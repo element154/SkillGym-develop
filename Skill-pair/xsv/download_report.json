@@ -1,0 +1,245 @@
+{
+  "skill": "D:\\engineer\\SKILL TO INPUT\\SKILLS\\xsv\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "basic_survey_data.csv",
+      "snippet": "... Customer Experience (OMB Circular A-11 Section 280 Implementation),\"The ... Transactions in Selected Services and Intellectual Property with Foreign ...",
+      "metadata": {
+        "url": "https://www.censusofsurveys.com/data/basic_survey_data.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Download_All_(CSV)_-_Data.govt.nz",
+      "snippet": "... customer service, punctuality, service standard, etc) or the raw complaint minus the identifying details. These would need to be grouped based on target ...",
+      "metadata": {
+        "url": "https://data.govt.nz/requests/csv?sortby=Title&o=0&start=350"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "entries.cascade.csv",
+      "snippet": "... export in a number of formats.\",\"Yes\",\"Yes\",\"Nate Eckstine\",\"Nate Eckstine ... transactions on a line basis--i.e. which entities received each check ...",
+      "metadata": {
+        "url": "http://us-city.census.okfn.org/api/entries.cascade.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "PreviousFDLPDisposalListOffersThroughAugust2021.csv",
+      "snippet": "... transactions, and information sources \",SuDoc,A 1.107:386,Yes,10/18/1977 ... export and consumption estimates, 1978-92\",SuDoc,A 1.34:875,Yes,microfiche ...",
+      "metadata": {
+        "url": "https://www.library.ca.gov/uploads/2024/03/PreviousFDLPDisposalListOffersThroughAugust2021.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "prompts.csv",
+      "snippet": "... rows excel sheet with row numbers and cell letters as columns (A to L). First column header should be empty to reference row number. I will ...",
+      "metadata": {
+        "url": "https://huggingface.co/datasets/fka/prompts.chat/resolve/main/prompts.csv?download=true"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "large_scale_ai_models.csv",
+      "snippet": "... data 15K of joint pre-training of ViT & LLM 200B (or 500B, unclear) ... sample code (Apache 2.0): https://github.com/ByteDance-Seed ...",
+      "metadata": {
+        "url": "https://epoch.ai/data/large_scale_ai_models.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "rows.csv",
+      "snippet": "... Data Updated Date (UTC),Domain,Derived View,Visits,Downloads,Row Label,Row Count,Column Count,Contact Email,License,Attribution,Attribution Link,Published ...",
+      "metadata": {
+        "url": "https://data.nola.gov/api/views/r6b2-hfba/rows.csv?accessType=DOWNLOAD&api_foundry=true"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Download_Dataset_List_(CSV)_-_Data.SA",
+      "snippet": "... (sample only),\"This dataset defines when a Probe was detected at a Bluetooth Site. The sample data contains one week of records from 8 June 2017 to 14 June ...",
+      "metadata": {
+        "url": "https://data.sa.gov.au/data/csv_dump/dataset"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "fulltimeNY.csv",
+      "snippet": "... Data Scientist – New York City</b></p><p><b>Reference No: EXEC/RD_DAT_NYC_6073</b></p><p><b>**PLEASE NOTE: To be considered for this position, applications ...",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/jglendrange/DATA607/main/fulltimeNY.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "[UCI] AAAI-14 Accepted Papers - Papers.csv",
+      "snippet": "The core idea of our model is to determine the behavior of occupants based on nearest neighbor comparison over a database of sample data. ... multiple data ...",
+      "metadata": {
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00307/%5BUCI%5D%20AAAI-14%20Accepted%20Papers%20-%20Papers.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Public-Sector-Innovation-Trends-2023-Data.csv",
+      "snippet": "... data-management and evidence-building strategies that advance multiple existing activities; and other capacity-building strategies that build lasting change ...",
+      "metadata": {
+        "url": "https://oecd-opsi.org/wp-content/uploads/2023/01/Public-Sector-Innovation-Trends-2023-Data.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "test.csv",
+      "snippet": "... Data Preparation** Begin by loading the required data into your preferred programming environment. Ensure that the data is appropriately preprocessed to ...",
+      "metadata": {
+        "url": "https://huggingface.co/datasets/soufyane/qa_ds_6K/raw/main/test.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "https_trac.filezilla-project.org_report_2_asc=1&...",
+      "snippet": "... Data/.config/filezilla/ Mac Details Model Name: iMac Model Identifier: iMac19,1 Processor Name: 6-Core Intel Core i5 Processor Speed: 3 GHz Number of ...",
+      "metadata": {
+        "url": "https://trac.filezilla-project.org/report/2?asc=1&format=csv&sort=type"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "all-pages-realtime.csv",
+      "snippet": "Active Users,page_title 26899,Earthdata Login 13791,USPS.com® - USPS Tracking® Results 11877,Error encountered - Nucleotide - NCBI 6325,Error - Nucleotide ...",
+      "metadata": {
+        "url": "https://analytics.usa.gov/data/live/all-pages-realtime.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "use-cases.csv",
+      "snippet": "We have developed a data schema and governance infrastructure with the ability to scale nationally. In order to build stable relationships with data ...",
+      "metadata": {
+        "url": "https://strategy.data.gov/data/use-cases.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "rows.csv",
+      "snippet": "... users to contact them and discuss access to datasets. The Administrative Data section of each database profile includes a brief summary of the format in which ...",
+      "metadata": {
+        "url": "https://datadiscovery.nlm.nih.gov/api/views/vp2h-kf33/rows.csv?accessType=DOWNLOAD"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "rows.csv",
+      "snippet": "... tables, businesses and their licenses and inspection and violation history, and uses a Simulated Annealing Algorithm to optimize the order in which ...",
+      "metadata": {
+        "url": "https://data.cityofnewyork.us/api/views/jaw4-yuem/rows.csv?accessType=DOWNLOAD"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "DDI_publications_20241217.csv",
+      "snippet": "... Data Documentation Initiative (DDI)\",\"10.17487/RFC9517\",\"https://www.rfc ... users who have faced and met this challenge. Our panel of expert speakers ...",
+      "metadata": {
+        "url": "https://ddialliance.org/hubfs/sites/default/files/DDI_publications_20241217.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "800-53-rev4-controls.csv",
+      "snippet": "... Orders, directives, regulations, policies, standards, and guidance. Security ... users of the information system and the specification of access ...",
+      "metadata": {
+        "url": "https://csrc.nist.gov/csrc/media/Projects/risk-management/800-53%20Downloads/800-53r4/800-53-rev4-controls.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Authorities.csv",
+      "snippet": "... orders as may be just to the Authority and to the owners of the property to be condemned and may require an undertaking or other security to secure such ...",
+      "metadata": {
+        "url": "https://law.lis.virginia.gov/CSV/Authorities.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "rows.csv",
+      "snippet": "... users manuals or other documents that describe any software you have like ... orders, guidelines, presentations, policy statements, legal opinions ...",
+      "metadata": {
+        "url": "https://data.cityofchicago.org/api/views/n379-5uzu/rows.csv?accessType=DOWNLOAD"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "ONET_20-0_Occupations.csv",
+      "snippet": "Design and construct large relational databases. Integrate new systems with existing warehouse structure and refine system performance and functionality ...",
+      "metadata": {
+        "url": "https://www.onetcenter.org/listings/20.0/updated/ONET_20-0_Occupations.csv?fmt=csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "query.csv",
+      "snippet": "... inconsistent\",2253,5619,2008-03-08.09:54:36,93,4,2 \"\"\"continue\"\" in .pdbrc has no effect\",1437051,4641,2010-07-30.08:30:08,None,4,2 \"\"\"continue\"\" inside ...",
+      "metadata": {
+        "url": "https://bugs.python.org/file47793/query.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "prbs-x10.01-y11.00.csv",
+      "snippet": "... Data Import,Yokohama Patch 11,PRB1967199,Other Fix,\"Yokohama Patch 11 Invalid delete for contract import causes no records to be imported An empty column 'A ...",
+      "metadata": {
+        "url": "https://downloads.docs.servicenow.com/prbrn/enus/yokohama/prbs-x10.01-y11.00.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "buglist.cgi",
+      "snippet": "... inconsistent\",\"2019-05-14 02:50:45\" 539354,\"PDE\",\"UI\",\"michael.keppler\",\"NEW ... data and provisioned bundles outside the workspace\",\"2014-04-01 07:51 ...",
+      "metadata": {
+        "url": "https://bugs.eclipse.org/bugs/buglist.cgi?product=PDE&query_format=advanced&ctype=csv&human=1"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "https_trac.filezilla-project.org_query_status=!&...",
+      "snippet": "... data connection\"\" on public IP\",closed,Tim Kosse,Bug report,normal,Other 226 ... columns (server/local file; direction; remote file...),closed,,Bug ...",
+      "metadata": {
+        "url": "https://trac.filezilla-project.org/query?status=!&order=summary&format=csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "issues.csv",
+      "snippet": "... row-leave handler not called after apply entry in FWD,Stanislav Lomany,10/16/2023 04:27 AM 2630,User Interface,Feature,New,Normal,Add ability to save new rows ...",
+      "metadata": {
+        "url": "https://proj.goldencode.com/issues.csv?per_page=25&sort=status%2Cpriority%3Adesc%2Cassigned_to"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "concat_snapshot_all_hadoop.csv",
+      "snippet": "... data,HADOOP-4975,Major,Closed,jly,jly,unknown,set:1 passed:1,using:3 set:2 ... columns:1 fixed:1 comments:1 ran:1 file:1 patches:1 java:1 results:1 ...",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/juarezmeneses/project-final-datavis/master/concat_snapshot_all_hadoop.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "data_set.csv",
+      "snippet": "... data for JS Data about attachments are assigned to a JavaScript variable so that they are available to CKEditor. The JSON encoder does not escape characters ...",
+      "metadata": {
+        "url": "https://dfzljdn9uc3pi.cloudfront.net/2025/cs-2641/1/data_set.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "https_core.trac.wordpress.org_report_60_sort=mod...",
+      "snippet": "... data Response data. */ $( function() { /** * Hides the authentication form ... Inconsistent Post Count in Category Taxonomy,,General,normal,defect (bug) ...",
+      "metadata": {
+        "url": "https://core.trac.wordpress.org/report/60?sort=modified&asc=0&format=csv"
+      }
+    }
+  ]
+}

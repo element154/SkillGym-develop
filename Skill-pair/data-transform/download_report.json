@@ -1,0 +1,21 @@
+{
+  "skill": "D:\\engineer\\SKILL TO INPUT\\SKILLS\\data-transform\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "OutputdataDataSet.csv",
+      "snippet": "... Log2 fold gene expression values and morphological details for Danio males from an acute stress experiment 268DFC75-2FD4-440F-B221-5F66E62D371D;180864;Log2 fold ...",
+      "metadata": {
+        "url": "https://data.snf.ch/exportcsv/OutputdataDataSet.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Data_Dictionary_-__Annotated__23May2025.csv",
+      "snippet": "... Clinical, or a prodromal participant confirmed eligible to proceed to PPMI ... Patient Number\",\"CHAR\",\"8\",\"\",\"\",\"\",\"\",\"\",\"\",\"\" \"Biospecimen_Analysis ...",
+      "metadata": {
+        "url": "https://www.ppmi-info.org/sites/default/files/tables-data/Data_Dictionary_-__Annotated__23May2025.csv"
+      }
+    }
+  ]
+}

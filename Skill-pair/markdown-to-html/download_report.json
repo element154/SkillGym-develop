@@ -1,0 +1,110 @@
+{
+  "output_dir": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html",
+  "threshold": 0.7,
+  "total": 10,
+  "succeeded_count": 10,
+  "failed_count": 0,
+  "succeeded": [
+    {
+      "url": "https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md",
+      "title": "markdown-cheatsheet/README.md at main - GitHub",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\README.md",
+      "size_kb": 313,
+      "q": "README.md documentation file with headers lists and code blocks",
+      "file_type": "txt_md",
+      "judge_confidence": 0.95,
+      "judge_reason": "README.md 文件本身就是用户会提交给 markdown-to-html skill 的输入文件，包含 headers、lists、code blocks 等 Markdown 内容"
+    },
+    {
+      "url": "https://github.com/ory/docs/blob/master/README.md",
+      "title": "docs/README.md at master · ory/docs - GitHub",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\README_1.md",
+      "size_kb": 411,
+      "q": "README.md documentation file with headers lists and code blocks",
+      "file_type": "txt_md",
+      "judge_confidence": 0.95,
+      "judge_reason": "README.md 文档文件，明确包含 headers、lists、code blocks 等 Markdown 元素，是直接的 skill 输入"
+    },
+    {
+      "url": "https://github.com/neondatabase/website/blob/main/content/docs/README.md",
+      "title": "website/content/docs/README.md at main - GitHub",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\README_2.md",
+      "size_kb": 497,
+      "q": "README.md documentation file with headers lists and code blocks",
+      "file_type": "txt_md",
+      "judge_confidence": 0.95,
+      "judge_reason": "README.md 文件，snippet 明确提到 code blocks 使用，是用户会提交转换的典型 Markdown 输入文件"
+    },
+    {
+      "url": "https://gitlab.com/gitlab-com/runbooks/-/blob/v4.199.1/docs/README.md",
+      "title": "docs/README.md · v4.199.1 - Runbooks - GitLab",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\README_3.md",
+      "size_kb": 37,
+      "q": "README.md documentation file with headers lists and code blocks",
+      "file_type": "txt_md",
+      "judge_confidence": 0.9,
+      "judge_reason": "README.md 文件，属于文档目录中的 Markdown 文件，可作为 skill 的输入进行 HTML 转换"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/miklevin/MikeLev.in/main/_posts/2025-04-24-jekyll-front-matter-seo-social-metadata-guide.md",
+      "title": "https://raw.githubusercontent.com/miklevin/MikeLev...",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\2025-04-24-jekyll-front-matter-seo-social-metadata-guide.md",
+      "size_kb": 21,
+      "q": "blog post markdown file with front matter YAML metadata",
+      "file_type": "txt_md",
+      "judge_confidence": 0.85,
+      "judge_reason": "这是实际的Jekyll博客文章markdown文件，包含YAML front matter，是用户会提交给skill的真实输入文件"
+    },
+    {
+      "url": "https://huggingface.co/prithivMLmods/Segue-Qwen3_DeepScaleR-Preview/raw/main/README.md",
+      "title": "raw - Hugging Face",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\README_4.md",
+      "size_kb": 3,
+      "q": "technical documentation markdown with tables and math equations LaTeX",
+      "file_type": "txt_md",
+      "judge_confidence": 0.85,
+      "judge_reason": "这是Hugging Face模型仓库的README.md原始文件，content_type为text/plain，是实际的markdown文档内容，可作为skill转换的输入样本"
+    },
+    {
+      "url": "https://github.com/apiaryio/api-elements/blob/master/docs/examples.md",
+      "title": "api-elements/docs/examples.md at master - GitHub",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\examples.md",
+      "size_kb": 275,
+      "q": "API documentation markdown file with code examples and nested lists",
+      "file_type": "txt_md",
+      "judge_confidence": 0.85,
+      "judge_reason": "这是API文档的Markdown示例文件，包含代码示例和嵌套列表，可直接作为markdown-to-html skill的输入进行转换"
+    },
+    {
+      "url": "https://waher.se/Markdown.md",
+      "title": "Markdown",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\Markdown.md",
+      "size_kb": 455,
+      "q": "API documentation markdown file with code examples and nested lists",
+      "file_type": "txt_md",
+      "judge_confidence": 0.8,
+      "judge_reason": "这是Markdown语法规范的示例文件，包含嵌套任务列表等实际内容，可作为转换输入"
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/home/list-home-contents.md",
+      "title": "View as Markdown Open this page as Markdown",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\list-home-contents.md",
+      "size_kb": 194,
+      "q": "API documentation markdown file with code examples and nested lists",
+      "file_type": "txt_md",
+      "judge_confidence": 0.9,
+      "judge_reason": "这是Smartsheet API的Markdown格式文档，content-type为text/markdown，包含API文档内容和嵌套列表，是理想的转换输入"
+    },
+    {
+      "url": "https://github.com/md2docx/react-markdown/blob/main/sample.md",
+      "title": "react-markdown/sample.md at main - GitHub",
+      "saved_as": "D:\\engineer\\SkillGym-develop\\Skill-pair\\markdown 转 html\\sample.md",
+      "size_kb": 466,
+      "q": "project wiki markdown with collapsible sections and embedded HTML",
+      "file_type": "txt_md",
+      "judge_confidence": 0.85,
+      "judge_reason": "这是sample.md示例文件，包含markdown内容，可直接作为skill的输入样本进行转换"
+    }
+  ],
+  "failed": []
+}

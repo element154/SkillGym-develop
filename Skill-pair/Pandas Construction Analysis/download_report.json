@@ -1,0 +1,53 @@
+{
+  "skill": "D:\\engineer\\SKILL TO INPUT\\SKILLS\\Pandas Construction Analysis\\SKILL.md",
+  "records": [
+    {
+      "category": "xlsx file",
+      "value": "qs_bim_attribute_requirements.xlsx",
+      "snippet": "BIM element is modelled with complete fabrication and assembly details over and above the Detailed Design stage where applicable or useful for construction ...",
+      "metadata": {
+        "url": "https://info.corenet.gov.sg/docs/default-source/bim-guides/essential/qs_bim_attribute_requirements.xlsx?sfvrsn=a61679dc_2"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "PA-DEL-REQ-DAT-SP-0003-InformationDeliveryPlan.xlsx",
+      "snippet": "FLOOR CONSTRUCTION, B1010.10, Floor structural frame, 0. 31, B, SHELL, B10, SUPERSTRUCTURE, B1010, FLOOR CONSTRUCTION, B1010.20, Floor decks, slabs and toppings ...",
+      "metadata": {
+        "url": "https://www.panynj.gov/content/dam/port-authority/pdfs/-available-engineering-documents/PA-DEL-REQ-DAT-SP-0003-InformationDeliveryPlan.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Section3.2AttachmentConstructionCostEstimateTemplateRev18.xlsx",
+      "snippet": "Hard Cost Detail Level 2: This template provides a detailed takeoff for cost estimate in CSI Master Format. ... Construction contingency estimate budgets for ...",
+      "metadata": {
+        "url": "https://www.nyc.gov/assets/ddc/downloads/public-building-resources/Section3.2AttachmentConstructionCostEstimateTemplateRev18.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "CHFA-Cost-Summary-Template.xlsx",
+      "snippet": "Provide the type of materials assumed for each line item, and quantity takeoff where possible. 3. Do not use lump sums or general per-square-foot allocation of ...",
+      "metadata": {
+        "url": "https://www.chfainfo.com/getattachment/707a5b78-178b-44ca-8d85-5551430d9770/CHFA-Cost-Summary-Template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Get-NSW-Active-2025-26-Cost-Estimate-standard-template.xlsx",
+      "snippet": "All items must be extended to show total amounts. Rates for individual pay items must exclude GST. Refer to guidance note for information on how to populate. 4 ...",
+      "metadata": {
+        "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2024/Get-NSW-Active-2025-26-Cost-Estimate-standard-template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "CJ-Michael-Presentation-and-Discussion-of-Case-Studies-and-Real-life-examples-of-Project-cost-estimating-for-Building-and-Civil-Engineering.xlsx",
+      "snippet": "COST OF MATERIAL/M3, 0, COST/ M3, 2600, COST/ m3. 34, 0, +VAT. 35, C=A+B, COST OF LATERITE SUPPLIED (+10% SWELL), 1.1, 0, COST/ M3, 0, COST/ M3. 36. 37. 38 ...",
+      "metadata": {
+        "url": "https://niqs.org.ng/wp-content/uploads/2021/10/CJ-Michael-Presentation-and-Discussion-of-Case-Studies-and-Real-life-examples-of-Project-cost-estimating-for-Building-and-Civil-Engineering.xlsx"
+      }
+    }
+  ]
+}

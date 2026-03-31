@@ -581,7 +581,7 @@
 4745,Add option to refresh local or remote only to Refresh button,closed,,Feature request,normal,FileZilla Client
 2978,Add option to sort files with natural/numerical order algorithm + select collation,closed,,Patch,normal,FileZilla Client
 2707,Add options to configure display settings,closed,Alexander Schuch,Feature request,normal,FileZilla Client
-13356,Add record_size_limit TLS extension (RFC 8449) to ClientHello for IoT interoperability,new,,Feature request,normal,FileZilla Client
+13356,Add record_size_limit TLS extension (RFC 8449) to ClientHello for IoT interoperability,closed,,Feature request,normal,FileZilla Client
 7220,Add row of navigation buttons above both local and remote listings,new,,Feature request,normal,FileZilla Client
 2911,Add scp support to Filezilla,closed,,Feature request,normal,FileZilla Client
 975,Add server type AS400 / Iseries,new,,Feature request,normal,FileZilla Client
@@ -1025,7 +1025,7 @@
 7874,Bypass proxy for all local sites,new,,Feature request,normal,FileZilla Client
 149,Bypass proxy not working,closed,,Bug report,normal,Other
 1528,Bypass proxy settings feature,closed,Tim Kosse,Patch,normal,FileZilla Client
-13350,C++ assert triggers when updating.,new,,Bug report,normal,Other
+13350,C++ assert triggers when updating.,moreinfo,,Bug report,normal,Other
 11742,CA and intermediary CA certificate expiration date in red even if not expired at their level,closed,,Bug report,normal,FileZilla Client
 248,CAsyncSocketEx::IOCtl() returns wrong result,closed,,Bug report,normal,Other
 3049,CD player without CD gives error cannot enumerate files,closed,,Bug report,normal,Other
@@ -2988,7 +2988,7 @@
 3819,FTP uploading error,closed,,Bug report,normal,FileZilla Client
 10248,FTP will not connect to some FTP sites (e.g. MediaTemple),closed,,Bug report,low,FileZilla Client
 12741,FTP with TLS explicit in mac,closed,,Bug report,normal,FileZilla Client
-13357,FTP'd files instantly become invisible on Filezilla while are visible on cPanel and are accessible online,new,,Bug report,normal,FileZilla Client
+13357,FTP'd files instantly become invisible on Filezilla while are visible on cPanel and are accessible online,closed,,Bug report,normal,FileZilla Client
 5642,FTP/SSL client certificate support,closed,,Feature request,low,FileZilla Server
 3610,FTPES - Failed retrieve directory listing,closed,,Bug report,normal,FileZilla Client
 12434,FTPES Directory Listing fails,new,,Bug report,high,FileZilla Client

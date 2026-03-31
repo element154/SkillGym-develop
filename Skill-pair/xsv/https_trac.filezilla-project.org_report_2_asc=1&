@@ -17471,7 +17471,7 @@ Just let me know what would help.
 
 Ken
 ",Ken Sonday
-,13350,C++ assert triggers when updating.,Other,,Bug report,,new,2026-03-18T01:28:16+01:00,2026-03-25T21:10:18+01:00,"Steps to reproduce:
+,13350,C++ assert triggers when updating.,Other,,Bug report,,moreinfo,2026-03-18T01:28:16+01:00,2026-03-30T09:38:30+02:00,"Steps to reproduce:
  - Have a computer with Windows OS and FileZilla server and FileZilla admin tool running.
  - Come to the computer after a while.
  - There is a FileZilla window telling me about an update.
@@ -17488,15 +17488,6 @@ Windows OS version: Windows Server 2022 Standard [Version 21H2 10.0.20348.4773] 
 
 The assert message: I don't have it anymore, but I do have a screenshot. https://imgur.com/a/2u6TZPW",MarekKnapek
 ,13353,FileZilla Server 1.12.5 (macOS),FileZilla Server,,Bug report,,new,2026-03-23T17:03:32+01:00,2026-03-23T17:03:32+01:00,"FileZilla Server shows an update available for 1.12.5 in an already updated app. I am running 1.12.5 on macOS Tahoe and each time I launch it, it shows the udpate available for the same release???",Jim Wiebmer
-,13357,FTP'd files instantly become invisible on Filezilla while are visible on cPanel and are accessible online,FileZilla Client,,Bug report,,new,2026-03-28T01:03:22+01:00,2026-03-28T01:05:12+01:00,"FTP'd files instantly become invisible on Filezilla while are visisble on cPanel and are accessible online
-
-Files uploaded via FTP are accessible via URL and are visible in my cPanel's File Manager, but do not appear in directory listings in FileZilla. What is happening exactly:
-
-From the left side of Filezilla screen I send a file pt170a.jpg and I can see it arriving at the right side alphabetical listing, but less than a second later it is remove (disappears). This same is happening to HTM files also. I am a very simple webmaster, not coder or a technician. I don't even know if it is a bug, or something else, such as unknown-to-me setting. I am afraid to fiddle on settings myself as I don't want to break or ruin anything irreversibly.
-
-P.S. I think this has been happening for quite a while now... months or even years? I changed hosting, but the problem remains, so I realised it is not the hosting issue.
-
-Your advise is appreciated how to fix this issue.",Tom Tom
 ,4122,mainframe file directory omits tape (EBCDIC) files from display,FileZilla Client,,Bug report,,reopened,2008-12-31T00:08:49+01:00,2017-06-09T20:50:45+02:00,"FileZilla version is 3.1.6, build date 12/2/08
 
 After logging in to a VM system and displaying a file directory, the detail list of files in the remote system's directory is incomplete. 
@@ -25079,15 +25070,6 @@ existing explicit design philosophy.",Lee Linkoff
 The log window behavior in Filezilla makes it impossible to stop the scrolling momentarily, to read an error message or similar.
 
 I have only tested this on MacOS, so I don't know if you can stop the auto-scrolling on Windows or Linux/BSD.",Patrik Bodin
-,13356,Add record_size_limit TLS extension (RFC 8449) to ClientHello for IoT interoperability,FileZilla Client,,Feature request,,new,2026-03-27T01:54:46+01:00,2026-03-27T01:54:46+01:00,"FileZilla does not advertise the `record_size_limit` TLS extension (RFC 8449) in ClientHello messages, even though GnuTLS - FileZilla's TLS library - already implements it. This creates an interoperability gap with memory-constrained IoT devices that depend on this extension to function correctly over TLS.
-
-RFC 8449 defines `record_size_limit` as the modern replacement for `max_fragment_length` (RFC 6066). It allows TLS endpoints to negotiate a maximum protected record size smaller than the default 16,384 bytes, which many microcontrollers cannot buffer for decryption due to RAM constraints. The extension is symmetric: each side independently advertises the maximum record size it is willing to receive, so advertising the full 16,384 bytes on FileZilla's side has zero performance or memory impact - it purely enables servers to communicate their own limit back.
-
-Per RFC 8449 Section 4: ""Endpoints SHOULD advertise the `record_size_limit` extension, even if they have no need to limit the size of records. For clients, this allows servers to advertise a limit at their discretion.""
-
-The EU Cyber Resilience Act (2027) requires IoT devices to implement secure communications, making this interoperability gap increasingly relevant. The fix on FileZilla's side should be straightforward: GnuTLS supports the extension via `gnutls_record_set_max_size()`, and calling it with the maximum permissible value (16,384 bytes) before the handshake would cause the extension to be advertised without changing any actual behaviour.
-
-In fact I've just added TLS support to our own open-source controllers, which do not have enough RAM to offer full 16K TLS data buffers, so I can't upload files longer than ~1K yet. Hence it would really help if this could be addressed in FTPS. I'd be happy to provide a patch as well if this is any help.",chrishamm
 ,3770,Wider Central Bar,FileZilla Client,,Feature request,,new,2008-09-15T13:39:01+02:00,2008-09-15T13:39:01+02:00,Just a suggestion but it might be advisable to widen the central bar between client side and server side folders on the filezilla client - to make it more obvious that the two sides are seperate and thus make it more user friendly to new users,marc
 ,3893,File edit dialog: Live-update,FileZilla Client,,Feature request,Bruno Ramos,assigned,2008-10-16T00:13:52+02:00,2014-09-09T08:42:52+02:00,"Steps to reproduce:
 1. Right-click a file, and click ""View / Edit"".

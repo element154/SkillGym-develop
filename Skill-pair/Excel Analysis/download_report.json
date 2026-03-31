@@ -1,0 +1,253 @@
+{
+  "skill": "D:\\engineer\\SKILL TO INPUT\\SKILLS\\Excel Analysis\\SKILL.md",
+  "records": [
+    {
+      "category": "xlsx file",
+      "value": "quarterly_sales_cust.xlsx",
+      "snippet": "QUARTERLY DATA: 18. 19, 2022: 1st quarter, 413500, 587700, 388400, 368400, 560100. 20, 2nd quarter, 437700, 609500, 398800, 387600, 580000. 21, 3rd quarter ...",
+      "metadata": {
+        "url": "https://www.census.gov/construction/nrs/xls/quarterly_sales_cust.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "SaleData.xlsx",
+      "snippet": "Sales Data. A, B, C, D, E, F, G, H. 1, OrderDate, Region, Manager, SalesMan, Item, Units, Unit_price, Sale_amt. 5, 43157, Central, Timothy, David, Cell Phone ...",
+      "metadata": {
+        "url": "https://www.w3resource.com/python-exercises/pandas/excel/SaleData.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "IC-Restaurant-Monthly-Sales-Report-11456.xlsx",
+      "snippet": "RESTAURANT MONTHLY SALES REPORT TEMPLATE. 3, RESTAURANT NAME, DATES OF REPORT. 4 ... RESTAURANT MONTHLY SALES REPORT TEMPLATE. 2, RESTAURANT NAME, DATES OF ...",
+      "metadata": {
+        "url": "https://www.smartsheet.com/sites/default/files/2022-06/IC-Restaurant-Monthly-Sales-Report-11456.xlsx?srsltid=AfmBOoqeiREELpzvrfAoIj-He65UkaaDVa1TOld-WDd-kU-KY2IP2K9K"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "roche-group-financial-data.xlsx",
+      "snippet": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0. 5, Sales 3rd, 30944, 29848, 0.04, 0.07, 30572, 30647, 0, 0.07, 61516, 60495, 0.02, 0.07, 1, 1, 1, 1, 1, 1. 6. 7, Sales to other ...",
+      "metadata": {
+        "url": "https://assets.roche.com/f/176343/x/bb0cb9f7bc/roche-group-financial-data.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "q1-2025-download-excel-financial-data-ssb-data.xlsx",
+      "snippet": "Sales revenue, 744.6, 666.9. 5, Cost of sales, -388.3, -358.2. 6, Gross profit on sales, 356.3, 308.7. 7, Selling and distribution costs, -126.8, -120.9. 8 ...",
+      "metadata": {
+        "url": "https://www.sartorius.com/download/1682228/q1-2025-download-excel-financial-data-ssb-data.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Download.aspx",
+      "snippet": "→Fill out the Reporting Data (e.g., Full Vendor Name, Reporting Period, etc. on the spreadsheet.) 13, →All State Agency spend including all University of ...",
+      "metadata": {
+        "url": "https://vendornet.wi.gov/Download.aspx?type=bid&Id=d20bf6e9-c2b0-e611-80f8-0050568c7f0f&filename=Appendix+B-+Monthly+Sales+Report+Template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "2022_Fourth_Quarter_Report_Data_Tables.xlsx",
+      "snippet": "Fourth Quarter Report Data Tables for period ending 31 December 2022, Historical Data Tables for period between 1 January 2016 and 31 December 2022. 3, Average ...",
+      "metadata": {
+        "url": "https://www.santos.com/wp-content/uploads/2023/01/2022_Fourth_Quarter_Report_Data_Tables.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "FAS SRP Excel Upload Reporting Template v1.3.9.xlsx",
+      "snippet": "Enter your sales data in Columns B through L provided. Columns that are marked with Asterisk are required fields. See Definition of Data Fields ...",
+      "metadata": {
+        "url": "https://srp.fas.gsa.gov/portal/docs/FAS%20SRP%20Excel%20Upload%20Reporting%20Template%20v1.3.9.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "local-sales-tax-collections-monthly-quarterly-collections-region.xlsx",
+      "snippet": "Notes: Collections data may reflect technical adjustments and other administrative issues, quarterly reconciliations, and changes in tax rates, all of which ...",
+      "metadata": {
+        "url": "https://www.osc.ny.gov/files/local-government/publications/excel/local-sales-tax-collections-monthly-quarterly-collections-region.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Income-Statement-Template.xlsx",
+      "snippet": "This Excel model is for educational purposes only and should not be used for ... Income Statement (Annual BLANK). A, B, C, D, E, F, G, H, I, J, K. 1, [Company ...",
+      "metadata": {
+        "url": "https://corporatefinanceinstitute.com/assets/Income-Statement-Template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial_Statements_Template.XLSX",
+      "snippet": "The Financial Statements Template is an excel file comprised of the following five sheets. 13, 1) Instructions. 14, 2) Income Statement (\"P&L\"). 15, 3) Cashflow ...",
+      "metadata": {
+        "url": "https://www.mdot.maryland.gov/OPCP/Financial_Statements_Template.XLSX"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial-statements-US-GAAP-Q2-2024-excel.xlsx",
+      "snippet": "Always refer to the electronic version of the Quarterly Summary US GAAP Financial Statements for Q2 2024 for the full and official financial information. 6. 7 ...",
+      "metadata": {
+        "url": "https://ourbrand.asml.com/m/5eb3c766d54b0125/original/Financial-statements-US-GAAP-Q2-2024-excel.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial-statements-template.xlsx",
+      "snippet": "A Balance Sheet brings together the results from the Profit & Loss Statement and the Cash Flow Statement. 7, (Download from the Business Victoria website at ...",
+      "metadata": {
+        "url": "https://business.vic.gov.au/__data/assets/excel_doc/0004/1009516/Financial-statements-template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial-Projections-Template.xlsx",
+      "snippet": "Income Statement. A, B, C, D, E, F, G, H. 2. 3, [Company Name], Income Statement. 4 ... BALANCE SHEET. 4, Assets, Year 1, Year 2, Year 3, Liabilities and Owner's ...",
+      "metadata": {
+        "url": "https://www.smartsheet.com/sites/default/files/Financial-Projections-Template.xlsx?srsltid=AfmBOopGmmIP2QRbcB5PUQEZAzSooy9V6CaJQ74qylPcdWp6dEFoFIg0"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial Statement Effects Template.xlsx",
+      "snippet": "Financial Statement Effects Template. 2, Balance Sheet, Income Statement. 3, #, Transaction, Cash Asset, +, Noncash Asset, = Liabilities, +, Contributed Capital ...",
+      "metadata": {
+        "url": "https://get.floqast.com/hubfs/Assets/Financial%20Statement%20Effects%20Template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "IC-Excel-Customer-Feedback-Form-11807.xlsx",
+      "snippet": "How would you are your overall customer experience? How satisfied were you with the product? How satisfied were you with customer support, How satisfied were ...",
+      "metadata": {
+        "url": "https://www.smartsheet.com/sites/default/files/2023-10/IC-Excel-Customer-Feedback-Form-11807.xlsx?srsltid=AfmBOoqHj6yckZTeoGzOIO4TioWFQ7Xaiy2Xjqmna2INxSfevH6VPgiV"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "oclc-research-linked-data-implementers-survey-2014.xlsx",
+      "snippet": "What types of data are you publishing as linked data? What is the size of your Linked Data dataset? What license do you apply to your linked data dataset?",
+      "metadata": {
+        "url": "https://www.oclc.org/content/dam/research/activities/linkeddata/oclc-research-linked-data-implementers-survey-2014.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "OQM Customer List.xlsx",
+      "snippet": "Customer Satisfaction Survey of users of space and assignment data to obtain satisfaction and importance ratings on space and assignment data appearing on ...",
+      "metadata": {
+        "url": "https://ors.od.nih.gov/OD/OQM/Documents/OQM%20Customer%20List.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "2cb959e1-4a0f-4604-bf5f-37eb93ded6de-JNCC-DATA-MATURITY-MODEL-20181126-public.xlsx",
+      "snippet": "Contact the open data publishers to let them know you are using their datasets. 2. Where you have feedback or improvements to the data, ...",
+      "metadata": {
+        "url": "https://data.jncc.gov.uk/data/2cb959e1-4a0f-4604-bf5f-37eb93ded6de-JNCC-DATA-MATURITY-MODEL-20181126-public.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "[XLS]_dataset.xlsx",
+      "snippet": "The survey was sent to around 39,000 UK businesses, and results presented in this release are based on a limited number of responses, around 25.2% (10,070) of ...",
+      "metadata": {
+        "url": "https://www.ons.gov.uk/file?uri=/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy/bicswave123/bicswave1232final.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "dol_edi Q4 2024.xlsx",
+      "snippet": "This dataset is the final data from the evaluation and includes administrative data from the six and eighteen month follow-ups and survey data from the six ...",
+      "metadata": {
+        "url": "https://www.dol.gov/sites/dolgov/files/Data-Governance/dol_edi%20Q4%202024.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "IC-Consignment-Inventory-Spreadsheet-Template-12363.xlsx",
+      "snippet": "Inventory Tracking. A, B, C, D, E, F, G, H, I, J, K, L, M, N. 2, Consignment Inventory Spreadsheet Template. 3, Product ID, Item Name, Description, Designer ...",
+      "metadata": {
+        "url": "https://www.smartsheet.com/sites/default/files/2025-03/IC-Consignment-Inventory-Spreadsheet-Template-12363.xlsx?srsltid=AfmBOorbwmSNevlZnc9nppkL6yGmAWT_RaY_qVRGSM-yA7Wrce6ac81l"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "ProMinent-SAP-Ariba-Excel-Catalog-Template.xlsx",
+      "snippet": "Commercial, Private Vehicles-Accessories + Comp. 30, custom, 2510, Motor vehicles. 31, custom, 251016, Product and material transport vehicles. 32, custom, 2517 ...",
+      "metadata": {
+        "url": "https://www.prominent.com/resources/CompanyInfoPolicy/English/25872/ProMinent-SAP-Ariba-Excel-Catalog-Template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Timesheet-with-Payroll-Calendar.xltx",
+      "snippet": "Timesheet Template. A, B, C, D, E, F, G, H, I, J, K, L, M, N, O ... Question about your time and paycodes, contact payroll at 334-0141 ... These Signatures certify ...",
+      "metadata": {
+        "url": "https://images.template.net/wp-content/uploads/2016/07/22110740/Timesheet-with-Payroll-Calendar.xltx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Download-The-Free-Employee-Schedule-Template-in-Excel.xlsm",
+      "snippet": "... staff and their shifts. You'll also want to click \"Enable Content\" so that the macros can calculate the total hours and total pay for your staff. 5, Adding ...",
+      "metadata": {
+        "url": "https://images.template.net/wp-content/uploads/2015/10/12192347/Download-The-Free-Employee-Schedule-Template-in-Excel.xlsm"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "IC-Payroll-Register-Template_0.xlsx",
+      "snippet": "Employee Number, Regular Hours. 12, Federal Filing Status, Overtime Hours. 13, Pay Begin Date, Holiday Hours. 14, Pay End Date, Vacation Hours. 15, Tax ...",
+      "metadata": {
+        "url": "https://www.smartsheet.com/sites/default/files/IC-Payroll-Register-Template_0.xlsx?srsltid=AfmBOorfzB08JVsuBt2xuj456fBtMhLuVv06Dn3-K8LJyeXxG99G2wBR"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "IC-Overtime-Calculator-and-Analysis-10678.xlsx",
+      "snippet": "Enter data for Start Time, Regular Hours, Regular Pay, and Overtime Pay. START TIME, REGULAR HOURS*, REGULAR PAY hourly rate, OVERTIME PAY hourly rate. 9 ...",
+      "metadata": {
+        "url": "https://www.smartsheet.com/sites/default/files/2019-10/IC-Overtime-Calculator-and-Analysis-10678.xlsx?srsltid=AfmBOootMHRkCrW5H1EKx81EJuiuVuOMy13KvOx_75dAUo1Wb9E69Ywx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "2025-Payroll-Worksheet-aka-employer-timesheet.xlsx",
+      "snippet": "2025 \"timesheet\", HOURS For HOURLY employees: #s reported below will result in a paycheck For SALARY employees: #s reported below are \"memos\" on payroll ...",
+      "metadata": {
+        "url": "https://www.diocal.org/wp-content/uploads/2024/11/2025-Payroll-Worksheet-aka-employer-timesheet.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Multiple-Employees-Weekly-Timesheet.xlsx",
+      "snippet": "Multiple Employees Weekly Timesheet Excel Template. 4, Day, 0, 0, 0, 0, 0, 0, 0, Total Hours ... Total Hours, Hourly Rate, Weekly Pay. 5, Date. 6, Name of ...",
+      "metadata": {
+        "url": "https://d25skit2l41vkl.cloudfront.net/wp-content/uploads/2018/05/Multiple-Employees-Weekly-Timesheet.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "standard-timesheet-for-staff-080123.xlsx",
+      "snippet": "I agree with the hours worked and time taken as shown on this Timesheet. ... \"The accuracy of time reporting is the responsibility of each ...",
+      "metadata": {
+        "url": "https://payroll.unm.edu/resources/standard-timesheet-for-staff-080123.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Media_1019789_smxx.xlsx",
+      "snippet": "... Timesheet Hourly paid Workers & Employees. 4. 5, Step 02. 6 ... In order for payroll to be able to identify the correct approvers against the timesheets ...",
+      "metadata": {
+        "url": "https://www.gla.ac.uk/media/Media_1019789_smxx.xlsx"
+      }
+    }
+  ]
+}
