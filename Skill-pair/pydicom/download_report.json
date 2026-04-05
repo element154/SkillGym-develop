@@ -1,0 +1,229 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\pydicom\\pydicom\\SKILL.md",
+  "records": [
+    {
+      "category": "dcm file",
+      "value": "lumbar-ct-scan.html",
+      "snippet": "This directory contains a sample dataset from the Lumbar CT Scans project, which is designed to showcase the diversity and quality of the imaging data available ...",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/aichaboumezrag/lumbar-ct-scan"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "getting_data.html",
+      "snippet": "The initial aim of the Visible Human Project was to create a digital image dataset of complete human male and female cadavers in MRI, CT and anatomical modes.",
+      "metadata": {
+        "url": "https://www.nlm.nih.gov/research/visible/getting_data.html"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "healthy-total-body-cts.html",
+      "snippet": "This data set includes low-dose whole body CT images and tissue segmentations of thirty healthy adult research participants who underwent PET/CT imaging.",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/healthy-total-body-cts/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "viewpage.action",
+      "snippet": "This dataset consists of CT and PET-CT DICOM images of lung cancer subjects with XML Annotation files that indicate tumor location with bounding boxes.",
+      "metadata": {
+        "url": "https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70224216"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "ct-org.html",
+      "snippet": "DICOM is the primary file format used by TCIA for radiology imaging. Supporting data related to the images such as patient outcomes, treatment ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/ct-org/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "DICOM_Library_-_Anonymize,_Share,_View_DICOM_files_ONLINE.html",
+      "snippet": "DICOM Sample 1 ... Do not upload files with information written on image! Watch video how to upload, view, share and download anonymized DICOM files online:.",
+      "metadata": {
+        "url": "https://www.dicomlibrary.com/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "dicom-brain-dataset.html",
+      "snippet": "The dataset consists of .dcm files containing MRI scans of the brain of the person with a normal brain. The images are labeled by the doctors and accompanied by ...",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/trainingdatapro/dicom-brain-dataset"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "mri-and-pet-dice-similarity-dataset.html",
+      "snippet": "Paired axial DICOM scans of brain tumor cases. Image‐registration and Dice‐score.",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/grantmcnatt/mri-and-pet-dice-similarity-dataset"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "brain-tumor-progression.html",
+      "snippet": "This collection includes datasets from 20 subjects with primary newly diagnosed glioblastoma who were treated with surgery and standard concomitant chemo- ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/brain-tumor-progression/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "qin-brain-dsc-mri.html",
+      "snippet": "This collection contains MR images of both low and high grade glial brain lesions. Data includes post-contrast T1w images with co-registered volumes of dynamic ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/qin-brain-dsc-mri/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "rider-neuro-mri.html",
+      "snippet": "RIDER Neuro MRI contains imaging data on 19 patients with recurrent glioblastoma who underwent repeat imaging sets.",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/rider-neuro-mri/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "chest-x-ray-dicom.html",
+      "snippet": "Chest-X-Ray-DICOM · About Dataset · Usability · License · Expected update frequency · Tags · labels.csv(11.81 kB) · See what others are saying about this dataset ...",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/falahgatea/chest-x-ray-dicom"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "nih-chest-x-ray-dataset.html",
+      "snippet": "dicom fiiles with markup and text conclusions of radiologists.",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/simongraves/nih-chest-x-ray-dataset"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "midrc-ricord-1c.html",
+      "snippet": "The RSNA International COVID-19 Open Annotated Radiology Database (RICORD) consists of 998 chest x-rays from 361 patients at four international sites annotated ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/midrc-ricord-1c/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "usg-medical-dataset-dicom-format.html",
+      "snippet": "Missing: imaging | Show results with:imaging",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/aixblock2023/usg-medical-dataset-dicom-format"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "dicom_files.html",
+      "snippet": "Below you'll find a few sample DICOM files. These files can be used for evaluation of the 'Rubo DICOM Viewer 2.0' (download the free demo). Click the image ...",
+      "metadata": {
+        "url": "https://www.rubomedical.com/dicom_files/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "datasets.html",
+      "snippet": "DICOM Sample Data Sets: MR DWI, MR Image Storage, Enhanced MR Image Storage, MR Spectroscopy Storage, Legacy Converted Enhanced MR Image Storage, Enhanced MR ...",
+      "metadata": {
+        "url": "https://www.aliza-dicom-viewer.com/download/datasets"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "dicom-images.html",
+      "snippet": "DICOM Images ; Korean DICOM Image Gallery. Download the DICOM files to duplicate the protocol ; Deep Resolve Phoenix images for MAGNETOM Free.Max 0.55T · 2023-10- ...",
+      "metadata": {
+        "url": "https://www.magnetomworld.siemens-healthineers.com/clinical-corner/protocols/dicom-images"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "fdg-pet-ct-lesions.html",
+      "snippet": "We provide the anonymized original DICOM files of all studies as well as the DICOM segmentation masks. Primary diagnosis, age and sex are ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/fdg-pet-ct-lesions/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "viewpage_1.action",
+      "snippet": "We provide the anonymized original DICOM files of all studies as well as the DICOM segmentation masks. Primary diagnosis, age and sex are ...",
+      "metadata": {
+        "url": "https://wiki.cancerimagingarchive.net/x/LwKPBQ"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "psma-pet-ct-lesions.html",
+      "snippet": "The dataset includes anonymized DICOM files, DICOM segmentation masks, and a TSV file with patient age at imaging, PET/CT manufacturer and model name, PET ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/psma-pet-ct-lesions/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "data.html",
+      "snippet": "Training.zip - A compressed folder that contains anonymized DICOM files of the training dataset. The subfolders are named according to each patient's ID after ...",
+      "metadata": {
+        "url": "https://www.kaggle.com/c/pet-radiomics-challenges/data"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "pet-radiomics-challenges.html",
+      "snippet": "This dataset encompasses anonymized 18F-FDG-PET DICOM-RT files, and expert-segmented contours of primary tumors propagated from computed ...",
+      "metadata": {
+        "url": "https://www.kaggle.com/c/pet-radiomics-challenges"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "lung-pet-ct-dx.html",
+      "snippet": "This dataset consists of CT and PET-CT DICOM images of lung cancer subjects with XML Annotation files that indicate tumor location with bounding boxes.",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/collection/lung-pet-ct-dx/"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "cranial-ct.html",
+      "snippet": "DICOM volume of cranial CT scans from PCIR. ... This particular dataset contains just the sequence of CT scans from series 3 of this file.",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/abbymorgan/cranial-ct"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "data_1.html",
+      "snippet": "The data are a tiny subset of images from the cancer imaging archive. They consist of the middle slice of all CT images taken where valid age, modality, and ...",
+      "metadata": {
+        "url": "https://www.kaggle.com/datasets/kmader/siim-medical-images/data"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "sect_A.6.html",
+      "snippet": "The SR sample document encoding includes information on the SR document body tree depth (column 1: SR Tree Depth), nesting level for nested artifacts.",
+      "metadata": {
+        "url": "https://dicom.nema.org/dicom/2013/output/chtml/part20/sect_A.6.html"
+      }
+    },
+    {
+      "category": "dcm file",
+      "value": "dicom-sr-breast-clinical.html",
+      "snippet": "The DICOM Breast Imaging Report template [1] , which supports description of patient characteristics, histopathology, receptor status and clinical findings ...",
+      "metadata": {
+        "url": "https://www.cancerimagingarchive.net/analysis-result/dicom-sr-breast-clinical/"
+      }
+    }
+  ]
+}

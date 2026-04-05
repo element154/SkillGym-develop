@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TII-SSRC-23 Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Network traffic for intrusion detection research." />
+    <meta name="keywords" content="computer science,tabular,research" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1775372080282;
+    window["pageRequestEndTime"] = 1775372080372;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-b0cd276cd4e48061.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/daniaherzalla/tii-ssrc-23" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/daniaherzalla/tii-ssrc-23" />
+    <meta property="og:title" content="TII-SSRC-23 Dataset" />
+    <meta property="og:description" content="Network traffic for intrusion detection research." />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/3631110/6312696/0c16865113064870fcb48d5da6f7f195/dataset-card.png?t=2024-05-30-18-33-31" />
+        <meta property="twitter:image" content="https://storage.googleapis.com/kaggle-datasets-images/3631110/6312696/0c16865113064870fcb48d5da6f7f195/dataset-card.png?t=2024-05-30-18-33-31" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"TII-SSRC-23 Dataset","description":"The TII-SSRC-23 dataset offers a comprehensive collection of network traffic patterns, meticulously compiled to support the development and research of Intrusion Detection Systems (IDS). It presents a dual structure: one part provides a tabular representation of extracted features in CSV format, while the other offers raw network traffic data for each type of traffic in PCAP files. \n\n## How to Cite\nIf you find this dataset useful, kindly attribute our efforts as ([DOI](https://doi.org/10.1109/ACCESS.2023.3319213)): \n```bibtex\n@article{herzalla2023tii,\n  title={TII-SSRC-23 Dataset: Typological Exploration of Diverse Traffic Patterns for Intrusion Detection},\n  author={Herzalla, Dania and Lunardi, Willian T and Andreoni, Martin},\n  journal={IEEE Access},\n  year={2023},\n  publisher={IEEE},\n  doi={10.1109/ACCESS.2023.3319213}\n}\n```\n\n\n\n## Overview\n- **Size**: 27.5 GB (raw network traffic)\n- **Categories**: Benign and Malicious\n- **Traffic Types**: 8\n- **Subtypes**: 32\n- **Format**: `.pcap` and `.csv`\n\nFor a detailed breakdown please consult the [table](#table-1) below or our [research paper](https://ieeexplore.ieee.org/document/10262330).\n\n## Getting Started\n\nIf you're looking for a starting point with our dataset, check out our [public notebook on Kaggle](https://www.kaggle.com/code/wtlunar/traffic-subtype-classification-using-tii-ssrc-23). It offers a basic introduction and some initial insights to help you dive in.\n\n## Usage Guidelines \n1. **Citation**: Please refer to our work when utilizing this dataset in your projects (See citation details above).\n2. **Dataset Limitations**: Ensure you know any inherent limitations, as highlighted in our paper.\n3. **Feedback &amp; Issues**: Contributions in the form of feedback or issue identification are encouraged through opening a discussion or reaching out directly.\n\n<a name=\"table-1\"></a>\n## Dataset Breakdown\n\n\"Bi. Flows\": the number of bidirectional flows extracted for each traffic subtype.<br>\n\"Combinations\": the count of traffic variations within a specific traffic subtype. This count is approximated based on the number of traffic permutations generated using the parameters varied unique to that subtype. More information can be found in our [paper](https://ieeexplore.ieee.org/document/10262330).\n\n\n| **Category**              | **Type**                 | **Subtype**               | **Combinations** | **Bi. Flows** |\n|--------------------------|--------------------------|---------------------------|------------------|---------------|\n| **Benign**               | Audio                    | Audio                     | 1                | 190           |\n|                          | Background               | Background                | 1                | 32            |\n|                          | Text                     | Text                      | 1                | 209           |\n|                          | Video                    | HTTP                      | 180              | 376           |\n|                          |                          | RTP                       | 180              | 349           |\n|                          |                          | UDP                       | 180              | 145           |\n| **Malicious**            | Bruteforce               | DNS                       | 2                | 22179         |\n|                          |                          | FTP                       | 1                | 3485          |\n|                          |                          | HTTP                      | 2                | 628           |\n|                          |                          | SSH                       | 1                | 3967          |\n|                          |                          | Telnet                    | 1                | 4913          |\n|                          | DoS                      | ACK                       | 24               | 936307        |\n|                          |                          | CWR                       | 24               | 872523        |\n|                          |                          | ECN                       | 24               | 871150        |\n|                          |                          | FIN                       | 24               | 725600        |\n|                          |                          | HTTP                      | 27               | 82351         |\n|                          |                          | ICMP                      | 16               | 9             |\n|                          |                          | MAC                       | 1                | 30            |\n|                          |                          | PSH                       | 24               | 909507        |\n|                          |                          | RST                       | 24               | 1072504       |\n...","url":"https://www.kaggle.com/daniaherzalla/tii-ssrc-23","version":5,"keywords":["subject, science and technology, computer science","data type, tabular","subject, science and technology, research"],"license":{"@type":"CreativeWork","name":"CC BY-SA 4.0","url":"https://creativecommons.org/licenses/by-sa/4.0/"},"identifier":["3631110"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Dania Herzalla","url":"https://www.kaggle.com/daniaherzalla","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/daniaherzalla/tii-ssrc-23/download?datasetVersionNumber=5","contentSize":"3325871327 bytes"}],"commentCount":0,"dateModified":"2023-08-16T12:00:56.367Z","discussionUrl":"https://www.kaggle.com/daniaherzalla/tii-ssrc-23/discussion","alternateName":"Network traffic for intrusion detection research.","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/3631110/6312696/0c16865113064870fcb48d5da6f7f195/dataset-card.png?t=2024-05-30-18-33-31","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":3928},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":17323},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":29}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="JtX0OL4Rk6xbXsNgp2DCPw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" src="/static/assets/runtime.js?v=627631c5edd19cd5"></script>
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" src="/static/assets/vendor.js?v=b58ece3666e973c5"></script>
+  <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" src="/static/assets/app.js?v=98155ac7f7a194de"></script>
+    <script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="JtX0OL4Rk6xbXsNgp2DCPw==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="JtX0OL4Rk6xbXsNgp2DCPw==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

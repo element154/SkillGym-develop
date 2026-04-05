@@ -1,0 +1,213 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\anndata\\anndata\\SKILL.md",
+  "records": [
+    {
+      "category": "h5ad file",
+      "value": "03__Download Published Data.html",
+      "snippet": "Select either the h5ad (AnnData v0.10) or rds (Seurat v5) download format. Click the blue Download button to download the dataset via the browser. The permanent ...",
+      "metadata": {
+        "url": "https://cellxgene.cziscience.com/docs/03__Download%20Published%20Data"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "24160713.html",
+      "snippet": "This repository contains the single-cell RNA and protein datasets as h5ad files scRNA-seq and protein datasets within the scperturb database ...",
+      "metadata": {
+        "url": "https://plus.figshare.com/articles/dataset/scPerturb_Single-Cell_Perturbation_Data_RNA_and_protein_h5ad_files/24160713"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "16553751.html",
+      "snippet": "Sorry, we can't preview this file ...but you can still download scvi-citeseq.h5ad. scvi-citeseq.h5ad (235.49 MB). File info ...",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/scvi-citeseq_h5ad/16553751"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "16447278.html",
+      "snippet": "H5AD file created by following the ... Keywords. Single-cell RNA-Seq analysisPBMC cellsAnnData filesBioinformaticsComputational Biology ...",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/scanpy-pbmc3k_h5ad/16447278"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "13350497.html",
+      "snippet": "Collection of h5ad files for RNA and protein single-cell perturbation datasets on scPerturb.org. For the associated publication, ...",
+      "metadata": {
+        "url": "https://zenodo.org/records/13350497"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "18061421.html",
+      "snippet": "These large files include .h5ad (anndata format) objects with snRNA-seq + snATAC-seq + spatial objects, and FASTQ files. For example, for ...",
+      "metadata": {
+        "url": "https://zenodo.org/records/18061421"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "10069816.html",
+      "snippet": "These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled \"distinct mesenchymal cell ...",
+      "metadata": {
+        "url": "https://zenodo.org/records/10069816"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "acc.cgi",
+      "snippet": "... single-cell RNA sequencing using the 10X Genomics platform. Please note that the *H5AD files ... Download, File type/resource.",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147520"
+      }
+    },
+    {
+      "category": "h5 file",
+      "value": "acc_1.cgi",
+      "snippet": "The raw HTO-by-barcode matrix was subsequently filtered based on identified real cells. The filtered HTO-by-barcode matrix for each pooled ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6048170"
+      }
+    },
+    {
+      "category": "h5 file",
+      "value": "acc_2.cgi",
+      "snippet": "The raw HTO-by-barcode matrix was subsequently filtered based on identified real cells. The filtered HTO-by-barcode matrix for each pooled ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6048219"
+      }
+    },
+    {
+      "category": "h5 file",
+      "value": "acc_3.cgi",
+      "snippet": "Feature barcode matrices were generated for each CITE-seq sample using antibody barcode patterns from TotalSeq. Assembly: GRCh38. Supplementary ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6278577"
+      }
+    },
+    {
+      "category": "h5 file",
+      "value": "E-MTAB-15746.html",
+      "snippet": "Processed Data. filtered_feature_bc_matrix_E81K.h5, 75.5 MB ... 1 (10x Genomics) according to manufacturer's instructions. Briefly ...",
+      "metadata": {
+        "url": "https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-15746/"
+      }
+    },
+    {
+      "category": "loom file",
+      "value": "6587903.html",
+      "snippet": "Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed",
+      "metadata": {
+        "url": "https://zenodo.org/records/6587903"
+      }
+    },
+    {
+      "category": "loom file",
+      "value": "10944066.html",
+      "snippet": "Velocyto LOOM File of Myeloid Subset from PBMC 10k Dataset: Accompanying the first dataset, this Velocyto-generated LOOM file represents a ...",
+      "metadata": {
+        "url": "https://zenodo.org/records/10944066"
+      }
+    },
+    {
+      "category": "loom file",
+      "value": "14167061.html",
+      "snippet": "AllStages_velocyto_output.loom is output file from velocyto run10x function run with default parameters on the E9.5, E10.5, E12.5, and E14.5 mouse placentae ...",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/AllStages_velocyto_output_loom/14167061"
+      }
+    },
+    {
+      "category": "loom file",
+      "value": "14229350.html",
+      "snippet": "Test Files for ShinyCell R Package containing single-cell datasets in various common single-cell data formats i.e. Seurat rda, SCE rds, loom ...",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/Test_Files_for_ShinyCell_R_Package/14229350"
+      }
+    },
+    {
+      "category": "mtx_tsv file",
+      "value": "acc_4.cgi",
+      "snippet": "The barcode.tsv files contain the 10X barcodes used to identify cells. Each matrix market file can be read into R, together with features.tsv.",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4909253"
+      }
+    },
+    {
+      "category": "mtx_tsv file",
+      "value": "acc_5.cgi",
+      "snippet": "mtx file is sparse matrix containing feature-barcode matrices. Supplementary_files_format_and_content: The fragments.tsv.gz file is a ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5026378"
+      }
+    },
+    {
+      "category": "mtx_tsv file",
+      "value": "acc_6.cgi",
+      "snippet": "Supplementary files format and content: tar.gz: output of STARsolo or CITE-seq-Counts (translated) as output of cellranger (genes.tsv, barcodes.tsv, matrix.mtx)",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8722494"
+      }
+    },
+    {
+      "category": "mtx_tsv file",
+      "value": "E-MTAB-16187.html",
+      "snippet": "Single-cell RNA-seq analysis of mouse tracheal epithelial cells from wild-type and Tppp3 knockout mice ; WT_barcodes.tsv.gz, 7.1 MB, Processed ...",
+      "metadata": {
+        "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-16187"
+      }
+    },
+    {
+      "category": "mtx_tsv file",
+      "value": "E-MTAB-12180.html",
+      "snippet": "Single-nucleus RNA-seq of adult female and male mouse livers for sex-biased gene expression analyses ; MOU_M_SN494.matrix.mtx.gz, 45.3 MB ...",
+      "metadata": {
+        "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-12180?query=E-MTAB-12180"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "7446267.html",
+      "snippet": "Seurat object: preprocessed_PBMC.Rds Scanpy objects: rna_PBMC.h5ad, atac_PBMC.h5ad Additional raw data ... single-cell RNA-seq · single-cell ATAC- ...",
+      "metadata": {
+        "url": "https://zenodo.org/records/7446267"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "acc_7.cgi",
+      "snippet": "The h5ad files are AnnData objects that contain the final processed and analyzed 10x Visium data (from the samples that are already on GEO) ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7974493"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "acc_8.cgi",
+      "snippet": "h5ad contains processed data for all spots passing QC filtering. These files contain raw counts for every gene in every spot as well as metadata ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5224029"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "acc_9.cgi",
+      "snippet": "Supplementary files format and content: H5ad files contain ... Repurposing Large-Format Microarrays for Scalable Spatial Transcriptomics ...",
+      "metadata": {
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8243014"
+      }
+    },
+    {
+      "category": "h5ad file",
+      "value": "16566057.html",
+      "snippet": "H5AD file created by following the squidpy Visium ... Keywords. Single-cell RNA-Seq analysisSpatial transcriptomicsVisiumAnnData filesBioinformaticsComputational ...",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/squidpy-visium_h5ad/16566057"
+      }
+    }
+  ]
+}

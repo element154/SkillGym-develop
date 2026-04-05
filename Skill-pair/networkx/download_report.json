@@ -1,0 +1,109 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\networkx\\networkx\\SKILL.md",
+  "records": [
+    {
+      "category": "txt_md file",
+      "value": "README.md",
+      "snippet": "This folder contains network data for character relationships within the Marvel comic book universe (beginning in 1961 and ending around 1999/2000?)",
+      "metadata": {
+        "url": "https://github.com/melaniewalsh/sample-social-network-datasets/blob/master/sample-datasets/marvel/README.md"
+      }
+    },
+    {
+      "category": "graphml file",
+      "value": "download.html",
+      "snippet": "By default, the links files encode interactions in both directions (AB and BA). However, since functional and physical interactions are symmetric, recording ...",
+      "metadata": {
+        "url": "https://string-db.org/cgi/download"
+      }
+    },
+    {
+      "category": "gml file",
+      "value": "MultilayerParis.html",
+      "snippet": "The graph of the transport networks is provided under various format: graphml, gml, edge and vertex files format. The network is composed of ...",
+      "metadata": {
+        "url": "https://github.com/ComplexNetTSP/MultilayerParis"
+      }
+    },
+    {
+      "category": "gml file",
+      "value": "roadnet.html",
+      "snippet": "Road networks from three US states (CA, PA, TX), in which edges are stretches of road and vertices are intersections of roads. ... Tip: click on the table header ...",
+      "metadata": {
+        "url": "https://networks.skewed.de/net/roadnet"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_1.md",
+      "snippet": "This function generates a knowledge graph in Turtle format (.ttl) from a water network .inp file and an ontology .ttl file. It creates an RDF graph representing ...",
+      "metadata": {
+        "url": "https://github.com/DiTEC-project/wdn-knowledge-graph/blob/main/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_2.md",
+      "snippet": "ttl — The update RDF Knowledge Graph in Turtle format. Pipeline Summary. The STVD-KG construction follows a modular pipeline: EPG Preprocessing",
+      "metadata": {
+        "url": "https://scm.univ-tours.fr/22313906t/stvd-kg/-/blob/main/source%20code/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_3.md",
+      "snippet": "Accessing the computed weight-averaged denoised gene regulatory networks. Networks are provided as matrices of class dgCMatrix that can be easily converted ...",
+      "metadata": {
+        "url": "https://github.com/cailab-tamu/scTenifoldNet/blob/master/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_4.md",
+      "snippet": "The main output is the InferredNetwork type, which represents a fully connected, weighted network, where an edge's weight indicates the relative confidence of ...",
+      "metadata": {
+        "url": "https://github.com/Tchanders/NetworkInference.jl/blob/master/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_5.md",
+      "snippet": "timestamps: numpy.array - Array of timestamps of Temporal Graph edges. edge_idxs: numpy.array - Array of edge IDs of Temporal Graph edges. labels: numpy ...",
+      "metadata": {
+        "url": "https://github.com/johnnyhuangcs/benchtemp/blob/master/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_6.md",
+      "snippet": "... temporal webgraph constituted of web data pulled ... These webgraphs contain 1+ billion edges, and 45+ million nodes per month. ... Specifically, as the first large ...",
+      "metadata": {
+        "url": "https://huggingface.co/datasets/credi-net/CrediBench/resolve/810cd3d08ba38758f7d2ee4523b1d060fe0a1fa0/README.md?download=true"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_7.md",
+      "snippet": "The 3rd column represents the timestamp (in Unix format) of the temporal edge ... edges do ... \"Temporal graph networks for deep learning on dynamic graphs.",
+      "metadata": {
+        "url": "https://github.com/YunmingHui/DINS/blob/main/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_8.md",
+      "snippet": "A tool for community detection and evaluation in weighted networks with positive and negative edges - signed-community-detection/README.md at master ...",
+      "metadata": {
+        "url": "https://github.com/pouyaesm/signed-community-detection/blob/master/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README_9.md",
+      "snippet": "A positive edge exists from user A to user B if user A liked a tweet posted by user B. A negative edge exists from user A to user B if user A expressed ...",
+      "metadata": {
+        "url": "https://github.com/lejohnyjohn/learning-stance-embeddings-from-signed-social-graphs/blob/main/README.md"
+      }
+    }
+  ]
+}

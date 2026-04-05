@@ -1,0 +1,8 @@
+scipy
+statsmodels
+pingouin
+pymc
+arviz
+matplotlib
+pandas
+numpy

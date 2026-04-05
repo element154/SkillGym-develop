@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Normal Brain MRI Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Brain MRI for a normal brain without any anomalies and a report from the doctor" />
+    <meta name="keywords" content="cancer,health,health conditions,image classification,medicine" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1775203451224;
+    window["pageRequestEndTime"] = 1775203451233;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-e1b1865463db8153.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/trainingdatapro/dicom-brain-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="SkIC1JuDkqdehUjhUxg7eg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="SkIC1JuDkqdehUjhUxg7eg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="SkIC1JuDkqdehUjhUxg7eg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/trainingdatapro/dicom-brain-dataset" />
+    <meta property="og:title" content="Normal Brain MRI Dataset" />
+    <meta property="og:description" content="Brain MRI for a normal brain without any anomalies and a report from the doctor" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/4469006/7663855/d4e15909cc844dbebb62bdf786cbec41/dataset-card.jpg?t=2024-02-20-13-31-51" />
+        <meta property="twitter:image" content="https://storage.googleapis.com/kaggle-datasets-images/4469006/7663855/d4e15909cc844dbebb62bdf786cbec41/dataset-card.jpg?t=2024-02-20-13-31-51" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="SkIC1JuDkqdehUjhUxg7eg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Normal Brain MRI Dataset","description":"# Brain MRI Dataset, Magnetic Resonance Dataset, Anomaly Classification &amp; Detection\n\n# The dataset is created on the basis of [Brain MRI Dataset](https://unidata.pro/datasets/brain-mri-image-dicom/?utm_source=kaggle-td&amp;utm_medium=referral&amp;utm_campaign=dicom-brain-dataset)\n\nThe dataset consists of .dcm files containing **MRI scans of the brain** of the person with a normal brain. The images are **labeled** by the doctors and accompanied by **report** in PDF-format. \n\nThe dataset includes 7 studies, made from the different angles which provide a comprehensive understanding of a normal brain structure and useful in training brain anomaly classification algorithms.\n\n### MRI study angles in the dataset\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F12421376%2F575ee174090e11f28708337336931252%2FFrame%2082.png?generation=1708436526735837&amp;alt=media)\n\n# 💴 For Commercial Usage: Full version of the dataset includes 100,000 brain studies of people with different conditions, leave a request on **[our website](https://unidata.pro/datasets/brain-mri-image-dicom/?utm_source=kaggle-td&amp;utm_medium=referral&amp;utm_campaign=dicom-brain-dataset)** to buy the dataset\n\n### Types of diseases and conditions in the full dataset:\n- Cancer\n- Multiple sclerosis\n- Metastatic lesion\n- Arnold-Chiari malformation\n- Focal gliosis of the brain\n- **AND MANY OTHER CONDITIONS** \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F12421376%2Fab15a54b699a7d9d43dce4473e70ce56%2F7.gif?generation=1708435711188765&amp;alt=media)\n\nThe dataset holds great value for researchers and medical professionals involved in oncology, radiology, and medical imaging. It can be used for a wide range of purposes, including developing and evaluating novel imaging techniques, training and validating machine learning algorithms for automated tumor detection and segmentation, analyzing tumor response to different treatments, and studying the relationship between imaging features and clinical outcomes.\n\n## OTHER MEDICAL BRAIN MRI DATASETS:\n- **[Brain MRI - Multiple Sclerosis Dataset](https://www.kaggle.com/datasets/trainingdatapro/multiple-sclerosis-dataset)**\n- **[Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/trainingdatapro/brain-mri-dataset)**\n- **[Brain Anomaly Detection Dataset](https://www.kaggle.com/datasets/trainingdatapro/brain-anomaly-detection)**\n- **[Fazekas Detection - MRI Dataset](https://www.kaggle.com/datasets/trainingdatapro/fazekas-mri)**\n\n## 🧩 This is just an example of the data. Leave a request [here](https://unidata.pro/datasets/brain-mri-image-dicom/?utm_source=kaggle-td&amp;utm_medium=referral&amp;utm_campaign=dicom-brain-dataset) to learn more\n\n# Content\n\n### The dataset includes:\n- **ST000001**: includes subfolders with 7 studies. Each study includes MRI-scans in **.dcm and .jpg formats**,\n- **DICOMDIR**: includes information about the patient's condition and links to access files,\n- **Brain_MRI_4.pdf**: includes medical report, provided by the radiologist,\n- **.csv file**: includes id of the studies and the number of files\n\n### Medical reports include the following data:\n- Patient's **demographic information**, \n- **Description** of the case, \n- Preliminary **diagnosis**, \n- **Recommendations** on the further actions\n\n*All patients consented to the publication of data*\n\n# Medical data might be collected in accordance with your requirements.\n\n**🚀 You can learn more about our high-quality unique datasets [here](https://unidata.pro/datasets/brain-mri-image-dicom/?utm_source=kaggle-td&amp;utm_medium=referral&amp;utm_campaign=dicom-brain-dataset)**\n\n*keywords: tumors, cloud, testing, glioma, related, pytorch, directories, science, improve, directory, malignant, classify, accuracy, level, classified, cancerous, magnetic, neural, resonance, mri brain scan, brain tumor, brain cancer, oncology, neuroimaging, radiology, brain metastasis, glioblastoma, meningioma, pituitary tumor, medulloblastoma, astrocytoma, oligodendroglioma, ependymoma, neuro-oncology, brain lesion, brain metastasis detection, brain tumor classification, brain tumor segmentation, brain tumor diagnosis, brain tumor prognosis, brain tumor treatment, brain tumor surgery, brain tumor radiation therapy, brain tumor chemotherapy, brain tumor clinical trials, brain tumor research, brain tumor awareness, brain tumor support, brain tumor survivor, neurosurgery, neurologist, neuroradiology, neuro-oncologist, neuroscientist, medical imaging, cancer detection, cancer segmentation, tumor, computed tomography, head, skull, brain scan, eye sockets, sinuses, computer vision, deep learning*\n","url":"https://www.kaggle.com/trainingdatapro/dicom-brain-dataset","version":2,"keywords":["subject, health and fitness, health, health conditions, cancer","subject, health and fitness, health","subject, health and fitness, health, health conditions","task, image-classification","subject, health and fitness, health, medicine"],"license":{"@type":"CreativeWork","name":"Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)","url":"https://creativecommons.org/licenses/by-nc-nd/4.0/"},"identifier":["4469006"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Unique Data","url":"https://www.kaggle.com/trainingdatapro","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/12421376-kg.jpg?t=2025-08-29-06-47-57"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/trainingdatapro/dicom-brain-dataset/download?datasetVersionNumber=2","contentSize":"76289803 bytes"}],"commentCount":0,"dateModified":"2024-02-20T13:24:41.593Z","discussionUrl":"https://www.kaggle.com/trainingdatapro/dicom-brain-dataset/discussion","alternateName":"Brain MRI for a normal brain without any anomalies and a report from the doctor","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/4469006/7663855/d4e15909cc844dbebb62bdf786cbec41/dataset-card.jpg?t=2024-02-20-13-31-51","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":2261},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":12070},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":22}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="SkIC1JuDkqdehUjhUxg7eg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="SkIC1JuDkqdehUjhUxg7eg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==" src="/static/assets/runtime.js?v=dcdca6c03aca45e6"></script>
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==" src="/static/assets/vendor.js?v=b58ece3666e973c5"></script>
+  <script nonce="SkIC1JuDkqdehUjhUxg7eg==" src="/static/assets/app.js?v=da13138bcfa24966"></script>
+    <script nonce="SkIC1JuDkqdehUjhUxg7eg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="SkIC1JuDkqdehUjhUxg7eg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="SkIC1JuDkqdehUjhUxg7eg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\contribution-analysis\\contribution-analysis\\SKILL.md",
+  "records": [
+    {
+      "category": "xlsx file",
+      "value": "59271187.html",
+      "snippet": "The MPI index was defined using sexual and reproductive health behaviour variables by using multiple correspondence analysis followed by mixed ...",
+      "metadata": {
+        "url": "https://figshare.com/ndownloader/files/59271187"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "IPEDS202122Tablesdoc.xlsx",
+      "snippet": "It contains all variables that were collected in the 2021-22 IPEDS data collection. The IPEDS data collection consists of 3 collection modules. Institutional ...",
+      "metadata": {
+        "url": "https://nces.ed.gov/ipeds/tablefiles/tableDocs/IPEDS202122Tablesdoc.xlsx"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Data Sheet 1.csv",
+      "snippet": "... scale: validation evidence in two languages (2010) Educational and Psychological Measurement, 70 (4), pp. 628-646; Gagné, M., Forest, J., Vansteenkiste, M ...",
+      "metadata": {
+        "url": "https://www.frontiersin.org/api/v4/articles/529406/file/Data_Sheet_1.csv/529406_supplementary-materials_datasheets_1_csv/1"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "sdqsearch.csv",
+      "snippet": "... data were analyzed with stepwise multiple linear and Quantile regression to find out significant predictors of emotional and behavioral problems among ...",
+      "metadata": {
+        "url": "https://www.sdqinfo.org/py/sdqinfo/download_sdqsearch.py?searchid=104750"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "using-social-to-understand-and-engage-with-customers-full.csv",
+      "snippet": "... behavior,2/11/2011 16:57, People & culture ,1,5,It would be fascinating to analyze what drives behavior in this jam. What causes some threads to grow to ...",
+      "metadata": {
+        "url": "https://public.dhe.ibm.com/software/documentation/lotus/using-social-to-understand-and-engage-with-customers-full.csv"
+      }
+    }
+  ]
+}

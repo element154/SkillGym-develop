@@ -1,0 +1,691 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\contribution-analysis\\contribution-analysis\\SKILL.md",
+  "threshold": 0.7,
+  "filtered_results": [
+    {
+      "q": "multivariate dataset with correlated predictors and response variable for variance decomposition",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "kaggle.com",
+        "archive.ics.uci.edu",
+        "data.world"
+      ],
+      "results_annotated": [
+        {
+          "title": "https://archive.ics.uci.edu/ml/machine-learning-da...",
+          "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00307/%5BUCI%5D%20AAAI-14%20Accepted%20Papers%20-%20Papers.csv",
+          "snippet": "Experimental results on 20 real-world datasets show the superiority of our model over the state-of-the-art models, demonstrating its effectiveness for ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "UCI机器学习库中的AAAI-14论文数据集，snippet显示是关于实验结果比较的论文元数据，不是多变量数据集，不包含correlated predictors和response variable的结构化数据，不适合作为R²分解的输入"
+        },
+        {
+          "title": "Database CSV - JPND Neurodegenerative Disease Research",
+          "url": "https://neurodegenerationresearch.eu/search-our-database/database-csv/",
+          "snippet": "... Predictors of Cognitive Outcomes in Geriatric Depression\",\"Investments &gt ... Response Alzheimers Disease Clinical Trials\",\"Investments > €500k ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "JPND神经退行性疾病研究数据库CSV，虽然涉及predictors和response（认知结果、阿尔茨海默病），但snippet显示这是项目/投资数据库的检索结果，不是可直接用于统计分析的原始多变量数据矩阵，更像是项目元数据"
+        },
+        {
+          "title": "https://huggingface.co/datasets/Just-Curieous/EXP-...",
+          "url": "https://huggingface.co/datasets/Just-Curieous/EXP-Bench/raw/main/exp_bench_dataset.csv",
+          "snippet": "... Decomposition Networks (VDN) with RNNs for cooperative multi-agent reinforcement learning?,\"Use the VDN implementation to train agents in a cooperative ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "HuggingFace上的EXP-Bench数据集，snippet显示是关于VDN分解网络的多智能体强化学习问题，是NLP/问答数据集，不是包含数值型correlated predictors和response variable的表格数据，完全不适合"
+        },
+        {
+          "title": "Raw Data - World Bank",
+          "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037992/1/DR0046100/raw.csv",
+          "snippet": "... response to <hi>COVID</hi>-19,\"<sep />of the National Science Foundation ... dataset that is tuned for classifying between four classes viz. $normal ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "世界银行原始数据，snippet显示是关于COVID-19响应和四分类问题的数据集，内容不明确，且从上下文看更像是文本/分类数据，不是用于方差分解的多变量数值型预测数据"
+        },
+        {
+          "title": "download - UNC School of Information and Library Science",
+          "url": "https://ils.unc.edu/~wangyue/isa-dataset/isa-data/reference_metadata_2020.csv",
+          "snippet": "... correlated with soil pH, organic-matter content, or clay content. Experiments with steam-sterilized soils indicated that soil microorganisms are responsible ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "UNC的ISA数据集，snippet提到correlated with soil pH等，看似有相关变量，但实际是参考文献元数据（reference_metadata_2020.csv），不是原始实验数据矩阵，无法直接作为R²分解的输入"
+        },
+        {
+          "title": "https://elixir-europe.org/services/dump.csv",
+          "url": "https://elixir-europe.org/services/dump.csv",
+          "snippet": "... dataset exploration.\",\"Yoann Pageaud\",, \"BioConda & BioContainers\",https://github.com/bioconda,,\"ELIXIR Germany\",,,\"Build, test and convert Cloud and HPC ...",
+          "judge_keep": false,
+          "judge_confidence": 0.1,
+          "judge_reason": "ELIXIR Europe的服务dump.csv，snippet显示是服务目录和工具列表（BioConda, BioContainers等），完全是服务元数据，与多变量统计分析无关"
+        },
+        {
+          "title": "CSV - MSC 2020",
+          "url": "https://msc2020.org/MSC_2020.csv",
+          "snippet": "... decomposition\" \"Graph designs and isomorphic decomposition [See also 05B30]\" \"05C55\" \"Generalized Ramsey theory\" \"Generalized Ramsey theory [See also 05D10] ...",
+          "judge_keep": false,
+          "judge_confidence": 0.1,
+          "judge_reason": "MSC 2020数学学科分类CSV，snippet显示是数学主题分类代码（如decomposition, Ramsey theory），是分类体系文件，不是数据集"
+        },
+        {
+          "title": "Download",
+          "url": "https://datashare.ed.ac.uk/bitstream/handle/10283/3514/Literature_Review_MS_Lesions_Signal_Characterisation_Primary_Search.csv?sequence=11&isAllowed=y",
+          "snippet": "... Variable density magnetization transfer (vdMT) imaging for 7T MR imaging ... dataset. For the ISBI2015 challenge, our one-shot domain adaptation model ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "爱丁堡大学DataShare的文献综述CSV，关于MS病灶信号表征的文献检索结果，是文献元数据（Literature_Review），不是原始多变量测量数据"
+        },
+        {
+          "title": "all_results_mod.csv - Zenodo",
+          "url": "https://zenodo.org/records/17089842/files/all_results_mod.csv?download=1",
+          "snippet": "... Multivariate Linear Regression for Biodiversity Assessment in the Hyrcanian ... predictors of plant biodiversity in Mexico,https://onlinelibrary.wiley ...",
+          "judge_keep": false,
+          "judge_confidence": 0.5,
+          "judge_reason": "Zenodo上的all_results_mod.csv，snippet提到Multivariate Linear Regression和biodiversity predictors，看似相关，但文件名中的'results'和上下文表明这是分析结果/文献数据，不是原始输入数据矩阵，无法直接用于R²分解计算"
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 9
+    },
+    {
+      "q": "survey data with multiple categorical factors and outcome variable for contribution analysis",
+      "file_type": "xlsx",
+      "preferred_sites": [
+        "kaggle.com",
+        "data.world",
+        "figshare.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[XLS] https://figshare.com/ndownloader/files/62560945",
+          "url": "https://figshare.com/ndownloader/files/62560945",
+          "snippet": "Measuring observer agreement for categorical data (kappa statistic) ... Bibliometric analysis ... Citation count; journal impact factor; recognised contribution to ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be a bibliometric analysis dataset about citation counts and journal impact factors, not survey data with multiple categorical factors and an outcome variable for R² decomposition. The snippet mentions kappa statistic and bibliometric analysis, which are different methodologies."
+        },
+        {
+          "title": "[XLS] https://figshare.com/ndownloader/files/62068199",
+          "url": "https://figshare.com/ndownloader/files/62068199",
+          "snippet": "Image analysis results indicated that during the overall study period (1986-2016), grass/ grazing land, agricultural land, and bare land have increased by ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is about land use change analysis from image analysis results (1986-2016). It's environmental/remote sensing data, not survey data with categorical factors suitable for contribution analysis. The variables appear to be land cover types over time, not the structured survey format needed."
+        },
+        {
+          "title": "[XLS] Sheet 1 - Amazon S3",
+          "url": "https://figshare.com/ndownloader/files/59271187",
+          "snippet": "The MPI index was defined using sexual and reproductive health behaviour variables by using multiple correspondence analysis followed by mixed ...",
+          "judge_keep": true,
+          "judge_confidence": 0.7,
+          "judge_reason": "This contains MPI (Multidimensional Poverty Index) data with sexual and reproductive health behaviour variables using multiple correspondence analysis. This matches the skill's need: survey data with multiple categorical variables that could be grouped into factors, with an outcome variable for contribution analysis. The mention of 'mixed' suggests outcome modeling."
+        },
+        {
+          "title": "[XLS] 2021-22 Excel - National Center for Education Statistics (NCES)",
+          "url": "https://nces.ed.gov/ipeds/tablefiles/tableDocs/IPEDS202122Tablesdoc.xlsx",
+          "snippet": "It contains all variables that were collected in the 2021-22 IPEDS data collection. The IPEDS data collection consists of 3 collection modules. Institutional ...",
+          "judge_keep": true,
+          "judge_confidence": 0.8,
+          "judge_reason": "This is the IPEDS (Integrated Postsecondary Education Data System) dataset containing all variables from a major education survey. It explicitly states 'contains all variables' from multiple collection modules, which fits the skill's need for a dataset with multiple categorical factors and outcome variables for R² decomposition analysis."
+        },
+        {
+          "title": "[XLS] Sheet1 - Census.gov",
+          "url": "https://www2.census.gov/programs-surveys/sipp/bibliography.xlsx",
+          "snippet": "This paper analyzes attrition behavior in two major longitudinal surveys, the Panel Study of Income Dynamics (PSID) and the Survey of Income and Program ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This is a bibliography file about survey methodology papers, not actual survey data. It analyzes attrition behavior in surveys (PSID and SIPP), but is itself a reference list, not the raw survey data with variables for contribution analysis."
+        },
+        {
+          "title": "[XLS] Methods and Tools of Analysis - APPAM",
+          "url": "https://www.appam.org/assets/1/6/Methods_and_Tools_of_Analysis_040522.xlsx",
+          "snippet": "Our outcome measures, which we believe better reflect the goals of community colleges, resulted in more positive outcome measures, especially when compared to ...",
+          "judge_keep": true,
+          "judge_confidence": 0.6,
+          "judge_reason": "This appears to contain community college outcome measures with multiple variables for comparison. The mention of 'outcome measures' and comparing different factors suggests it has the structure needed: multiple categorical/grouping variables with outcome variables suitable for R² decomposition."
+        },
+        {
+          "title": "[XLS] https://wvde.us/sites/default/files/2023/09/Math-C...",
+          "url": "https://wvde.us/sites/default/files/2023/09/Math-Criteria_Statistics_2024.xlsx",
+          "snippet": "... surveys, experiments, and observational studies; explain how randomization relates to each. 17, M.PS.2 Use data from a sample survey to estimate a population ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is a criteria/rubric document for math education standards (WVDE statistics criteria). It describes what students should learn about surveys and experiments, but is not actual survey data with categorical factors and outcomes for analysis."
+        },
+        {
+          "title": "[XLS] https://www.valueinhealthjournal.com/cms/10.1016/j...",
+          "url": "https://www.valueinhealthjournal.com/cms/10.1016/j.jval.2025.08.007/attachment/aaf8fae8-214a-43e1-bb75-0fb248ada52b/mmc5.xlsx",
+          "snippet": "Is the unit of analysis individual or aggregated data? Specify, Number of total variables (before feature selection), Description of data used, Do they use ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "This appears to be a methods checklist or data dictionary for health economics research, asking about unit of analysis and number of variables. It's metadata/documentation about datasets, not the actual survey data with categorical factors and outcome variables itself."
+        },
+        {
+          "title": "[XLS] List of Federal Agency Categorical Exclusions (CE LIST)",
+          "url": "https://ceq.doe.gov/docs/nepa-practice/May-2024-CE-Catalog.xlsx",
+          "snippet": "Federal agencies' CEs cover a broad range of actions, including administrative functions, operations and maintenance activities, research and information ...",
+          "judge_keep": false,
+          "judge_confidence": 0.1,
+          "judge_reason": "This is a catalog of Categorical Exclusions (CEs) for environmental review processes under NEPA. 'Categorical' here refers to regulatory categories, not categorical variables in a statistical sense. This is administrative documentation, not survey data."
+        },
+        {
+          "title": "[XLS] EvidenceTable - Foundation For Health Care Quality",
+          "url": "https://www.qualityhealth.org/bree/wp-content/uploads/sites/8/2021/11/111021-TJR-integrated-evidence-table.xlsx",
+          "snippet": "For the primary analysis, a random walk of first order was used to account for multiple follow-up outcome data within a trial. Preparations that used ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This is an evidence table from a systematic review about total joint replacement (TJR). While it mentions outcome data and trials, it's a synthesized evidence summary table, not raw survey data with multiple categorical factors suitable for R² decomposition analysis."
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "[XLS] Sheet 1 - Amazon S3",
+          "url": "https://figshare.com/ndownloader/files/59271187",
+          "snippet": "The MPI index was defined using sexual and reproductive health behaviour variables by using multiple correspondence analysis followed by mixed ...",
+          "judge_keep": true,
+          "judge_confidence": 0.7,
+          "judge_reason": "This contains MPI (Multidimensional Poverty Index) data with sexual and reproductive health behaviour variables using multiple correspondence analysis. This matches the skill's need: survey data with multiple categorical variables that could be grouped into factors, with an outcome variable for contribution analysis. The mention of 'mixed' suggests outcome modeling."
+        },
+        {
+          "title": "[XLS] 2021-22 Excel - National Center for Education Statistics (NCES)",
+          "url": "https://nces.ed.gov/ipeds/tablefiles/tableDocs/IPEDS202122Tablesdoc.xlsx",
+          "snippet": "It contains all variables that were collected in the 2021-22 IPEDS data collection. The IPEDS data collection consists of 3 collection modules. Institutional ...",
+          "judge_keep": true,
+          "judge_confidence": 0.8,
+          "judge_reason": "This is the IPEDS (Integrated Postsecondary Education Data System) dataset containing all variables from a major education survey. It explicitly states 'contains all variables' from multiple collection modules, which fits the skill's need for a dataset with multiple categorical factors and outcome variables for R² decomposition analysis."
+        }
+      ],
+      "kept_count": 2,
+      "total_count": 10
+    },
+    {
+      "q": "environmental factors dataset with R2 decomposition example",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "zenodo.org",
+        "kaggle.com",
+        "dataverse.harvard.edu"
+      ],
+      "results_annotated": [
+        {
+          "title": "https://zenodo.org/records/7322013/files/subjek.cs...",
+          "url": "https://zenodo.org/records/7322013/files/subjek.csv?download=1",
+          "snippet": "... Environmental criminology; Critical cartography; Social justice; Map making ... factors and ergonomics; Human rights; Political science; Terrorism ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be a dataset about environmental criminology and social justice topics, not a structured dataset with multiple correlated variables suitable for R² decomposition. The snippet shows categorical/thematic tags rather than numerical data columns with a response variable and multiple factors."
+        },
+        {
+          "title": "biorxiv-pubs-2014-2023.csv - Zenodo",
+          "url": "https://zenodo.org/records/13622641/files/biorxiv-pubs-2014-2023.csv?download=1",
+          "snippet": "... environmental variables in local adaptation we test for correlations with the estimated genetic values. We also develop a general test of local adaptation ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "While this mentions environmental variables and genetic values, the snippet indicates it's about local adaptation testing in bioRxiv publications, not a clean dataset with multiple correlated factors and a clear response variable for contribution analysis. Likely publication metadata or study summaries."
+        },
+        {
+          "title": "https://zenodo.org/records/7334228/files/journal.c...",
+          "url": "https://zenodo.org/records/7334228/files/journal.csv?download=1",
+          "snippet": "... dataset obtained from a teaching environment and a demonstration dataset, both using SAP R/3, presently the predominant ERP system. The results of this ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is about a teaching environment dataset for SAP R/3 ERP system demonstration. The snippet mentions 'demonstration dataset' but appears to be about ERP systems, not environmental factors with multiple correlated variables for R² decomposition."
+        },
+        {
+          "title": "citation_context_2020.csv TEXT/CSV - EPA",
+          "url": "https://pasteur.epa.gov/uploads/10.23719/1527631/citation_context_2020.csv",
+          "snippet": "... factors upon which the emissions estimates are based. For example, emissions factors for residential wood combustion are based on values found in the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is EPA citation context data about emissions factors. The snippet describes emissions estimation methodology documentation, not a structured dataset with multiple correlated environmental factors and a response variable suitable for contribution analysis."
+        },
+        {
+          "title": "download - UNC School of Information and Library Science",
+          "url": "https://ils.unc.edu/~wangyue/isa-dataset/isa-data/reference_metadata_2020.csv",
+          "snippet": "... factors affecting macrophage function and host resistance are also reported. A discussion of the synergistic mechanism of action of these combined agents ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is reference metadata about factors affecting macrophage function. The snippet suggests it's bibliographic/reference data, not a structured dataset with numerical variables for R² decomposition analysis."
+        },
+        {
+          "title": "Metadata CSV - University of Idaho Library",
+          "url": "https://www.lib.uidaho.edu/digital/uief/assets/data/metadata.csv",
+          "snippet": "... Environmental Assessment for the East Hatter Creek Unit of the University of ... factors which might create small openings in the stand. Western pine ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is environmental assessment metadata for a forest management unit. The snippet describes assessment documentation about forest stand factors, not a structured dataset with multiple correlated numerical variables and a response variable for contribution analysis."
+        },
+        {
+          "title": "https://airs.jpl.nasa.gov/api/v1/publications.csv",
+          "url": "https://airs.jpl.nasa.gov/api/v1/publications.csv",
+          "snippet": "... factors in studying the radiation balance of the earth-atmosphere system in East Asia. It is of great significance to explore the influence factors on OLR ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This is a publications CSV from NASA AIRS about radiation balance factors. While it mentions influence factors, the snippet suggests it's publication records/bibliographic data, not a structured dataset with numerical variables for R² decomposition."
+        },
+        {
+          "title": "https://repository.library.noaa.gov/view/noaa/2471...",
+          "url": "https://repository.library.noaa.gov/view/noaa/24713/noaa_24713_DS1.csv",
+          "snippet": "... ENVIRONMENTAL,178 OPINIONS,176 SPECIES,174 STEELHEAD,170 RIGHT,168 ANNUAL ... DECOMPOSITION,10 DIEGO,10 EAST,10 ELLIPSOID,10 ET,10 EX1605,10 EXPLOSIVE ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "This NOAA dataset contains 'DECOMPOSITION' in the snippet, but this appears to be a word frequency or tag list (ENVIRONMENTAL, OPINIONS, SPECIES, etc. with counts). This is not a structured dataset with multiple correlated variables and a response variable for R² decomposition."
+        },
+        {
+          "title": "Download",
+          "url": "https://open.canada.ca/data/dataset/f781b1ff-1205-4e94-93c8-dbb3b8e5973c/resource/afeb3b0a-277f-4ff3-9902-0655b8b020c1/download/publications-csv.csv",
+          "snippet": "... [R2] Y. Blanchard, A. Royer, N. T. O'Neill, D. D. Turner and E. W. Eloranta ... dataset was reprocessed in 2017 and will soon be added to the new TCCON ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is a Canadian government publications CSV. The snippet shows citation references [R2] and mentions dataset reprocessing, but this is clearly bibliographic/publication metadata, not a dataset with environmental factors for contribution analysis."
+        },
+        {
+          "title": "ABI_databaseSearch2All.csv (604.81 KB)",
+          "url": "https://dspace.lib.cranfield.ac.uk/bitstreams/113336c2-5234-4fbd-911f-d0cbc6d73019/download",
+          "snippet": "... environmental pollution and indirectly spread COVID-19. Predicting the environmental impacts of these wastes can be used to provide situational management ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This is about environmental pollution and COVID-19 waste impacts. While related to environmental factors, the snippet suggests it's about predicting environmental impacts of wastes for management, not a structured dataset with multiple correlated numerical variables suitable for R² decomposition with factor analysis."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "economic indicators panel data with multiple correlated variables",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "worldbank.org",
+        "data.oecd.org",
+        "fred.stlouisfed.org"
+      ],
+      "results_annotated": [
+        {
+          "title": "https://datacatalogfiles.worldbank.org/ddh-publish...",
+          "url": "https://datacatalogfiles.worldbank.org/ddh-published/0065200/1/DR0092801/results_completed_updated_20231003.csv",
+          "snippet": "... data demonstrate that in poor mobilizers addition of rhGH to rhG-CSF allows ... correlated positively with external eating. Additional novel findings ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "Snippet mentions medical/clinical data (rhGH, rhG-CSF, eating behavior), not economic indicators. URL suggests World Bank but content appears to be health research data, not suitable for contribution analysis of economic factors."
+        },
+        {
+          "title": "Raw Data - World Bank",
+          "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037992/1/DR0046100/raw.csv",
+          "snippet": "... economic loss<sep />to track, detect and isolate infected people are among the most effective means to quickly contain the outbreak. Based on trajectory ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "World Bank raw data file, but snippet shows pandemic/health-related content (infected people, outbreak containment), not economic indicators panel data with multiple correlated variables for R² decomposition."
+        },
+        {
+          "title": "https://financesonefiles.worldbank.org/f-one/DS000...",
+          "url": "https://financesonefiles.worldbank.org/f-one/DS00028/RS00025/Corporate_Procurement_Contract_Awards.csv",
+          "snippet": "... Economic Inclusion in the Agri-food Sector,IBRD,2009012,Deloitte Conseil Tunisie,Tunisia,TN,447480.0,Trust Fund,Office of the Regional Vice Pres 12/20/2024 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "Corporate procurement contract awards data - single table of contracts with vendor info. Not panel data with multiple correlated economic indicators; lacks the structure needed for factor analysis and R² decomposition."
+        },
+        {
+          "title": "Download as CSV - Federal Data Strategy",
+          "url": "https://strategy.data.gov/data/use-cases.csv",
+          "snippet": "The Federal Reserve Economic Data (FRED) is a central repository for U.S. and international economic indicators. FRED hosts 509,000 time series, including ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This is a metadata/use-cases CSV about FRED data repository, not actual economic time series data. It's documentation about data sources, not the raw panel data with multiple variables that the skill requires as input."
+        },
+        {
+          "title": "https://www.cambridge.org/core/services/aop-cambri...",
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/download/cited-by?doi=10.1017/S0266466600006125&productType=JOURNAL_ARTICLE&productId=A68E78AA554EA8A7C2B7CB23D3B8158F",
+          "snippet": "... panel data models. Journal of Econometrics, Vol. 90, Issue. 1, p. 77\",\"https://doi.org/10.1016/S0304-4076(98)00033-5\" \"Baltagi, Badi H., Kao, Chihwa 2000 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.1,
+          "judge_reason": "Academic citation download link for econometrics papers, not data. This is reference material about panel data methods, not actual input data for analysis."
+        },
+        {
+          "title": "Download - Data Discovery at the National Library of Medicine",
+          "url": "https://datadiscovery.nlm.nih.gov/api/views/rysd-8s3y/rows.csv?accessType=DOWNLOAD",
+          "snippet": "... Data Research Network (CDRN) was founded in 2014 under PCORI phase I funding. Our CDRN encompasses three large networks with multiple health systems ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "Health/medical data (CDRN, PCORI, health systems). Completely wrong domain - not economic indicators, unsuitable for this skill."
+        },
+        {
+          "title": "CSV - Asia Regional Integration Center - Asian Development Bank",
+          "url": "https://aric.adb.org/database/aeir-datacatalogue?tm=3499",
+          "snippet": "\"Table 2.2: Panel Logistic Regression on Preferential Trade Agreement ... Economic Integration Report | Data Catalogue Asia Regional Integration ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "Data catalogue page describing regression results tables, not raw panel data. The snippet shows 'Table 2.2: Panel Logistic Regression' which is output/analysis, not input data with multiple correlated variables."
+        },
+        {
+          "title": "https://clear.dol.gov/sasr-export.csv",
+          "url": "https://clear.dol.gov/sasr-export.csv",
+          "snippet": "... data that covered the years 2007 to 2016. The authors included two data sources. Per capita personal income data came from the Bureau of Economic Analysis ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "Labor statistics report data (2007-2016, per capita income from BEA). While economic, snippet suggests limited variables (personal income, employment data) from specific study - not clear if it has multiple correlated indicators suitable for factor analysis."
+        },
+        {
+          "title": "http://ipl.econ.duke.edu/seminars/slist/csv/metric...",
+          "url": "http://ipl.econ.duke.edu/seminars/slist/csv/metrics/all/all",
+          "snippet": "... Data\",\" 3:30pm\",\" 5:00pm\",\"Social Sciences room 113\",\"https://ipl.econ.duke ... Panel Models\",\" 3:30pm\",\" 5:00pm\",\"Social Sciences room 113\",\"https ...",
+          "judge_keep": false,
+          "judge_confidence": 0.1,
+          "judge_reason": "Seminar schedule/listing page (times, rooms, topics). Not data at all - completely unsuitable as input for contribution analysis."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 9
+    },
+    {
+      "q": "psychometric scale data with factor loadings for variance attribution",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "openpsychometrics.org",
+        "data.world",
+        "osf.io"
+      ],
+      "results_annotated": [
+        {
+          "title": "BibliometricAnalysis.csv Data for Bibliometric Analysis ( ...",
+          "url": "https://conservancy.umn.edu/bitstreams/0357d73d-457c-46f0-9580-8845e2cffb6f/download",
+          "snippet": "... Psychometric issues in ELL assessment and special education eligibility ... scale assessments, report,2003,\"Abedi, J.; Courtney, M.; Leon, S.\",Research ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be a bibliometric analysis dataset about ELL assessment research papers, not psychometric scale data with factor loadings. The snippet mentions 'report' and researcher names, suggesting it's a citation/research metadata file, not raw psychometric scale responses suitable for factor analysis and R² decomposition."
+        },
+        {
+          "title": "Download - Data Discovery at the National Library of Medicine",
+          "url": "https://datadiscovery.nlm.nih.gov/api/views/rysd-8s3y/rows.csv?accessType=DOWNLOAD",
+          "snippet": "... scale up successful system-level improvements quickly. Activities will be supported via an online resource center, listserv, archived sessions, and coaching ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "The snippet describes an online resource center for system improvements with listserv and coaching activities. This is administrative/program data, not psychometric scale data with factor loadings. No indication of survey responses, Likert scales, or variables suitable for PCA/factor analysis."
+        },
+        {
+          "title": "https://www.frontiersin.org/api/v4/articles/529406...",
+          "url": "https://www.frontiersin.org/api/v4/articles/529406/file/Data_Sheet_1.csv/529406_supplementary-materials_datasheets_1_csv/1",
+          "snippet": "... scale: validation evidence in two languages (2010) Educational and Psychological Measurement, 70 (4), pp. 628-646; Gagné, M., Forest, J., Vansteenkiste, M ...",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "This is a supplementary data file from a Frontiers article about scale validation with psychometric evidence. The title references 'validation evidence in two languages' and 'Educational and Psychological Measurement' journal. This is likely actual psychometric scale data (CSV format) that could contain item responses, factor loadings, or scores suitable for variance attribution analysis. The 'Data_Sheet_1.csv' naming suggests raw data."
+        },
+        {
+          "title": "Downloadable - Data Montgomery",
+          "url": "https://data.montgomerycountymd.gov/api/views/p7z5-tjrz/rows.csv?accessType=DOWNLOAD",
+          "snippet": "... psychometric properties, for the assessment of aptitudes, intelligence, interests, performance, and personality of diverse populations. Ethical, legal, and ...",
+          "judge_keep": false,
+          "judge_confidence": 0.25,
+          "judge_reason": "The snippet describes psychometric properties for assessment tools but appears to be metadata about tests/instruments themselves, not actual response data. The description sounds like a catalog or inventory of assessment tools, not raw scale data with individual responses needed for factor analysis."
+        },
+        {
+          "title": "https://aclanthology.org/anthology-files/underline...",
+          "url": "https://aclanthology.org/anthology-files/underline_science_vids/eacl-2023/eacl_2023_underline.csv",
+          "snippet": "... data to help simplify. First, we proposed an alignment algorithm to extract sentence pairs from summarization datasets. Then, we designed four attributes to ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is a conference paper metadata file (EACL 2023) about summarization datasets and alignment algorithms. The 'four attributes' mentioned relate to text summarization evaluation, not psychometric factors. Completely wrong domain - NLP/ML, not psychology/psychometrics."
+        },
+        {
+          "title": "https://www.sdqinfo.org/py/sdqinfo/download_sdqsea...",
+          "url": "https://www.sdqinfo.org/py/sdqinfo/download_sdqsearch.py?searchid=104750",
+          "snippet": "... data were analyzed with stepwise multiple linear and Quantile regression to find out significant predictors of emotional and behavioral problems among ...",
+          "judge_keep": true,
+          "judge_confidence": 0.7,
+          "judge_reason": "This is from sdqinfo.org, which hosts the Strengths and Difficulties Questionnaire (SDQ) - a well-known psychometric scale for behavioral screening. The snippet mentions regression analysis of emotional and behavioral problems, suggesting this contains actual SDQ scale data with predictor variables. This is genuine psychometric scale data that could be used for factor analysis and contribution analysis."
+        },
+        {
+          "title": "https://cdn.amegroups.cn/static/public/tgh-24-84-3.csv",
+          "url": "https://cdn.amegroups.cn/static/public/tgh-24-84-3.csv",
+          "snippet": "... factor,1171, twenty,1166, kg,1161, women,1155, oesophagus,1153, lung,1152 ... psychometric,109, ra,109, radiofrequency,109, 1991,108, 6.6,108, 7.6,108 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "While the snippet contains 'factor' and 'psychometric', the context appears to be a word frequency or term list (numbers like 1171, 1166 suggest counts). The terms listed (kg, women, oesophagus, lung, ra, radiofrequency) suggest medical/clinical term frequencies, not structured psychometric scale data with item responses suitable for PCA."
+        },
+        {
+          "title": "https://raw.githubusercontent.com/Oscar-Delaney/sa...",
+          "url": "https://raw.githubusercontent.com/Oscar-Delaney/safe_AI_papers/refs/heads/main/Automated%20categorization/final_output.csv",
+          "snippet": "... scale feasibly to state-of-the-art transformers and, as a result, be unable to practically contribute to AI safety. Since then, scaling sparse autoencoders ...",
+          "judge_keep": false,
+          "judge_confidence": 0.15,
+          "judge_reason": "This is about AI safety papers and sparse autoencoders - completely unrelated to psychometric scales. The 'scale' mentioned refers to computational scaling, not psychological measurement. Wrong domain entirely."
+        },
+        {
+          "title": "https://analytics.usa.gov/data/health-human-servic...",
+          "url": "https://analytics.usa.gov/data/health-human-services/all-pages-realtime.csv",
+          "snippet": "... data - PMC 447,NCBI Conserved Domain Search 370,\"Senior Staff and ... scale - Behavioral Health 12,\"SOPS Bibliography | Agency for Healthcare Research ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is web analytics data from USA.gov (page view statistics for health/human services websites). The 'scale' mentioned is 'Behavioral Health' as a page category, not a psychometric instrument. No survey data or factor loadings present."
+        },
+        {
+          "title": "https://ic2s2-2025.org/files/ic2s2_2025_schedule_v...",
+          "url": "https://ic2s2-2025.org/files/ic2s2_2025_schedule_v5.csv",
+          "snippet": "... Data with Applications to Socio-Spatial Inequality,\"Large-scale human mobility datasets derived from mobile phones have become a valuable resource in the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.25,
+          "judge_reason": "This is a conference schedule CSV (IC2S2 2025) with session titles. The 'Large-scale' refers to dataset size for human mobility research, not psychometric scales. This is administrative scheduling data, not response data suitable for factor analysis."
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "https://www.frontiersin.org/api/v4/articles/529406...",
+          "url": "https://www.frontiersin.org/api/v4/articles/529406/file/Data_Sheet_1.csv/529406_supplementary-materials_datasheets_1_csv/1",
+          "snippet": "... scale: validation evidence in two languages (2010) Educational and Psychological Measurement, 70 (4), pp. 628-646; Gagné, M., Forest, J., Vansteenkiste, M ...",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "This is a supplementary data file from a Frontiers article about scale validation with psychometric evidence. The title references 'validation evidence in two languages' and 'Educational and Psychological Measurement' journal. This is likely actual psychometric scale data (CSV format) that could contain item responses, factor loadings, or scores suitable for variance attribution analysis. The 'Data_Sheet_1.csv' naming suggests raw data."
+        },
+        {
+          "title": "https://www.sdqinfo.org/py/sdqinfo/download_sdqsea...",
+          "url": "https://www.sdqinfo.org/py/sdqinfo/download_sdqsearch.py?searchid=104750",
+          "snippet": "... data were analyzed with stepwise multiple linear and Quantile regression to find out significant predictors of emotional and behavioral problems among ...",
+          "judge_keep": true,
+          "judge_confidence": 0.7,
+          "judge_reason": "This is from sdqinfo.org, which hosts the Strengths and Difficulties Questionnaire (SDQ) - a well-known psychometric scale for behavioral screening. The snippet mentions regression analysis of emotional and behavioral problems, suggesting this contains actual SDQ scale data with predictor variables. This is genuine psychometric scale data that could be used for factor analysis and contribution analysis."
+        }
+      ],
+      "kept_count": 2,
+      "total_count": 10
+    },
+    {
+      "q": "customer behavior metrics with multiple drivers and conversion outcome",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "kaggle.com",
+        "data.world",
+        "analyticsvidhya.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "https://downloads.docs.servicenow.com/prbrn/enus/x...",
+          "url": "https://downloads.docs.servicenow.com/prbrn/enus/xanadu/prbs-w05.01-x07b.00.csv",
+          "snippet": "... Customer Operations for Customer Service Management,Xanadu Patch 7b ... multiple times, resulting in the cursor unexpectedly jumping to the end. 1. On ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "ServiceNow patch documentation CSV, contains software bug tracking data, not customer behavior metrics with conversion outcome. Not suitable as input for R² decomposition analysis."
+        },
+        {
+          "title": "2025 Quality Benchmarks - QPP - CMS",
+          "url": "https://qpp.cms.gov/api/frontend/benchmarks-csv/quality/2025",
+          "snippet": "... Outcome\",\"Yes\",\"Yes\",\"25.75\",\"Yes\",\"Historical\",\"99.00 - 90.01\",\"90.00 - 80.01\",\"80.00 - 70.01\",\"70.00 - 60.01\",\"60.00 - 50.01\",\"50.00 - 40.01\",\"40.00 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "CMS healthcare quality benchmarks with outcome ranges, but this is official government reporting data with predefined benchmark tiers, not raw customer behavior data with multiple drivers for contribution analysis."
+        },
+        {
+          "title": "HHS AI Use Case Inventory FY25",
+          "url": "https://www.hhs.gov/sites/default/files/hhs-ai-use-case-inventory-fy25.csv",
+          "snippet": "... outcome? Practice: Offer Consistent Remedies or Appeals\",\"What steps has the agency taken to consult and incorporate feedback from end users of this AI use ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "HHS AI use case inventory - government compliance documentation about AI systems, not customer behavior metrics data. No conversion outcome or behavioral drivers present."
+        },
+        {
+          "title": "AI use case inventory - Treasury.gov",
+          "url": "https://home.treasury.gov/system/files/136/Treasury-AI-Use-Case-Inventory.csv",
+          "snippet": "... outcomes defined in the high-impact criteria.\",Information Technology,Generative AI,\"Assigning employees to tasks requires balancing multiple ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Treasury AI use case inventory - government documentation about AI system deployment, not customer behavior data with conversion outcomes and multiple drivers."
+        },
+        {
+          "title": "https://www.performance.gov/cx/data/collections.csv",
+          "url": "https://www.performance.gov/cx/data/collections.csv",
+          "snippet": "... customer satisfaction survey, respondents provided lower scores across all seven metrics ... multiple times per week; which is indicative of those seeking ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "Customer experience survey data from performance.gov, but snippet shows only aggregated satisfaction scores and frequency metrics. No clear multiple behavioral drivers with conversion outcome structure for R² decomposition."
+        },
+        {
+          "title": "https://www.intgovforum.org/zh-hans/igf-2018-repor...",
+          "url": "https://www.intgovforum.org/zh-hans/igf-2018-reports-xls?page&_format=csv",
+          "snippet": "... many functions and as a result, children use them for multiple purposes such as studying, looking for source material, connecting to friends, play, watch ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "IGF 2018 reports in Chinese - internet governance forum documentation about children's technology use, not structured customer behavior metrics with conversion outcome data."
+        },
+        {
+          "title": "Download a CSV file - DDI Alliance",
+          "url": "https://ddialliance.org/hubfs/sites/default/files/DDI_publications_20241217.csv",
+          "snippet": "... Conversion and Archiving\",\"10.5281/zenodo.10257318\",\"https://doi.org/10.5281/zenodo.10257318\",\"Roy CShekhar, Hossain A. 2023. Historical Data Conversion and ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "DDI Alliance publications bibliography - academic citation data about data conversion/archiving papers, not customer behavior metrics data."
+        },
+        {
+          "title": "using-social-to-understand-and-engage-with-customers-full.csv - IBM",
+          "url": "https://public.dhe.ibm.com/software/documentation/lotus/using-social-to-understand-and-engage-with-customers-full.csv",
+          "snippet": "... behavior,2/11/2011 16:57, People & culture ,1,5,It would be fascinating to analyze what drives behavior in this jam. What causes some threads to grow to ...",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "IBM social customer engagement data with explicit mention of 'analyze what drives behavior' and behavioral patterns. Contains discussion data that could be processed into metrics about drivers of customer engagement behavior. Potentially convertible to input format with behavioral variables."
+        },
+        {
+          "title": "https://federallabs.org/FLC_KenticoXperience_Core/...",
+          "url": "https://federallabs.org/FLC_KenticoXperience_Core/media/Files/Data.Gov%20Uploads/opportunity_1764955984.csv",
+          "snippet": "... multiple aircraft with sensors,,https://flc.flintbox.com/#technologies ... conversion kit,,https://flc.flintbox.com/#technologies/6d53e3ce-c6d6-4f84 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Federal labs technology opportunity data - aircraft sensors and conversion kits refer to physical hardware, not customer behavior metrics or conversion outcomes in business/marketing sense."
+        },
+        {
+          "title": "Download the Entire City Database - ACEEE | Policy Database",
+          "url": "https://database.aceee.org/aceee_city_download.csv",
+          "snippet": "... metrics, or protocols to track how multiple energy, sustainability, or climate action initiatives are affecting local marginalized groups. Last updated ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "ACEEE city energy policy database - sustainability/climate metrics for cities, not customer behavior data with conversion outcomes. Multiple initiatives refers to policy programs, not behavioral drivers."
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "using-social-to-understand-and-engage-with-customers-full.csv - IBM",
+          "url": "https://public.dhe.ibm.com/software/documentation/lotus/using-social-to-understand-and-engage-with-customers-full.csv",
+          "snippet": "... behavior,2/11/2011 16:57, People & culture ,1,5,It would be fascinating to analyze what drives behavior in this jam. What causes some threads to grow to ...",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "IBM social customer engagement data with explicit mention of 'analyze what drives behavior' and behavioral patterns. Contains discussion data that could be processed into metrics about drivers of customer engagement behavior. Potentially convertible to input format with behavioral variables."
+        }
+      ],
+      "kept_count": 1,
+      "total_count": 10
+    },
+    {
+      "q": "biological assay data with multiple correlated biomarkers and phenotype",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "geo.ncbi.nlm.nih.gov",
+        "arrayexpress.ebi.ac.uk",
+        "zenodo.org"
+      ],
+      "results_annotated": [
+        {
+          "title": "all_results_mod.csv - Zenodo",
+          "url": "https://zenodo.org/records/17089842/files/all_results_mod.csv?download=1",
+          "snippet": "... data for forest habitat types classification and mapping,https://www.mdpi ... Biological Health of Streams in the United States with Gradient Boosted ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be forest habitat classification data, not biological assay data with multiple correlated biomarkers and phenotype. The snippet mentions 'forest habitat types classification' and 'Biological Health of Streams' which is ecological data, not the multi-biomarker assay data with response variable needed for R² decomposition."
+        },
+        {
+          "title": "repository_info_v3.csv - Zenodo",
+          "url": "https://zenodo.org/records/7643637/files/repository_info_v3.csv?download=1",
+          "snippet": "... Biological General Repository for Interaction Datasets (BioGRID) is a ... data|Scientific and statistical data formats|Software applications|Structured.",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is repository metadata about BioGRID database, not actual biological assay data. The snippet shows it's about 'Repository for Interaction Datasets' and file format descriptions, not user-submitted input data with biomarkers and phenotype."
+        },
+        {
+          "title": "biorxiv-pubs-2014-2023.csv - Zenodo",
+          "url": "https://zenodo.org/records/13622641/files/biorxiv-pubs-2014-2023.csv?download=1",
+          "snippet": "... phenotypic traits inherent to the tumour initiating cells and the effect of the microenvironment on tissue growth. We identify the regions in phenotype ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be publication metadata from bioRxiv, not actual assay data. The snippet mentions 'phenotypic traits' and 'tumour' in a research context, but this is likely article abstracts/titles, not structured data with multiple correlated biomarkers suitable for PCA and R² decomposition."
+        },
+        {
+          "title": "Export as CSV - National Institute on Aging - NIH",
+          "url": "https://www.nia.nih.gov/export/milestones/csv/4146?page&_format=csv",
+          "snippet": "... Biomarkers: Biomarkers for preclinical/clinical drug development\",\"In Progress\",\"Develop and validate translatable biomarkers for their use in preclinical ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is an export of milestones/progress tracking data from NIH, not biological assay data. The snippet shows project status information ('In Progress', 'Develop and validate translatable biomarkers'), not actual biomarker measurements with response variables."
+        },
+        {
+          "title": "Database CSV - JPND Neurodegenerative Disease Research",
+          "url": "https://neurodegenerationresearch.eu/search-our-database/database-csv/",
+          "snippet": "... Phenotype Predictors of Cognitive Outcomes in Geriatric Depression ... biological resource for metagenomic studies of dementia\",\"Investments < €500k ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be a database of research projects on neurodegeneration, not actual assay data. The snippet mentions 'Phenotype Predictors' but in context of project descriptions and funding information, not structured multi-biomarker data."
+        },
+        {
+          "title": "https://cdas.cancer.gov/approved-projects/?downloa...",
+          "url": "https://cdas.cancer.gov/approved-projects/?download&sort=request_type&page=5&p=4",
+          "snippet": "... data to estimate dwell time of cancers and colorectal adenomas and develop new cancer stage progression models,Joachim Worthington,The University of Sydney ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This appears to be a list of approved research projects with investigator names and institutions, not actual biological assay data. The snippet shows project metadata, not biomarker measurements."
+        },
+        {
+          "title": "https://datacatalogfiles.worldbank.org/ddh-publish...",
+          "url": "https://datacatalogfiles.worldbank.org/ddh-published/0065200/1/DR0092801/results_completed_updated_20231003.csv",
+          "snippet": "... 2 patients. Reinfusion of rhGH/rhG-CSF-mobilized cells following myeloablative therapy resulted in prompt hematopoietic recovery. In conclusion, our data ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be clinical trial results about cell reinfusion and hematopoietic recovery. While it mentions patients and recovery data, the snippet suggests it's about cell therapy outcomes, not multiple correlated biomarkers with a phenotype response variable suitable for contribution analysis."
+        },
+        {
+          "title": "File (216.00 KB)",
+          "url": "https://www.cell.com/cms/10.1016/j.heliyon.2025.e42750/attachment/ea9813c2-0628-4c25-a985-6fda3ad796c1/mmc10.csv",
+          "snippet": "... biomarkers\",\"57\" \"clinical trials\",\"57\" \"breast cancer\",\"54\" \"network analysis\",\"53\" \"knowledge graph\",\"51\" \"big data\",\"49\" \"cheminformatics\",\"49\" \"drug ...",
+          "judge_keep": false,
+          "judge_confidence": 0.4,
+          "judge_reason": "This appears to be a keyword frequency table from a publication (supplementary material from Heliyon journal). The snippet shows term counts ('biomarkers','57', 'clinical trials','57'), not actual structured assay data with multiple biomarker measurements and response variable."
+        },
+        {
+          "title": "Download CSV - NIH Oxford-Cambridge Scholars Program",
+          "url": "https://oxcam.gpp.nih.gov/opportunity-export.csv?page&_format=csv",
+          "snippet": "Training will be provided in advanced computational and statistical analysis of multi-omics data, natural language processing using artificial intelligence ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is a training opportunity export from NIH Oxford-Cambridge Scholars Program, listing computational training programs. The snippet describes training in 'multi-omics data' analysis, but this is program metadata, not actual biological assay data."
+        },
+        {
+          "title": "https://scicrunch.org/php/download-resource-mentio...",
+          "url": "https://scicrunch.org/php/download-resource-mentions.php?rid=SCR_008549",
+          "snippet": "... multiple probes \",1,none, SCR_008549,PMID:34681664,PMID,,,,http://www.ncbi.nlm.nih.gov/pubmed/34681664,\"Normalization quality controls, such as scaling ...",
+          "judge_keep": false,
+          "judge_confidence": 0.3,
+          "judge_reason": "This appears to be resource citation/mention data from SciCrunch (a registry). The snippet shows publication references and probe information with normalization quality controls, but this is citation tracking data, not user-submitted biological assay data with correlated biomarkers and phenotype."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    }
+  ]
+}

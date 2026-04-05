@@ -1,1 +1,5 @@
 *.gtf filter=lfs diff=lfs merge=lfs -text
+Skill-pair/search-flights/HMT_-_2011_Air_Data.csv filter=lfs diff=lfs merge=lfs -text
+Skill-pair/statistical-analysis/Health_Services_Research_Projects_in_Progress__HSRProj__-_Archived_Data.csv filter=lfs diff=lfs merge=lfs -text
+Skill-pair/ab-unit-harmonization/Science_Clips.csv filter=lfs diff=lfs merge=lfs -text
+Skill-pair/lab-unit-harmonization/Science_Clips.csv filter=lfs diff=lfs merge=lfs -text

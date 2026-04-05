@@ -1,0 +1,253 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\marker\\marker\\SKILL.md",
+  "records": [
+    {
+      "category": "pdf file",
+      "value": "2408.07081v2.pdf",
+      "snippet": "Understanding sentences that contain mathematical expres- sions in text form poses significant challenges. To address this, the importance of converting ...",
+      "metadata": {
+        "url": "https://www.arxiv.org/pdf/2408.07081v2"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "1908.11415v1.pdf",
+      "snippet": "Abstract—In this paper we propose a deep neural network model with an encoder-decoder architecture that translates images of math formulas into their LaTeX ...",
+      "metadata": {
+        "url": "https://www.arxiv.org/pdf/1908.11415v1"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "2402.01660v1.pdf",
+      "snippet": "The research aims to simplify LaTeX formula entry by: 1) allowing rendered formulas to be edited directly alongside their associated LaTeX strings, 2) helping ...",
+      "metadata": {
+        "url": "https://arxiv.org/pdf/2402.01660"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "feb89e01d80b5a52a694c1816c893837caf2f0e2.html",
+      "snippet": "In this paper we analyze characteristics of textual and visual. MEs characteristics for the image-to-LATEX translation task. While there are ...",
+      "metadata": {
+        "url": "https://pdfs.semanticscholar.org/feb8/9e01d80b5a52a694c1816c893837caf2f0e2.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "d8b6e5ef3d4b7c76d17ab5d2fa06cf13ef81b1cc.html",
+      "snippet": "Abstract. In this paper we investigate the architecture of a MathML formatting engine based on an abstraction of the TEX box primitives.",
+      "metadata": {
+        "url": "https://pdfs.semanticscholar.org/d8b6/e5ef3d4b7c76d17ab5d2fa06cf13ef81b1cc.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "fda71154149f192f15e633819d4408d95cc2385a.html",
+      "snippet": "Research Objectives and Plans. In mathematics, LATEX is the de facto standard to prepare documents, e.g., scientific publications.",
+      "metadata": {
+        "url": "https://pdfs.semanticscholar.org/fda7/1154149f192f15e633819d4408d95cc2385a.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "stamp.jsp",
+      "snippet": "This research aims to develop a framework called MathVision which converts the mathematical equation present in an image to voice which gives a ...",
+      "metadata": {
+        "url": "https://ieeexplore.ieee.org/iel8/6287639/10820123/10787000.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "515564.pdf",
+      "snippet": "the description and evaluation of a system which provides instances of that model for table examples. There are three parts to the thesis. The ...",
+      "metadata": {
+        "url": "https://era.ed.ac.uk/bitstream/handle/1842/7309/515564.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Dissertation Chapter 4 Annotated Sample.pdf",
+      "snippet": "This chapter contains the results of the grounded theory methodology study conducted to answer the research questions: RQ1: What motivates women in STEM ...",
+      "metadata": {
+        "url": "https://equella.uagc.edu/curriculum/file/55654dcf-9be6-4393-a522-fc357922ce8a/1/Dissertation%20Sample%20PDFs.zip/Dissertation%20Sample%20PDFs/Dissertation%20Chapter%204%20Annotated%20Sample.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "roboy-sw-documentation-template-readthedocs-io-en-master.pdf",
+      "snippet": "This document documents the software requirements and describes how the SCRUM team plans to implement them. - It should allow the developers ...",
+      "metadata": {
+        "url": "https://roboy-sw-documentation-template.readthedocs.io/_/downloads/en/master/pdf/"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "NWTC_Programmers_Handbook.pdf",
+      "snippet": "Make changes: Make sure you comment your changes well, both in the source code and in the change log. See the “Documentation” section of this ...",
+      "metadata": {
+        "url": "https://openfast.readthedocs.io/en/dev-tc/_downloads/2a9110b5e2a2b531c7dc05ea1fc86b89/NWTC_Programmers_Handbook.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "bnfc-readthedocs-io-en-v2.9.0.pdf",
+      "snippet": "This document defines the grammar formalism Labelled BNF (LBNF), which is used in the compiler construction tool BNF Converter.",
+      "metadata": {
+        "url": "https://bnfc.readthedocs.io/_/downloads/en/v2.9.0/pdf/"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "tensorflow-whitepaper2015.pdf",
+      "snippet": "The rest of this paper describes TensorFlow in more detail. Section 2 describes the programming model and basic concepts of the TensorFlow ...",
+      "metadata": {
+        "url": "https://www.tensorflow.org/extras/tensorflow-whitepaper2015.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "manual_codeblocks_en.pdf",
+      "snippet": "Code::Blocks settings are saved as application data in a file called <user>.conf in the codeblocks directory. This configuration file contains information such ...",
+      "metadata": {
+        "url": "https://www.codeblocks.org/docs/manual_codeblocks_en.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "fema_national-risk-index_technical-documentation.pdf",
+      "snippet": "This document was created in accordance with guidance issued by the Secretary of Homeland. Security that published documents should contain ...",
+      "metadata": {
+        "url": "https://www.fema.gov/sites/default/files/documents/fema_national-risk-index_technical-documentation.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Section 5 Structured Programming in Python.pdf",
+      "snippet": "□ Note that code blocks are defined by indents. □ Each line must have the same indent - use the Tab key. □ Meaningful whitespace is a distinguishing ...",
+      "metadata": {
+        "url": "https://web.engr.oregonstate.edu/~webbky/ENGR103_files/Section%205%20Structured%20Programming%20in%20Python.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "reeves-2006-code-documents-structure.pdf",
+      "snippet": "The purpose of this paper is twofold. Firstly it presents a preliminary and ethnomethodologically-informed analysis of the way in which the ...",
+      "metadata": {
+        "url": "https://people.cs.nott.ac.uk/pszsr/files/reeves-2006-code-documents-structure.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "2025.ijcnlp-long.0.pdf",
+      "snippet": "Proceedings of the Conference (Volume 1: Long Papers). December 20-24, 2025. Page 2. The IJCNLP-AACL organizers gratefully acknowledge the ...",
+      "metadata": {
+        "url": "https://aclanthology.org/2025.ijcnlp-long.0.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "2025.swisstext-1.pdf",
+      "snippet": "These proceedings include: • 13 full papers from the Scientific Track. • 3 papers from the Corpora Track. • 16 abstracts from the Impact Track.",
+      "metadata": {
+        "url": "https://aclanthology.org/2025.swisstext-1.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "E09-1000.pdf",
+      "snippet": "We are delighted to present you with this volume containing the papers accepted for presentation at the 12th Conference of the European Chapter ...",
+      "metadata": {
+        "url": "https://aclanthology.org/E09-1000.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "NeurIPS-2024-direct-consistency-optimization-for-robust-customization-of-text-to-image-diffusion-models-Paper-Conference.pdf",
+      "snippet": "Realfill: Reference-driven generation for authentic image completion. In ACM SIGGRAPH conference proceedings, 2024. 11. Page 12. [14] Edward J Hu, Yelong Shen ...",
+      "metadata": {
+        "url": "https://papers.nips.cc/paper_files/paper/2024/file/baf583e395665636887b3bda9b5ec7a1-Paper-Conference.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "NeurIPS-2024-mvsplat360-feed-forward-360-scene-synthesis-from-sparse-views-Paper-Conference.pdf",
+      "snippet": "We introduce MVSplat360, a feed-forward approach for 360° novel view synthesis. (NVS) of diverse real-world scenes, using only sparse observations.",
+      "metadata": {
+        "url": "https://papers.nips.cc/paper_files/paper/2024/file/c196239c5f9481e0db2755f31fe4585f-Paper-Conference.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "NeurIPS-2024-mome-mixture-of-multimodal-experts-for-generalist-multimodal-large-language-models-Paper-Conference.pdf",
+      "snippet": "38th Conference on Neural Information Processing Systems (NeurIPS 2024). Page 2. Figure 1: VL data distribution visualization and model performance comparisons.",
+      "metadata": {
+        "url": "https://papers.nips.cc/paper_files/paper/2024/file/4a3a14b9536806a0522930007c5512f7-Paper-Conference.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "nakis24a.pdf",
+      "snippet": "In Proceedings of the 23rd ACM International Conference on Con- ference on Information and Knowledge Management,. CIKM '14, page 491–498, New York, NY, USA,.",
+      "metadata": {
+        "url": "https://proceedings.mlr.press/v238/nakis24a/nakis24a.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "CollegeAlgebra-OP.pdf",
+      "snippet": "OpenStax provides free, peer-reviewed, openly licensed textbooks for introductory college and Advanced Placement® courses and low-cost, personalized courseware ...",
+      "metadata": {
+        "url": "https://assets.openstax.org/oscms-prodcms/media/documents/CollegeAlgebra-OP.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "IntroductoryStatistics-OP_i6tAI7e.pdf",
+      "snippet": "If you redistribute this textbook in a digital format (including but not limited to PDF and HTML), then you must retain on every page the following ...",
+      "metadata": {
+        "url": "https://assets.openstax.org/oscms-prodcms/media/documents/IntroductoryStatistics-OP_i6tAI7e.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "ElementaryAlgebra2e-WEB_EjIP4sI.pdf",
+      "snippet": "- If you redistribute this textbook in a print format, then you must include on every physical page the following attribution: “Access for free at openstax.org.",
+      "metadata": {
+        "url": "https://assets.openstax.org/oscms-prodcms/media/documents/ElementaryAlgebra2e-WEB_EjIP4sI.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "CALCULUS_pdf.pdf",
+      "snippet": "This is a set of exercises and problems for a (more or less) standard beginning calculus sequence. While a fair number of the exercises involve only routine ...",
+      "metadata": {
+        "url": "https://web.pdx.edu/~erdman/CALCULUS/CALCULUS_pdf.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Sullivan Algebra & Trigonometry 9th txtbk.pdf",
+      "snippet": "This will. Chapter Test under test conditions—no get you ready for your instructor's test. notes! If you get a problem wrong, watch the Chapter Test Prep video.",
+      "metadata": {
+        "url": "https://home.ufam.edu.br/andersonlfc/Nivelamento_Matem%C3%A1tica/Algebra%20&%20Trigonometry%20-%20Sullivan/Sullivan%20Algebra%20&%20Trigonometry%209th%20txtbk.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Larson_problem-solving.pdf",
+      "snippet": "Mathematics Problems, exercises, etc. 2. Problem solving. I ... In this chapter we will be concerned with the heuristics of solving mathematical problems.",
+      "metadata": {
+        "url": "https://web02.gonzaga.edu/faculty/axon/Larson_problem-solving.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Mathematical Statistics - Exercises and Solutions.pdf",
+      "snippet": "It is only a partial solution manual to Mathematical Statistics (which contains over. 900 exercises). However, the types of exercise in Mathematical Statistics ...",
+      "metadata": {
+        "url": "https://www.stewartschultz.com/statistics/books/Mathematical%20Statistics%20-%20Exercises%20and%20Solutions.pdf"
+      }
+    }
+  ]
+}

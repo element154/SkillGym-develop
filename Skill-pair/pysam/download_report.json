@@ -1,0 +1,53 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\pysam\\pysam\\SKILL.md",
+  "records": [
+    {
+      "category": "fasta file",
+      "value": "bigZips.html",
+      "snippet": "2013 assembly of the human genome (GRCh38 Genome Reference Consortium Human Reference 38), is called hg38 at UCSC. This directory contains the genome as ...",
+      "metadata": {
+        "url": "http://hgdownload.soe.ucsc.edu/goldenpath/hg38/bigZips/"
+      }
+    },
+    {
+      "category": "fasta file",
+      "value": "chromosomes.html",
+      "snippet": "This directory contains the Dec. 2013 assembly of the human genome (hg38, GRCh38 Genome Reference Consortium Human Reference 38 (GCA_000001405.15))",
+      "metadata": {
+        "url": "https://hgdownload.soe.ucsc.edu/goldenpath/hg38/chromosomes/"
+      }
+    },
+    {
+      "category": "fasta file",
+      "value": "hg38Patch7.html",
+      "snippet": "... genomes/genbank/vertebrate_mammalian/Homo_sapiens/all_assembly_versions/GCA_000001405.22_GRCh38.p7/ Files in this directory: hg38Patch7.fa.gz - GRCh38.p7 fasta ...",
+      "metadata": {
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/hg38Patch7/"
+      }
+    },
+    {
+      "category": "gtf file",
+      "value": "genes.html",
+      "snippet": "This directory contains GTF files for the main gene transcript sets where available. They are sourced from the following gene model tables: ncbiRefSeq, refGene ...",
+      "metadata": {
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/"
+      }
+    },
+    {
+      "category": "gtf file",
+      "value": "genes_1.html",
+      "snippet": "This directory contains GTF files for the main gene transcript sets where available. They are sourced from the following gene model tables: ncbiRefSeq, refGene ...",
+      "metadata": {
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/genes/"
+      }
+    },
+    {
+      "category": "gtf file",
+      "value": "bigZips_1.html",
+      "snippet": "genes/hs1.ncbiRefSeq.gtf.gz - gene annotations made by NCBI RefSeq in GFF/GTF format. Name Last modified Size Description · Parent Directory - GCA_009914755 ...",
+      "metadata": {
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hs1/bigZips/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\cobrapy\\cobrapy\\SKILL.md",
+  "records": [
+    {
+      "category": "xml file",
+      "value": "genome-scale-models.html",
+      "snippet": "The genome scale metabolic models in this repository are encoded according to SBML standard and saved as human-readable *.xml or *.json files.",
+      "metadata": {
+        "url": "https://github.com/m-jahn/genome-scale-models"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "iCH360.html",
+      "snippet": "iCH360 is a medium-scale, Goldilocks model of Escherichia Coli K-12 MG1655 energy and biosynthesis metabolism. Derived from the genome-scale model iML1515 ...",
+      "metadata": {
+        "url": "https://github.com/marco-corrao/iCH360"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "EcoliKineticBenchmark.html",
+      "snippet": "Repository contains: Mathematical models in SBML or Matlab format that can simulate E. coli metabolism - data/models/* .",
+      "metadata": {
+        "url": "https://github.com/biosustain/EcoliKineticBenchmark"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "yeast-gem.html",
+      "snippet": "This repository contains the current consensus genome-scale metabolic model of Saccharomyces cerevisiae. It is the continuation of the legacy project yeastnet.",
+      "metadata": {
+        "url": "https://github.com/sysbiochalmers/yeast-gem"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "panYeast-GEM.html",
+      "snippet": "This repository contains the pan-genome metabolic model of Saccharomyces cerevisiae. This README.md is mostly copied from yeast-GEM . Model ...",
+      "metadata": {
+        "url": "https://github.com/SysBioChalmers/panYeast-GEM"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "yeast-GEM_1.html",
+      "snippet": "This repository contains the continuously updated consensus genome-scale metabolic model of Saccharomyces cerevisiae.",
+      "metadata": {
+        "url": "https://sysbiochalmers.github.io/yeast-GEM/"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "article.html",
+      "snippet": "by V Vieira · 2022 · Cited by 25 — The human metabolic model and its auxiliary reaction and metabolite tables can be found on the Human-GEM GitHub repository at https://github.com/SysBioChalmers/ ...",
+      "metadata": {
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009294"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "s12_gem.html",
+      "snippet": "Genome-scale metabolic network model and phenome of solvent-tolerant Pseudomonas putida S12. These codes and data were used to construct iSH1474 and replicate ...",
+      "metadata": {
+        "url": "https://github.com/sybirg/s12_gem"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "P_putida_xylose_metabolism.html",
+      "snippet": "The former is a standard genome-scale metabolic model of P. putida but with an added pathway to utilize xylose. The xylose uptake in this model is not ...",
+      "metadata": {
+        "url": "https://github.com/DalimilBujdos/P_putida_xylose_metabolism"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "PubSuppl.html",
+      "snippet": "The directory contains P. putida KT2440 genome-scale metabolic model: the core model and the most updated model from iJN1463, and some notes on the models.",
+      "metadata": {
+        "url": "https://github.com/puiggene07/PubSuppl"
+      }
+    },
+    {
+      "category": "yml file",
+      "value": "psamm-model-collection.html",
+      "snippet": "This is a collection of published GEMs that have been converted to the YAML format used by PSAMM, using the psamm-import tool. These model files serve as an ...",
+      "metadata": {
+        "url": "https://github.com/zhanglab/psamm-model-collection"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "Staph-PanGenome.pdf",
+      "snippet": "Each reconstruction serves as a comprehensive representation of the metabolic capabilities of an S. aureus strain. Content shared among all reconstructions ...",
+      "metadata": {
+        "url": "https://pediatrics.ucsd.edu/research/faculty-labs/nizet-lab/_files/Staph-PanGenome.pdf"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "s41540-019-0122-3.html",
+      "snippet": "We have reconstructed and experimentally validated an updated and enhanced genome-scale metabolic model of S. aureus USA300_FPR3757.",
+      "metadata": {
+        "url": "https://www.nature.com/articles/s41540-019-0122-3"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "MODEL1507180015.html",
+      "snippet": "In this work, we introduce a new genome-scale metabolic model of B. subtilis 168 called iBsu1103. This new model is based on the annotated B. subtilis 168 ...",
+      "metadata": {
+        "url": "https://www.omicsdi.org/dataset/biomodels/MODEL1507180015"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1856 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>
+    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/>
+
+    
+    
+    <meta name="generator" content="InvenioRDM 14.0"/>
+
+    
+    
+    
+  
+    <meta name="description" content="Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the &#39;read&#39; function in Scvelo. Preprocessed adata objects can be accessed using the &#39;read_h5ad&#39; function in Scanpy. The raw single-cell RNA sequencing datasets can be found under the following accession codes. Mouse embryonic cell cycle dataset from Ref. (https://doi.org/10.1038/nbt.3102) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805 Hematopoiesis differentiation dataset from Ref. (https://doi.org/10.1182/blood-2016-05-716480) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682 NKT cell differentiation dataset from Ref. (https://doi.org/10.1038/ni.3437) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596. Hematopoiesis differentiation dataset from Ref. (https://doi.org/10.1038/nature19348) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244 LPS stimulation dataset from Ref. (https://doi.org/10.1016/j.cels.2017.03.010) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383. INF-gamma stimulation dataset from Ref. (https://doi.org/10.1038/s41587-020-00803-5) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465. AML chemotherapy dataset from Ref. (https://doi.org/10.1038/s41591-018-0233-1) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481. AML diagnosis/relapse dataset from Ref. (https://doi.org/10.1038/s41375-021-01338-7) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068. MS case control PBMC and CSF datasets from Ref. (https://doi.org/10.1038/s41467-019-14118-w) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266." />
+    <meta name="citation_title" content="Single-cell datasets for temporal gene expression integration" />
+    <meta name="citation_author" content="Ranek, Jolene" />
+    <meta name="citation_author" content="Stanley, Natalie" />
+    <meta name="citation_author" content="Purvis, Jeremy" />
+    <meta name="citation_doi" content="10.5281/zenodo.6587903" />
+    <meta name="citation_keywords" content="data integation" />
+    <meta name="citation_keywords" content="single-cell" />
+    <meta name="citation_keywords" content="RNA velocity" />
+    <meta name="citation_keywords" content="trajectory inference" />
+    <meta name="citation_keywords" content="prediction" />
+    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/6587903" />
+    <meta property="og:title" content="Single-cell datasets for temporal gene expression integration" />
+    <meta property="og:description" content="Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the &#39;read&#39; function in Scvelo. Preprocessed adata objects can be accessed using the &#39;read_h5ad&#39; function in Scanpy. The raw single-cell RNA sequencing datasets can be found under the following accession codes. Mouse embryonic cell cycle dataset from Ref. (https://doi.org/10.1038/nbt.3102) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805 Hematopoiesis differentiation dataset from Ref. (https://doi.org/10.1182/blood-2016-05-716480) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682 NKT cell differentiation dataset from Ref. (https://doi.org/10.1038/ni.3437) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596. Hematopoiesis differentiation dataset from Ref. (https://doi.org/10.1038/nature19348) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244 LPS stimulation dataset from Ref. (https://doi.org/10.1016/j.cels.2017.03.010) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383. INF-gamma stimulation dataset from Ref. (https://doi.org/10.1038/s41587-020-00803-5) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465. AML chemotherapy dataset from Ref. (https://doi.org/10.1038/s41591-018-0233-1) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481. AML diagnosis/relapse dataset from Ref. (https://doi.org/10.1038/s41375-021-01338-7) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068. MS case control PBMC and CSF datasets from Ref. (https://doi.org/10.1038/s41467-019-14118-w) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266." />
+    <meta property="og:url" content="https://zenodo.org/records/6587903" />
+    <meta property="og:site_name" content="Zenodo" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@zenodo_org" />
+    <meta name="twitter:title" content="Single-cell datasets for temporal gene expression integration" />
+    <meta name="twitter:description" content="Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the &#39;read&#39; function in Scvelo. Preprocessed adata objects can be accessed using the &#39;read_h5ad&#39; function in Scanpy. The raw single-cell RNA sequencing datasets can be found under the following accession codes. Mouse embryonic cell cycle dataset from Ref. (https://doi.org/10.1038/nbt.3102) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805 Hematopoiesis differentiation dataset from Ref. (https://doi.org/10.1182/blood-2016-05-716480) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682 NKT cell differentiation dataset from Ref. (https://doi.org/10.1038/ni.3437) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596. Hematopoiesis differentiation dataset from Ref. (https://doi.org/10.1038/nature19348) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244 LPS stimulation dataset from Ref. (https://doi.org/10.1016/j.cels.2017.03.010) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383. INF-gamma stimulation dataset from Ref. (https://doi.org/10.1038/s41587-020-00803-5) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465. AML chemotherapy dataset from Ref. (https://doi.org/10.1038/s41591-018-0233-1) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481. AML diagnosis/relapse dataset from Ref. (https://doi.org/10.1038/s41375-021-01338-7) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068. MS case control PBMC and CSF datasets from Ref. (https://doi.org/10.1038/s41467-019-14118-w) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266." />
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Stetson.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Stetson.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Schafflick_merged_pbmc.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Schafflick_merged_pbmc.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Lane.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Lane.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Schafflick_merged_csf.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Schafflick_merged_csf.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Pollyea_merged.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Pollyea_merged.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Olsson.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Olsson.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Nestorowa.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Nestorowa.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Engel.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Engel.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Burkhardt_merged.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Burkhardt_merged.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Buettner.loom">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/Buettner.loom">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_stetson.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_stetson.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_schafflick_pbmc.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_schafflick_pbmc.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_schafflick_csf.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_schafflick_csf.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_pollyea.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_pollyea.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_olsson.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_olsson.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_nestorowa.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_nestorowa.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_lane.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_lane.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_engel.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_engel.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_burkhardt.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_burkhardt.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_buettner.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/6587903/files/adata_buettner.h5ad">
+
+
+<link rel="canonical" href="https://zenodo.org/records/6587903">
+      <title>Single-cell datasets for temporal gene expression integration</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico"/>
+          <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120.png"/>
+          <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152.png"/>
+          <link rel="apple-touch-icon" sizes="167x167" href="/static/apple-touch-icon-167.png"/>
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180.png"/>
+    
+      <link rel="stylesheet" href="/static/dist/css/3526.7651b58ff2a6f2fc884a.css" />
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    
+  </head>
+
+  <body data-invenio-config='{"isMathJaxEnabled": "//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"}'  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">
+      <a id="skip-to-main" class="ui button primary ml-5 mt-5 skip-link" href="#main">Skip to main</a>
+      <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    
+
+<div>
+  <header class="theme header">
+
+    <div class="outer-navbar">
+      <div class="ui container invenio-header-container">
+        <nav id="invenio-nav" class="ui inverted menu borderless p-0">
+          <div class="item logo p-0">
+                    <a class="logo-link" href="/">
+                      <img class="ui image rdm-logo"
+                            src="/static/images/invenio-rdm.svg"
+                            alt="Zenodo home"/>
+                    </a>
+          </div>
+
+          <div id="rdm-burger-toggle">
+            <button
+              id="rdm-burger-menu-icon"
+              class="ui button transparent"
+              aria-label="Menu"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-controls="invenio-menu"
+            >
+              <span class="navicon" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <nav
+            id="invenio-menu"
+            aria-labelledby="rdm-burger-menu-icon"
+            class="ui fluid menu borderless mobile-hidden"
+          >
+            <button
+              id="rdm-close-burger-menu-icon"
+              class="ui button transparent"
+              aria-label="Close menu"
+            >
+              <span class="navicon" aria-hidden="true"></span>
+            </button>
+    
+    
+    
+      <div class="item p-0 search-bar">
+        <div id="header-search-bar" data-options='[{"key": "records", "text": "All Zenodo", "value": "/search"}]'>
+          <div class="ui fluid search">
+            <div class="ui icon input">
+              <input
+                autocomplete="off"
+                aria-label="Search records"
+                placeholder="Search records..."
+                type="text"
+                tabindex="0"
+                class="prompt"
+                value=""
+              >
+              <i aria-hidden="true" class="search icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                  <div class="item">
+                    <a href="/communities">Communities</a>
+                  </div>
+
+              
+                <div class="item">
+                  <a href="/me/uploads">My dashboard</a>
+                </div>
+              
+              <div class="right menu item">
+    <form>
+      <a
+        href="/login/?next=/records/6587903"
+        class="ui button auth-button" aria-busy="false" aria-live="polite" aria-label="Log in"
+      >
+        <i class="sign-in icon auth-icon" aria-hidden="true"></i>
+        Log in
+      </a>
+      
+        <a href="/signup/" class="ui button signup">
+          <i class="edit outline icon"></i>
+          Sign up
+        </a>
+      
+    </form>
+              </div>
+          </nav>
+        </nav>
+      </div>
+    </div>
+      
+      
+    
+      
+    
+    
+  </header>
+</div>
+
+  <main id="main">
+    <div class="invenio-page-body">
+<span id="detail-share-btn-require-link-expiration"
+        data-share-btn-require-link-expiration='false'>
+
+  <section id="banners" class="banners" aria-label="Information banner">
+    <!-- COMMUNITY HEADER: hide it when displaying the submission request -->
+    
+      
+    
+    <!-- /COMMUNITY HEADER -->
+
+    <!-- PREVIEW HEADER -->
+    
+    <!-- /PREVIEW HEADER -->
+
+    
+  </section>
+
+
+  <div class="ui container">
+    <div class="ui relaxed grid mt-5">
+      <div class="two column row top-padded">
+
+        
+        <article
+          class="sixteen wide tablet eleven wide computer column main-record-content">
+          
+
+              
+
+              
+
+              <section id="record-info"
+                       aria-label="Publication date and version number">
+                <div class="ui grid middle aligned">
+                  <div class="two column row">
+                    <div class="left floated left aligned column">
+                      <span class="ui" title="Publication date">
+                        Published February 16, 2022
+                      </span>
+                      <span
+                        class="label text-muted"> | Version v2</span>
+                    </div>
+                    <div class="right floated right aligned column">
+
+                      
+                        <span role="note"
+                              class="ui label horizontal small neutral mb-5"
+                              aria-label="Resource type"
+                        >
+                          Dataset
+                        </span>
+                      
+
+                      <span role="note"
+                            class="ui label horizontal small access-status open mb-5"
+                            data-tooltip="The record and files are publicly accessible."
+                            data-inverted=""
+                            aria-label="Access status"
+                      >
+                        
+                          <i class="icon unlock"
+                             aria-hidden="true"></i>
+                        
+                        <span
+                          aria-label="The record and files are publicly accessible.">
+                          Open
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="ui divider hidden"></div><section id="record-title-section"
+                       aria-label="Record title, authors and contributors">
+                <h1 id="record-title"
+                    class="wrap-overflowing-text">Single-cell datasets for temporal gene expression integration</h1>
+
+                
+                  <section id="creatibutors"
+                           aria-label="Authors and contributors">
+
+<div class="ui grid">
+  
+    <div class="row ui accordion affiliations">
+      <div class="sixteen wide mobile twelve wide tablet thirteen wide computer column">
+          <h3 class="sr-only">Authors/Creators</h3>
+          <ul class="creatibutors">
+            
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="University of North Carolina at Chapel Hill"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Ranek,+Jolene%22"
+    >
+
+      <span class="creatibutor-name">Ranek, Jolene</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Stanley,+Natalie%22"
+    >
+
+      <span class="creatibutor-name">Stanley, Natalie</span></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Purvis,+Jeremy%22"
+    >
+
+      <span class="creatibutor-name">Purvis, Jeremy</span></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+          </ul>
+      </div>
+
+        
+        
+          
+<div class="ui sixteen wide tablet three wide computer column title right aligned bottom aligned">
+  <button class="ui affiliations-button trigger button mini mr-0"
+          aria-controls="creators-affiliations"
+          data-open-text="Show affiliations"
+          data-close-text="Hide affiliations"
+          aria-expanded="false"
+  >
+    Show affiliations
+  </button>
+</div>
+
+<section class="ui sixteen wide column content" id="creators-affiliations" aria-label="Affiliations for creators">
+  <ul>
+    
+    <li>
+      1.
+
+      
+
+      University of North Carolina at Chapel Hill
+    </li>
+  
+
+    </ul>
+</section>
+
+        
+
+    </div>
+  
+
+  
+</div>
+                  </section>
+                
+              </section>
+
+
+
+  <section id="description" class="rel-mt-2 rich-input-content" aria-label="Record description">
+    <h2 id="description-heading" class="sr-only">Description</h2>
+    
+    <div style="word-wrap: break-word;">
+      <p>Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the &#39;read&#39; function in Scvelo. Preprocessed adata objects can be accessed using the &#39;read_h5ad&#39; function in Scanpy.</p>
+
+<p>The raw single-cell RNA sequencing datasets can be found under the following accession codes.</p>
+
+<ul>
+	<li>
+	<p>Mouse embryonic cell cycle dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1038/nbt.3102">10.1038/nbt.3102</a>) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805</p>
+	</li>
+	<li>
+	<p>Hematopoiesis differentiation dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/10.1182/blood-2016-05-716480</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682</p>
+	</li>
+	<li>
+	<p>NKT cell differentiation dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1038/ni.3437">10.1038/ni.3437</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596.</p>
+	</li>
+	<li>
+	<p>Hematopoiesis differentiation dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org</a>/<a href="https://doi.org/10.1038/nature19348">10.1038/nature19348</a>) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244</p>
+	</li>
+	<li>
+	<p>LPS stimulation dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1016/j.cels.2017.03.010">10.1016/j.cels.2017.03.010</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383.</p>
+	</li>
+	<li>
+	<p>INF-gamma&nbsp;stimulation dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1038/s41587-020-00803-5">10.1038/s41587-020-00803-5</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465.</p>
+	</li>
+	<li>
+	<p>AML chemotherapy dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1038/s41591-018-0233-1">10.1038/s41591-018-0233-1</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481.</p>
+	</li>
+	<li>
+	<p>AML diagnosis/relapse dataset from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1038/s41375-021-01338-7">10.1038/s41375-021-01338-7</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068.</p>
+	</li>
+	<li>
+	<p>MS case control PBMC and CSF datasets from Ref. (<a href="https://doi.org/10.1182/blood-2016-05-716480">https://doi.org/</a><a href="https://doi.org/10.1038/s41467-019-14118-w">10.1038/s41467-019-14118-w</a>) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266.</p>
+	</li>
+</ul>
+    </div>
+  </section>
+
+
+<section
+      id="record-files" class="rel-mt-2 rel-mb-3"
+      aria-label="Files"
+    ><h2 id="files-heading">Files</h2>
+  <div class="ui accordion panel mb-10 open" href="#files-list-accordion-panel">
+    <h3 class="active title panel-heading open m-0">
+      <div role="button" id="files-list-accordion-trigger" aria-controls="files-list-accordion-panel" aria-expanded="true" tabindex="0" class="trigger">
+        Files
+        <small class="text-muted"> (12.1 GB)</small>
+        <i class="angle right icon" aria-hidden="true"></i>
+      </div>
+    </h3>
+
+    <div role="region" id="files-list-accordion-panel" aria-labelledby="files-list-accordion-trigger" class="active content pt-0">
+      
+      <div>
+        
+  <table class="ui striped table files fluid open">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th class>
+            
+            <a role="button" class="ui compact mini button right floated archive-link" href="https://zenodo.org/api/records/6587903/files-archive">
+              <i class="file archive icon button" aria-hidden="true"></i> Download all
+            </a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_buettner.h5ad?download=1">adata_buettner.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:bf9e1f3d88b35b8465dc909f8ed3e81c
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>55.6 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_buettner.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_burkhardt.h5ad?download=1">adata_burkhardt.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:a30c48cd9355f8d8136b58b33bd7fa09
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>2.6 GB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_burkhardt.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_engel.h5ad?download=1">adata_engel.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:b7b3fcb884cbec9ee8a7208b9719acec
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>23.9 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_engel.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_lane.h5ad?download=1">adata_lane.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:bd96ed8fb7b1b4674093cbf2bae05d34
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>225.7 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_lane.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_nestorowa.h5ad?download=1">adata_nestorowa.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:40ba6324925523738e1fa2865489c4ea
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>472.7 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_nestorowa.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_olsson.h5ad?download=1">adata_olsson.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:45ff1b68c9b906d139c86d1e4b210b61
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>42.5 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_olsson.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_pollyea.h5ad?download=1">adata_pollyea.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:83128086f61a6a204bbbe32ae028ef86
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>566.9 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_pollyea.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_schafflick_csf.h5ad?download=1">adata_schafflick_csf.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:f0fd5c8f0898be4526a5c66ac6c0be02
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>3.2 GB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_schafflick_csf.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_schafflick_pbmc.h5ad?download=1">adata_schafflick_pbmc.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:0c0604ff417e035c426b078d03371983
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>3.1 GB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_schafflick_pbmc.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/adata_stetson.h5ad?download=1">adata_stetson.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:373b6c065383a6021db84d7c666e6c48
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>139.6 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/adata_stetson.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Buettner.loom?download=1">Buettner.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:23434964f75a4a7b5601b88cf2b89723
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>23.4 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Buettner.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Burkhardt_merged.loom?download=1">Burkhardt_merged.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:e3ab7fd417a00a1f1112e1c27f3507e8
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>348.7 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Burkhardt_merged.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Engel.loom?download=1">Engel.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:ee299d6a6d37b29f9b250cc66720502c
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>10.8 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Engel.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Lane.loom?download=1">Lane.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:ac860717585b7afb48f8b57ddd2fbeec
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>30.6 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Lane.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Nestorowa.loom?download=1">Nestorowa.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:f3eda32479cd6c345b1d4c345a2c6a58
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>164.8 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Nestorowa.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Olsson.loom?download=1">Olsson.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:64484c8344a73bb6c5f99a5ea10ee291
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>23.4 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Olsson.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Pollyea_merged.loom?download=1">Pollyea_merged.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:00a4646536502f76e7c6f4ad399bb896
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>110.8 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Pollyea_merged.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Schafflick_merged_csf.loom?download=1">Schafflick_merged_csf.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:c839dd5fbfc5abf2cc2cb9b9fd37c9c7
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>373.3 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Schafflick_merged_csf.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Schafflick_merged_pbmc.loom?download=1">Schafflick_merged_pbmc.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:f03c019a9b80b2c97e558dd8025ef335
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>610.4 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Schafflick_merged_pbmc.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/6587903/files/Stetson.loom?download=1">Stetson.loom</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:f0fb23bd927dcdc35c4b2a133c61f24f
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>25.6 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/6587903/files/Stetson.loom?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+    </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+
+    </section>
+              
+
+  <section id="additional-details" class="rel-mt-2" aria-label="Additional record details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  </section>
+    
+    <section
+      id="citations-search"
+      data-record-pids='{"doi": {"client": "datacite", "identifier": "10.5281/zenodo.6587903", "provider": "datacite"}, "oai": {"identifier": "oai:zenodo.org:6587903", "provider": "oai"}}'
+      data-record-parent-pids='{"doi": {"client": "datacite", "identifier": "10.5281/zenodo.6110278", "provider": "datacite"}}'
+      data-citations-endpoint="https://zenodo-broker.web.cern.ch/api/relationships"
+      aria-label="Record citations"
+      class="rel-mb-1"
+    >
+    </section>
+  
+        </article>
+
+        
+        <aside class="sixteen wide tablet five wide computer column sidebar"
+               aria-label="Record details">
+          
+
+
+
+
+<section id="metrics" aria-label="Metrics" class="ui segment rdm-sidebar sidebar-container">
+
+
+<div class="ui tiny two statistics rel-mt-1">
+  
+  
+
+  <div class="ui statistic">
+    <div class="value">2K</div>
+    <div class="label">
+      <i aria-hidden="true" class="eye icon"></i>
+      Views
+    </div>
+  </div>
+
+  <div class="ui statistic">
+    <div class="value">3K</div>
+    <div class="label">
+      <i aria-hidden="true" class="download icon"></i>
+      Downloads
+    </div>
+  </div>
+</div>
+
+<div class="ui accordion rel-mt-1 centered">
+  <div class="title trigger" tabindex="0">
+    <i class="caret right icon" aria-hidden="true"></i>
+    <span
+      data-open-text="Show more details"
+      data-close-text="Show less details"
+    >
+      Show more details
+    </span>
+  </div>
+
+  <div class="content">
+    <table id="record-statistics" class="ui definition table fluid">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="right aligned">All versions</th>
+          <th class="right aligned">This version</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Views
+            <i
+              tabindex="0"
+              role="button"
+              style="position:relative"
+              class="popup-trigger question circle small icon"
+              aria-expanded="false"
+              aria-label="More info"
+              data-variation="mini inverted"
+            >
+            </i>
+            <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+              Total views
+            </p>
+          </td>
+          <td data-label="All versions" class="right aligned">
+  
+    1,576
+  
+</td>
+          <td data-label="This version" class="right aligned">
+  
+    831
+  
+</td>
+        </tr>
+        <tr>
+          <td>
+            Downloads
+            <i
+              tabindex="0"
+              role="button"
+              style="position:relative"
+              class="popup-trigger question circle small icon"
+              aria-expanded="false"
+              aria-label="More info"
+              data-variation="mini inverted"
+            >
+            </i>
+            <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+              Total downloads
+            </p>
+          </td>
+          <td data-label="All versions" class="right aligned">
+  
+    2,857
+  
+</td>
+          <td data-label="This version" class="right aligned">
+  
+    1,790
+  
+</td>
+        </tr>
+        <tr>
+          <td>
+            Data volume
+            <i
+              tabindex="0"
+              role="button"
+              style="position:relative"
+              class="popup-trigger question circle small icon"
+              aria-expanded="false"
+              aria-label="More info"
+              data-variation="mini inverted"
+            >
+            </i>
+            <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+              Total data volume
+            </p>
+          </td>
+
+          <td data-label="All versions" class="right aligned">2.0 TB</td>
+          <td data-label="This version" class="right aligned">1.1 TB</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="text-align-center rel-mt-1">
+      <small>
+        <a href="/help/statistics">More info on how stats are collected....</a>
+      </small>
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+<div class="sidebar-container">
+  <h2 class="ui medium top attached header mt-0">Versions</h2>
+  <div id="record-versions" class="ui segment rdm-sidebar bottom attached pl-0 pr-0 pt-0">
+    <div class="versions">
+      <div id="recordVersions" data-record='{"access": {"embargo": {"active": false, "reason": null}, "files": "public", "record": "public", "status": "open"}, "created": "2022-05-27T17:47:56.623814+00:00", "custom_fields": {}, "deletion_status": {"is_deleted": false, "status": "P"}, "expanded": {"parent": {"access": {"owned_by": {"active": null, "blocked_at": null, "confirmed_at": null, "email": "", "id": "306115", "is_current_user": false, "links": {"avatar": "https://zenodo.org/api/users/306115/avatar.svg", "records_html": "https://zenodo.org/search/records?q=parent.access.owned_by.user:306115", "self": "https://zenodo.org/api/users/306115"}, "profile": {"affiliations": "", "full_name": "Jolene Ranek"}, "username": "jranek", "verified_at": null}}}}, "files": {"count": 20, "enabled": true, "entries": {"Buettner.loom": {"access": {"hidden": false}, "checksum": "md5:23434964f75a4a7b5601b88cf2b89723", "ext": "loom", "id": "7e43b339-2c2b-4d62-ba98-9a9353ae4258", "key": "Buettner.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Buettner.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Buettner.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 23372689, "storage_class": "L"}, "Burkhardt_merged.loom": {"access": {"hidden": false}, "checksum": "md5:e3ab7fd417a00a1f1112e1c27f3507e8", "ext": "loom", "id": "3002adaf-d1c8-47a1-aadd-f42ae277a99d", "key": "Burkhardt_merged.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Burkhardt_merged.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Burkhardt_merged.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 348703912, "storage_class": "L"}, "Engel.loom": {"access": {"hidden": false}, "checksum": "md5:ee299d6a6d37b29f9b250cc66720502c", "ext": "loom", "id": "c34ee25f-d06a-402f-b413-e86ac77b2e2f", "key": "Engel.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Engel.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Engel.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 10779413, "storage_class": "L"}, "Lane.loom": {"access": {"hidden": false}, "checksum": "md5:ac860717585b7afb48f8b57ddd2fbeec", "ext": "loom", "id": "e9a1d354-a467-4cf5-9a1a-972f3a4eed4d", "key": "Lane.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Lane.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Lane.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 30623492, "storage_class": "L"}, "Nestorowa.loom": {"access": {"hidden": false}, "checksum": "md5:f3eda32479cd6c345b1d4c345a2c6a58", "ext": "loom", "id": "db0f6f1b-6bef-438e-984a-8c0fb58b9a2d", "key": "Nestorowa.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Nestorowa.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Nestorowa.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 164817502, "storage_class": "L"}, "Olsson.loom": {"access": {"hidden": false}, "checksum": "md5:64484c8344a73bb6c5f99a5ea10ee291", "ext": "loom", "id": "387346d5-1444-4ed2-9523-2ce007f897b5", "key": "Olsson.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Olsson.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Olsson.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 23395761, "storage_class": "L"}, "Pollyea_merged.loom": {"access": {"hidden": false}, "checksum": "md5:00a4646536502f76e7c6f4ad399bb896", "ext": "loom", "id": "09b4a3f4-0f85-4d30-b335-a4c267a25be0", "key": "Pollyea_merged.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Pollyea_merged.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Pollyea_merged.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 110826467, "storage_class": "L"}, "Schafflick_merged_csf.loom": {"access": {"hidden": false}, "checksum": "md5:c839dd5fbfc5abf2cc2cb9b9fd37c9c7", "ext": "loom", "id": "11fa2e8e-e89c-4ef0-8a96-e67132b17a8a", "key": "Schafflick_merged_csf.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_csf.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_csf.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 373334313, "storage_class": "L"}, "Schafflick_merged_pbmc.loom": {"access": {"hidden": false}, "checksum": "md5:f03c019a9b80b2c97e558dd8025ef335", "ext": "loom", "id": "cf9240a8-a0b9-4165-aca2-f40f03757da8", "key": "Schafflick_merged_pbmc.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_pbmc.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_pbmc.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 610420805, "storage_class": "L"}, "Stetson.loom": {"access": {"hidden": false}, "checksum": "md5:f0fb23bd927dcdc35c4b2a133c61f24f", "ext": "loom", "id": "9f373a60-91e4-4e34-9c59-30bdfdadb015", "key": "Stetson.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Stetson.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Stetson.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 25622384, "storage_class": "L"}, "adata_buettner.h5ad": {"access": {"hidden": false}, "checksum": "md5:bf9e1f3d88b35b8465dc909f8ed3e81c", "ext": "h5ad", "id": "e62cf165-e934-420b-a2d6-a8d664abed94", "key": "adata_buettner.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_buettner.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_buettner.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 55577990, "storage_class": "L"}, "adata_burkhardt.h5ad": {"access": {"hidden": false}, "checksum": "md5:a30c48cd9355f8d8136b58b33bd7fa09", "ext": "h5ad", "id": "800a1385-bc34-4e3d-bd89-ef91e9c2e847", "key": "adata_burkhardt.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_burkhardt.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_burkhardt.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 2616752091, "storage_class": "L"}, "adata_engel.h5ad": {"access": {"hidden": false}, "checksum": "md5:b7b3fcb884cbec9ee8a7208b9719acec", "ext": "h5ad", "id": "3037312c-cc24-4cc0-b9c5-762d65d9fbbb", "key": "adata_engel.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_engel.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_engel.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 23917651, "storage_class": "L"}, "adata_lane.h5ad": {"access": {"hidden": false}, "checksum": "md5:bd96ed8fb7b1b4674093cbf2bae05d34", "ext": "h5ad", "id": "1ad69461-b89e-42e8-9534-f62bdf9f2d76", "key": "adata_lane.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_lane.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_lane.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 225726429, "storage_class": "L"}, "adata_nestorowa.h5ad": {"access": {"hidden": false}, "checksum": "md5:40ba6324925523738e1fa2865489c4ea", "ext": "h5ad", "id": "b6d2706a-7757-4eee-b3ae-7b3cecb8f541", "key": "adata_nestorowa.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_nestorowa.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_nestorowa.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 472671286, "storage_class": "L"}, "adata_olsson.h5ad": {"access": {"hidden": false}, "checksum": "md5:45ff1b68c9b906d139c86d1e4b210b61", "ext": "h5ad", "id": "6f4e5903-27ad-4e57-a2b3-3383299ac25f", "key": "adata_olsson.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_olsson.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_olsson.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 42537840, "storage_class": "L"}, "adata_pollyea.h5ad": {"access": {"hidden": false}, "checksum": "md5:83128086f61a6a204bbbe32ae028ef86", "ext": "h5ad", "id": "0f67e27d-d0af-4282-ad0a-c88a9ec20d0c", "key": "adata_pollyea.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_pollyea.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_pollyea.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 566930626, "storage_class": "L"}, "adata_schafflick_csf.h5ad": {"access": {"hidden": false}, "checksum": "md5:f0fd5c8f0898be4526a5c66ac6c0be02", "ext": "h5ad", "id": "abdfc638-6d2c-4fea-a11e-bca313b983c8", "key": "adata_schafflick_csf.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_schafflick_csf.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_schafflick_csf.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 3153893881, "storage_class": "L"}, "adata_schafflick_pbmc.h5ad": {"access": {"hidden": false}, "checksum": "md5:0c0604ff417e035c426b078d03371983", "ext": "h5ad", "id": "6a115a5e-6ca9-436e-b97c-f52b6a684422", "key": "adata_schafflick_pbmc.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_schafflick_pbmc.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_schafflick_pbmc.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 3079070710, "storage_class": "L"}, "adata_stetson.h5ad": {"access": {"hidden": false}, "checksum": "md5:373b6c065383a6021db84d7c666e6c48", "ext": "h5ad", "id": "02b6e9c9-043f-464f-aa7a-24ede418c441", "key": "adata_stetson.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_stetson.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_stetson.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 139574454, "storage_class": "L"}}, "order": [], "total_bytes": 12098549696}, "id": "6587903", "is_draft": false, "is_published": true, "links": {"access": "https://zenodo.org/api/records/6587903/access", "access_grants": "https://zenodo.org/api/records/6587903/access/grants", "access_links": "https://zenodo.org/api/records/6587903/access/links", "access_request": "https://zenodo.org/api/records/6587903/access/request", "access_users": "https://zenodo.org/api/records/6587903/access/users", "archive": "https://zenodo.org/api/records/6587903/files-archive", "archive_media": "https://zenodo.org/api/records/6587903/media-files-archive", "communities": "https://zenodo.org/api/records/6587903/communities", "communities-suggestions": "https://zenodo.org/api/records/6587903/communities-suggestions", "doi": "https://doi.org/10.5281/zenodo.6587903", "draft": "https://zenodo.org/api/records/6587903/draft", "file_modification": "https://zenodo.org/api/records/6587903/file-modification", "files": "https://zenodo.org/api/records/6587903/files", "latest": "https://zenodo.org/api/records/6587903/versions/latest", "latest_html": "https://zenodo.org/records/6587903/latest", "media_files": "https://zenodo.org/api/records/6587903/media-files", "parent": "https://zenodo.org/api/records/6110278", "parent_doi": "https://doi.org/10.5281/zenodo.6110278", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6110278", "parent_html": "https://zenodo.org/records/6110278", "preview_html": "https://zenodo.org/records/6587903?preview=1", "request_deletion": "https://zenodo.org/api/records/6587903/request-deletion", "requests": "https://zenodo.org/api/records/6587903/requests", "reserve_doi": "https://zenodo.org/api/records/6587903/draft/pids/doi", "self": "https://zenodo.org/api/records/6587903", "self_doi": "https://doi.org/10.5281/zenodo.6587903", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6587903", "self_html": "https://zenodo.org/records/6587903", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6587903/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6587903/sequence/default", "versions": "https://zenodo.org/api/records/6587903/versions"}, "media_files": {"count": 0, "enabled": false, "entries": {}, "order": [], "total_bytes": 0}, "metadata": {"creators": [{"affiliations": [{"name": "University of North Carolina at Chapel Hill"}], "person_or_org": {"family_name": "Ranek", "given_name": "Jolene", "name": "Ranek, Jolene", "type": "personal"}}, {"person_or_org": {"family_name": "Stanley", "given_name": "Natalie", "name": "Stanley, Natalie", "type": "personal"}}, {"person_or_org": {"family_name": "Purvis", "given_name": "Jeremy", "name": "Purvis, Jeremy", "type": "personal"}}], "description": "\u003cp\u003eContains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the \u0026#39;read\u0026#39; function in Scvelo. Preprocessed adata objects can be accessed using the \u0026#39;read_h5ad\u0026#39; function in Scanpy.\u003c/p\u003e\n\n\u003cp\u003eThe raw single-cell RNA sequencing datasets can be found under the following accession codes.\u003c/p\u003e\n\n\u003cul\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eMouse embryonic cell cycle dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/nbt.3102\"\u003e10.1038/nbt.3102\u003c/a\u003e) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eHematopoiesis differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/10.1182/blood-2016-05-716480\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eNKT cell differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/ni.3437\"\u003e10.1038/ni.3437\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eHematopoiesis differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org\u003c/a\u003e/\u003ca href=\"https://doi.org/10.1038/nature19348\"\u003e10.1038/nature19348\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eLPS stimulation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1016/j.cels.2017.03.010\"\u003e10.1016/j.cels.2017.03.010\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eINF-gamma\u0026nbsp;stimulation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41587-020-00803-5\"\u003e10.1038/s41587-020-00803-5\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eAML chemotherapy dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41591-018-0233-1\"\u003e10.1038/s41591-018-0233-1\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eAML diagnosis/relapse dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41375-021-01338-7\"\u003e10.1038/s41375-021-01338-7\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eMS case control PBMC and CSF datasets from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41467-019-14118-w\"\u003e10.1038/s41467-019-14118-w\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266.\u003c/p\u003e\n\t\u003c/li\u003e\n\u003c/ul\u003e", "publication_date": "2022-02-16", "publisher": "Zenodo", "resource_type": {"id": "dataset", "title": {"de": "Datensatz", "en": "Dataset"}}, "rights": [{"description": {"en": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code."}, "id": "mit", "props": {"scheme": "spdx", "url": "https://opensource.org/licenses/MIT"}, "title": {"en": "MIT License"}}], "subjects": [{"subject": "data integation"}, {"subject": "single-cell"}, {"subject": "RNA velocity"}, {"subject": "trajectory inference"}, {"subject": "prediction"}], "title": "Single-cell datasets for temporal gene expression integration"}, "parent": {"access": {"owned_by": {"user": "306115"}, "settings": {"accept_conditions_text": null, "allow_guest_requests": false, "allow_user_requests": false, "secret_link_expiration": 0}}, "communities": {}, "id": "6110278", "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.6110278", "provider": "datacite"}}}, "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.6587903", "provider": "datacite"}, "oai": {"identifier": "oai:zenodo.org:6587903", "provider": "oai"}}, "revision_id": 3, "stats": {"all_versions": {"data_volume": 1995003312531.0, "downloads": 2951, "unique_downloads": 2857, "unique_views": 1576, "views": 1887}, "this_version": {"data_volume": 1096217245003.0, "downloads": 1813, "unique_downloads": 1790, "unique_views": 831, "views": 881}}, "status": "published", "swh": {}, "ui": {"access_status": {"description_l10n": "The record and files are publicly accessible.", "embargo_date_l10n": null, "icon": "unlock", "id": "open", "message_class": "", "title_l10n": "Open"}, "created_date_l10n_long": "May 27, 2022", "creators": {"affiliations": [[1, "University of North Carolina at Chapel Hill", null]], "creators": [{"affiliations": [[1, "University of North Carolina at Chapel Hill"]], "person_or_org": {"family_name": "Ranek", "given_name": "Jolene", "name": "Ranek, Jolene", "type": "personal"}}, {"person_or_org": {"family_name": "Stanley", "given_name": "Natalie", "name": "Stanley, Natalie", "type": "personal"}}, {"person_or_org": {"family_name": "Purvis", "given_name": "Jeremy", "name": "Purvis, Jeremy", "type": "personal"}}]}, "custom_fields": {}, "description_stripped": "Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the \u0027read\u0027 function in Scvelo. Preprocessed adata objects can be accessed using the \u0027read_h5ad\u0027 function in Scanpy.\n\n\nThe raw single-cell RNA sequencing datasets can be found under the following accession codes.\n\n\n\n\t\n\n\t\nMouse embryonic cell cycle dataset from Ref. (https://doi.org/10.1038/nbt.3102) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805\n\t\n\t\n\n\t\nHematopoiesis differentiation dataset from Ref. (https://doi.org/10.1182/blood-2016-05-716480) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682\n\t\n\t\n\n\t\nNKT cell differentiation dataset from Ref. (https://doi.org/10.1038/ni.3437) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596.\n\t\n\t\n\n\t\nHematopoiesis differentiation dataset from Ref. (https://doi.org/10.1038/nature19348) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244\n\t\n\t\n\n\t\nLPS stimulation dataset from Ref. (https://doi.org/10.1016/j.cels.2017.03.010) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383.\n\t\n\t\n\n\t\nINF-gamma\u00a0stimulation dataset from Ref. (https://doi.org/10.1038/s41587-020-00803-5) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465.\n\t\n\t\n\n\t\nAML chemotherapy dataset from Ref. (https://doi.org/10.1038/s41591-018-0233-1) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481.\n\t\n\t\n\n\t\nAML diagnosis/relapse dataset from Ref. (https://doi.org/10.1038/s41375-021-01338-7) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068.\n\t\n\t\n\n\t\nMS case control PBMC and CSF datasets from Ref. (https://doi.org/10.1038/s41467-019-14118-w) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266.", "is_draft": false, "publication_date_l10n_long": "February 16, 2022", "publication_date_l10n_medium": "Feb 16, 2022", "resource_type": {"id": "dataset", "title_l10n": "Dataset"}, "rights": [{"description_l10n": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.", "id": "mit", "props": {"scheme": "spdx", "url": "https://opensource.org/licenses/MIT"}, "title_l10n": "MIT License"}], "updated_date_l10n_long": "August 12, 2022", "version": "v2"}, "updated": "2022-08-12T17:53:09.489441+00:00", "versions": {"index": 2, "is_latest": true}}' data-preview='false'>
+        <div class="rel-p-1"></div>
+        <div class="ui fluid placeholder rel-mr-1 rel-ml-1"></div>
+        <div class="header">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="sidebar-container">
+  <h2 class="ui small top attached header">External resources</h2>
+  <dl id="external-resource" aria-label="External resources" class="ui bottom attached segment rdm-sidebar external resource details-list">
+
+    <dt class="ui tiny header">Indexed in</dt>
+      <ul class="ui list no-bullet m-0">
+              <li class="item flex align-items-center">
+
+                
+                  <img class="ui image" src="/static/images/openaire.svg" alt="" width="32">
+                
+
+                <div class="content">
+                  <a
+                    class="header"
+                    href="https://explore.openaire.eu/search/result?pid=10.5281/zenodo.6587903"
+                    target="_blank"
+                    rel="noreferrer"
+                  >OpenAIRE
+                  </a>
+
+                  </div>
+              </li></ul></dl>
+</div><div
+  id="sidebar-communities-manage"
+  data-user-communities-memberships='{}'
+  data-record-community-endpoint='https://zenodo.org/api/records/6587903/communities'
+  data-record-community-search-endpoint='https://zenodo.org/api/records/6587903/communities-suggestions'
+  data-record-community-search-config='{"aggs": [{"aggName": "type", "field": "type", "title": "Type"}, {"aggName": "funder", "field": "metadata.funding.funder", "title": "Funders"}, {"aggName": "organization", "field": "metadata.organizations", "title": "Organizations"}], "appId": "InvenioAppRdm.RecordCommunitiesSuggestions", "defaultSortingOnEmptyQueryString": [{"sortBy": "newest"}], "initialQueryState": {"filters": [], "hiddenParams": null, "layout": "list", "page": 1, "size": 10, "sortBy": "bestmatch"}, "layoutOptions": {"gridView": false, "listView": true}, "paginationOptions": {"defaultValue": 10, "maxTotalResults": 10000, "resultsPerPage": [{"text": "10", "value": 10}, {"text": "20", "value": 20}]}, "searchApi": {"axios": {"headers": {"Accept": "application/vnd.inveniordm.v1+json"}, "url": "https://zenodo.org/api/records/6587903/communities-suggestions", "withCredentials": true}, "invenio": {"requestSerializer": "InvenioRecordsResourcesRequestSerializer"}}, "sortOptions": [{"sortBy": "bestmatch", "text": "Best match"}, {"sortBy": "newest", "text": "Newest"}, {"sortBy": "oldest", "text": "Oldest"}], "sortOrderDisabled": true}'
+  data-record-user-community-search-endpoint=''
+  data-record-user-community-search-config='{"aggs": [{"aggName": "type", "field": "type", "title": "Type"}, {"aggName": "funder", "field": "metadata.funding.funder", "title": "Funders"}, {"aggName": "organization", "field": "metadata.organizations", "title": "Organizations"}], "appId": "InvenioAppRdm.RecordUserCommunitiesSuggestions", "defaultSortingOnEmptyQueryString": [{"sortBy": "newest"}], "initialQueryState": {"filters": [], "hiddenParams": [["membership", "true"]], "layout": "list", "page": 1, "size": 10, "sortBy": "bestmatch"}, "layoutOptions": {"gridView": false, "listView": true}, "paginationOptions": {"defaultValue": 10, "maxTotalResults": 10000, "resultsPerPage": [{"text": "10", "value": 10}, {"text": "20", "value": 20}]}, "searchApi": {"axios": {"headers": {"Accept": "application/vnd.inveniordm.v1+json"}, "url": "https://zenodo.org/api/records/6587903/communities-suggestions", "withCredentials": true}, "invenio": {"requestSerializer": "InvenioRecordsResourcesRequestSerializer"}}, "sortOptions": [{"sortBy": "bestmatch", "text": "Best match"}, {"sortBy": "newest", "text": "Newest"}, {"sortBy": "oldest", "text": "Oldest"}], "sortOrderDisabled": true}'
+  data-pending-communities-search-config='{"aggs": [{"aggName": "type", "field": "type", "title": "Type"}, {"aggName": "status", "field": "status", "title": "Status"}], "appId": "InvenioAppRdm.RecordRequests", "defaultSortingOnEmptyQueryString": [{"sortBy": "newest"}], "initialQueryState": {"filters": [], "hiddenParams": [["expand", "1"], ["is_open", "true"], ["type", "community-inclusion"], ["type", "community-submission"]], "layout": "list", "page": 1, "size": 10, "sortBy": "bestmatch"}, "layoutOptions": {"gridView": false, "listView": true}, "paginationOptions": {"defaultValue": 10, "maxTotalResults": 10000, "resultsPerPage": [{"text": "10", "value": 10}, {"text": "20", "value": 20}, {"text": "50", "value": 50}]}, "searchApi": {"axios": {"headers": {"Accept": "application/json"}, "url": "https://zenodo.org/api/records/6587903/requests", "withCredentials": true}, "invenio": {"requestSerializer": "InvenioRecordsResourcesRequestSerializer"}}, "sortOptions": [{"sortBy": "bestmatch", "text": "Best match"}, {"sortBy": "newest", "text": "Newest"}, {"sortBy": "oldest", "text": "Oldest"}, {"sortBy": "newestactivity", "text": "Newest activity"}, {"sortBy": "oldestactivity", "text": "Oldest activity"}], "sortOrderDisabled": true}'
+  data-permissions='{"can_edit": false, "can_immediately_delete": false, "can_manage": false, "can_media_read_files": true, "can_moderate": false, "can_new_version": false, "can_read_files": true, "can_request_deletion": false, "can_review": false, "can_update_draft": false, "can_view": false}'
+  data-record='{"access": {"embargo": {"active": false, "reason": null}, "files": "public", "record": "public", "status": "open"}, "created": "2022-05-27T17:47:56.623814+00:00", "custom_fields": {}, "deletion_status": {"is_deleted": false, "status": "P"}, "expanded": {"parent": {"access": {"owned_by": {"active": null, "blocked_at": null, "confirmed_at": null, "email": "", "id": "306115", "is_current_user": false, "links": {"avatar": "https://zenodo.org/api/users/306115/avatar.svg", "records_html": "https://zenodo.org/search/records?q=parent.access.owned_by.user:306115", "self": "https://zenodo.org/api/users/306115"}, "profile": {"affiliations": "", "full_name": "Jolene Ranek"}, "username": "jranek", "verified_at": null}}}}, "files": {"count": 20, "enabled": true, "entries": {"Buettner.loom": {"access": {"hidden": false}, "checksum": "md5:23434964f75a4a7b5601b88cf2b89723", "ext": "loom", "id": "7e43b339-2c2b-4d62-ba98-9a9353ae4258", "key": "Buettner.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Buettner.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Buettner.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 23372689, "storage_class": "L"}, "Burkhardt_merged.loom": {"access": {"hidden": false}, "checksum": "md5:e3ab7fd417a00a1f1112e1c27f3507e8", "ext": "loom", "id": "3002adaf-d1c8-47a1-aadd-f42ae277a99d", "key": "Burkhardt_merged.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Burkhardt_merged.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Burkhardt_merged.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 348703912, "storage_class": "L"}, "Engel.loom": {"access": {"hidden": false}, "checksum": "md5:ee299d6a6d37b29f9b250cc66720502c", "ext": "loom", "id": "c34ee25f-d06a-402f-b413-e86ac77b2e2f", "key": "Engel.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Engel.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Engel.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 10779413, "storage_class": "L"}, "Lane.loom": {"access": {"hidden": false}, "checksum": "md5:ac860717585b7afb48f8b57ddd2fbeec", "ext": "loom", "id": "e9a1d354-a467-4cf5-9a1a-972f3a4eed4d", "key": "Lane.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Lane.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Lane.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 30623492, "storage_class": "L"}, "Nestorowa.loom": {"access": {"hidden": false}, "checksum": "md5:f3eda32479cd6c345b1d4c345a2c6a58", "ext": "loom", "id": "db0f6f1b-6bef-438e-984a-8c0fb58b9a2d", "key": "Nestorowa.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Nestorowa.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Nestorowa.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 164817502, "storage_class": "L"}, "Olsson.loom": {"access": {"hidden": false}, "checksum": "md5:64484c8344a73bb6c5f99a5ea10ee291", "ext": "loom", "id": "387346d5-1444-4ed2-9523-2ce007f897b5", "key": "Olsson.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Olsson.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Olsson.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 23395761, "storage_class": "L"}, "Pollyea_merged.loom": {"access": {"hidden": false}, "checksum": "md5:00a4646536502f76e7c6f4ad399bb896", "ext": "loom", "id": "09b4a3f4-0f85-4d30-b335-a4c267a25be0", "key": "Pollyea_merged.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Pollyea_merged.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Pollyea_merged.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 110826467, "storage_class": "L"}, "Schafflick_merged_csf.loom": {"access": {"hidden": false}, "checksum": "md5:c839dd5fbfc5abf2cc2cb9b9fd37c9c7", "ext": "loom", "id": "11fa2e8e-e89c-4ef0-8a96-e67132b17a8a", "key": "Schafflick_merged_csf.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_csf.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_csf.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 373334313, "storage_class": "L"}, "Schafflick_merged_pbmc.loom": {"access": {"hidden": false}, "checksum": "md5:f03c019a9b80b2c97e558dd8025ef335", "ext": "loom", "id": "cf9240a8-a0b9-4165-aca2-f40f03757da8", "key": "Schafflick_merged_pbmc.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_pbmc.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_pbmc.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 610420805, "storage_class": "L"}, "Stetson.loom": {"access": {"hidden": false}, "checksum": "md5:f0fb23bd927dcdc35c4b2a133c61f24f", "ext": "loom", "id": "9f373a60-91e4-4e34-9c59-30bdfdadb015", "key": "Stetson.loom", "links": {"content": "https://zenodo.org/api/records/6587903/files/Stetson.loom/content", "self": "https://zenodo.org/api/records/6587903/files/Stetson.loom"}, "metadata": null, "mimetype": "application/octet-stream", "size": 25622384, "storage_class": "L"}, "adata_buettner.h5ad": {"access": {"hidden": false}, "checksum": "md5:bf9e1f3d88b35b8465dc909f8ed3e81c", "ext": "h5ad", "id": "e62cf165-e934-420b-a2d6-a8d664abed94", "key": "adata_buettner.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_buettner.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_buettner.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 55577990, "storage_class": "L"}, "adata_burkhardt.h5ad": {"access": {"hidden": false}, "checksum": "md5:a30c48cd9355f8d8136b58b33bd7fa09", "ext": "h5ad", "id": "800a1385-bc34-4e3d-bd89-ef91e9c2e847", "key": "adata_burkhardt.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_burkhardt.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_burkhardt.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 2616752091, "storage_class": "L"}, "adata_engel.h5ad": {"access": {"hidden": false}, "checksum": "md5:b7b3fcb884cbec9ee8a7208b9719acec", "ext": "h5ad", "id": "3037312c-cc24-4cc0-b9c5-762d65d9fbbb", "key": "adata_engel.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_engel.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_engel.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 23917651, "storage_class": "L"}, "adata_lane.h5ad": {"access": {"hidden": false}, "checksum": "md5:bd96ed8fb7b1b4674093cbf2bae05d34", "ext": "h5ad", "id": "1ad69461-b89e-42e8-9534-f62bdf9f2d76", "key": "adata_lane.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_lane.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_lane.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 225726429, "storage_class": "L"}, "adata_nestorowa.h5ad": {"access": {"hidden": false}, "checksum": "md5:40ba6324925523738e1fa2865489c4ea", "ext": "h5ad", "id": "b6d2706a-7757-4eee-b3ae-7b3cecb8f541", "key": "adata_nestorowa.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_nestorowa.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_nestorowa.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 472671286, "storage_class": "L"}, "adata_olsson.h5ad": {"access": {"hidden": false}, "checksum": "md5:45ff1b68c9b906d139c86d1e4b210b61", "ext": "h5ad", "id": "6f4e5903-27ad-4e57-a2b3-3383299ac25f", "key": "adata_olsson.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_olsson.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_olsson.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 42537840, "storage_class": "L"}, "adata_pollyea.h5ad": {"access": {"hidden": false}, "checksum": "md5:83128086f61a6a204bbbe32ae028ef86", "ext": "h5ad", "id": "0f67e27d-d0af-4282-ad0a-c88a9ec20d0c", "key": "adata_pollyea.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_pollyea.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_pollyea.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 566930626, "storage_class": "L"}, "adata_schafflick_csf.h5ad": {"access": {"hidden": false}, "checksum": "md5:f0fd5c8f0898be4526a5c66ac6c0be02", "ext": "h5ad", "id": "abdfc638-6d2c-4fea-a11e-bca313b983c8", "key": "adata_schafflick_csf.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_schafflick_csf.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_schafflick_csf.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 3153893881, "storage_class": "L"}, "adata_schafflick_pbmc.h5ad": {"access": {"hidden": false}, "checksum": "md5:0c0604ff417e035c426b078d03371983", "ext": "h5ad", "id": "6a115a5e-6ca9-436e-b97c-f52b6a684422", "key": "adata_schafflick_pbmc.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_schafflick_pbmc.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_schafflick_pbmc.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 3079070710, "storage_class": "L"}, "adata_stetson.h5ad": {"access": {"hidden": false}, "checksum": "md5:373b6c065383a6021db84d7c666e6c48", "ext": "h5ad", "id": "02b6e9c9-043f-464f-aa7a-24ede418c441", "key": "adata_stetson.h5ad", "links": {"content": "https://zenodo.org/api/records/6587903/files/adata_stetson.h5ad/content", "self": "https://zenodo.org/api/records/6587903/files/adata_stetson.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 139574454, "storage_class": "L"}}, "order": [], "total_bytes": 12098549696}, "id": "6587903", "is_draft": false, "is_published": true, "links": {"access": "https://zenodo.org/api/records/6587903/access", "access_grants": "https://zenodo.org/api/records/6587903/access/grants", "access_links": "https://zenodo.org/api/records/6587903/access/links", "access_request": "https://zenodo.org/api/records/6587903/access/request", "access_users": "https://zenodo.org/api/records/6587903/access/users", "archive": "https://zenodo.org/api/records/6587903/files-archive", "archive_media": "https://zenodo.org/api/records/6587903/media-files-archive", "communities": "https://zenodo.org/api/records/6587903/communities", "communities-suggestions": "https://zenodo.org/api/records/6587903/communities-suggestions", "doi": "https://doi.org/10.5281/zenodo.6587903", "draft": "https://zenodo.org/api/records/6587903/draft", "file_modification": "https://zenodo.org/api/records/6587903/file-modification", "files": "https://zenodo.org/api/records/6587903/files", "latest": "https://zenodo.org/api/records/6587903/versions/latest", "latest_html": "https://zenodo.org/records/6587903/latest", "media_files": "https://zenodo.org/api/records/6587903/media-files", "parent": "https://zenodo.org/api/records/6110278", "parent_doi": "https://doi.org/10.5281/zenodo.6110278", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6110278", "parent_html": "https://zenodo.org/records/6110278", "preview_html": "https://zenodo.org/records/6587903?preview=1", "request_deletion": "https://zenodo.org/api/records/6587903/request-deletion", "requests": "https://zenodo.org/api/records/6587903/requests", "reserve_doi": "https://zenodo.org/api/records/6587903/draft/pids/doi", "self": "https://zenodo.org/api/records/6587903", "self_doi": "https://doi.org/10.5281/zenodo.6587903", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6587903", "self_html": "https://zenodo.org/records/6587903", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6587903/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6587903/sequence/default", "versions": "https://zenodo.org/api/records/6587903/versions"}, "media_files": {"count": 0, "enabled": false, "entries": {}, "order": [], "total_bytes": 0}, "metadata": {"creators": [{"affiliations": [{"name": "University of North Carolina at Chapel Hill"}], "person_or_org": {"family_name": "Ranek", "given_name": "Jolene", "name": "Ranek, Jolene", "type": "personal"}}, {"person_or_org": {"family_name": "Stanley", "given_name": "Natalie", "name": "Stanley, Natalie", "type": "personal"}}, {"person_or_org": {"family_name": "Purvis", "given_name": "Jeremy", "name": "Purvis, Jeremy", "type": "personal"}}], "description": "\u003cp\u003eContains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the \u0026#39;read\u0026#39; function in Scvelo. Preprocessed adata objects can be accessed using the \u0026#39;read_h5ad\u0026#39; function in Scanpy.\u003c/p\u003e\n\n\u003cp\u003eThe raw single-cell RNA sequencing datasets can be found under the following accession codes.\u003c/p\u003e\n\n\u003cul\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eMouse embryonic cell cycle dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/nbt.3102\"\u003e10.1038/nbt.3102\u003c/a\u003e) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eHematopoiesis differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/10.1182/blood-2016-05-716480\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eNKT cell differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/ni.3437\"\u003e10.1038/ni.3437\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eHematopoiesis differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org\u003c/a\u003e/\u003ca href=\"https://doi.org/10.1038/nature19348\"\u003e10.1038/nature19348\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eLPS stimulation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1016/j.cels.2017.03.010\"\u003e10.1016/j.cels.2017.03.010\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eINF-gamma\u0026nbsp;stimulation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41587-020-00803-5\"\u003e10.1038/s41587-020-00803-5\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eAML chemotherapy dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41591-018-0233-1\"\u003e10.1038/s41591-018-0233-1\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eAML diagnosis/relapse dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41375-021-01338-7\"\u003e10.1038/s41375-021-01338-7\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eMS case control PBMC and CSF datasets from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41467-019-14118-w\"\u003e10.1038/s41467-019-14118-w\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266.\u003c/p\u003e\n\t\u003c/li\u003e\n\u003c/ul\u003e", "publication_date": "2022-02-16", "publisher": "Zenodo", "resource_type": {"id": "dataset", "title": {"de": "Datensatz", "en": "Dataset"}}, "rights": [{"description": {"en": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code."}, "id": "mit", "props": {"scheme": "spdx", "url": "https://opensource.org/licenses/MIT"}, "title": {"en": "MIT License"}}], "subjects": [{"subject": "data integation"}, {"subject": "single-cell"}, {"subject": "RNA velocity"}, {"subject": "trajectory inference"}, {"subject": "prediction"}], "title": "Single-cell datasets for temporal gene expression integration"}, "parent": {"access": {"owned_by": {"user": "306115"}, "settings": {"accept_conditions_text": null, "allow_guest_requests": false, "allow_user_requests": false, "secret_link_expiration": 0}}, "communities": {}, "id": "6110278", "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.6110278", "provider": "datacite"}}}, "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.6587903", "provider": "datacite"}, "oai": {"identifier": "oai:zenodo.org:6587903", "provider": "oai"}}, "revision_id": 3, "stats": {"all_versions": {"data_volume": 1995003312531.0, "downloads": 2951, "unique_downloads": 2857, "unique_views": 1576, "views": 1887}, "this_version": {"data_volume": 1096217245003.0, "downloads": 1813, "unique_downloads": 1790, "unique_views": 831, "views": 881}}, "status": "published", "swh": {}, "ui": {"access_status": {"description_l10n": "The record and files are publicly accessible.", "embargo_date_l10n": null, "icon": "unlock", "id": "open", "message_class": "", "title_l10n": "Open"}, "created_date_l10n_long": "May 27, 2022", "creators": {"affiliations": [[1, "University of North Carolina at Chapel Hill", null]], "creators": [{"affiliations": [[1, "University of North Carolina at Chapel Hill"]], "person_or_org": {"family_name": "Ranek", "given_name": "Jolene", "name": "Ranek, Jolene", "type": "personal"}}, {"person_or_org": {"family_name": "Stanley", "given_name": "Natalie", "name": "Stanley, Natalie", "type": "personal"}}, {"person_or_org": {"family_name": "Purvis", "given_name": "Jeremy", "name": "Purvis, Jeremy", "type": "personal"}}]}, "custom_fields": {}, "description_stripped": "Contains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the \u0027read\u0027 function in Scvelo. Preprocessed adata objects can be accessed using the \u0027read_h5ad\u0027 function in Scanpy.\n\n\nThe raw single-cell RNA sequencing datasets can be found under the following accession codes.\n\n\n\n\t\n\n\t\nMouse embryonic cell cycle dataset from Ref. (https://doi.org/10.1038/nbt.3102) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805\n\t\n\t\n\n\t\nHematopoiesis differentiation dataset from Ref. (https://doi.org/10.1182/blood-2016-05-716480) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682\n\t\n\t\n\n\t\nNKT cell differentiation dataset from Ref. (https://doi.org/10.1038/ni.3437) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596.\n\t\n\t\n\n\t\nHematopoiesis differentiation dataset from Ref. (https://doi.org/10.1038/nature19348) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244\n\t\n\t\n\n\t\nLPS stimulation dataset from Ref. (https://doi.org/10.1016/j.cels.2017.03.010) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383.\n\t\n\t\n\n\t\nINF-gamma\u00a0stimulation dataset from Ref. (https://doi.org/10.1038/s41587-020-00803-5) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465.\n\t\n\t\n\n\t\nAML chemotherapy dataset from Ref. (https://doi.org/10.1038/s41591-018-0233-1) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481.\n\t\n\t\n\n\t\nAML diagnosis/relapse dataset from Ref. (https://doi.org/10.1038/s41375-021-01338-7) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068.\n\t\n\t\n\n\t\nMS case control PBMC and CSF datasets from Ref. (https://doi.org/10.1038/s41467-019-14118-w) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266.", "is_draft": false, "publication_date_l10n_long": "February 16, 2022", "publication_date_l10n_medium": "Feb 16, 2022", "resource_type": {"id": "dataset", "title_l10n": "Dataset"}, "rights": [{"description_l10n": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.", "id": "mit", "props": {"scheme": "spdx", "url": "https://opensource.org/licenses/MIT"}, "title_l10n": "MIT License"}], "updated_date_l10n_long": "August 12, 2022", "version": "v2"}, "updated": "2022-08-12T17:53:09.489441+00:00", "versions": {"index": 2, "is_latest": true}}'
+  data-record-requests='{}'
+  class='sidebar-container'
+>
+
+  <h2 class="ui medium top attached header">Communities</h2>
+
+  <div class="ui segment bottom attached rdm-sidebar">
+    <div class="ui fluid placeholder">
+      <div class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Keywords and subjects</h2>
+    <div id="keywords-and-subjects" aria-label="Keywords and subjects"
+            class="ui segment bottom attached rdm-sidebar">
+  
+  
+  <h3 class="hidden">Keywords</h3>
+  <ul class="ui horizontal list no-bullets subjects">
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22data+integation%22"
+          class="subject"
+          title="Search results for data integation"
+      >
+        data integation
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22single-cell%22"
+          class="subject"
+          title="Search results for single-cell"
+      >
+        single-cell
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22RNA+velocity%22"
+          class="subject"
+          title="Search results for RNA velocity"
+      >
+        RNA velocity
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22trajectory+inference%22"
+          class="subject"
+          title="Search results for trajectory inference"
+      >
+        trajectory inference
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22prediction%22"
+          class="subject"
+          title="Search results for prediction"
+      >
+        prediction
+      </a>
+    </li>
+  </ul>
+  
+
+    </div>
+  </div>
+
+
+<div class="sidebar-container">
+  <h2 class="ui medium top attached header mt-0">Details</h2>
+  <div id="record-details" class="ui segment bottom attached rdm-sidebar">
+
+    <dl class="details-list">
+      
+
+ 
+  <dt class="ui tiny header">DOI
+    
+  </dt>
+  <dd>
+    <span class="get-badge details-doi-section" data-toggle="tooltip" data-placement="bottom">
+      <img id='record-doi-badge' data-target="[data-modal='10.5281/zenodo.6587903']" title="Get the DOI badge!"
+        src="/badge/DOI/10.5281/zenodo.6587903.svg" alt="10.5281/zenodo.6587903" />
+      <div id="copy-button-record-doi-badge" class="copy-doi-button" data-value=https://doi.org/10.5281/zenodo.6587903 data-size="mini"></div>
+    </span>
+
+    <div id="doi-modal" class="ui modal fade badge-modal" data-modal="10.5281/zenodo.6587903">
+      <div class="header">DOI Badge</div>
+      <div class="content">
+        <h4>
+          <small>DOI</small>
+        </h4>
+        <h4>
+          <pre>10.5281/zenodo.6587903</pre>
+        </h4>
+        
+        
+
+    <h3 class="ui small header">
+      Markdown
+    </h3>
+    <div class="ui message code">
+      <pre>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6587903.svg)](https://doi.org/10.5281/zenodo.6587903)</pre>
+    </div>
+
+    <h3 class="ui small header">
+      reStructuredText
+    </h3>
+      <div class="ui message code">
+        <pre>.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.6587903.svg
+  :target: https://doi.org/10.5281/zenodo.6587903</pre>
+      </div>
+
+    <h3 class="ui small header">
+      HTML
+    </h3>
+    <div class="ui message code">
+      <pre>&lt;a href="https://doi.org/10.5281/zenodo.6587903"&gt;&lt;img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6587903.svg" alt="DOI"&gt;&lt;/a&gt;</pre>
+    </div>
+
+    <h3 class="ui small header">
+      Image URL
+    </h3>
+    <div class="ui message code">
+      <pre>https://zenodo.org/badge/DOI/10.5281/zenodo.6587903.svg</pre>
+    </div>
+
+    <h3 class="ui small header">
+    Target URL
+    </h3>
+    <div class="ui message code">
+      <pre>https://doi.org/10.5281/zenodo.6587903</pre>
+    </div>
+      </div>
+    </div>
+  </dd>
+
+      
+      
+  <dt class="ui tiny header">Resource type</dt>
+  <dd>Dataset</dd>
+      
+      
+  <dt class="ui tiny header">Publisher</dt>
+  <dd>Zenodo</dd>
+      
+      
+      
+      
+      
+      
+      
+    </dl>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <div class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Rights</h2>
+    <div id="licenses" class="ui segment bottom attached rdm-sidebar">
+      <dl class="details-list">
+      
+        <dt class="ui tiny header">License</dt><dd id="license-mit-1" class="has-popup">
+              <div id="title-mit-1"
+                   class="license clickable"
+                   tabindex="0"
+                   aria-haspopup="dialog"
+                   aria-expanded="false"
+                   role="button"
+                   aria-label="MIT License"
+              >
+                
+                <span class="title-text">
+                MIT License
+              </span>
+              </div>
+              <div id="description-mit-1"
+                   class="licenses-description ui flowing popup transition hidden"
+                   role="dialog"
+                   aria-labelledby="title-mit-1"
+              >
+                <i role="button" tabindex="0" class="close icon text-muted"
+                   aria-label="Close"></i>
+                <div id="license-description-1" class="description">
+                <span class="text-muted">
+                  A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+                </span>
+                  
+  
+    <a class="license-link" href="https://opensource.org/licenses/MIT" target="_blank"
+       title="Opens in new tab">Read more</a>
+  
+
+                </div>
+              </div>
+            </dd>
+          
+      
+      
+      </dl>
+    </div>
+  </div>
+<div class="sidebar-container">
+  <h2 class="ui medium top attached header mt-0">Citation</h2>
+  <div id="citation" class="ui segment bottom attached rdm-sidebar">
+
+<div id="recordCitation" data-record-links='{"access": "https://zenodo.org/api/records/6587903/access", "access_grants": "https://zenodo.org/api/records/6587903/access/grants", "access_links": "https://zenodo.org/api/records/6587903/access/links", "access_request": "https://zenodo.org/api/records/6587903/access/request", "access_users": "https://zenodo.org/api/records/6587903/access/users", "archive": "https://zenodo.org/api/records/6587903/files-archive", "archive_media": "https://zenodo.org/api/records/6587903/media-files-archive", "communities": "https://zenodo.org/api/records/6587903/communities", "communities-suggestions": "https://zenodo.org/api/records/6587903/communities-suggestions", "doi": "https://doi.org/10.5281/zenodo.6587903", "draft": "https://zenodo.org/api/records/6587903/draft", "file_modification": "https://zenodo.org/api/records/6587903/file-modification", "files": "https://zenodo.org/api/records/6587903/files", "latest": "https://zenodo.org/api/records/6587903/versions/latest", "latest_html": "https://zenodo.org/records/6587903/latest", "media_files": "https://zenodo.org/api/records/6587903/media-files", "parent": "https://zenodo.org/api/records/6110278", "parent_doi": "https://doi.org/10.5281/zenodo.6110278", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6110278", "parent_html": "https://zenodo.org/records/6110278", "preview_html": "https://zenodo.org/records/6587903?preview=1", "request_deletion": "https://zenodo.org/api/records/6587903/request-deletion", "requests": "https://zenodo.org/api/records/6587903/requests", "reserve_doi": "https://zenodo.org/api/records/6587903/draft/pids/doi", "self": "https://zenodo.org/api/records/6587903", "self_doi": "https://doi.org/10.5281/zenodo.6587903", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6587903", "self_html": "https://zenodo.org/records/6587903", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6587903/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6587903/sequence/default", "versions": "https://zenodo.org/api/records/6587903/versions"}'
+  data-styles='[["apa", "APA"], ["harvard-cite-them-right", "Harvard"], ["modern-language-association", "MLA"], ["vancouver", "Vancouver"], ["chicago-fullnote-bibliography", "Chicago"], ["ieee", "IEEE"]]'
+  data-defaultstyle='"apa"'
+  data-include-deleted='false'>
+</div>
+  </div>
+</div>
+  <div class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Export</h2>
+    <div id="export-record" class="ui segment bottom attached exports rdm-sidebar">
+
+      
+      
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <div id="recordExportDownload" data-formats='[{"export_url": "/records/6587903/export/json", "name": "JSON"}, {"export_url": "/records/6587903/export/json-ld", "name": "JSON-LD"}, {"export_url": "/records/6587903/export/csl", "name": "CSL"}, {"export_url": "/records/6587903/export/datacite-json", "name": "DataCite JSON"}, {"export_url": "/records/6587903/export/datacite-xml", "name": "DataCite XML"}, {"export_url": "/records/6587903/export/dublincore", "name": "Dublin Core XML"}, {"export_url": "/records/6587903/export/marcxml", "name": "MARCXML"}, {"export_url": "/records/6587903/export/bibtex", "name": "BibTeX"}, {"export_url": "/records/6587903/export/geojson", "name": "GeoJSON"}, {"export_url": "/records/6587903/export/dcat-ap", "name": "DCAT"}, {"export_url": "/records/6587903/export/codemeta", "name": "Codemeta"}, {"export_url": "/records/6587903/export/cff", "name": "Citation File Format"}, {"export_url": "/records/6587903/export/datapackage", "name": "Data Package JSON"}]'></div>
+    </div>
+  </div>
+<section
+  id="upload-info"
+  role="note"
+  aria-label="Upload information"
+  class="sidebar-container ui segment rdm-sidebar text-muted"
+>
+  <h2 class="ui small header text-muted p-0 mb-5"><small>Technical metadata</small></h2>
+  <dl class="m-0">
+    <dt class="inline"><small>Created</small></dt>
+    <dd class="inline">
+      <small>May 27, 2022</small>
+    </dd>
+    <div>
+      <dt class="rel-mt-1 inline"><small>Modified</small></dt>
+      <dd class="inline">
+        <small>August 12, 2022</small>
+      </dd>
+    </div>
+  </dl>
+</section>
+          
+        </aside>
+      </div>
+    </div>
+
+    <div class="ui container">
+      <div class="ui relaxed grid">
+        <div class="two column row">
+          <div class="sixteen wide tablet eleven wide computer column">
+            <div class="ui grid">
+                <div class="centered row rel-mt-1">
+                  <button id="jump-btn" class="jump-to-top ui button labeled icon"
+                          aria-label="Jump to top of page">
+                    <i class="arrow alternate circle up outline icon"></i>
+                    Jump up
+                  </button>
+                </div>
+              </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </main>
+    <footer id="rdm-footer-element">
+        
+
+  <div class="footer-top">
+    <div class="ui container app-rdm-footer">
+<div class="ui equal width stackable grid zenodo-footer">
+  <div class="column">
+    <h2 class="ui inverted tiny header">About</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://about.zenodo.org">About</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/policies">Policies</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/infrastructure">Infrastructure</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/principles">Principles</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/projects/">Projects</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/roadmap/">Roadmap</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Blog</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://blog.zenodo.org">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Support</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://help.zenodo.org/">Help</a>
+      </li>
+      <li class="item">
+        <a href="https://support.zenodo.org/help/">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Developers</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://developers.zenodo.org">REST API</a>
+      </li>
+      <li class="item">
+        <a href="https://developers.zenodo.org#oai-pmh">OAI-PMH</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Contribute</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://github.com/zenodo/zenodo-rdm">
+          <i class="icon external" aria-hidden="true"></i>
+          GitHub
+        </a>
+      </li>
+      <li class="item">
+        <a href="/donate">
+          <i class="icon external" aria-hidden="true"></i>
+          Donate
+        </a>
+      </li>
+    </ul>
+  </div>
+      <div class="six wide column right aligned">
+  <h2 class="ui inverted tiny header">Funded by</h2>
+  <ul class="ui horizontal link list">
+    <li class="item">
+      <a href="https://home.cern" aria-label="CERN">
+        <img src="/static/images/cern.png" width="60" height="60" alt="" />
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://www.openaire.eu" aria-label="OpenAIRE">
+        <img src="/static/images/openaire.png" width="60" height="60" alt="" />
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://commission.europa.eu/index_en" aria-label="European Commission">
+        <img src="/static/images/eu.png" width="88" height="60" alt="" />
+      </a>
+    </li>
+  </ul>
+      </div>
+      </div>
+    </div>
+
+  </div>
+        <div class="footer-bottom">
+  <div class="ui inverted container">
+    <div class="ui grid">
+      <div class="eight wide column left middle aligned">
+        <p class="m-0">
+          Powered by
+          <a href="https://home.cern/science/computing/data-centre">CERN Data Centre</a> & <a href="https://inveniordm.docs.cern.ch/">InvenioRDM</a>
+        </p>
+      </div>
+      <div class="eight wide column right aligned">
+        <ul class="ui inverted horizontal link list">
+          <li class="item">
+            <a href="https://stats.uptimerobot.com/vlYOVuWgM/">Status</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/privacy-policy">Privacy policy</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/cookie-policy">Cookie policy</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/terms">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    </footer>
+  
+  
+    
+
+        
+          <script type="text/javascript">
+            window.MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true // Allows escaping $ signs if needed
+              }
+            };
+          </script>
+          <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+<script src="/static/dist/js/manifest.86dc9ad40902b3aeb71a.js"></script>
+<script src="/static/dist/js/73.eff6d29b79c9412c5335.js"></script>
+<script src="/static/dist/js/3526.351e8d7556355023958f.js"></script>
+<script src="/static/dist/js/theme.46e20d3a883fda8b01b2.js"></script>
+<script src="/static/dist/js/3180.0c49d4bf07e64be03fda.js"></script>
+<script src="/static/dist/js/1057.7522b9b6407fa55bed5b.js"></script>
+<script src="/static/dist/js/7655.49da91d7c142bad19ccb.js"></script>
+<script src="/static/dist/js/5092.a8e9aa3149755c25c425.js"></script>
+<script src="/static/dist/js/8871.21b70d011e443068ff4a.js"></script>
+<script src="/static/dist/js/278.8d92f1a6c45c7759d815.js"></script>
+<script src="/static/dist/js/8118.f587fe017309e5588179.js"></script>
+<script src="/static/dist/js/4157.b89712ff141a054ffdf0.js"></script>
+<script src="/static/dist/js/base-theme-rdm.af2522498ea0c70c2c9f.js"></script>
+<script src="/static/dist/js/i18n_app.45ea25224d14a494a50c.js"></script>
+<script src="/static/dist/js/2301.7b05926e461909740138.js"></script>
+<script src="/static/dist/js/4252.1d10592ed59b0987a6b5.js"></script>
+<script src="/static/dist/js/overridable-registry.b74f4047080b7e408e7b.js"></script>
+  
+    
+      <script type='application/ld+json'>{"@context": "http://schema.org", "@id": "https://doi.org/10.5281/zenodo.6587903", "@type": "https://schema.org/Dataset", "author": [{"@type": "Person", "affiliation": [{"@type": "Organization", "name": "University of North Carolina at Chapel Hill"}], "familyName": "Ranek", "givenName": "Jolene", "name": "Ranek, Jolene"}, {"@type": "Person", "familyName": "Stanley", "givenName": "Natalie", "name": "Stanley, Natalie"}, {"@type": "Person", "familyName": "Purvis", "givenName": "Jeremy", "name": "Purvis, Jeremy"}], "contentSize": "11.27 GB", "creator": [{"@type": "Person", "affiliation": [{"@type": "Organization", "name": "University of North Carolina at Chapel Hill"}], "familyName": "Ranek", "givenName": "Jolene", "name": "Ranek, Jolene"}, {"@type": "Person", "familyName": "Stanley", "givenName": "Natalie", "name": "Stanley, Natalie"}, {"@type": "Person", "familyName": "Purvis", "givenName": "Jeremy", "name": "Purvis, Jeremy"}], "dateCreated": "2022-05-27T17:47:56.623814+00:00", "dateModified": "2022-08-12T17:53:09.489441+00:00", "datePublished": "2022-02-16", "description": "\u003cp\u003eContains loom files and preprocessed adata objects to compare methods for temporal gene expression integration. Loom files can be accessed using the \u0026#39;read\u0026#39; function in Scvelo. Preprocessed adata objects can be accessed using the \u0026#39;read_h5ad\u0026#39; function in Scanpy.\u003c/p\u003e\n\n\u003cp\u003eThe raw single-cell RNA sequencing datasets can be found under the following accession codes.\u003c/p\u003e\n\n\u003cul\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eMouse embryonic cell cycle dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/nbt.3102\"\u003e10.1038/nbt.3102\u003c/a\u003e) was originally downloaded from ArrayExpress with the accession code E-MTAB-2805\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eHematopoiesis differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/10.1182/blood-2016-05-716480\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE81682\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eNKT cell differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/ni.3437\"\u003e10.1038/ni.3437\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE74596.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eHematopoiesis differentiation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org\u003c/a\u003e/\u003ca href=\"https://doi.org/10.1038/nature19348\"\u003e10.1038/nature19348\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession codes GSE70236, GSE70240, GSE70244\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eLPS stimulation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1016/j.cels.2017.03.010\"\u003e10.1016/j.cels.2017.03.010\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE94383.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eINF-gamma\u0026nbsp;stimulation dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41587-020-00803-5\"\u003e10.1038/s41587-020-00803-5\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE161465.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eAML chemotherapy dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41591-018-0233-1\"\u003e10.1038/s41591-018-0233-1\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE116481.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eAML diagnosis/relapse dataset from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41375-021-01338-7\"\u003e10.1038/s41375-021-01338-7\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE126068.\u003c/p\u003e\n\t\u003c/li\u003e\n\t\u003cli\u003e\n\t\u003cp\u003eMS case control PBMC and CSF datasets from Ref. (\u003ca href=\"https://doi.org/10.1182/blood-2016-05-716480\"\u003ehttps://doi.org/\u003c/a\u003e\u003ca href=\"https://doi.org/10.1038/s41467-019-14118-w\"\u003e10.1038/s41467-019-14118-w\u003c/a\u003e) was originally downloaded from the Gene Expression Omnibus with the accession code GSE138266.\u003c/p\u003e\n\t\u003c/li\u003e\n\u003c/ul\u003e", "distribution": [{"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Stetson.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_pbmc.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Lane.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Schafflick_merged_csf.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Pollyea_merged.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Olsson.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Nestorowa.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Engel.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Burkhardt_merged.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/Buettner.loom/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_stetson.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_schafflick_pbmc.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_schafflick_csf.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_pollyea.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_olsson.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_nestorowa.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_lane.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_engel.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_burkhardt.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/6587903/files/adata_buettner.h5ad/content", "encodingFormat": "application/octet-stream"}], "identifier": "https://doi.org/10.5281/zenodo.6587903", "keywords": "data integation, single-cell, RNA velocity, trajectory inference, prediction", "license": "https://opensource.org/licenses/MIT", "name": "Single-cell datasets for temporal gene expression integration", "publisher": {"@type": "Organization", "name": "Zenodo"}, "size": "11.27 GB", "url": "https://zenodo.org/records/6587903"}</script>
+
+  <script src="/static/dist/js/invenio-app-rdm-landing-page-theme.6621f92f68af6cb1b71a.js"></script>
+  <script src="/static/dist/js/5941.e8d469953f2097d1b80c.js"></script>
+<script src="/static/dist/js/9736.d2eec24d7946bd6d5842.js"></script>
+<script src="/static/dist/js/4683.3dde35073541a4cfab77.js"></script>
+<script src="/static/dist/js/7641.c5257ddf674154c9b6b2.js"></script>
+<script src="/static/dist/js/7302.60cc5652ce662994b29a.js"></script>
+<script src="/static/dist/js/8585.d7c719e4d737eaf98c6c.js"></script>
+<script src="/static/dist/js/1357.e127ab0ea8be479ccd38.js"></script>
+<script src="/static/dist/js/5002.e27ae61e6763574bea57.js"></script>
+<script src="/static/dist/js/1644.7885d9d3dcbd8315f16b.js"></script>
+<script src="/static/dist/js/5400.ef510f260282c73585d0.js"></script>
+<script src="/static/dist/js/8962.19852e93355dac6e4e1c.js"></script>
+<script src="/static/dist/js/5097.7d0a0bd7d0439f9b0ff5.js"></script>
+<script src="/static/dist/js/5680.e9f92f6e9958b03847ba.js"></script>
+<script src="/static/dist/js/invenio-app-rdm-landing-page.b12dba3cb3fad1a8f4e6.js"></script>
+  <script src="/static/dist/js/previewer_theme.e613af66c367ae91620f.js"></script>
+  <script src="/static/dist/js/zenodo-rdm-citations.42ba6ec5068dbee7fa6f.js"></script>
+  
+
+        <div class="ui container info message cookie-banner hidden">
+  <i class="close icon"></i>
+  <div>
+    <i aria-hidden="true" class="info icon"></i>
+    <p class="inline">This site uses cookies. Find out more on <a href="https://about.zenodo.org/cookie-policy">how we use cookies</a></p>
+  </div>
+  <div class="buttons">
+    <button class="ui button small primary" id="cookies-all">Accept all cookies</button>
+    <button class="ui button small" id="cookies-essential">Accept only essential cookies</button>
+  </div>
+</div>
+
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['requireCookieConsent']);
+
+  (function() {
+    var u="https://webanalytics.web.cern.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '366']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+  const cookieConsent = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("cookie_consent="))
+    ?.split("=")[1];
+
+  if (cookieConsent) {
+    if (cookieConsent === "all") {
+      matomo();
+    }
+  } else {
+    document.querySelector(".cookie-banner").classList.remove("hidden")
+    _paq.push(['forgetConsentGiven']);
+  }
+
+  $('.cookie-banner .close')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","essential");
+    });
+
+  $('#cookies-essential')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","essential");
+    });
+
+  $('#cookies-all')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","all");
+      _paq.push(['rememberCookieConsentGiven']);
+      matomo();
+    });
+
+  function matomo() {
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+  }
+
+  function setCookie(cname, cvalue) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // one year
+    var expires = "expires=" + d.toUTCString();
+    var cookie = cname + "=" + cvalue + ";" + expires + ";"
+    cookie += "Domain=zenodo.org;Path=/;SameSite=None; Secure";
+    document.cookie = cookie;
+  }
+</script>
+  </body>
+</html>

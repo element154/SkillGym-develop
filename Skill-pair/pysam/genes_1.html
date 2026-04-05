@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /goldenPath/hg19/bigZips/genes</title>
+ </head>
+ <body>
+<pre>
+Introduction
+^^^^^^^^^^^^
+
+This directory contains GTF files for the main gene transcript sets where available. They are
+sourced from the following gene model tables: ncbiRefSeq, refGene, ensGene, knownGene
+
+Not all files are available for every assembly. For more information on the source tables 
+see the respective data track description page in the assembly. For example:
+    http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg38&amp;g=refGene
+
+Information on the different gene models can also be found in our genes FAQ:
+    https://genome.ucsc.edu/FAQ/FAQgenes.html
+
+Generation
+^^^^^^^^^^
+
+The files are created using the genePredToGtf utility with the additional -utr flag. Utilities
+can be found in the following directory:
+    http://hgdownload.soe.ucsc.edu/admin/exe/
+
+An example command is as follows:
+    genePredToGtf -utr hg38 ncbiRefSeq hg38.ncbiRefSeq.gtf
+
+Additional Resources
+^^^^^^^^^^^^^^^^^^^^
+
+Information on GTF format and how it is related to GFF format:
+    https://genome.ucsc.edu/FAQ/FAQformat.html#format4
+
+Information about the different gene models available in the Genome Browser:
+    https://genome.ucsc.edu/FAQ/FAQgenes.html
+
+More information on how the files were generated:
+    https://genome.ucsc.edu/FAQ/FAQdownloads.html#download37
+</pre>
+<pre>      <a href="?C=N;O=D">Name</a>                      <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr>      <a href="/goldenPath/hg19/bigZips/">Parent Directory</a>                               -   
+      <a href="hg19.ensGene.gtf.gz">hg19.ensGene.gtf.gz</a>       2020-01-10 09:45   26M  
+      <a href="hg19.knownGene.gtf.gz">hg19.knownGene.gtf.gz</a>     2024-04-25 10:23   35M  
+      <a href="hg19.ncbiRefSeq.gtf.gz">hg19.ncbiRefSeq.gtf.gz</a>    2021-05-17 10:35   19M  
+      <a href="hg19.refGene.gtf.gz">hg19.refGene.gtf.gz</a>       2020-01-10 09:45   21M  
+<hr></pre>
+</body></html>

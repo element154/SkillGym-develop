@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\Finance Skill\\Finance Skill\\SKILL.md",
+  "records": [
+    {
+      "category": "pdf file",
+      "value": "cfpb_building_block_activities_sample-credit-card-statement_handout.pdf",
+      "snippet": "Account Summary. Payment Information. Previous Balance. $482.42. New Balance. $1,392.71. Payment, Credits. -$350.42. Payment Due Date. 1/23/XX. Purchases.",
+      "metadata": {
+        "url": "https://files.consumerfinance.gov/f/documents/cfpb_building_block_activities_sample-credit-card-statement_handout.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "dummy_statement.pdf",
+      "snippet": "You have successfully opened a sample statement in PDF format. Please continue with your e-Statement enrollment. Summary of Your Account. Page 1 of 2.",
+      "metadata": {
+        "url": "https://www.impact-bank.com/user/file/dummy_statement.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "statement_sample1.pdf",
+      "snippet": "Beginning Balance on May 3, 2003. $7,126.11. Deposits & Other Credits. +3,615.08. ATM Withdrawals & Debits.",
+      "metadata": {
+        "url": "https://www.commercebank.com/-/media/cb/pdf/personal/bank/statement_sample1.pdf?revision=54d56c85-b8e2-40a4-bd17-e09697b71bc6&modified=20211119170100"
+      }
+    },
+    {
+      "category": "image file",
+      "value": "gas-station-receipt.html",
+      "snippet": "Search among 118 authentic gas station receipt stock photos, high-definition images, and pictures, or look at other gas station or fuel purchase stock images to ...",
+      "metadata": {
+        "url": "https://www.dreamstime.com/photos-images/gas-station-receipt.html"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "paperless_statements_chase_sample.pdf",
+      "snippet": "Account number: 0000 0000 0000 0000. $. Amount Enclosed. Make your check payable to: Chase Card Services. 00000 ...",
+      "metadata": {
+        "url": "https://www.chase.com/content/dam/chase-ux/documents/digital/resources/paperless_statements_chase_sample.pdf"
+      }
+    }
+  ]
+}

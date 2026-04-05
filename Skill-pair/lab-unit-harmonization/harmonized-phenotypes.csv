@@ -1,0 +1,66 @@
+"Phenotype Domain",Description,"UMLS CUI","UMLS Term","dbGaP Tag Name (Phenotype Concept)"
+Anthropometry,"Body mass index (weight divided by the square of height)",C1305855,"Body mass index",BMI
+Anthropometry,"Standing body height measurement",C0005890,"Body height",Height
+Anthropometry,"Hip circumference measurement",C0562350,"Hip circumference","Hip circumference"
+Anthropometry,"Waist circumference measurement",C0455829,"Waist circumference","Waist circumference"
+Anthropometry,"Ratio of waist to hip circumference",C0205682,"Waist-hip ratio","Waist-hip ratio"
+Anthropometry,"Body weight measurement",C0005910,"Body weight",Weight
+"Blood pressure","Qualitative indicator of hypertension status",C3843080,"Hypertension or high blood pressure",Hypertension
+"Blood pressure","Quantitative measure of resting diastolic blood pressure",C2183311,"Diastolic blood pressure at rest","Resting arm diastolic BP"
+"Blood pressure","Quantitative measure of resting systolic blood pressure",C2039694,"Systolic blood pressure at rest","Resting arm systolic BP"
+"Cardiovascular disease","Quantitative measure of coronary artery calcification (CAC) by computed tomography (CT) scan",C1611184,"Calcification of coronary artery",CAC
+"Cardiovascular disease","Quantitative measure of carotid intima media thickness (IMT) by ultrasound",C1960466,"Carotid Intima-Media Thickness","Carotid IMT"
+"Cardiovascular disease","Qualitative indicator of coronary angioplasty status",C3542439,"presence of coronary angioplasty implant and graft (physical finding)","Coronary angioplasty"
+"Cardiovascular disease","Qualitative indicator of coronary artery bypass graft (CABG) status",C0585628,"Presence of coronary artery bypass graft","Coronary artery bypass graft"
+"Cardiovascular disease","Qualitative indicator of heart failure status",C0018801,"Heart failure","Heart failure"
+"Cardiovascular disease","Qualitative indicator of myocardial infarction (MI) status",C2926063,"Myocardial infarction:Finding:Point in time:^Patient:Ordinal","Myocardial infarction"
+Demographics,"Self-reported sex",C0017249,Gender,Gender
+Demographics,"Self-reported race, ancestry or ethnicity",C1830369,"Race or ethnicity",Race/ancestry/ethnicity
+Diabetes,"Quantitative measure of the concentration of glucose in blood.",C1320980,"Blood glucose status","Blood glucose"
+Diabetes,"Qualitative indicator of diabetes mellitus status",C0011849,"Diabetes Mellitus",Diabetes
+Diabetes,"Quantitative measure of the concentration of glycated hemoglobin (hemoglobin A1c, or HbA1c) in blood",C1261236,"Hemoglobin A1c level result",HbA1c
+Diabetes,"Quantitative measure of the concentration of insulin in blood.",C0428405,"Insulin level result","Insulin in blood"
+EKG/Arrhythmia,"Qualitative indicator of atrial fibrillation or atrial flutter status",C0155709,"Atrial fibrillation and flutter","Atrial fibrillation/flutter"
+EKG/Arrhythmia,"Quantitative index of left ventricular hypertrophy (LVT) calculated from electrocardiogram (EKG) data",C0232306,"Electrocardiogram: left ventricle hypertrophy (finding)","LVH from EKG"
+EKG/Arrhythmia,"Qualitative indicator of pacemaker implant status",C1533090,"Pacemaker observable",Pacemaker
+EKG/Arrhythmia,"Quantitative measure of PR interval from electrocardiogram (EKG) data",C0520877,"PR interval feature","PR interval from EKG"
+EKG/Arrhythmia,"Quantitative measure of QRS duration from electrocardiogram (EKG) data",C0429025,"QRS complex duration (observable entity)","QRS duration from EKG"
+EKG/Arrhythmia,"Quantitative measure of QT interval from electrocardiogram (EKG) data",C0429028,"QT interval feature (observable entity)","QT interval from EKG"
+EKG/Arrhythmia,"Quantitative measure of heart rate (HR) from electrocardiogram (EKG) data",C2041121,"electrocardiogram rhythm strip 3-lead heart rate (bpm)","Resting heart rate from EKG"
+"Hematology & Hemostasis","Quantitative measure of factor VII activity or concentration in blood",C0427593,"Factor VII level","Factor VII"
+"Hematology & Hemostasis","Quantitative measure of factor VIII activity or concentration in blood",C0457997,"Factor VIII level","Factor VIII"
+"Hematology & Hemostasis","Quantitative measure of fibrinogen concentration in blood",C1318051,"Fibrinogen level result","Fibrinogen in blood"
+"Hematology & Hemostasis","Quantitative measure of the fraction of blood volume that is composed of red blood cells",C0518014,"Hematocrit level",Hematocrit
+"Hematology & Hemostasis","Quantitative measure of hemoglobin concentration in blood",C0019029,"Hemoglobin concentration result",Hemoglobin
+"Hematology & Hemostasis","Quantitative measure of platelet cell number per volume of blood",C1287267,"Finding of platelet count","Platelet count"
+"Hematology & Hemostasis","Quantitative measure of red blood cell number per volume of blood",C1287262,"Finding of red blood cell count","Red blood cell count"
+"Hematology & Hemostasis","Quantitative measure of von Willebrand factor (vWf) activity or concentration in blood",C0427585,"vWF - von Willebrand factor level result","von Willebrand factor"
+"Hematology & Hemostasis","Qualitative indicator of venous thromboembolism (VTE) status",C1861172,"venous thromboembolism",VTE
+"Hematology & Hemostasis","Quantitative measure of white blood cell number per volume of blood",C0427512,"White blood cell count laboratory result","White blood cell count"
+Inflammation,"Quantitative measure of C-reactive protein (CRP) concentration in blood",C0428528,"C-reactive protein level","CRP in blood"
+Inflammation,"Quantitative measure of Interleukin 6 (IL-6) concentration in blood",C0366888,Interleukin6:ACnc:Pt:Ser/Plas:Qn,"Interleukin 6 in blood"
+"Kidney function","Quantitative measure of the ratio of albumin concentration to creatinine concentration in urine",C1318330,"Urine albumin:creatinine ratio result","Albumin-creatinine ratio in urine"
+"Kidney function","Quantitative measure of creatinine concentration in blood",C0428279,"Finding of creatinine level","Creatinine in blood"
+"Kidney function","Quantitative measure of cystatin C concentration in blood",C1445989,"Blood cystatin C measurement","Cystatin C in blood"
+"Kidney function","Quantitative measure of glomerular filtration rate (GFR)",C4524116,"Estimated GFR",GFR
+Lipids,"Quantitative measure of high-density lipoprotein (HDL) cholesterol concentration in blood",C2603387,"Cholesterol.in HDL [Mass or Molecules/volume] in Serum or Plasma","HDL in blood"
+Lipids,"Quantitative measure of low-density lipoprotein (LDL) cholesterol concentration in blood",C2603388,"Cholesterol.in LDL [Mass or Molecules/volume] in Serum or Plasma","LDL in blood"
+Lipids,"Quantitative measure of total cholesterol concentration in blood",C0201950,"Cholesterol measurement test","Total cholesterol in blood"
+Lipids,"Quantitative measure of triglyceride concentration in blood",C0428475,"Triglyceride level - finding","Triglycerides in blood"
+Lung,"Qualitative indicator of asthma status",C1272273,"Asthma finding",Asthma
+Lung,"Qualitative and quantitative measures of asthma severity",C0581122,"Asthma severity","Asthma severity"
+Lung,"Qualitative indicator of Chronic Obstructive Pulmonary Disease (COPD) status",C0024117,"Chronic Obstructive Airway Disease",COPD
+Lung,"Forced expiratory volume in 1 second (FEV1) measured using spirometry",C0802965,"Volume^at 1.0 s post forced expiration:Volume:Point in time:Respiratory system:Quantitative",FEV1
+Lung,"Quantitative measure of forced vital capacity (FVC) measured using spirometry",C3714541,"Forced Vital Capacity",FVC
+Sleep,"Quantitative measure of Apnea-Hypopnea Index (AHI), a measure of sleep apnea severity",C2111846,"Apnea-hypopnea index procedure",AHI
+Sleep,"Qualitative indicator of sleep apnea status",C0037315,"Sleep Apnea Syndromes","Sleep apnea"
+Smoking,"Qualitative and quantitative measures of cigarette smoking history and cigarette smoking status",C1519384,"Smoking History","Cigarette smoking"
+Stroke,"Qualitative indicator of hemorrhagic stroke status",C0553692,"Brain hemorrhage","Hemorrhagic stroke"
+Stroke,"Qualitative indicator of ischemic stroke status",C0948008,"Ischemic stroke","Ischemic stroke"
+Stroke,"Qualitative indicator of other/unspecified stroke status",C4489300,"Stroke-other stroke","Other stroke"
+"Supporting phenotypes","Participant age at enrollment or age at which data or biosamples were collected",C0001779,Age,"Age at enrollment/collection"
+"Supporting phenotypes","Categorical indicator of the clinical visit (exam, year, etc.) during which observations, measurements and/or other data/biosample collections were made",C0008952,"Clinic Visits","Clinic visit"
+"Supporting phenotypes","Qualitative or quantitative indicator describing or quantifying fasting status prior to blood draw for any blood sample-derived measurement",C1976106,"Fasting Status",Fasting
+"Supporting phenotypes","Categorical indicator of the clinic, recruitment site, and/or field center at which participants were recruited, and/or where data or biosamples were collected.",C2828208,Locality,"Geographic site"
+"Supporting phenotypes","Qualitative or quantitative indicator of use of any kind of medication, vitamin, mineral, or dietary supplement",C0240320,"medication use","Medication/supplement use"
+"Supporting phenotypes","Categorical indicator of membership in different study subcohorts (i.e. participant subsets within a study who were recruited at different times and/or enrolled in different sub-studies)",C0599755,Cohort,Subcohort

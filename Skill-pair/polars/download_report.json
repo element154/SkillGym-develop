@@ -1,0 +1,109 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\polars\\polars\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "datadata.csv",
+      "snippet": "... Kaggle,This particular set of sales data was released by Walmart for a predictive data science competition on the machine learning site Kaggle.,1,other.",
+      "metadata": {
+        "url": "https://www.bloomberg.com/businessweek/graphics/2014-03-bigdata/data/datadata.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "ebmj-99pg.csv",
+      "snippet": "... dataset includes sales data for fleet equipment that was sold in the current and previous three years. This dataset does not include sales data for Seattle ...",
+      "metadata": {
+        "url": "https://data.seattle.gov/resource/ebmj-99pg.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "NYC_Open_Data_Plan__Future_Releases.csv",
+      "snippet": "... Sales data for the calendar year,Annually,12/31/2018,, 2013,Department of Finance (DOF),Open Balance Detail,Mainframe text file.,Quarterly,12/31/2018,, 2013 ...",
+      "metadata": {
+        "url": "https://data.cityofnewyork.us/api/views/k462-uqyk/rows.csv?accessType=DOWNLOAD"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "b4dx-n6cg.csv",
+      "snippet": "... dataset is based on heating, ventilation, and air conditioning (HVAC) sales data reported to D+R International by Heating, Air-conditioning & Refrigeration ...",
+      "metadata": {
+        "url": "https://data.ny.gov/resource/b4dx-n6cg.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "hgxu-5rdh.csv",
+      "snippet": "... data and plan to have Liquor Sales data, Marijuana sales data and Revenue Distribution data published by the end of the biennium. The process of moving to a ...",
+      "metadata": {
+        "url": "https://data.oregon.gov/resource/hgxu-5rdh.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Open_Data_Portal_Requests.csv",
+      "snippet": "... dataset at this link: https://data.ct.gov/Local-Government/2024-Connecticut-Parcel-and-CAMA-Data/pqrn-qghw/about_data Real estate sales data is available ...",
+      "metadata": {
+        "url": "https://data.ct.gov/api/views/ibrt-5wvx/rows.csv?accessType=DOWNLOAD"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Interagency-Data-Inventory-2025.xlsx",
+      "snippet": "It collects balance sheet and off-balance-sheet information, including detailed supporting schedule items, from all U.S. branches and agencies of foreign banks.",
+      "metadata": {
+        "url": "https://www.financialresearch.gov/data/files/Interagency-Data-Inventory-2025.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial_Report.xlsx",
+      "snippet": "These unaudited condensed consolidated financial statements should be read in conjunction with the financial statements and notes included in our Annual Report ...",
+      "metadata": {
+        "url": "https://content.equisolve.net/sec/0000764065-25-000103/Financial_Report.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "20240615-financial_report.xlsx",
+      "snippet": "a) First, prepare a budget organized by activity/output/outcome in Sheet 1. (Activity amounts can be indicative estimates.) b) Then, divide each output budget ...",
+      "metadata": {
+        "url": "https://mptf.undp.org/sites/default/files/documents/2024-06/20240615-financial_report.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial-Analysis-Template.xlsx",
+      "snippet": "The Key Financial Indicators section at the top of the Financial Statement Data worksheet will automatically calculate results based on entries ...",
+      "metadata": {
+        "url": "https://www.milbank.org/wp-content/uploads/2024/03/Financial-Analysis-Template.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Acctg-annual_school_financial_report_2021-excel-format.xls.xlsx",
+      "snippet": "We confirm we are responsible for fair financial reporting, for adopting sound accounting policies, and for establishing and maintaining ...",
+      "metadata": {
+        "url": "https://archkck.org/wp-content/uploads/2021/06/Acctg-annual_school_financial_report_2021-excel-format.xls.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "Financial_Report_1.xlsx",
+      "snippet": "All material intercompany balances and transactions have been eliminated in consolidation. These interim unaudited condensed consolidated financial statements ...",
+      "metadata": {
+        "url": "https://s3.amazonaws.com/content.stockpr.com/sec/0001213900-21-042585/Financial_Report.xlsx"
+      }
+    },
+    {
+      "category": "vcf file",
+      "value": "1_FungiDB_SNP_Mapping_2.pdf",
+      "snippet": "Download vcf files and evaluate workflow results. The vcf file generated by SnpEff contains information about SNPs and the genomic location. Post-processing of ...",
+      "metadata": {
+        "url": "https://static-content.veupathdb.org/documents/2021hinxtonfungal/1_FungiDB_SNP_Mapping_2.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PET radiomics challenges | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="18F-FDG PET Radiomics Risk Stratifiers in Head and Neck Cancer: A MICCAI 2018 CPM Grand Challenge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1775203576947;
+    window["pageRequestEndTime"] = 1775203576956;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-e1b1865463db8153.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Competitions',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:title" content="PET radiomics challenges" />
+    <meta property="og:description" content="18F-FDG PET Radiomics Risk Stratifiers in Head and Neck Cancer: A MICCAI 2018 CPM Grand Challenge" />
+    <meta property="og:type" content="website"  />
+    <meta property="og:url" content="https://kaggle.com/pet-radiomics-challenges" />
+
+        <meta property="og:image" content="https://kaggle.com/competitions/9891/images/header" />
+        <meta property="twitter:image" content="https://kaggle.com/competitions/9891/images/header" />
+    <meta property="twitter:title" content="PET radiomics challenges" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@kaggle" />
+
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="X0ju8BdpC+iY2LAZoPvMWg==" src="/static/assets/runtime.js?v=dcdca6c03aca45e6"></script>
+  <script nonce="X0ju8BdpC+iY2LAZoPvMWg==" src="/static/assets/vendor.js?v=b58ece3666e973c5"></script>
+  <script nonce="X0ju8BdpC+iY2LAZoPvMWg==" src="/static/assets/app.js?v=da13138bcfa24966"></script>
+    <script nonce="X0ju8BdpC&#x2B;iY2LAZoPvMWg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

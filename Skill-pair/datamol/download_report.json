@@ -1,0 +1,13 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\datamol\\datamol\\SKILL.md",
+  "records": [
+    {
+      "category": "xml file",
+      "value": "vasprun.xml",
+      "snippet": "Download raw file. Open symbols panel. Edit and raw actions. <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <modeling> <generator> <i name=\"program\" type=\"string\"> ...",
+      "metadata": {
+        "url": "https://github.com/abelcarreras/vasp_parser/blob/master/vasprun.xml"
+      }
+    }
+  ]
+}

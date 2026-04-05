@@ -1,0 +1,13 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\scikit-bio\\scikit-bio\\SKILL.md",
+  "records": [
+    {
+      "category": "fastq file",
+      "value": "SRR31107638.html",
+      "snippet": "Illumina NovaSeq 6000 paired end sequencing; Celery and Parsley Rhizospher Microbiome. Organism: rhizosphere metagenome. Instrument Platform: ILLUMINA.",
+      "metadata": {
+        "url": "https://www.ebi.ac.uk/ena/browser/view/SRR31107638"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+datamol
+pandas
+scipy
+fsspec

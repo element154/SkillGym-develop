@@ -1,0 +1,61 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\biopython\\biopython\\SKILL.md",
+  "records": [
+    {
+      "category": "nwk file",
+      "value": "1.html",
+      "snippet": "Phylogenetic tree in Newick format used for the calculations. History. 2023-07-05 - First online date, Publication date, Posted date ...",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/Phylogenetic_tree_in_Newick_format_used_for_the_calculations_/23630748/1"
+      }
+    },
+    {
+      "category": "nwk file",
+      "value": "29546288.html",
+      "snippet": "This entry contains the HCO CyoB subunit phylogenetic tree (Newick format) depicted in Figure 6B in the manuscript. History.",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/HCO_CyoB_subunit_phylogenetic_tree_Newick_format_/29546288"
+      }
+    },
+    {
+      "category": "nwk file",
+      "value": "16902901.html",
+      "snippet": "We identified over 1000 P4-like elements with very conserved genetic organization of the core genome and a few hotspots with highly variable genes. These ...",
+      "metadata": {
+        "url": "https://rs.figshare.com/articles/dataset/File_S3_separate_file_Phylogenetic_tree_Newick_format_of_the_alpA_nucleotide_sequence_alignments_from_To_catch_a_hijacker_abundance_evolution_and_genetic_diversity_of_P4-like_bacteriophage_satellites/16902901"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "dc6c50a1599fa03d85cb.html",
+      "snippet": "BLAST Output format (XML) - Stripped example. GitHub Gist: instantly share code, notes, and snippets.",
+      "metadata": {
+        "url": "https://gist.github.com/raivivek/dc6c50a1599fa03d85cb"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "biodataome_data.csv",
+      "snippet": "... Gene expression\",GPL11154,\"expression profiling by high throughput ... data/Homo sapiens/GPL11154/DRP000987.csv\",\"http://dataome.mensxmachina.org/data ...",
+      "metadata": {
+        "url": "http://dataome.mensxmachina.org/biodataome_data.csv"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "README.md",
+      "snippet": "The example genepop data is a GenePop data format with 10 populations, 30 individuals per population, and 100 Loci. #Load example data in your workspace.",
+      "metadata": {
+        "url": "https://github.com/rystanley/genepopedit/blob/master/README.md"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "2018-01-22-Preparing-for-Genepop.md",
+      "snippet": "Next step is to export the data into a GenePop format. GenePop is one of the most commonly used programs used to analyze microsatellite data.",
+      "metadata": {
+        "url": "https://github.com/laurahspencer/O.lurida_genetics/blob/master/Notebooks/2018-01-22-Preparing-for-Genepop.md"
+      }
+    }
+  ]
+}

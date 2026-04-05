@@ -1,0 +1,2307 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>
+    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/>
+
+    
+    
+    <meta name="generator" content="InvenioRDM 14.0"/>
+
+    
+    
+    
+  
+    <meta name="description" content="These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled &#34;distinct mesenchymal cell states mediate prostate cancer progression&#34;. adata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.adata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).scenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters in the mouse mesenchymal data.scenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.adata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.adata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.visium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.visium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.natHistory_expression: the normalized expression matrix for the natural history cohort.natHistory_label: the metastasis indicators for the natural history cohort." />
+    <meta name="citation_title" content="distinct mesenchymal cell states mediate prostate cancer progression" />
+    <meta name="citation_author" content="Pakula, Hubert" />
+    <meta name="citation_author" content="Omar, Mohamed" />
+    <meta name="citation_author" content="Carelli, Ryan" />
+    <meta name="citation_author" content="Pederzoli, Filippo" />
+    <meta name="citation_author" content="Fanelli, Giuseppe Nicolò" />
+    <meta name="citation_author" content="Pannellini, Tania" />
+    <meta name="citation_author" content="Emmenis, Lucie Van" />
+    <meta name="citation_author" content="Rodrigues, Silvia" />
+    <meta name="citation_author" content="Fidalgo-Ribeiro, Caroline" />
+    <meta name="citation_author" content="Nuzzo, Pier V." />
+    <meta name="citation_author" content="Brady, Nicholas J." />
+    <meta name="citation_author" content="Jere, Madhavi" />
+    <meta name="citation_author" content="Unkenholz, Caitlin" />
+    <meta name="citation_author" content="Mohammad, Mohammad" />
+    <meta name="citation_author" content="Khani, Francesca" />
+    <meta name="citation_author" content="de Almeida, Francisca Nunes" />
+    <meta name="citation_author" content="Rickman, David S." />
+    <meta name="citation_author" content="Barbieri, Christopher E." />
+    <meta name="citation_author" content="Robinson, Brian D." />
+    <meta name="citation_author" content="Marchionni, Luigi" />
+    <meta name="citation_author" content="Loda, Massimo" />
+    <meta name="citation_doi" content="10.5281/zenodo.10069816" />
+    <meta name="citation_keywords" content="prostate cancer" />
+    <meta name="citation_keywords" content="tumor microenvironment" />
+    <meta name="citation_keywords" content="cancer-associated fibroblasts" />
+    <meta name="citation_keywords" content="genetically-engineered mouse models" />
+    <meta name="citation_keywords" content="single-cell RNA sequencing" />
+    <meta name="citation_keywords" content="complement protein" />
+    <meta name="citation_keywords" content="innate and adaptive immunity" />
+    <meta name="citation_keywords" content="WNT signaling" />
+    <meta name="citation_keywords" content="neuroendocrine tumor stroma" />
+    <meta name="citation_keywords" content="bone metastasis" />
+    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/10069816" />
+    <meta property="og:title" content="distinct mesenchymal cell states mediate prostate cancer progression" />
+    <meta property="og:description" content="These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled &#34;distinct mesenchymal cell states mediate prostate cancer progression&#34;. adata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.adata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).scenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters in the mouse mesenchymal data.scenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.adata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.adata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.visium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.visium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.natHistory_expression: the normalized expression matrix for the natural history cohort.natHistory_label: the metastasis indicators for the natural history cohort." />
+    <meta property="og:url" content="https://zenodo.org/records/10069816" />
+    <meta property="og:site_name" content="Zenodo" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@zenodo_org" />
+    <meta name="twitter:title" content="distinct mesenchymal cell states mediate prostate cancer progression" />
+    <meta name="twitter:description" content="These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled &#34;distinct mesenchymal cell states mediate prostate cancer progression&#34;. adata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.adata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).scenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters in the mouse mesenchymal data.scenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.adata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.adata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.visium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.visium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.natHistory_expression: the normalized expression matrix for the natural history cohort.natHistory_label: the metastasis indicators for the natural history cohort." />
+    
+    <link rel="alternate" type="text/csv" href="https://zenodo.org/records/10069816/files/scenic_mesenchyme_thresholds.csv">
+    <link rel="item" type="text/csv" href="https://zenodo.org/records/10069816/files/scenic_mesenchyme_thresholds.csv">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_mouse_myo.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_mouse_myo.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_human_BoneMet_stroma.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_human_BoneMet_stroma.h5ad">
+    
+    <link rel="alternate" type="text/csv" href="https://zenodo.org/records/10069816/files/metadata_mouse.csv">
+    <link rel="item" type="text/csv" href="https://zenodo.org/records/10069816/files/metadata_mouse.csv">
+    
+    <link rel="alternate" type="text/csv" href="https://zenodo.org/records/10069816/files/scenic_mesenchyme_binary.csv">
+    <link rel="item" type="text/csv" href="https://zenodo.org/records/10069816/files/scenic_mesenchyme_binary.csv">
+    
+    <link rel="alternate" type="text/csv" href="https://zenodo.org/records/10069816/files/scenic_mesenchyme_auc.csv">
+    <link rel="item" type="text/csv" href="https://zenodo.org/records/10069816/files/scenic_mesenchyme_auc.csv">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_human.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_human.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_mouse.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/adata_mouse.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/visium_PRN.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/visium_PRN.h5ad">
+    
+    <link rel="alternate" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/visium_WT.h5ad">
+    <link rel="item" type="application/octet-stream" href="https://zenodo.org/records/10069816/files/visium_WT.h5ad">
+    
+    <link rel="alternate" type="text/csv" href="https://zenodo.org/records/10069816/files/natHistory_expression.csv">
+    <link rel="item" type="text/csv" href="https://zenodo.org/records/10069816/files/natHistory_expression.csv">
+    
+    <link rel="alternate" type="text/csv" href="https://zenodo.org/records/10069816/files/natHistory_label.csv">
+    <link rel="item" type="text/csv" href="https://zenodo.org/records/10069816/files/natHistory_label.csv">
+
+
+<link rel="canonical" href="https://zenodo.org/records/10069816">
+      <title>distinct mesenchymal cell states mediate prostate cancer progression</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico"/>
+          <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120.png"/>
+          <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152.png"/>
+          <link rel="apple-touch-icon" sizes="167x167" href="/static/apple-touch-icon-167.png"/>
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180.png"/>
+    
+      <link rel="stylesheet" href="/static/dist/css/3526.7651b58ff2a6f2fc884a.css" />
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    
+  </head>
+
+  <body data-invenio-config='{"isMathJaxEnabled": "//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"}'  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">
+      <a id="skip-to-main" class="ui button primary ml-5 mt-5 skip-link" href="#main">Skip to main</a>
+      <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    
+
+<div>
+  <header class="theme header">
+
+    <div class="outer-navbar">
+      <div class="ui container invenio-header-container">
+        <nav id="invenio-nav" class="ui inverted menu borderless p-0">
+          <div class="item logo p-0">
+                    <a class="logo-link" href="/">
+                      <img class="ui image rdm-logo"
+                            src="/static/images/invenio-rdm.svg"
+                            alt="Zenodo home"/>
+                    </a>
+          </div>
+
+          <div id="rdm-burger-toggle">
+            <button
+              id="rdm-burger-menu-icon"
+              class="ui button transparent"
+              aria-label="Menu"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-controls="invenio-menu"
+            >
+              <span class="navicon" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <nav
+            id="invenio-menu"
+            aria-labelledby="rdm-burger-menu-icon"
+            class="ui fluid menu borderless mobile-hidden"
+          >
+            <button
+              id="rdm-close-burger-menu-icon"
+              class="ui button transparent"
+              aria-label="Close menu"
+            >
+              <span class="navicon" aria-hidden="true"></span>
+            </button>
+    
+    
+    
+      <div class="item p-0 search-bar">
+        <div id="header-search-bar" data-options='[{"key": "records", "text": "All Zenodo", "value": "/search"}]'>
+          <div class="ui fluid search">
+            <div class="ui icon input">
+              <input
+                autocomplete="off"
+                aria-label="Search records"
+                placeholder="Search records..."
+                type="text"
+                tabindex="0"
+                class="prompt"
+                value=""
+              >
+              <i aria-hidden="true" class="search icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                  <div class="item">
+                    <a href="/communities">Communities</a>
+                  </div>
+
+              
+                <div class="item">
+                  <a href="/me/uploads">My dashboard</a>
+                </div>
+              
+              <div class="right menu item">
+    <form>
+      <a
+        href="/login/?next=/records/10069816"
+        class="ui button auth-button" aria-busy="false" aria-live="polite" aria-label="Log in"
+      >
+        <i class="sign-in icon auth-icon" aria-hidden="true"></i>
+        Log in
+      </a>
+      
+        <a href="/signup/" class="ui button signup">
+          <i class="edit outline icon"></i>
+          Sign up
+        </a>
+      
+    </form>
+              </div>
+          </nav>
+        </nav>
+      </div>
+    </div>
+      
+      
+    
+      
+    
+    
+  </header>
+</div>
+
+  <main id="main">
+    <div class="invenio-page-body">
+<span id="detail-share-btn-require-link-expiration"
+        data-share-btn-require-link-expiration='false'>
+
+  <section id="banners" class="banners" aria-label="Information banner">
+    <!-- COMMUNITY HEADER: hide it when displaying the submission request -->
+    
+      
+    
+    <!-- /COMMUNITY HEADER -->
+
+    <!-- PREVIEW HEADER -->
+    
+    <!-- /PREVIEW HEADER -->
+
+    
+  </section>
+
+
+  <div class="ui container">
+    <div class="ui relaxed grid mt-5">
+      <div class="two column row top-padded">
+
+        
+        <article
+          class="sixteen wide tablet eleven wide computer column main-record-content">
+          
+
+              
+
+              
+
+              <section id="record-info"
+                       aria-label="Publication date and version number">
+                <div class="ui grid middle aligned">
+                  <div class="two column row">
+                    <div class="left floated left aligned column">
+                      <span class="ui" title="Publication date">
+                        Published November 3, 2023
+                      </span>
+                      <span
+                        class="label text-muted"> | Version v3</span>
+                    </div>
+                    <div class="right floated right aligned column">
+
+                      
+                        <span role="note"
+                              class="ui label horizontal small neutral mb-5"
+                              aria-label="Resource type"
+                        >
+                          Dataset
+                        </span>
+                      
+
+                      <span role="note"
+                            class="ui label horizontal small access-status open mb-5"
+                            data-tooltip="The record and files are publicly accessible."
+                            data-inverted=""
+                            aria-label="Access status"
+                      >
+                        
+                          <i class="icon unlock"
+                             aria-hidden="true"></i>
+                        
+                        <span
+                          aria-label="The record and files are publicly accessible.">
+                          Open
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="ui divider hidden"></div><section id="record-title-section"
+                       aria-label="Record title, authors and contributors">
+                <h1 id="record-title"
+                    class="wrap-overflowing-text">distinct mesenchymal cell states mediate prostate cancer progression</h1>
+
+                
+                  <section id="creatibutors"
+                           aria-label="Authors and contributors">
+
+<div class="ui grid">
+  
+    <div class="row ui accordion affiliations">
+      <div class="sixteen wide mobile twelve wide tablet thirteen wide computer column">
+          <h3 class="sr-only">Authors/Creators</h3>
+          <ul class="creatibutors">
+            
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Pakula,+Hubert%22"
+    >
+
+      <span class="creatibutor-name">Pakula, Hubert</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Omar,+Mohamed%22"
+    >
+
+      <span class="creatibutor-name">Omar, Mohamed</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Carelli,+Ryan%22"
+    >
+
+      <span class="creatibutor-name">Carelli, Ryan</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Pederzoli,+Filippo%22"
+    >
+
+      <span class="creatibutor-name">Pederzoli, Filippo</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Fanelli,+Giuseppe+Nicol%C3%B2%22"
+    >
+
+      <span class="creatibutor-name">Fanelli, Giuseppe Nicolò</span><sup class="font-tiny">2</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Pannellini,+Tania%22"
+    >
+
+      <span class="creatibutor-name">Pannellini, Tania</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Emmenis,+Lucie+Van%22"
+    >
+
+      <span class="creatibutor-name">Emmenis, Lucie Van</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Rodrigues,+Silvia%22"
+    >
+
+      <span class="creatibutor-name">Rodrigues, Silvia</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Fidalgo-Ribeiro,+Caroline%22"
+    >
+
+      <span class="creatibutor-name">Fidalgo-Ribeiro, Caroline</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Nuzzo,+Pier+V.%22"
+    >
+
+      <span class="creatibutor-name">Nuzzo, Pier V.</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Brady,+Nicholas+J.%22"
+    >
+
+      <span class="creatibutor-name">Brady, Nicholas J.</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Jere,+Madhavi%22"
+    >
+
+      <span class="creatibutor-name">Jere, Madhavi</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Unkenholz,+Caitlin%22"
+    >
+
+      <span class="creatibutor-name">Unkenholz, Caitlin</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Mohammad,+Mohammad%22"
+    >
+
+      <span class="creatibutor-name">Mohammad, Mohammad</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Khani,+Francesca%22"
+    >
+
+      <span class="creatibutor-name">Khani, Francesca</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22de+Almeida,+Francisca+Nunes%22"
+    >
+
+      <span class="creatibutor-name">de Almeida, Francisca Nunes</span><sup class="font-tiny">3</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Rickman,+David+S.%22"
+    >
+
+      <span class="creatibutor-name">Rickman, David S.</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Barbieri,+Christopher+E.%22"
+    >
+
+      <span class="creatibutor-name">Barbieri, Christopher E.</span><sup class="font-tiny">4</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Robinson,+Brian+D.%22"
+    >
+
+      <span class="creatibutor-name">Robinson, Brian D.</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Marchionni,+Luigi%22"
+    >
+
+      <span class="creatibutor-name">Marchionni, Luigi</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+  <li class="creatibutor-wrap separated">
+    <a class="ui creatibutor-link"
+      
+        data-tooltip="Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"
+      
+      href="/search?q=metadata.creators.person_or_org.name:%22Loda,+Massimo%22"
+    >
+
+      <span class="creatibutor-name">Loda, Massimo</span><sup class="font-tiny">1</sup></a>
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+    
+      <i class="user icon"></i>
+    
+  
+</li>
+  
+          </ul>
+      </div>
+
+        
+        
+          
+<div class="ui sixteen wide tablet three wide computer column title right aligned bottom aligned">
+  <button class="ui affiliations-button trigger button mini mr-0"
+          aria-controls="creators-affiliations"
+          data-open-text="Show affiliations"
+          data-close-text="Hide affiliations"
+          aria-expanded="false"
+  >
+    Show affiliations
+  </button>
+</div>
+
+<section class="ui sixteen wide column content" id="creators-affiliations" aria-label="Affiliations for creators">
+  <ul>
+    
+    <li>
+      1.
+
+      
+
+      Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA
+    </li>
+  
+    <li>
+      2.
+
+      
+
+      Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy
+    </li>
+  
+    <li>
+      3.
+
+      
+
+      Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA.
+    </li>
+  
+    <li>
+      4.
+
+      
+
+      Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA
+    </li>
+  
+
+    </ul>
+</section>
+
+        
+
+    </div>
+  
+
+  
+</div>
+                  </section>
+                
+              </section>
+
+
+
+  <section id="description" class="rel-mt-2 rich-input-content" aria-label="Record description">
+    <h2 id="description-heading" class="sr-only">Description</h2>
+    
+    <div style="word-wrap: break-word;">
+      <p>These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled "distinct mesenchymal cell states mediate prostate cancer progression".&nbsp;</p><ul><li>adata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.</li><li>adata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).</li><li>scenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters&nbsp;in the mouse mesenchymal data.</li><li>scenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.</li><li>adata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.</li><li>adata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.</li><li>visium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.</li><li>visium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.</li><li>natHistory_expression: the normalized expression matrix for the natural history cohort.</li><li>natHistory_label: the metastasis indicators for the natural history cohort.</li></ul>
+    </div>
+  </section>
+
+
+<section
+      id="record-files" class="rel-mt-2 rel-mb-3"
+      aria-label="Files"
+    ><h2 id="files-heading">Files</h2>
+            
+  <div class="ui accordion panel mb-10 open" href="#files-preview-accordion-panel">
+    <h3 class="active title panel-heading open m-0">
+      <div
+        role="button"
+        id="files-preview-accordion-trigger"
+        aria-controls="files-preview-accordion-panel"
+        aria-expanded="true"
+        tabindex="0"
+        class="trigger"
+        aria-label="File preview"
+      >
+        <span id="preview-file-title">metadata_mouse.csv</span>
+        <i class="angle right icon" aria-hidden="true"></i>
+      </div>
+    </h3>
+    <div
+      role="region"
+      id="files-preview-accordion-panel"
+      aria-labelledby="files-preview-accordion-trigger"
+      class="active content preview-container pt-0 open"
+    >
+      <div>
+        
+  
+  <iframe
+    title="Preview"
+    class="preview-iframe"
+    id="preview-iframe"
+    name="preview-iframe"
+    src="/records/10069816/preview/metadata_mouse.csv?include_deleted=0"
+  >
+  </iframe>
+      </div>
+    </div>
+  </div>
+  <div class="ui accordion panel mb-10 open" href="#files-list-accordion-panel">
+    <h3 class="active title panel-heading open m-0">
+      <div role="button" id="files-list-accordion-trigger" aria-controls="files-list-accordion-panel" aria-expanded="true" tabindex="0" class="trigger">
+        Files
+        <small class="text-muted"> (2.1 GB)</small>
+        <i class="angle right icon" aria-hidden="true"></i>
+      </div>
+    </h3>
+
+    <div role="region" id="files-list-accordion-panel" aria-labelledby="files-list-accordion-trigger" class="active content pt-0">
+      
+      <div>
+        
+  <table class="ui striped table files fluid open">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th class>
+            
+            <a role="button" class="ui compact mini button right floated archive-link" href="https://zenodo.org/api/records/10069816/files-archive">
+              <i class="file archive icon button" aria-hidden="true"></i> Download all
+            </a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/adata_human.h5ad?download=1">adata_human.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:d791a5c0e449f14d85d5b6664f1ab2e5
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>307.6 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/adata_human.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/adata_human_BoneMet_stroma.h5ad?download=1">adata_human_BoneMet_stroma.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:985b807384afa21535883a73c460f583
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>265.9 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/adata_human_BoneMet_stroma.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/adata_mouse.h5ad?download=1">adata_mouse.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:7dbb544c583488ebf11198096ccb62db
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>418.8 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/adata_mouse.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/adata_mouse_myo.h5ad?download=1">adata_mouse_myo.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:f4bbb4c5ff18530056b61a7467705d17
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>80.9 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/adata_mouse_myo.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/metadata_mouse.csv?download=1">metadata_mouse.csv</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:492ffdcc913f104908d25704a61e9688
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>17.8 MB</td>
+          <td class="right aligned">
+            <span>
+              
+                <a role="button" class="ui compact mini button preview-link" href="/records/10069816/preview/metadata_mouse.csv?include_deleted=0" target="preview-iframe" data-file-key="metadata_mouse.csv">
+                  <i class="eye icon" aria-hidden="true"></i>Preview
+                </a>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/metadata_mouse.csv?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/natHistory_expression.csv?download=1">natHistory_expression.csv</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:f34ee672cfd7d639b3cb5817abc0c267
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>36.5 MB</td>
+          <td class="right aligned">
+            <span>
+              
+                <a role="button" class="ui compact mini button preview-link" href="/records/10069816/preview/natHistory_expression.csv?include_deleted=0" target="preview-iframe" data-file-key="natHistory_expression.csv">
+                  <i class="eye icon" aria-hidden="true"></i>Preview
+                </a>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/natHistory_expression.csv?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/natHistory_label.csv?download=1">natHistory_label.csv</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:001a11d98455809fcc1552abe8b107ea
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>6.5 kB</td>
+          <td class="right aligned">
+            <span>
+              
+                <a role="button" class="ui compact mini button preview-link" href="/records/10069816/preview/natHistory_label.csv?include_deleted=0" target="preview-iframe" data-file-key="natHistory_label.csv">
+                  <i class="eye icon" aria-hidden="true"></i>Preview
+                </a>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/natHistory_label.csv?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/scenic_mesenchyme_auc.csv?download=1">scenic_mesenchyme_auc.csv</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:bf042b65f76fe5a86675f8149a46509a
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>17.1 MB</td>
+          <td class="right aligned">
+            <span>
+              
+                <a role="button" class="ui compact mini button preview-link" href="/records/10069816/preview/scenic_mesenchyme_auc.csv?include_deleted=0" target="preview-iframe" data-file-key="scenic_mesenchyme_auc.csv">
+                  <i class="eye icon" aria-hidden="true"></i>Preview
+                </a>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/scenic_mesenchyme_auc.csv?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/scenic_mesenchyme_binary.csv?download=1">scenic_mesenchyme_binary.csv</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:262c19377885b30a012ff1908fd545bc
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>2.1 MB</td>
+          <td class="right aligned">
+            <span>
+              
+                <a role="button" class="ui compact mini button preview-link" href="/records/10069816/preview/scenic_mesenchyme_binary.csv?include_deleted=0" target="preview-iframe" data-file-key="scenic_mesenchyme_binary.csv">
+                  <i class="eye icon" aria-hidden="true"></i>Preview
+                </a>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/scenic_mesenchyme_binary.csv?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/scenic_mesenchyme_thresholds.csv?download=1">scenic_mesenchyme_thresholds.csv</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:810e3880787cb68c7e7535de2e894cb0
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>2.4 kB</td>
+          <td class="right aligned">
+            <span>
+              
+                <a role="button" class="ui compact mini button preview-link" href="/records/10069816/preview/scenic_mesenchyme_thresholds.csv?include_deleted=0" target="preview-iframe" data-file-key="scenic_mesenchyme_thresholds.csv">
+                  <i class="eye icon" aria-hidden="true"></i>Preview
+                </a>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/scenic_mesenchyme_thresholds.csv?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/visium_PRN.h5ad?download=1">visium_PRN.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:893aafc2a5055040ee22771c8f1d1efb
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>691.5 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/visium_PRN.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+      
+        
+        
+        <tr>
+          <td class="ten wide">
+            <div>
+              <a href="/records/10069816/files/visium_WT.h5ad?download=1">visium_WT.h5ad</a>
+            </div>
+            <small class="ui text-muted font-tiny">md5:330e9c65ab0b8342a905bdcf6cea1e87
+            <div class="ui icon inline-block" data-tooltip="This is the file fingerprint (checksum), which can be used to verify the file integrity.">
+              <i class="question circle checksum icon"></i>
+            </div>
+            </small>
+          </td>
+          <td>267.9 MB</td>
+          <td class="right aligned">
+            <span>
+              
+              <a role="button" class="ui compact mini button" href="/records/10069816/files/visium_WT.h5ad?download=1">
+                <i class="download icon" aria-hidden="true"></i>Download
+              </a>
+            </span>
+          </td>
+        </tr>
+      
+    
+    </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+
+    </section>
+              
+
+  <section id="additional-details" class="rel-mt-2" aria-label="Additional record details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  </section>
+    
+    <section
+      id="citations-search"
+      data-record-pids='{"doi": {"client": "datacite", "identifier": "10.5281/zenodo.10069816", "provider": "datacite"}, "oai": {"identifier": "oai:zenodo.org:10069816", "provider": "oai"}}'
+      data-record-parent-pids='{"doi": {"client": "datacite", "identifier": "10.5281/zenodo.7452769", "provider": "datacite"}}'
+      data-citations-endpoint="https://zenodo-broker.web.cern.ch/api/relationships"
+      aria-label="Record citations"
+      class="rel-mb-1"
+    >
+    </section>
+  
+        </article>
+
+        
+        <aside class="sixteen wide tablet five wide computer column sidebar"
+               aria-label="Record details">
+          
+
+
+
+
+<section id="metrics" aria-label="Metrics" class="ui segment rdm-sidebar sidebar-container">
+
+
+<div class="ui tiny two statistics rel-mt-1">
+  
+  
+
+  <div class="ui statistic">
+    <div class="value">996</div>
+    <div class="label">
+      <i aria-hidden="true" class="eye icon"></i>
+      Views
+    </div>
+  </div>
+
+  <div class="ui statistic">
+    <div class="value">2K</div>
+    <div class="label">
+      <i aria-hidden="true" class="download icon"></i>
+      Downloads
+    </div>
+  </div>
+</div>
+
+<div class="ui accordion rel-mt-1 centered">
+  <div class="title trigger" tabindex="0">
+    <i class="caret right icon" aria-hidden="true"></i>
+    <span
+      data-open-text="Show more details"
+      data-close-text="Show less details"
+    >
+      Show more details
+    </span>
+  </div>
+
+  <div class="content">
+    <table id="record-statistics" class="ui definition table fluid">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="right aligned">All versions</th>
+          <th class="right aligned">This version</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Views
+            <i
+              tabindex="0"
+              role="button"
+              style="position:relative"
+              class="popup-trigger question circle small icon"
+              aria-expanded="false"
+              aria-label="More info"
+              data-variation="mini inverted"
+            >
+            </i>
+            <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+              Total views
+            </p>
+          </td>
+          <td data-label="All versions" class="right aligned">
+  
+    996
+  
+</td>
+          <td data-label="This version" class="right aligned">
+  
+    629
+  
+</td>
+        </tr>
+        <tr>
+          <td>
+            Downloads
+            <i
+              tabindex="0"
+              role="button"
+              style="position:relative"
+              class="popup-trigger question circle small icon"
+              aria-expanded="false"
+              aria-label="More info"
+              data-variation="mini inverted"
+            >
+            </i>
+            <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+              Total downloads
+            </p>
+          </td>
+          <td data-label="All versions" class="right aligned">
+  
+    2,047
+  
+</td>
+          <td data-label="This version" class="right aligned">
+  
+    1,664
+  
+</td>
+        </tr>
+        <tr>
+          <td>
+            Data volume
+            <i
+              tabindex="0"
+              role="button"
+              style="position:relative"
+              class="popup-trigger question circle small icon"
+              aria-expanded="false"
+              aria-label="More info"
+              data-variation="mini inverted"
+            >
+            </i>
+            <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+              Total data volume
+            </p>
+          </td>
+
+          <td data-label="All versions" class="right aligned">397.2 GB</td>
+          <td data-label="This version" class="right aligned">304.3 GB</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="text-align-center rel-mt-1">
+      <small>
+        <a href="/help/statistics">More info on how stats are collected....</a>
+      </small>
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+<div class="sidebar-container">
+  <h2 class="ui medium top attached header mt-0">Versions</h2>
+  <div id="record-versions" class="ui segment rdm-sidebar bottom attached pl-0 pr-0 pt-0">
+    <div class="versions">
+      <div id="recordVersions" data-record='{"access": {"embargo": {"active": false, "reason": null}, "files": "public", "record": "public", "status": "open"}, "created": "2023-11-03T16:00:48.184639+00:00", "custom_fields": {}, "deletion_status": {"is_deleted": false, "status": "P"}, "expanded": {"parent": {"access": {"owned_by": {"active": null, "blocked_at": null, "confirmed_at": null, "email": "", "id": "464169", "is_current_user": false, "links": {"avatar": "https://zenodo.org/api/users/464169/avatar.svg", "records_html": "https://zenodo.org/search/records?q=parent.access.owned_by.user:464169", "self": "https://zenodo.org/api/users/464169"}, "profile": {"affiliations": "", "full_name": "Mohamed Omar"}, "username": "MohamedOmar93", "verified_at": null}}}}, "files": {"count": 12, "enabled": true, "entries": {"adata_human.h5ad": {"access": {"hidden": false}, "checksum": "md5:d791a5c0e449f14d85d5b6664f1ab2e5", "ext": "h5ad", "id": "52efa92d-03dd-4142-a5d4-3d88bf70eba2", "key": "adata_human.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_human.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_human.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 307584836, "storage_class": "L"}, "adata_human_BoneMet_stroma.h5ad": {"access": {"hidden": false}, "checksum": "md5:985b807384afa21535883a73c460f583", "ext": "h5ad", "id": "308a0453-e59e-4194-86fb-27dd8a8a4a1b", "key": "adata_human_BoneMet_stroma.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_human_BoneMet_stroma.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_human_BoneMet_stroma.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 265881558, "storage_class": "L"}, "adata_mouse.h5ad": {"access": {"hidden": false}, "checksum": "md5:7dbb544c583488ebf11198096ccb62db", "ext": "h5ad", "id": "47dc02d9-8ccc-480c-9523-591c72454272", "key": "adata_mouse.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_mouse.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_mouse.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 418817842, "storage_class": "L"}, "adata_mouse_myo.h5ad": {"access": {"hidden": false}, "checksum": "md5:f4bbb4c5ff18530056b61a7467705d17", "ext": "h5ad", "id": "d7b1076e-f72b-46df-81b9-adc6ce07cacc", "key": "adata_mouse_myo.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_mouse_myo.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_mouse_myo.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 80879309, "storage_class": "L"}, "metadata_mouse.csv": {"access": {"hidden": false}, "checksum": "md5:492ffdcc913f104908d25704a61e9688", "ext": "csv", "id": "e84367ae-74f9-4095-8d84-723519532945", "key": "metadata_mouse.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/metadata_mouse.csv/content", "self": "https://zenodo.org/api/records/10069816/files/metadata_mouse.csv"}, "metadata": null, "mimetype": "text/csv", "size": 17832436, "storage_class": "L"}, "natHistory_expression.csv": {"access": {"hidden": false}, "checksum": "md5:f34ee672cfd7d639b3cb5817abc0c267", "ext": "csv", "id": "3bd3adfa-c238-41bd-8bc3-ded0ff1c24f7", "key": "natHistory_expression.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/natHistory_expression.csv/content", "self": "https://zenodo.org/api/records/10069816/files/natHistory_expression.csv"}, "metadata": null, "mimetype": "text/csv", "size": 36503486, "storage_class": "L"}, "natHistory_label.csv": {"access": {"hidden": false}, "checksum": "md5:001a11d98455809fcc1552abe8b107ea", "ext": "csv", "id": "dd496fb4-e09b-45bd-ac8b-a9e97fae2f58", "key": "natHistory_label.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/natHistory_label.csv/content", "self": "https://zenodo.org/api/records/10069816/files/natHistory_label.csv"}, "metadata": null, "mimetype": "text/csv", "size": 6453, "storage_class": "L"}, "scenic_mesenchyme_auc.csv": {"access": {"hidden": false}, "checksum": "md5:bf042b65f76fe5a86675f8149a46509a", "ext": "csv", "id": "b2685e8d-b4a6-45d7-b67f-65d17f58a10b", "key": "scenic_mesenchyme_auc.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_auc.csv/content", "self": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_auc.csv"}, "metadata": null, "mimetype": "text/csv", "size": 17124631, "storage_class": "L"}, "scenic_mesenchyme_binary.csv": {"access": {"hidden": false}, "checksum": "md5:262c19377885b30a012ff1908fd545bc", "ext": "csv", "id": "a5057c6f-f879-43d9-8643-48907fbe0ef1", "key": "scenic_mesenchyme_binary.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_binary.csv/content", "self": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_binary.csv"}, "metadata": null, "mimetype": "text/csv", "size": 2108182, "storage_class": "L"}, "scenic_mesenchyme_thresholds.csv": {"access": {"hidden": false}, "checksum": "md5:810e3880787cb68c7e7535de2e894cb0", "ext": "csv", "id": "5e757625-de1a-4042-9b69-aab26a29de52", "key": "scenic_mesenchyme_thresholds.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_thresholds.csv/content", "self": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_thresholds.csv"}, "metadata": null, "mimetype": "text/csv", "size": 2424, "storage_class": "L"}, "visium_PRN.h5ad": {"access": {"hidden": false}, "checksum": "md5:893aafc2a5055040ee22771c8f1d1efb", "ext": "h5ad", "id": "5cecfe4d-9d5e-4ca5-bc62-8fa9de78042c", "key": "visium_PRN.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/visium_PRN.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/visium_PRN.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 691537938, "storage_class": "L"}, "visium_WT.h5ad": {"access": {"hidden": false}, "checksum": "md5:330e9c65ab0b8342a905bdcf6cea1e87", "ext": "h5ad", "id": "c35b10e1-943e-42a1-b00e-7e53845ac633", "key": "visium_WT.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/visium_WT.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/visium_WT.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 267855026, "storage_class": "L"}}, "order": [], "total_bytes": 2106134121}, "id": "10069816", "is_draft": false, "is_published": true, "links": {"access": "https://zenodo.org/api/records/10069816/access", "access_grants": "https://zenodo.org/api/records/10069816/access/grants", "access_links": "https://zenodo.org/api/records/10069816/access/links", "access_request": "https://zenodo.org/api/records/10069816/access/request", "access_users": "https://zenodo.org/api/records/10069816/access/users", "archive": "https://zenodo.org/api/records/10069816/files-archive", "archive_media": "https://zenodo.org/api/records/10069816/media-files-archive", "communities": "https://zenodo.org/api/records/10069816/communities", "communities-suggestions": "https://zenodo.org/api/records/10069816/communities-suggestions", "doi": "https://doi.org/10.5281/zenodo.10069816", "draft": "https://zenodo.org/api/records/10069816/draft", "file_modification": "https://zenodo.org/api/records/10069816/file-modification", "files": "https://zenodo.org/api/records/10069816/files", "latest": "https://zenodo.org/api/records/10069816/versions/latest", "latest_html": "https://zenodo.org/records/10069816/latest", "media_files": "https://zenodo.org/api/records/10069816/media-files", "parent": "https://zenodo.org/api/records/7452769", "parent_doi": "https://doi.org/10.5281/zenodo.7452769", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7452769", "parent_html": "https://zenodo.org/records/7452769", "preview_html": "https://zenodo.org/records/10069816?preview=1", "request_deletion": "https://zenodo.org/api/records/10069816/request-deletion", "requests": "https://zenodo.org/api/records/10069816/requests", "reserve_doi": "https://zenodo.org/api/records/10069816/draft/pids/doi", "self": "https://zenodo.org/api/records/10069816", "self_doi": "https://doi.org/10.5281/zenodo.10069816", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10069816", "self_html": "https://zenodo.org/records/10069816", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10069816/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10069816/sequence/default", "versions": "https://zenodo.org/api/records/10069816/versions"}, "media_files": {"count": 0, "enabled": false, "entries": {}, "order": [], "total_bytes": 0}, "metadata": {"creators": [{"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Pakula", "given_name": "Hubert", "name": "Pakula, Hubert", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Omar", "given_name": "Mohamed", "name": "Omar, Mohamed", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Carelli", "given_name": "Ryan", "name": "Carelli, Ryan", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Pederzoli", "given_name": "Filippo", "name": "Pederzoli, Filippo", "type": "personal"}}, {"affiliations": [{"name": "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"}], "person_or_org": {"family_name": "Fanelli", "given_name": "Giuseppe Nicol\u00f2", "name": "Fanelli, Giuseppe Nicol\u00f2", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Pannellini", "given_name": "Tania", "name": "Pannellini, Tania", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Emmenis", "given_name": "Lucie Van", "name": "Emmenis, Lucie Van", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Rodrigues", "given_name": "Silvia", "name": "Rodrigues, Silvia", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Fidalgo-Ribeiro", "given_name": "Caroline", "name": "Fidalgo-Ribeiro, Caroline", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Nuzzo", "given_name": "Pier V.", "name": "Nuzzo, Pier V.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Brady", "given_name": "Nicholas J.", "name": "Brady, Nicholas J.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Jere", "given_name": "Madhavi", "name": "Jere, Madhavi", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Unkenholz", "given_name": "Caitlin", "name": "Unkenholz, Caitlin", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Mohammad", "given_name": "Mohammad", "name": "Mohammad, Mohammad", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Khani", "given_name": "Francesca", "name": "Khani, Francesca", "type": "personal"}}, {"affiliations": [{"name": "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."}], "person_or_org": {"family_name": "de Almeida", "given_name": "Francisca Nunes", "name": "de Almeida, Francisca Nunes", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Rickman", "given_name": "David S.", "name": "Rickman, David S.", "type": "personal"}}, {"affiliations": [{"name": "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Barbieri", "given_name": "Christopher E.", "name": "Barbieri, Christopher E.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Robinson", "given_name": "Brian D.", "name": "Robinson, Brian D.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Marchionni", "given_name": "Luigi", "name": "Marchionni, Luigi", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Loda", "given_name": "Massimo", "name": "Loda, Massimo", "type": "personal"}}], "description": "\u003cp\u003eThese are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled \"distinct mesenchymal cell states mediate prostate cancer progression\".\u0026nbsp;\u003c/p\u003e\u003cul\u003e\u003cli\u003eadata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.\u003c/li\u003e\u003cli\u003eadata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).\u003c/li\u003e\u003cli\u003escenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters\u0026nbsp;in the mouse mesenchymal data.\u003c/li\u003e\u003cli\u003escenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.\u003c/li\u003e\u003cli\u003eadata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.\u003c/li\u003e\u003cli\u003eadata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.\u003c/li\u003e\u003cli\u003evisium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.\u003c/li\u003e\u003cli\u003evisium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.\u003c/li\u003e\u003cli\u003enatHistory_expression: the normalized expression matrix for the natural history cohort.\u003c/li\u003e\u003cli\u003enatHistory_label: the metastasis indicators for the natural history cohort.\u003c/li\u003e\u003c/ul\u003e", "publication_date": "2023-11-03", "publisher": "Zenodo", "resource_type": {"id": "dataset", "title": {"de": "Datensatz", "en": "Dataset"}}, "rights": [{"description": {"en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."}, "icon": "cc-by-icon", "id": "cc-by-4.0", "props": {"scheme": "spdx", "url": "https://creativecommons.org/licenses/by/4.0/legalcode"}, "title": {"en": "Creative Commons Attribution 4.0 International"}}], "subjects": [{"subject": "prostate cancer"}, {"subject": "tumor microenvironment"}, {"subject": "cancer-associated fibroblasts"}, {"subject": "genetically-engineered mouse models"}, {"subject": "single-cell RNA sequencing"}, {"subject": "complement protein"}, {"subject": "innate and adaptive immunity"}, {"subject": "WNT signaling"}, {"subject": "neuroendocrine tumor stroma"}, {"subject": "bone metastasis"}], "title": "distinct mesenchymal cell states mediate prostate cancer progression"}, "parent": {"access": {"owned_by": {"user": "464169"}, "settings": {"accept_conditions_text": "\u003cp\u003ePlease request access to view this dataset.\u003c/p\u003e", "allow_guest_requests": true, "allow_user_requests": true, "secret_link_expiration": 30}}, "communities": {}, "id": "7452769", "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.7452769", "provider": "datacite"}}}, "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.10069816", "provider": "datacite"}, "oai": {"identifier": "oai:zenodo.org:10069816", "provider": "oai"}}, "revision_id": 4, "stats": {"all_versions": {"data_volume": 397244376826.0, "downloads": 2194, "unique_downloads": 2047, "unique_views": 996, "views": 1079}, "this_version": {"data_volume": 304261891998.0, "downloads": 1796, "unique_downloads": 1664, "unique_views": 629, "views": 687}}, "status": "published", "swh": {}, "ui": {"access_status": {"description_l10n": "The record and files are publicly accessible.", "embargo_date_l10n": null, "icon": "unlock", "id": "open", "message_class": "", "title_l10n": "Open"}, "created_date_l10n_long": "November 3, 2023", "creators": {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA", null], [2, "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy", null], [3, "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA.", null], [4, "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA", null]], "creators": [{"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Pakula", "given_name": "Hubert", "name": "Pakula, Hubert", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Omar", "given_name": "Mohamed", "name": "Omar, Mohamed", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Carelli", "given_name": "Ryan", "name": "Carelli, Ryan", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Pederzoli", "given_name": "Filippo", "name": "Pederzoli, Filippo", "type": "personal"}}, {"affiliations": [[2, "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"]], "person_or_org": {"family_name": "Fanelli", "given_name": "Giuseppe Nicol\u00f2", "name": "Fanelli, Giuseppe Nicol\u00f2", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Pannellini", "given_name": "Tania", "name": "Pannellini, Tania", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Emmenis", "given_name": "Lucie Van", "name": "Emmenis, Lucie Van", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Rodrigues", "given_name": "Silvia", "name": "Rodrigues, Silvia", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Fidalgo-Ribeiro", "given_name": "Caroline", "name": "Fidalgo-Ribeiro, Caroline", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Nuzzo", "given_name": "Pier V.", "name": "Nuzzo, Pier V.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Brady", "given_name": "Nicholas J.", "name": "Brady, Nicholas J.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Jere", "given_name": "Madhavi", "name": "Jere, Madhavi", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Unkenholz", "given_name": "Caitlin", "name": "Unkenholz, Caitlin", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Mohammad", "given_name": "Mohammad", "name": "Mohammad, Mohammad", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Khani", "given_name": "Francesca", "name": "Khani, Francesca", "type": "personal"}}, {"affiliations": [[3, "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."]], "person_or_org": {"family_name": "de Almeida", "given_name": "Francisca Nunes", "name": "de Almeida, Francisca Nunes", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Rickman", "given_name": "David S.", "name": "Rickman, David S.", "type": "personal"}}, {"affiliations": [[4, "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Barbieri", "given_name": "Christopher E.", "name": "Barbieri, Christopher E.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Robinson", "given_name": "Brian D.", "name": "Robinson, Brian D.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Marchionni", "given_name": "Luigi", "name": "Marchionni, Luigi", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Loda", "given_name": "Massimo", "name": "Loda, Massimo", "type": "personal"}}]}, "custom_fields": {}, "description_stripped": "These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled \"distinct mesenchymal cell states mediate prostate cancer progression\".\u00a0\n\nadata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.\nadata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).\nscenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters\u00a0in the mouse mesenchymal data.\nscenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.\nadata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.\nadata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.\nvisium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.\nvisium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.\nnatHistory_expression: the normalized expression matrix for the natural history cohort.\nnatHistory_label: the metastasis indicators for the natural history cohort.", "is_draft": false, "publication_date_l10n_long": "November 3, 2023", "publication_date_l10n_medium": "Nov 3, 2023", "resource_type": {"id": "dataset", "title_l10n": "Dataset"}, "rights": [{"description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.", "icon": "cc-by-icon", "id": "cc-by-4.0", "props": {"scheme": "spdx", "url": "https://creativecommons.org/licenses/by/4.0/legalcode"}, "title_l10n": "Creative Commons Attribution 4.0 International"}], "updated_date_l10n_long": "November 3, 2023", "version": "v3"}, "updated": "2023-11-03T16:00:48.927236+00:00", "versions": {"index": 3, "is_latest": true}}' data-preview='false'>
+        <div class="rel-p-1"></div>
+        <div class="ui fluid placeholder rel-mr-1 rel-ml-1"></div>
+        <div class="header">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="sidebar-container">
+  <h2 class="ui small top attached header">External resources</h2>
+  <dl id="external-resource" aria-label="External resources" class="ui bottom attached segment rdm-sidebar external resource details-list">
+
+    <dt class="ui tiny header">Indexed in</dt>
+      <ul class="ui list no-bullet m-0">
+              <li class="item flex align-items-center">
+
+                
+                  <img class="ui image" src="/static/images/openaire.svg" alt="" width="32">
+                
+
+                <div class="content">
+                  <a
+                    class="header"
+                    href="https://explore.openaire.eu/search/result?pid=10.5281/zenodo.10069816"
+                    target="_blank"
+                    rel="noreferrer"
+                  >OpenAIRE
+                  </a>
+
+                  </div>
+              </li></ul></dl>
+</div><div
+  id="sidebar-communities-manage"
+  data-user-communities-memberships='{}'
+  data-record-community-endpoint='https://zenodo.org/api/records/10069816/communities'
+  data-record-community-search-endpoint='https://zenodo.org/api/records/10069816/communities-suggestions'
+  data-record-community-search-config='{"aggs": [{"aggName": "type", "field": "type", "title": "Type"}, {"aggName": "funder", "field": "metadata.funding.funder", "title": "Funders"}, {"aggName": "organization", "field": "metadata.organizations", "title": "Organizations"}], "appId": "InvenioAppRdm.RecordCommunitiesSuggestions", "defaultSortingOnEmptyQueryString": [{"sortBy": "newest"}], "initialQueryState": {"filters": [], "hiddenParams": null, "layout": "list", "page": 1, "size": 10, "sortBy": "bestmatch"}, "layoutOptions": {"gridView": false, "listView": true}, "paginationOptions": {"defaultValue": 10, "maxTotalResults": 10000, "resultsPerPage": [{"text": "10", "value": 10}, {"text": "20", "value": 20}]}, "searchApi": {"axios": {"headers": {"Accept": "application/vnd.inveniordm.v1+json"}, "url": "https://zenodo.org/api/records/10069816/communities-suggestions", "withCredentials": true}, "invenio": {"requestSerializer": "InvenioRecordsResourcesRequestSerializer"}}, "sortOptions": [{"sortBy": "bestmatch", "text": "Best match"}, {"sortBy": "newest", "text": "Newest"}, {"sortBy": "oldest", "text": "Oldest"}], "sortOrderDisabled": true}'
+  data-record-user-community-search-endpoint=''
+  data-record-user-community-search-config='{"aggs": [{"aggName": "type", "field": "type", "title": "Type"}, {"aggName": "funder", "field": "metadata.funding.funder", "title": "Funders"}, {"aggName": "organization", "field": "metadata.organizations", "title": "Organizations"}], "appId": "InvenioAppRdm.RecordUserCommunitiesSuggestions", "defaultSortingOnEmptyQueryString": [{"sortBy": "newest"}], "initialQueryState": {"filters": [], "hiddenParams": [["membership", "true"]], "layout": "list", "page": 1, "size": 10, "sortBy": "bestmatch"}, "layoutOptions": {"gridView": false, "listView": true}, "paginationOptions": {"defaultValue": 10, "maxTotalResults": 10000, "resultsPerPage": [{"text": "10", "value": 10}, {"text": "20", "value": 20}]}, "searchApi": {"axios": {"headers": {"Accept": "application/vnd.inveniordm.v1+json"}, "url": "https://zenodo.org/api/records/10069816/communities-suggestions", "withCredentials": true}, "invenio": {"requestSerializer": "InvenioRecordsResourcesRequestSerializer"}}, "sortOptions": [{"sortBy": "bestmatch", "text": "Best match"}, {"sortBy": "newest", "text": "Newest"}, {"sortBy": "oldest", "text": "Oldest"}], "sortOrderDisabled": true}'
+  data-pending-communities-search-config='{"aggs": [{"aggName": "type", "field": "type", "title": "Type"}, {"aggName": "status", "field": "status", "title": "Status"}], "appId": "InvenioAppRdm.RecordRequests", "defaultSortingOnEmptyQueryString": [{"sortBy": "newest"}], "initialQueryState": {"filters": [], "hiddenParams": [["expand", "1"], ["is_open", "true"], ["type", "community-inclusion"], ["type", "community-submission"]], "layout": "list", "page": 1, "size": 10, "sortBy": "bestmatch"}, "layoutOptions": {"gridView": false, "listView": true}, "paginationOptions": {"defaultValue": 10, "maxTotalResults": 10000, "resultsPerPage": [{"text": "10", "value": 10}, {"text": "20", "value": 20}, {"text": "50", "value": 50}]}, "searchApi": {"axios": {"headers": {"Accept": "application/json"}, "url": "https://zenodo.org/api/records/10069816/requests", "withCredentials": true}, "invenio": {"requestSerializer": "InvenioRecordsResourcesRequestSerializer"}}, "sortOptions": [{"sortBy": "bestmatch", "text": "Best match"}, {"sortBy": "newest", "text": "Newest"}, {"sortBy": "oldest", "text": "Oldest"}, {"sortBy": "newestactivity", "text": "Newest activity"}, {"sortBy": "oldestactivity", "text": "Oldest activity"}], "sortOrderDisabled": true}'
+  data-permissions='{"can_edit": false, "can_immediately_delete": false, "can_manage": false, "can_media_read_files": true, "can_moderate": false, "can_new_version": false, "can_read_files": true, "can_request_deletion": false, "can_review": false, "can_update_draft": false, "can_view": false}'
+  data-record='{"access": {"embargo": {"active": false, "reason": null}, "files": "public", "record": "public", "status": "open"}, "created": "2023-11-03T16:00:48.184639+00:00", "custom_fields": {}, "deletion_status": {"is_deleted": false, "status": "P"}, "expanded": {"parent": {"access": {"owned_by": {"active": null, "blocked_at": null, "confirmed_at": null, "email": "", "id": "464169", "is_current_user": false, "links": {"avatar": "https://zenodo.org/api/users/464169/avatar.svg", "records_html": "https://zenodo.org/search/records?q=parent.access.owned_by.user:464169", "self": "https://zenodo.org/api/users/464169"}, "profile": {"affiliations": "", "full_name": "Mohamed Omar"}, "username": "MohamedOmar93", "verified_at": null}}}}, "files": {"count": 12, "enabled": true, "entries": {"adata_human.h5ad": {"access": {"hidden": false}, "checksum": "md5:d791a5c0e449f14d85d5b6664f1ab2e5", "ext": "h5ad", "id": "52efa92d-03dd-4142-a5d4-3d88bf70eba2", "key": "adata_human.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_human.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_human.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 307584836, "storage_class": "L"}, "adata_human_BoneMet_stroma.h5ad": {"access": {"hidden": false}, "checksum": "md5:985b807384afa21535883a73c460f583", "ext": "h5ad", "id": "308a0453-e59e-4194-86fb-27dd8a8a4a1b", "key": "adata_human_BoneMet_stroma.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_human_BoneMet_stroma.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_human_BoneMet_stroma.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 265881558, "storage_class": "L"}, "adata_mouse.h5ad": {"access": {"hidden": false}, "checksum": "md5:7dbb544c583488ebf11198096ccb62db", "ext": "h5ad", "id": "47dc02d9-8ccc-480c-9523-591c72454272", "key": "adata_mouse.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_mouse.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_mouse.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 418817842, "storage_class": "L"}, "adata_mouse_myo.h5ad": {"access": {"hidden": false}, "checksum": "md5:f4bbb4c5ff18530056b61a7467705d17", "ext": "h5ad", "id": "d7b1076e-f72b-46df-81b9-adc6ce07cacc", "key": "adata_mouse_myo.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/adata_mouse_myo.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/adata_mouse_myo.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 80879309, "storage_class": "L"}, "metadata_mouse.csv": {"access": {"hidden": false}, "checksum": "md5:492ffdcc913f104908d25704a61e9688", "ext": "csv", "id": "e84367ae-74f9-4095-8d84-723519532945", "key": "metadata_mouse.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/metadata_mouse.csv/content", "self": "https://zenodo.org/api/records/10069816/files/metadata_mouse.csv"}, "metadata": null, "mimetype": "text/csv", "size": 17832436, "storage_class": "L"}, "natHistory_expression.csv": {"access": {"hidden": false}, "checksum": "md5:f34ee672cfd7d639b3cb5817abc0c267", "ext": "csv", "id": "3bd3adfa-c238-41bd-8bc3-ded0ff1c24f7", "key": "natHistory_expression.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/natHistory_expression.csv/content", "self": "https://zenodo.org/api/records/10069816/files/natHistory_expression.csv"}, "metadata": null, "mimetype": "text/csv", "size": 36503486, "storage_class": "L"}, "natHistory_label.csv": {"access": {"hidden": false}, "checksum": "md5:001a11d98455809fcc1552abe8b107ea", "ext": "csv", "id": "dd496fb4-e09b-45bd-ac8b-a9e97fae2f58", "key": "natHistory_label.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/natHistory_label.csv/content", "self": "https://zenodo.org/api/records/10069816/files/natHistory_label.csv"}, "metadata": null, "mimetype": "text/csv", "size": 6453, "storage_class": "L"}, "scenic_mesenchyme_auc.csv": {"access": {"hidden": false}, "checksum": "md5:bf042b65f76fe5a86675f8149a46509a", "ext": "csv", "id": "b2685e8d-b4a6-45d7-b67f-65d17f58a10b", "key": "scenic_mesenchyme_auc.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_auc.csv/content", "self": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_auc.csv"}, "metadata": null, "mimetype": "text/csv", "size": 17124631, "storage_class": "L"}, "scenic_mesenchyme_binary.csv": {"access": {"hidden": false}, "checksum": "md5:262c19377885b30a012ff1908fd545bc", "ext": "csv", "id": "a5057c6f-f879-43d9-8643-48907fbe0ef1", "key": "scenic_mesenchyme_binary.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_binary.csv/content", "self": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_binary.csv"}, "metadata": null, "mimetype": "text/csv", "size": 2108182, "storage_class": "L"}, "scenic_mesenchyme_thresholds.csv": {"access": {"hidden": false}, "checksum": "md5:810e3880787cb68c7e7535de2e894cb0", "ext": "csv", "id": "5e757625-de1a-4042-9b69-aab26a29de52", "key": "scenic_mesenchyme_thresholds.csv", "links": {"content": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_thresholds.csv/content", "self": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_thresholds.csv"}, "metadata": null, "mimetype": "text/csv", "size": 2424, "storage_class": "L"}, "visium_PRN.h5ad": {"access": {"hidden": false}, "checksum": "md5:893aafc2a5055040ee22771c8f1d1efb", "ext": "h5ad", "id": "5cecfe4d-9d5e-4ca5-bc62-8fa9de78042c", "key": "visium_PRN.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/visium_PRN.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/visium_PRN.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 691537938, "storage_class": "L"}, "visium_WT.h5ad": {"access": {"hidden": false}, "checksum": "md5:330e9c65ab0b8342a905bdcf6cea1e87", "ext": "h5ad", "id": "c35b10e1-943e-42a1-b00e-7e53845ac633", "key": "visium_WT.h5ad", "links": {"content": "https://zenodo.org/api/records/10069816/files/visium_WT.h5ad/content", "self": "https://zenodo.org/api/records/10069816/files/visium_WT.h5ad"}, "metadata": null, "mimetype": "application/octet-stream", "size": 267855026, "storage_class": "L"}}, "order": [], "total_bytes": 2106134121}, "id": "10069816", "is_draft": false, "is_published": true, "links": {"access": "https://zenodo.org/api/records/10069816/access", "access_grants": "https://zenodo.org/api/records/10069816/access/grants", "access_links": "https://zenodo.org/api/records/10069816/access/links", "access_request": "https://zenodo.org/api/records/10069816/access/request", "access_users": "https://zenodo.org/api/records/10069816/access/users", "archive": "https://zenodo.org/api/records/10069816/files-archive", "archive_media": "https://zenodo.org/api/records/10069816/media-files-archive", "communities": "https://zenodo.org/api/records/10069816/communities", "communities-suggestions": "https://zenodo.org/api/records/10069816/communities-suggestions", "doi": "https://doi.org/10.5281/zenodo.10069816", "draft": "https://zenodo.org/api/records/10069816/draft", "file_modification": "https://zenodo.org/api/records/10069816/file-modification", "files": "https://zenodo.org/api/records/10069816/files", "latest": "https://zenodo.org/api/records/10069816/versions/latest", "latest_html": "https://zenodo.org/records/10069816/latest", "media_files": "https://zenodo.org/api/records/10069816/media-files", "parent": "https://zenodo.org/api/records/7452769", "parent_doi": "https://doi.org/10.5281/zenodo.7452769", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7452769", "parent_html": "https://zenodo.org/records/7452769", "preview_html": "https://zenodo.org/records/10069816?preview=1", "request_deletion": "https://zenodo.org/api/records/10069816/request-deletion", "requests": "https://zenodo.org/api/records/10069816/requests", "reserve_doi": "https://zenodo.org/api/records/10069816/draft/pids/doi", "self": "https://zenodo.org/api/records/10069816", "self_doi": "https://doi.org/10.5281/zenodo.10069816", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10069816", "self_html": "https://zenodo.org/records/10069816", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10069816/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10069816/sequence/default", "versions": "https://zenodo.org/api/records/10069816/versions"}, "media_files": {"count": 0, "enabled": false, "entries": {}, "order": [], "total_bytes": 0}, "metadata": {"creators": [{"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Pakula", "given_name": "Hubert", "name": "Pakula, Hubert", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Omar", "given_name": "Mohamed", "name": "Omar, Mohamed", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Carelli", "given_name": "Ryan", "name": "Carelli, Ryan", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Pederzoli", "given_name": "Filippo", "name": "Pederzoli, Filippo", "type": "personal"}}, {"affiliations": [{"name": "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"}], "person_or_org": {"family_name": "Fanelli", "given_name": "Giuseppe Nicol\u00f2", "name": "Fanelli, Giuseppe Nicol\u00f2", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Pannellini", "given_name": "Tania", "name": "Pannellini, Tania", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Emmenis", "given_name": "Lucie Van", "name": "Emmenis, Lucie Van", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Rodrigues", "given_name": "Silvia", "name": "Rodrigues, Silvia", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Fidalgo-Ribeiro", "given_name": "Caroline", "name": "Fidalgo-Ribeiro, Caroline", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Nuzzo", "given_name": "Pier V.", "name": "Nuzzo, Pier V.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Brady", "given_name": "Nicholas J.", "name": "Brady, Nicholas J.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Jere", "given_name": "Madhavi", "name": "Jere, Madhavi", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Unkenholz", "given_name": "Caitlin", "name": "Unkenholz, Caitlin", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Mohammad", "given_name": "Mohammad", "name": "Mohammad, Mohammad", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Khani", "given_name": "Francesca", "name": "Khani, Francesca", "type": "personal"}}, {"affiliations": [{"name": "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."}], "person_or_org": {"family_name": "de Almeida", "given_name": "Francisca Nunes", "name": "de Almeida, Francisca Nunes", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Rickman", "given_name": "David S.", "name": "Rickman, David S.", "type": "personal"}}, {"affiliations": [{"name": "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Barbieri", "given_name": "Christopher E.", "name": "Barbieri, Christopher E.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Robinson", "given_name": "Brian D.", "name": "Robinson, Brian D.", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Marchionni", "given_name": "Luigi", "name": "Marchionni, Luigi", "type": "personal"}}, {"affiliations": [{"name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "person_or_org": {"family_name": "Loda", "given_name": "Massimo", "name": "Loda, Massimo", "type": "personal"}}], "description": "\u003cp\u003eThese are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled \"distinct mesenchymal cell states mediate prostate cancer progression\".\u0026nbsp;\u003c/p\u003e\u003cul\u003e\u003cli\u003eadata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.\u003c/li\u003e\u003cli\u003eadata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).\u003c/li\u003e\u003cli\u003escenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters\u0026nbsp;in the mouse mesenchymal data.\u003c/li\u003e\u003cli\u003escenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.\u003c/li\u003e\u003cli\u003eadata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.\u003c/li\u003e\u003cli\u003eadata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.\u003c/li\u003e\u003cli\u003evisium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.\u003c/li\u003e\u003cli\u003evisium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.\u003c/li\u003e\u003cli\u003enatHistory_expression: the normalized expression matrix for the natural history cohort.\u003c/li\u003e\u003cli\u003enatHistory_label: the metastasis indicators for the natural history cohort.\u003c/li\u003e\u003c/ul\u003e", "publication_date": "2023-11-03", "publisher": "Zenodo", "resource_type": {"id": "dataset", "title": {"de": "Datensatz", "en": "Dataset"}}, "rights": [{"description": {"en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."}, "icon": "cc-by-icon", "id": "cc-by-4.0", "props": {"scheme": "spdx", "url": "https://creativecommons.org/licenses/by/4.0/legalcode"}, "title": {"en": "Creative Commons Attribution 4.0 International"}}], "subjects": [{"subject": "prostate cancer"}, {"subject": "tumor microenvironment"}, {"subject": "cancer-associated fibroblasts"}, {"subject": "genetically-engineered mouse models"}, {"subject": "single-cell RNA sequencing"}, {"subject": "complement protein"}, {"subject": "innate and adaptive immunity"}, {"subject": "WNT signaling"}, {"subject": "neuroendocrine tumor stroma"}, {"subject": "bone metastasis"}], "title": "distinct mesenchymal cell states mediate prostate cancer progression"}, "parent": {"access": {"owned_by": {"user": "464169"}, "settings": {"accept_conditions_text": "\u003cp\u003ePlease request access to view this dataset.\u003c/p\u003e", "allow_guest_requests": true, "allow_user_requests": true, "secret_link_expiration": 30}}, "communities": {}, "id": "7452769", "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.7452769", "provider": "datacite"}}}, "pids": {"doi": {"client": "datacite", "identifier": "10.5281/zenodo.10069816", "provider": "datacite"}, "oai": {"identifier": "oai:zenodo.org:10069816", "provider": "oai"}}, "revision_id": 4, "stats": {"all_versions": {"data_volume": 397244376826.0, "downloads": 2194, "unique_downloads": 2047, "unique_views": 996, "views": 1079}, "this_version": {"data_volume": 304261891998.0, "downloads": 1796, "unique_downloads": 1664, "unique_views": 629, "views": 687}}, "status": "published", "swh": {}, "ui": {"access_status": {"description_l10n": "The record and files are publicly accessible.", "embargo_date_l10n": null, "icon": "unlock", "id": "open", "message_class": "", "title_l10n": "Open"}, "created_date_l10n_long": "November 3, 2023", "creators": {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA", null], [2, "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy", null], [3, "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA.", null], [4, "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA", null]], "creators": [{"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Pakula", "given_name": "Hubert", "name": "Pakula, Hubert", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Omar", "given_name": "Mohamed", "name": "Omar, Mohamed", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Carelli", "given_name": "Ryan", "name": "Carelli, Ryan", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Pederzoli", "given_name": "Filippo", "name": "Pederzoli, Filippo", "type": "personal"}}, {"affiliations": [[2, "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"]], "person_or_org": {"family_name": "Fanelli", "given_name": "Giuseppe Nicol\u00f2", "name": "Fanelli, Giuseppe Nicol\u00f2", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Pannellini", "given_name": "Tania", "name": "Pannellini, Tania", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Emmenis", "given_name": "Lucie Van", "name": "Emmenis, Lucie Van", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Rodrigues", "given_name": "Silvia", "name": "Rodrigues, Silvia", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Fidalgo-Ribeiro", "given_name": "Caroline", "name": "Fidalgo-Ribeiro, Caroline", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Nuzzo", "given_name": "Pier V.", "name": "Nuzzo, Pier V.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Brady", "given_name": "Nicholas J.", "name": "Brady, Nicholas J.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Jere", "given_name": "Madhavi", "name": "Jere, Madhavi", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Unkenholz", "given_name": "Caitlin", "name": "Unkenholz, Caitlin", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Mohammad", "given_name": "Mohammad", "name": "Mohammad, Mohammad", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Khani", "given_name": "Francesca", "name": "Khani, Francesca", "type": "personal"}}, {"affiliations": [[3, "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."]], "person_or_org": {"family_name": "de Almeida", "given_name": "Francisca Nunes", "name": "de Almeida, Francisca Nunes", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Rickman", "given_name": "David S.", "name": "Rickman, David S.", "type": "personal"}}, {"affiliations": [[4, "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Barbieri", "given_name": "Christopher E.", "name": "Barbieri, Christopher E.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Robinson", "given_name": "Brian D.", "name": "Robinson, Brian D.", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Marchionni", "given_name": "Luigi", "name": "Marchionni, Luigi", "type": "personal"}}, {"affiliations": [[1, "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"]], "person_or_org": {"family_name": "Loda", "given_name": "Massimo", "name": "Loda, Massimo", "type": "personal"}}]}, "custom_fields": {}, "description_stripped": "These are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled \"distinct mesenchymal cell states mediate prostate cancer progression\".\u00a0\n\nadata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.\nadata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).\nscenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters\u00a0in the mouse mesenchymal data.\nscenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.\nadata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.\nadata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.\nvisium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.\nvisium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.\nnatHistory_expression: the normalized expression matrix for the natural history cohort.\nnatHistory_label: the metastasis indicators for the natural history cohort.", "is_draft": false, "publication_date_l10n_long": "November 3, 2023", "publication_date_l10n_medium": "Nov 3, 2023", "resource_type": {"id": "dataset", "title_l10n": "Dataset"}, "rights": [{"description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.", "icon": "cc-by-icon", "id": "cc-by-4.0", "props": {"scheme": "spdx", "url": "https://creativecommons.org/licenses/by/4.0/legalcode"}, "title_l10n": "Creative Commons Attribution 4.0 International"}], "updated_date_l10n_long": "November 3, 2023", "version": "v3"}, "updated": "2023-11-03T16:00:48.927236+00:00", "versions": {"index": 3, "is_latest": true}}'
+  data-record-requests='{}'
+  class='sidebar-container'
+>
+
+  <h2 class="ui medium top attached header">Communities</h2>
+
+  <div class="ui segment bottom attached rdm-sidebar">
+    <div class="ui fluid placeholder">
+      <div class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="image header">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Keywords and subjects</h2>
+    <div id="keywords-and-subjects" aria-label="Keywords and subjects"
+            class="ui segment bottom attached rdm-sidebar">
+  
+  
+  <h3 class="hidden">Keywords</h3>
+  <ul class="ui horizontal list no-bullets subjects">
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22prostate+cancer%22"
+          class="subject"
+          title="Search results for prostate cancer"
+      >
+        prostate cancer
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22tumor+microenvironment%22"
+          class="subject"
+          title="Search results for tumor microenvironment"
+      >
+        tumor microenvironment
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22cancer-associated+fibroblasts%22"
+          class="subject"
+          title="Search results for cancer-associated fibroblasts"
+      >
+        cancer-associated fibroblasts
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22genetically-engineered+mouse+models%22"
+          class="subject"
+          title="Search results for genetically-engineered mouse models"
+      >
+        genetically-engineered mouse models
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22single-cell+RNA+sequencing%22"
+          class="subject"
+          title="Search results for single-cell RNA sequencing"
+      >
+        single-cell RNA sequencing
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22complement+protein%22"
+          class="subject"
+          title="Search results for complement protein"
+      >
+        complement protein
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22innate+and+adaptive+immunity%22"
+          class="subject"
+          title="Search results for innate and adaptive immunity"
+      >
+        innate and adaptive immunity
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22WNT+signaling%22"
+          class="subject"
+          title="Search results for WNT signaling"
+      >
+        WNT signaling
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22neuroendocrine+tumor+stroma%22"
+          class="subject"
+          title="Search results for neuroendocrine tumor stroma"
+      >
+        neuroendocrine tumor stroma
+      </a>
+    </li>
+    <li class="item">
+      <a href="/search?q=metadata.subjects.subject:%22bone+metastasis%22"
+          class="subject"
+          title="Search results for bone metastasis"
+      >
+        bone metastasis
+      </a>
+    </li>
+  </ul>
+  
+
+    </div>
+  </div>
+
+
+<div class="sidebar-container">
+  <h2 class="ui medium top attached header mt-0">Details</h2>
+  <div id="record-details" class="ui segment bottom attached rdm-sidebar">
+
+    <dl class="details-list">
+      
+
+ 
+  <dt class="ui tiny header">DOI
+    
+  </dt>
+  <dd>
+    <span class="get-badge details-doi-section" data-toggle="tooltip" data-placement="bottom">
+      <img id='record-doi-badge' data-target="[data-modal='10.5281/zenodo.10069816']" title="Get the DOI badge!"
+        src="/badge/DOI/10.5281/zenodo.10069816.svg" alt="10.5281/zenodo.10069816" />
+      <div id="copy-button-record-doi-badge" class="copy-doi-button" data-value=https://doi.org/10.5281/zenodo.10069816 data-size="mini"></div>
+    </span>
+
+    <div id="doi-modal" class="ui modal fade badge-modal" data-modal="10.5281/zenodo.10069816">
+      <div class="header">DOI Badge</div>
+      <div class="content">
+        <h4>
+          <small>DOI</small>
+        </h4>
+        <h4>
+          <pre>10.5281/zenodo.10069816</pre>
+        </h4>
+        
+        
+
+    <h3 class="ui small header">
+      Markdown
+    </h3>
+    <div class="ui message code">
+      <pre>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10069816.svg)](https://doi.org/10.5281/zenodo.10069816)</pre>
+    </div>
+
+    <h3 class="ui small header">
+      reStructuredText
+    </h3>
+      <div class="ui message code">
+        <pre>.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.10069816.svg
+  :target: https://doi.org/10.5281/zenodo.10069816</pre>
+      </div>
+
+    <h3 class="ui small header">
+      HTML
+    </h3>
+    <div class="ui message code">
+      <pre>&lt;a href="https://doi.org/10.5281/zenodo.10069816"&gt;&lt;img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10069816.svg" alt="DOI"&gt;&lt;/a&gt;</pre>
+    </div>
+
+    <h3 class="ui small header">
+      Image URL
+    </h3>
+    <div class="ui message code">
+      <pre>https://zenodo.org/badge/DOI/10.5281/zenodo.10069816.svg</pre>
+    </div>
+
+    <h3 class="ui small header">
+    Target URL
+    </h3>
+    <div class="ui message code">
+      <pre>https://doi.org/10.5281/zenodo.10069816</pre>
+    </div>
+      </div>
+    </div>
+  </dd>
+
+      
+      
+  <dt class="ui tiny header">Resource type</dt>
+  <dd>Dataset</dd>
+      
+      
+  <dt class="ui tiny header">Publisher</dt>
+  <dd>Zenodo</dd>
+      
+      
+      
+      
+      
+      
+      
+    </dl>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <div class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Rights</h2>
+    <div id="licenses" class="ui segment bottom attached rdm-sidebar">
+      <dl class="details-list">
+      
+        <dt class="ui tiny header">License</dt><dd id="license-cc-by-4.0-1" class="has-popup">
+              <div id="title-cc-by-4.0-1"
+                   class="license clickable"
+                   tabindex="0"
+                   aria-haspopup="dialog"
+                   aria-expanded="false"
+                   role="button"
+                   aria-label="Creative Commons Attribution 4.0 International"
+              >
+                
+                  
+                  <span class="icon-wrap">
+                  <img class="icon" src="/static/icons/licenses/cc-by-icon.svg"
+                       alt="cc-by-4.0 icon"/>
+                </span>
+                
+                <span class="title-text">
+                Creative Commons Attribution 4.0 International
+              </span>
+              </div>
+              <div id="description-cc-by-4.0-1"
+                   class="licenses-description ui flowing popup transition hidden"
+                   role="dialog"
+                   aria-labelledby="title-cc-by-4.0-1"
+              >
+                <i role="button" tabindex="0" class="close icon text-muted"
+                   aria-label="Close"></i>
+                <div id="license-description-1" class="description">
+                <span class="text-muted">
+                  The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.
+                </span>
+                  
+  
+    <a class="license-link" href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank"
+       title="Opens in new tab">Read more</a>
+  
+
+                </div>
+              </div>
+            </dd>
+          
+      
+      
+      </dl>
+    </div>
+  </div>
+<div class="sidebar-container">
+  <h2 class="ui medium top attached header mt-0">Citation</h2>
+  <div id="citation" class="ui segment bottom attached rdm-sidebar">
+
+<div id="recordCitation" data-record-links='{"access": "https://zenodo.org/api/records/10069816/access", "access_grants": "https://zenodo.org/api/records/10069816/access/grants", "access_links": "https://zenodo.org/api/records/10069816/access/links", "access_request": "https://zenodo.org/api/records/10069816/access/request", "access_users": "https://zenodo.org/api/records/10069816/access/users", "archive": "https://zenodo.org/api/records/10069816/files-archive", "archive_media": "https://zenodo.org/api/records/10069816/media-files-archive", "communities": "https://zenodo.org/api/records/10069816/communities", "communities-suggestions": "https://zenodo.org/api/records/10069816/communities-suggestions", "doi": "https://doi.org/10.5281/zenodo.10069816", "draft": "https://zenodo.org/api/records/10069816/draft", "file_modification": "https://zenodo.org/api/records/10069816/file-modification", "files": "https://zenodo.org/api/records/10069816/files", "latest": "https://zenodo.org/api/records/10069816/versions/latest", "latest_html": "https://zenodo.org/records/10069816/latest", "media_files": "https://zenodo.org/api/records/10069816/media-files", "parent": "https://zenodo.org/api/records/7452769", "parent_doi": "https://doi.org/10.5281/zenodo.7452769", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7452769", "parent_html": "https://zenodo.org/records/7452769", "preview_html": "https://zenodo.org/records/10069816?preview=1", "request_deletion": "https://zenodo.org/api/records/10069816/request-deletion", "requests": "https://zenodo.org/api/records/10069816/requests", "reserve_doi": "https://zenodo.org/api/records/10069816/draft/pids/doi", "self": "https://zenodo.org/api/records/10069816", "self_doi": "https://doi.org/10.5281/zenodo.10069816", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10069816", "self_html": "https://zenodo.org/records/10069816", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10069816/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10069816/sequence/default", "versions": "https://zenodo.org/api/records/10069816/versions"}'
+  data-styles='[["apa", "APA"], ["harvard-cite-them-right", "Harvard"], ["modern-language-association", "MLA"], ["vancouver", "Vancouver"], ["chicago-fullnote-bibliography", "Chicago"], ["ieee", "IEEE"]]'
+  data-defaultstyle='"apa"'
+  data-include-deleted='false'>
+</div>
+  </div>
+</div>
+  <div class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Export</h2>
+    <div id="export-record" class="ui segment bottom attached exports rdm-sidebar">
+
+      
+      
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <div id="recordExportDownload" data-formats='[{"export_url": "/records/10069816/export/json", "name": "JSON"}, {"export_url": "/records/10069816/export/json-ld", "name": "JSON-LD"}, {"export_url": "/records/10069816/export/csl", "name": "CSL"}, {"export_url": "/records/10069816/export/datacite-json", "name": "DataCite JSON"}, {"export_url": "/records/10069816/export/datacite-xml", "name": "DataCite XML"}, {"export_url": "/records/10069816/export/dublincore", "name": "Dublin Core XML"}, {"export_url": "/records/10069816/export/marcxml", "name": "MARCXML"}, {"export_url": "/records/10069816/export/bibtex", "name": "BibTeX"}, {"export_url": "/records/10069816/export/geojson", "name": "GeoJSON"}, {"export_url": "/records/10069816/export/dcat-ap", "name": "DCAT"}, {"export_url": "/records/10069816/export/codemeta", "name": "Codemeta"}, {"export_url": "/records/10069816/export/cff", "name": "Citation File Format"}, {"export_url": "/records/10069816/export/datapackage", "name": "Data Package JSON"}]'></div>
+    </div>
+  </div>
+<section
+  id="upload-info"
+  role="note"
+  aria-label="Upload information"
+  class="sidebar-container ui segment rdm-sidebar text-muted"
+>
+  <h2 class="ui small header text-muted p-0 mb-5"><small>Technical metadata</small></h2>
+  <dl class="m-0">
+    <dt class="inline"><small>Created</small></dt>
+    <dd class="inline">
+      <small>November 3, 2023</small>
+    </dd>
+    <div>
+      <dt class="rel-mt-1 inline"><small>Modified</small></dt>
+      <dd class="inline">
+        <small>November 3, 2023</small>
+      </dd>
+    </div>
+  </dl>
+</section>
+          
+        </aside>
+      </div>
+    </div>
+
+    <div class="ui container">
+      <div class="ui relaxed grid">
+        <div class="two column row">
+          <div class="sixteen wide tablet eleven wide computer column">
+            <div class="ui grid">
+                <div class="centered row rel-mt-1">
+                  <button id="jump-btn" class="jump-to-top ui button labeled icon"
+                          aria-label="Jump to top of page">
+                    <i class="arrow alternate circle up outline icon"></i>
+                    Jump up
+                  </button>
+                </div>
+              </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </main>
+    <footer id="rdm-footer-element">
+        
+
+  <div class="footer-top">
+    <div class="ui container app-rdm-footer">
+<div class="ui equal width stackable grid zenodo-footer">
+  <div class="column">
+    <h2 class="ui inverted tiny header">About</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://about.zenodo.org">About</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/policies">Policies</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/infrastructure">Infrastructure</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/principles">Principles</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/projects/">Projects</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/roadmap/">Roadmap</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Blog</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://blog.zenodo.org">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Support</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://help.zenodo.org/">Help</a>
+      </li>
+      <li class="item">
+        <a href="https://support.zenodo.org/help/">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Developers</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://developers.zenodo.org">REST API</a>
+      </li>
+      <li class="item">
+        <a href="https://developers.zenodo.org#oai-pmh">OAI-PMH</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Contribute</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://github.com/zenodo/zenodo-rdm">
+          <i class="icon external" aria-hidden="true"></i>
+          GitHub
+        </a>
+      </li>
+      <li class="item">
+        <a href="/donate">
+          <i class="icon external" aria-hidden="true"></i>
+          Donate
+        </a>
+      </li>
+    </ul>
+  </div>
+      <div class="six wide column right aligned">
+  <h2 class="ui inverted tiny header">Funded by</h2>
+  <ul class="ui horizontal link list">
+    <li class="item">
+      <a href="https://home.cern" aria-label="CERN">
+        <img src="/static/images/cern.png" width="60" height="60" alt="" />
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://www.openaire.eu" aria-label="OpenAIRE">
+        <img src="/static/images/openaire.png" width="60" height="60" alt="" />
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://commission.europa.eu/index_en" aria-label="European Commission">
+        <img src="/static/images/eu.png" width="88" height="60" alt="" />
+      </a>
+    </li>
+  </ul>
+      </div>
+      </div>
+    </div>
+
+  </div>
+        <div class="footer-bottom">
+  <div class="ui inverted container">
+    <div class="ui grid">
+      <div class="eight wide column left middle aligned">
+        <p class="m-0">
+          Powered by
+          <a href="https://home.cern/science/computing/data-centre">CERN Data Centre</a> & <a href="https://inveniordm.docs.cern.ch/">InvenioRDM</a>
+        </p>
+      </div>
+      <div class="eight wide column right aligned">
+        <ul class="ui inverted horizontal link list">
+          <li class="item">
+            <a href="https://stats.uptimerobot.com/vlYOVuWgM/">Status</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/privacy-policy">Privacy policy</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/cookie-policy">Cookie policy</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/terms">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    </footer>
+  
+  
+    
+
+        
+          <script type="text/javascript">
+            window.MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true // Allows escaping $ signs if needed
+              }
+            };
+          </script>
+          <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+<script src="/static/dist/js/manifest.86dc9ad40902b3aeb71a.js"></script>
+<script src="/static/dist/js/73.eff6d29b79c9412c5335.js"></script>
+<script src="/static/dist/js/3526.351e8d7556355023958f.js"></script>
+<script src="/static/dist/js/theme.46e20d3a883fda8b01b2.js"></script>
+<script src="/static/dist/js/3180.0c49d4bf07e64be03fda.js"></script>
+<script src="/static/dist/js/1057.7522b9b6407fa55bed5b.js"></script>
+<script src="/static/dist/js/7655.49da91d7c142bad19ccb.js"></script>
+<script src="/static/dist/js/5092.a8e9aa3149755c25c425.js"></script>
+<script src="/static/dist/js/8871.21b70d011e443068ff4a.js"></script>
+<script src="/static/dist/js/278.8d92f1a6c45c7759d815.js"></script>
+<script src="/static/dist/js/8118.f587fe017309e5588179.js"></script>
+<script src="/static/dist/js/4157.b89712ff141a054ffdf0.js"></script>
+<script src="/static/dist/js/base-theme-rdm.af2522498ea0c70c2c9f.js"></script>
+<script src="/static/dist/js/i18n_app.45ea25224d14a494a50c.js"></script>
+<script src="/static/dist/js/2301.7b05926e461909740138.js"></script>
+<script src="/static/dist/js/4252.1d10592ed59b0987a6b5.js"></script>
+<script src="/static/dist/js/overridable-registry.b74f4047080b7e408e7b.js"></script>
+  
+    
+      <script type='application/ld+json'>{"@context": "http://schema.org", "@id": "https://doi.org/10.5281/zenodo.10069816", "@type": "https://schema.org/Dataset", "author": [{"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Pakula", "givenName": "Hubert", "name": "Pakula, Hubert"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Omar", "givenName": "Mohamed", "name": "Omar, Mohamed"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Carelli", "givenName": "Ryan", "name": "Carelli, Ryan"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Pederzoli", "givenName": "Filippo", "name": "Pederzoli, Filippo"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"}], "familyName": "Fanelli", "givenName": "Giuseppe Nicol\u00f2", "name": "Fanelli, Giuseppe Nicol\u00f2"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Pannellini", "givenName": "Tania", "name": "Pannellini, Tania"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Emmenis", "givenName": "Lucie Van", "name": "Emmenis, Lucie Van"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Rodrigues", "givenName": "Silvia", "name": "Rodrigues, Silvia"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Fidalgo-Ribeiro", "givenName": "Caroline", "name": "Fidalgo-Ribeiro, Caroline"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Nuzzo", "givenName": "Pier V.", "name": "Nuzzo, Pier V."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Brady", "givenName": "Nicholas J.", "name": "Brady, Nicholas J."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Jere", "givenName": "Madhavi", "name": "Jere, Madhavi"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Unkenholz", "givenName": "Caitlin", "name": "Unkenholz, Caitlin"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Mohammad", "givenName": "Mohammad", "name": "Mohammad, Mohammad"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Khani", "givenName": "Francesca", "name": "Khani, Francesca"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."}], "familyName": "de Almeida", "givenName": "Francisca Nunes", "name": "de Almeida, Francisca Nunes"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Rickman", "givenName": "David S.", "name": "Rickman, David S."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"}], "familyName": "Barbieri", "givenName": "Christopher E.", "name": "Barbieri, Christopher E."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Robinson", "givenName": "Brian D.", "name": "Robinson, Brian D."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Marchionni", "givenName": "Luigi", "name": "Marchionni, Luigi"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Loda", "givenName": "Massimo", "name": "Loda, Massimo"}], "contentSize": "1.96 GB", "creator": [{"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Pakula", "givenName": "Hubert", "name": "Pakula, Hubert"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Omar", "givenName": "Mohamed", "name": "Omar, Mohamed"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Carelli", "givenName": "Ryan", "name": "Carelli, Ryan"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Pederzoli", "givenName": "Filippo", "name": "Pederzoli, Filippo"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Laboratory Medicine, Pisa University Hospital, Division of Pathology, Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa 56126, Italy"}], "familyName": "Fanelli", "givenName": "Giuseppe Nicol\u00f2", "name": "Fanelli, Giuseppe Nicol\u00f2"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Pannellini", "givenName": "Tania", "name": "Pannellini, Tania"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Emmenis", "givenName": "Lucie Van", "name": "Emmenis, Lucie Van"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Rodrigues", "givenName": "Silvia", "name": "Rodrigues, Silvia"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Fidalgo-Ribeiro", "givenName": "Caroline", "name": "Fidalgo-Ribeiro, Caroline"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Nuzzo", "givenName": "Pier V.", "name": "Nuzzo, Pier V."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Brady", "givenName": "Nicholas J.", "name": "Brady, Nicholas J."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Jere", "givenName": "Madhavi", "name": "Jere, Madhavi"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Unkenholz", "givenName": "Caitlin", "name": "Unkenholz, Caitlin"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Mohammad", "givenName": "Mohammad", "name": "Mohammad, Mohammad"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Khani", "givenName": "Francesca", "name": "Khani, Francesca"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Molecular Pharmacology and Therapeutics, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center, New York, NY 10032, USA."}], "familyName": "de Almeida", "givenName": "Francisca Nunes", "name": "de Almeida, Francisca Nunes"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Rickman", "givenName": "David S.", "name": "Rickman, David S."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, Belfer Research Building, 413 East 69th Street, New York, NY 10021, USA"}], "familyName": "Barbieri", "givenName": "Christopher E.", "name": "Barbieri, Christopher E."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Robinson", "givenName": "Brian D.", "name": "Robinson, Brian D."}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Marchionni", "givenName": "Luigi", "name": "Marchionni, Luigi"}, {"@type": "Person", "affiliation": [{"@type": "Organization", "name": "Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY 10021, USA"}], "familyName": "Loda", "givenName": "Massimo", "name": "Loda, Massimo"}], "dateCreated": "2023-11-03T16:00:48.184639+00:00", "dateModified": "2023-11-03T16:00:48.927236+00:00", "datePublished": "2023-11-03", "description": "\u003cp\u003eThese are the count matrices (in .h5ad format) used to produce the results and figures in the paper entitled \"distinct mesenchymal cell states mediate prostate cancer progression\".\u0026nbsp;\u003c/p\u003e\u003cul\u003e\u003cli\u003eadata_mouse.h5ad: the normalized count matrix and cell annotations for the mesenchymal prostate data from all mouse models.\u003c/li\u003e\u003cli\u003eadata_mouse_myo.h5ad: the normalized count matrix for the myofibroblasts and pericytes (both are c0).\u003c/li\u003e\u003cli\u003escenic_mesenchyme_auc.csv: the auc matrix of the regulons activity in the different cells and clusters\u0026nbsp;in the mouse mesenchymal data.\u003c/li\u003e\u003cli\u003escenic_mesenchyme_binary.csv: the binary matrix of regulons activity in the mouse mesenchymal data.\u003c/li\u003e\u003cli\u003eadata_human.h5ad: the normalized count matrix and cell annotations for the mesenchymal human primary prostate cancer data.\u003c/li\u003e\u003cli\u003eadata_human_boneMet_stroma.h5ad: the normalized count matrix and cell annotation for the bone metastasis data derived from Kfoury et al.\u003c/li\u003e\u003cli\u003evisium_PRN.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the PRN mouse model.\u003c/li\u003e\u003cli\u003evisium_WT.h5ad: the normalized count matrix and cell annotation for the Visium spatial transcriptomics data of the WT (PRN-WT) mouse model.\u003c/li\u003e\u003cli\u003enatHistory_expression: the normalized expression matrix for the natural history cohort.\u003c/li\u003e\u003cli\u003enatHistory_label: the metastasis indicators for the natural history cohort.\u003c/li\u003e\u003c/ul\u003e", "distribution": [{"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_thresholds.csv/content", "encodingFormat": "text/csv"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/adata_mouse_myo.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/adata_human_BoneMet_stroma.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/metadata_mouse.csv/content", "encodingFormat": "text/csv"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_binary.csv/content", "encodingFormat": "text/csv"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/scenic_mesenchyme_auc.csv/content", "encodingFormat": "text/csv"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/adata_human.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/adata_mouse.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/visium_PRN.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/visium_WT.h5ad/content", "encodingFormat": "application/octet-stream"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/natHistory_expression.csv/content", "encodingFormat": "text/csv"}, {"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/records/10069816/files/natHistory_label.csv/content", "encodingFormat": "text/csv"}], "identifier": "https://doi.org/10.5281/zenodo.10069816", "keywords": "prostate cancer, tumor microenvironment, cancer-associated fibroblasts, genetically-engineered mouse models, single-cell RNA sequencing, complement protein, innate and adaptive immunity, WNT signaling, neuroendocrine tumor stroma, bone metastasis", "license": "https://creativecommons.org/licenses/by/4.0/legalcode", "name": "distinct mesenchymal cell states mediate prostate cancer progression", "publisher": {"@type": "Organization", "name": "Zenodo"}, "size": "1.96 GB", "url": "https://zenodo.org/records/10069816"}</script>
+
+  <script src="/static/dist/js/invenio-app-rdm-landing-page-theme.6621f92f68af6cb1b71a.js"></script>
+  <script src="/static/dist/js/5941.e8d469953f2097d1b80c.js"></script>
+<script src="/static/dist/js/9736.d2eec24d7946bd6d5842.js"></script>
+<script src="/static/dist/js/4683.3dde35073541a4cfab77.js"></script>
+<script src="/static/dist/js/7641.c5257ddf674154c9b6b2.js"></script>
+<script src="/static/dist/js/7302.60cc5652ce662994b29a.js"></script>
+<script src="/static/dist/js/8585.d7c719e4d737eaf98c6c.js"></script>
+<script src="/static/dist/js/1357.e127ab0ea8be479ccd38.js"></script>
+<script src="/static/dist/js/5002.e27ae61e6763574bea57.js"></script>
+<script src="/static/dist/js/1644.7885d9d3dcbd8315f16b.js"></script>
+<script src="/static/dist/js/5400.ef510f260282c73585d0.js"></script>
+<script src="/static/dist/js/8962.19852e93355dac6e4e1c.js"></script>
+<script src="/static/dist/js/5097.7d0a0bd7d0439f9b0ff5.js"></script>
+<script src="/static/dist/js/5680.e9f92f6e9958b03847ba.js"></script>
+<script src="/static/dist/js/invenio-app-rdm-landing-page.b12dba3cb3fad1a8f4e6.js"></script>
+  <script src="/static/dist/js/previewer_theme.e613af66c367ae91620f.js"></script>
+  <script src="/static/dist/js/zenodo-rdm-citations.42ba6ec5068dbee7fa6f.js"></script>
+  
+
+        <div class="ui container info message cookie-banner hidden">
+  <i class="close icon"></i>
+  <div>
+    <i aria-hidden="true" class="info icon"></i>
+    <p class="inline">This site uses cookies. Find out more on <a href="https://about.zenodo.org/cookie-policy">how we use cookies</a></p>
+  </div>
+  <div class="buttons">
+    <button class="ui button small primary" id="cookies-all">Accept all cookies</button>
+    <button class="ui button small" id="cookies-essential">Accept only essential cookies</button>
+  </div>
+</div>
+
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['requireCookieConsent']);
+
+  (function() {
+    var u="https://webanalytics.web.cern.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '366']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+  const cookieConsent = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("cookie_consent="))
+    ?.split("=")[1];
+
+  if (cookieConsent) {
+    if (cookieConsent === "all") {
+      matomo();
+    }
+  } else {
+    document.querySelector(".cookie-banner").classList.remove("hidden")
+    _paq.push(['forgetConsentGiven']);
+  }
+
+  $('.cookie-banner .close')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","essential");
+    });
+
+  $('#cookies-essential')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","essential");
+    });
+
+  $('#cookies-all')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","all");
+      _paq.push(['rememberCookieConsentGiven']);
+      matomo();
+    });
+
+  function matomo() {
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+  }
+
+  function setCookie(cname, cvalue) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // one year
+    var expires = "expires=" + d.toUTCString();
+    var cookie = cname + "=" + cvalue + ";" + expires + ";"
+    cookie += "Domain=zenodo.org;Path=/;SameSite=None; Secure";
+    document.cookie = cookie;
+  }
+</script>
+  </body>
+</html>

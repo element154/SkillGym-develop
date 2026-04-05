@@ -1,0 +1,53 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\scikit-learn\\scikit-learn\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "[UCI] AAAI-14 Accepted Papers - Papers.csv",
+      "snippet": "We use a customized distance function suited for mixed categorical and numerical data. ... We apply our methods to sequential data modeling and classification ...",
+      "metadata": {
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00307/%5BUCI%5D%20AAAI-14%20Accepted%20Papers%20-%20Papers.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "DQS_Health__United_States_Dataset_Footnote_Lookup.csv",
+      "snippet": "In 2018, race data were missing and imputed for 29% of physician visits and 21% of emergency department visits. Information on the race imputation process used ...",
+      "metadata": {
+        "url": "https://data.cdc.gov/api/views/9xt5-u42s/rows.csv?accessType=DOWNLOAD"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "biology_ai_models.csv",
+      "snippet": "... missing residues in antibody sequence data, a key issue with B-cell receptor repertoire sequencing, e.g. over 40% of OAS sequences are missing the first 15 ...",
+      "metadata": {
+        "url": "https://epoch.ai/data/biology_ai_models.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "test.csv",
+      "snippet": "... Data Preparation** Begin by loading the required data into your preferred programming environment. Ensure that the data is appropriately preprocessed to ...",
+      "metadata": {
+        "url": "https://huggingface.co/datasets/soufyane/qa_ds_6K/raw/main/test.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "test_1.csv",
+      "snippet": "... text, 'html.parser') # Find the title and description meta tags title = soup.find('title').get_text() if soup.find('title') else \"\"N/A\"\" description = soup ...",
+      "metadata": {
+        "url": "https://huggingface.co/datasets/greatdarklord/python_dataset/resolve/main/test.csv?download=true"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "test_passages.csv",
+      "snippet": "... data. An unsupervised model, in contrast, provides unlabeled data that the algorithm tries to make sense of by extracting features and patterns on its own ...",
+      "metadata": {
+        "url": "https://huggingface.co/datasets/McGill-NLP/mlquestions/raw/main/test_passages.csv"
+      }
+    }
+  ]
+}

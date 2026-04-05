@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\did_causal_analysis\\did_causal_analysis\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "IPEDSGlossary.csv",
+      "snippet": "... Enrollment (E12)\",\"This annual component of IPEDS collects unduplicated student enrollment counts and instructional activity data for an entire 12-month ...",
+      "metadata": {
+        "url": "https://surveys.nces.ed.gov/ipeds/api/downloads/IPEDSGlossary.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Public_Test_View.csv",
+      "snippet": "... student participation and college credits earned by semester, school, and partnership. It describes the program ... test results by district and school ...",
+      "metadata": {
+        "url": "https://educationtocareer.data.mass.gov/api/views/4pxu-dy5v/rows.csv?accessType=DOWNLOAD&api_foundry=true"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "sasr-export.csv",
+      "snippet": "... after the year funding was awarded. \",\"The authors did not account for preexisting differences between the groups before program participation ... Training ...",
+      "metadata": {
+        "url": "https://clear.dol.gov/sasr-export.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "1427783_data_for_replication_5_5.csv",
+      "snippet": "... employment status?\" \"5\",\"worker_pre\",\"Worker before the pandemic, derived\" \"6\",\"jobcat_pre_harm\",\"Job category before the pandemic, harmonized\" \"7 ...",
+      "metadata": {
+        "url": "https://findingspress.org/article/24556-how-stable-are-transport-related-attitudes-over-time/attachment/62546.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Enterprise_Dataset_Inventory_as_of_March_2018_2.csv",
+      "snippet": "... customers including the program enrolled, location of program, zip code, ethnicity, gender, date of birth, age, and language spoken at home.\",Occasional ...",
+      "metadata": {
+        "url": "https://hub.arcgis.com/api/download/v1/items/070b41a0dc474c54881734e95388e672/csv?redirect=true&layers=21"
+      }
+    }
+  ]
+}

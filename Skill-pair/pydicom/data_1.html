@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CT Medical Images | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="CT images from cancer imaging archive with contrast and patient age" />
+    <meta name="keywords" content="image,health,health conditions,healthcare" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==" type="text/javascript">
+    window["pageRequestStartTime"] = 1775203622260;
+    window["pageRequestEndTime"] = 1775203622267;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-e1b1865463db8153.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/kmader/siim-medical-images" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="AWsCw9MGswQGfYyvZgLL9A==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="AWsCw9MGswQGfYyvZgLL9A==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="AWsCw9MGswQGfYyvZgLL9A==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/kmader/siim-medical-images" />
+    <meta property="og:title" content="CT Medical Images" />
+    <meta property="og:description" content="CT images from cancer imaging archive with contrast and patient age" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1012/1826/dcf783d7dd5f628dccb49111ade64649/dataset-card.jpg" />
+        <meta property="twitter:image" content="https://storage.googleapis.com/kaggle-datasets-images/1012/1826/dcf783d7dd5f628dccb49111ade64649/dataset-card.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@kevinsmader" />
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="AWsCw9MGswQGfYyvZgLL9A==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"CT Medical Images","description":"# Overview\n\nThe dataset is designed to allow for different methods to be tested for examining the trends in CT image data associated with using contrast and patient age. The basic idea is to identify image textures, statistical patterns and features correlating strongly with these traits and possibly build simple tools for automatically classifying these images when they have been misclassified (or finding outliers which could be suspicious cases, bad measurements, or poorly calibrated machines)\n\n# Data\nThe data are a tiny subset of images from the cancer imaging archive. They consist of the middle slice of all CT images taken where valid age, modality, and contrast tags could be found. This results in 475 series from 69 different patients.\n\nTCIA Archive Link - https://wiki.cancerimagingarchive.net/display/Public/TCGA-LUAD\n\n\n# License\n- http://creativecommons.org/licenses/by/3.0/\n- After the publication embargo period ends these collections are freely available to browse, download, and use for commercial, scientific and educational purposes as outlined in the Creative Commons Attribution 3.0 Unported License. Questions may be directed to help@cancerimagingarchive.net. Please be sure to acknowledge both this data set and TCIA in publications by including the following citations in your work:\n\n# Data Citation\n\n```\nAlbertina, B., Watson, M., Holback, C., Jarosz, R., Kirk, S., Lee, Y., … Lemmerman, J. (2016). Radiology Data from The Cancer Genome Atlas Lung Adenocarcinoma [TCGA-LUAD] collection. The Cancer Imaging Archive. http://doi.org/10.7937/K9/TCIA.2016.JGNIHEP5\n```\n\n# TCIA Citation\n\n```\nClark K, Vendt B, Smith K, Freymann J, Kirby J, Koppel P, Moore S, Phillips S, Maffitt D, Pringle M, Tarbox L, Prior F. The Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information Repository, Journal of Digital Imaging, Volume 26, Number 6, December, 2013, pp 1045-1057. (paper)\n```","url":"https://www.kaggle.com/kmader/siim-medical-images","version":6,"keywords":["data type, image","subject, health and fitness, health","subject, health and fitness, health, health conditions","subject, health and fitness, health, healthcare"],"license":{"@type":"CreativeWork","name":"Other (specified in description)","url":""},"identifier":["1012"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"K Scott Mader","url":"https://www.kaggle.com/kmader","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/67483-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/kmader/siim-medical-images/download?datasetVersionNumber=6","contentSize":"261989898 bytes"}],"commentCount":4,"dateModified":"2017-05-23T07:03:06.953Z","discussionUrl":"https://www.kaggle.com/kmader/siim-medical-images/discussion","alternateName":"CT images from cancer imaging archive with contrast and patient age","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1012/1826/dcf783d7dd5f628dccb49111ade64649/dataset-card.jpg","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":4},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":55983},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":475282},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":870}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="AWsCw9MGswQGfYyvZgLL9A==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="AWsCw9MGswQGfYyvZgLL9A==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==" src="/static/assets/runtime.js?v=dcdca6c03aca45e6"></script>
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==" src="/static/assets/vendor.js?v=b58ece3666e973c5"></script>
+  <script nonce="AWsCw9MGswQGfYyvZgLL9A==" src="/static/assets/app.js?v=da13138bcfa24966"></script>
+    <script nonce="AWsCw9MGswQGfYyvZgLL9A==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="AWsCw9MGswQGfYyvZgLL9A==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="AWsCw9MGswQGfYyvZgLL9A==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

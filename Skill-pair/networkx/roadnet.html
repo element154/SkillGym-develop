@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+        <title>Netzschleuder: the network catalogue, repository and centrifuge </title>
+        <meta name="description" content="Netzschleuder: the network centrifuge.">
+        <meta name="keywords" content="graph, network, network analysis, network science, network data, data, repository" />
+        <meta name="author" content="Tiago de Paula Peixoto <tiago@skewed.de>">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="icon" type="image/svg+xml" href="/static/img/netzschleuder.svg">
+        <link rel="icon" href="/static/img/graph-icon.png" type="image/png" />
+        <link rel="apple-touch-icon-precomposed" href="/static/ink/img/touch-icon.57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ink/img/touch-icon.72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ink/img/touch-icon.114.png">
+        <link rel="apple-touch-startup-image" href="/static/ink/img/splash.320x460.png"
+        media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="/static/ink/img/splash.768x1004.png"
+        media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="/static/ink/img/splash.1024x748.png"
+        media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+        <link rel="stylesheet" type="text/css" href="/static/ink/css/ink.css">
+        <link rel="stylesheet" type="text/css" href="/static/ink/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/code.css">
+        <link href='//fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        <!--[if IE 7 ]>
+            <link rel="stylesheet" href="/static/css/ink-ie7.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        
+        <script type="text/javascript" src="/static/ink/js/holder.js"></script>
+        <script type="text/javascript" src="/static/ink/js/ink.min.js"></script>
+        <script type="text/javascript" src="/static/ink/js/ink-ui.min.js"></script>
+        <script type="text/javascript" src="/static/ink/js/autoload.js"></script>
+        <script type="text/javascript" src="/static/ink/js/html5shiv.js"></script>
+
+        <script type="text/javascript" src="/static/js/sorttable.js"></script>
+
+        <style type="text/css">
+           body {
+            background: #ededed;
+           }
+           header {
+            padding: 2em 0 0 0;
+           }
+           header h1 {
+            font-size: 2em;
+           }
+           footer {
+            background: #ccc;
+            /* color: #0003; */
+           }
+           footer p {
+            padding: 0.5em 1em 0.5em 0;
+            margin: 0;        
+           }
+
+           .ink-navigation ul.menu.horizontal iframe {
+            vertical-align: bottom;
+           }
+        </style>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                extensions: ["tex2jax.js", "mml2jax.js"],
+                jax: ["input/TeX", "input/MathML", "output/HTML-CSS"],
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                },
+                "HTML-CSS": { availableFonts: ["TeX"] }
+            });
+        </script>
+        <script type="text/javascript" src="/static/MathJax/MathJax.js">
+        </script>
+
+        
+        
+    <meta name="description" content="Road networks from three US states (CA, PA, TX), in which edges are stretches of road and vertices are intersections of roads.">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="networks.skewed.de">
+    <meta property="twitter:url" content="https://networks.skewed.de/net/roadnet" />
+    <meta name="twitter:title" content="roadnet — U.S. roads (CA, PA, TX)" />
+    <meta name="twitter:description" content="Road networks from three US states (CA, PA, TX), in which edges are stretches of road and vertices are intersections of roads."/>
+    <meta name="twitter:image" content="https://networks.skewed.de/draw/roadnet/CA?thumb=True" />
+    <meta name="twitter:site" content="@netzschleuder" />
+    <meta name="twitter:creator" content="@netzschleuder" />
+
+    <meta property="og:url" content="https://networks.skewed.de/net/roadnet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="roadnet — U.S. roads (CA, PA, TX)" />
+    <meta property="og:description" content="Road networks from three US states (CA, PA, TX), in which edges are stretches of road and vertices are intersections of roads."/>
+    <meta property="og:image" content="https://networks.skewed.de/draw/roadnet/CA?thumb=True" />
+
+    </head>
+
+    <body>
+        <div class="ink-grid">
+            <header>
+              
+              <h1 class="logo xlarge-push-left large-push-left" style="font-weight: normal">
+                <span style="white-space:nowrap;">
+                  <a href="/"><img src="/static/img/netzschleuder.svg" alt="logo" height="45" style="vertical-align: text-bottom; margin-bottom: -.08em"></a>
+                  <a style="margin-right:.5em" href="/">Netzschleuder</a>
+                  <small style="color: #888888">network catalogue, repository and centrifuge</small></span>
+              </h1>
+              <nav class="ink-navigation xlarge-push-right large-push-right">
+                <ul class="menu horizontal black shadowed">
+                  <li class="heading 
+active
+"><a href="/">Networks</a></li>
+                  <li class=""><a href="/stats">Stats</a></li>
+                  <li class=""><a href="/api">API</a></li>
+                  <li class=""><a href="/git">Git</a></li>
+                  <li class=""><a href="/issues">Issues</a></li>
+                  <li class=""><a href="/contribute">Contribute</a></li>
+                  <li class=""><a href="/health">Health</a></li>
+                  <li class=""><a href="/about">About</a></li>
+                </ul>
+              </nav>
+              
+            </header>
+
+            <div class="column-group vertical-space" style="margin-top:.6em; margin-bottom: .6em;}">
+              <div class="all-100">
+              </div>
+            </div>
+
+            
+
+<div class="column-group">
+  <div class="xlarge-100 large-100 small-100 bottom-space">
+    <div class="all-25" style="float:right; vertical-align:top; display:inline">
+      <blockquote class="note">
+        Problems with this dataset?  Open an
+        <a href="/issues">issue</a>.<br/>
+        You may also take a look at the <a href="https://git.skewed.de/count0/netzschleuder/-/blob/master/entries/roadnet/__init__.py">source code</a>.
+      </blockquote>
+    </div>
+    <div class="all-25" style="float:right; clear:right; vertical-align:top; display:inline">
+      <blockquote class="note">
+        The
+        
+        networks
+        
+        in this dataset can be loaded directly
+        from <a href="https://graph-tool.skewed.de">graph-tool</a> with:
+<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">graph_tool.all</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gt</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">gt</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">ns</span><span class="p">[</span><span class="s2">&quot;roadnet/CA&quot;</span><span class="p">]</span>
+</pre></div>
+
+        
+        (and likewise for the other networks available.)
+        
+      </blockquote>
+    </div>
+    <h1 style="margin-top: 0px"><a href="/net/roadnet" class="mono">roadnet</a> &mdash; U.S. roads (CA, PA, TX)
+    </h1>
+    <dl>
+      <dt>Description</dt>
+      <dd style="max-width: 80em"><p>Road networks from three US states (CA, PA, TX), in which edges are stretches of road and vertices are intersections of roads.<sup id="fnref:icon"><a class="footnote-ref" href="#fn:icon">1</a></sup></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:icon">
+<p>Description obtained from the <a href="https://icon.colorado.edu">ICON</a> project.&#160;<a class="footnote-backref" href="#fnref:icon" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></dd>
+      <dt>Tags</dt>
+      <dd>
+        
+            <a href="/?tags=Transportation"><span class="ink-label grey">Transportation</span></a>
+        
+            <a href="/?tags=Roads"><span class="ink-label grey">Roads</span></a>
+        
+            <a href="/?tags=Unweighted"><span class="ink-label grey">Unweighted</span></a>
+        
+      </dd>
+      <dt>Citation</dt>
+      <dd>
+        <ul class="unstyled">
+        
+        <li>J. Leskovec, K. Lang, A. Dasgupta, M. Mahoney. &#34;Community Structure in Large Networks: Natural Cluster Sizes and the Absence of Large Well-Defined Clusters.&#34; Internet Mathematics 6(1), 29-123 (2009). arxiv:0810.1355, <a href="http://arxiv.org/abs/0810.1355">http://arxiv.org/abs/0810.1355</a>
+          
+        </li>
+        
+        </ul>
+      </dd>
+      <dt>Upstream URL
+        <span style="font-size: smaller; vertical-align: text-top; padding-left: 1em">
+          
+          <span class="ink-label green" title="Upstream health OK. Last checked on Fri Mar 27 00:00:42 2026">OK</span>
+          
+        </span>
+
+      </dt>
+      <dd>
+        
+            <a href="http://snap.stanford.edu/data/roadNet-CA.html">http://snap.stanford.edu/data/roadNet-CA.html</a>
+        
+      </dd>
+      
+      <dt>Networks</dt>
+      <dd>
+        
+        
+            <span style="font-size:x-small">Tip: click on the table header to sort the list. Hover your mouse over it to obtain a legend.</span>
+        
+        <table class="ink-table hover sortable" style="table-layout: auto">
+          <thead>
+            <tr>
+              <th class="align-left">Name</th>
+              <th class="align-right tight">Nodes</th>
+              <th class="align-right">Edges</th>
+              <th class="align-right" title="Mean degree">$\left&lt;k\right&gt;$</th>
+              <th class="align-right" title="Standard deviation of the degrees">$\sigma_k$</th>
+              <th class="align-right" title="Largest eigenvalue of Hashimoto (non-backtracking) matrix">$\lambda_h$</th>
+              <th class="align-right" title="Random walk mixing time">$\tau$</th>
+              <th class="align-right" title="Degree assortativity">$r$</th>
+              <th class="align-right" title="Global clustering coefficient">$c$</th>
+              <th class="align-right" title="(Pseudo-) diameter">$\oslash$</th>
+              <th class="align-right" title="Relative size of the largest component">$S$</th>
+              <th class="align-right">Kind</th>
+              <th class="align-right">Mode</th>
+              <th class="align-right" title="Node properties">NPs</th>
+              <th class="align-right" title="Edge properties">EPs</th>
+
+              <th class="align-center tight" style="width:1px;white-space:nowrap;"><a href="//graph-tool.skewed.de/static/doc/gt_format.html">gt</a></th>
+              <th class="align-center tight" style="width:1px;white-space:nowrap;"><a href="https://en.wikipedia.org/wiki/GraphML">GraphML</a></th>
+              <th class="align-center tight" style="width:1px;white-space:nowrap;"><a href="https://en.wikipedia.org/wiki/Graph_Modelling_Language">GML</a></th>
+              <th class="align-center tight" style="width:1px;white-space:nowrap;"><a href="https://en.wikipedia.org/wiki/Comma-separated_values">csv</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+                
+                
+                    
+                
+                <tr id="CA">
+                  <td>
+                    <a href="#CA_draw">CA</a>
+                  </td>
+                  <td class="align-right">
+                    1,971,281
+                  </td>
+                  <td class="align-right">
+                    5,533,214
+                  </td>
+                  <td class="align-right">
+                    5.61
+                  </td>
+                  <td class="align-right">
+                    2.01
+                  </td>
+                  <td class="align-right">
+                    3.32
+                  </td>
+                  <td class="align-right">
+                    1062213.81
+                  </td>
+                  <td class="align-right">
+                    0.13
+                  </td>
+                  <td class="align-right">
+                    0.05
+                  </td>
+                  <td class="align-right">
+                    857
+                  </td>
+                  <td class="align-right">
+                    0.99
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            Undirected
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            Unipartite
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                    
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/CA.gt.zst"><span class="ink-label grey">36.9 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/CA.xml.zst"><span class="ink-label grey">54.6 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/CA.gml.zst"><span class="ink-label grey">53.0 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/CA.csv.zip"><span class="ink-label grey">48.3 MiB</span></a>
+                  </td>
+            
+                
+                
+                    
+                
+                <tr id="PA">
+                  <td>
+                    <a href="#PA_draw">PA</a>
+                  </td>
+                  <td class="align-right">
+                    1,090,920
+                  </td>
+                  <td class="align-right">
+                    3,083,796
+                  </td>
+                  <td class="align-right">
+                    5.65
+                  </td>
+                  <td class="align-right">
+                    2.05
+                  </td>
+                  <td class="align-right">
+                    3.11
+                  </td>
+                  <td class="align-right">
+                    1673263.65
+                  </td>
+                  <td class="align-right">
+                    0.12
+                  </td>
+                  <td class="align-right">
+                    0.05
+                  </td>
+                  <td class="align-right">
+                    794
+                  </td>
+                  <td class="align-right">
+                    1.00
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            Undirected
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            Unipartite
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                    
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/PA.gt.zst"><span class="ink-label grey">20.5 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/PA.xml.zst"><span class="ink-label grey">30.3 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/PA.gml.zst"><span class="ink-label grey">29.6 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/PA.csv.zip"><span class="ink-label grey">25.9 MiB</span></a>
+                  </td>
+            
+                
+                
+                    
+                
+                <tr id="TX">
+                  <td>
+                    <a href="#TX_draw">TX</a>
+                  </td>
+                  <td class="align-right">
+                    1,393,383
+                  </td>
+                  <td class="align-right">
+                    3,843,320
+                  </td>
+                  <td class="align-right">
+                    5.52
+                  </td>
+                  <td class="align-right">
+                    2.07
+                  </td>
+                  <td class="align-right">
+                    3.56
+                  </td>
+                  <td class="align-right">
+                    3265801.80
+                  </td>
+                  <td class="align-right">
+                    0.13
+                  </td>
+                  <td class="align-right">
+                    0.05
+                  </td>
+                  <td class="align-right">
+                    1,064
+                  </td>
+                  <td class="align-right">
+                    0.97
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            Undirected
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            Unipartite
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                            
+                        
+                    
+                  </td>
+                  <td class="align-right">
+                    
+                        
+                    
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/TX.gt.zst"><span class="ink-label grey">26.1 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/TX.xml.zst"><span class="ink-label grey">39.0 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/TX.gml.zst"><span class="ink-label grey">38.2 MiB</span></a>
+                  </td>
+                  <td class="align-center">
+                    <a href="roadnet/files/TX.csv.zip"><span class="ink-label grey">34.4 MiB</span></a>
+                  </td>
+            
+          </tbody>
+        </table>
+      </dd>
+      
+      
+      
+          <dt>Ridiculograms<sup><a href="#hairball">*</a></sup></dt>
+          <dd style="vertical-align: middle;">
+          
+              
+              
+                  
+              
+              
+              
+                    <figure style="width:24%; display: inline-block;">
+                    
+                         <a href="/draw/roadnet/CA">
+                           <img src="/draw/roadnet/CA?thumb=True" alt="CA drawing" style="width: 100%"/>
+                         </a>
+                         <figcaption style="text-align: center">
+                           <a href="#CA" id="CA_draw">CA</a>
+                         </figcaption>
+                    
+                    </figure>
+                    </a>
+              
+          
+              
+              
+                  
+              
+              
+              
+                    <figure style="width:24%; display: inline-block;">
+                    
+                         <a href="/draw/roadnet/PA">
+                           <img src="/draw/roadnet/PA?thumb=True" alt="PA drawing" style="width: 100%"/>
+                         </a>
+                         <figcaption style="text-align: center">
+                           <a href="#PA" id="PA_draw">PA</a>
+                         </figcaption>
+                    
+                    </figure>
+                    </a>
+              
+          
+              
+              
+                  
+              
+              
+              
+                    <figure style="width:24%; display: inline-block;">
+                    
+                         <a href="/draw/roadnet/TX">
+                           <img src="/draw/roadnet/TX?thumb=True" alt="TX drawing" style="width: 100%"/>
+                         </a>
+                         <figcaption style="text-align: center">
+                           <a href="#TX" id="TX_draw">TX</a>
+                         </figcaption>
+                    
+                    </figure>
+                    </a>
+              
+          
+          </dd>
+         <div style="font-size: smaller"><a name="hairball"><sup>*</sup></a> These are automatically generated force-directed visualizations, and can be quite meaningless for networks both big and small. They should not be taken seriously as sources of scientific insight. See <a href="https://skewed.de/lab/posts/hairball/">here</a> for a discussion.
+      
+    </dl>
+  </div>
+</div>
+
+
+
+        </div>
+        <footer>
+        
+        <div class="ink-grid" style="padding-left: 2px">
+          <p class="push-left small-100">
+            <span style="vertical-align: middle; white-space:nowrap;"><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img src="/static/img/agpl-v3.svg" alt="logo" style="height: 35px; vertical-align: middle; margin-right: 9px; margin-left: 3px"/></a></span>
+          </p>
+          <p class="push-left small-100"><img src="/static/img/data.png" alt="logo" style="height: 35px; vertical-align: middle; margin-right: 9px; margin-left: 3px"/></p>
+          <p class="push-left small-100">
+            <span style="vertical-align: middle; white-space:nowrap;">Powered by <a href="https://graph-tool.skewed.de"><img src="/static/img/graph-tool-logo.svg" alt="logo" style="height:35px;vertical-align: middle; margin-right: 9px; margin-left: 3px"/>graph-tool:</a> efficient network analysis </span>
+          </p>
+          <p class="push-right small-100">by <a href="//skewed.de/tiago">Tiago P. Peixoto</a></p>
+        </div>
+        
+        </footer>
+    </body>
+</html>

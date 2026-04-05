@@ -1,0 +1,149 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\geopandas\\geopandas\\SKILL.md",
+  "records": [
+    {
+      "category": "geojson file",
+      "value": "countries.geojson",
+      "snippet": "... of the world's countries - vector data at 1:110m scale) - geo-boundaries-world-110m/countries.geojson at main · datasets/geo-boundaries-world-110m.",
+      "metadata": {
+        "url": "https://github.com/datasets/geo-boundaries-world-110m/blob/main/countries.geojson"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "CountryGeoJSONCollection.html",
+      "snippet": "If run without arguments, the countries.geojson file will be ... ./genCountriesGeoJSON.py -k country_code -i boundaries.geojson -o geo_data -g country_name.",
+      "metadata": {
+        "url": "https://github.com/LonnyGomes/CountryGeoJSONCollection"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "geojson-world.html",
+      "snippet": "This file contains all capitals of the world with coordinates type 'Point'. countries.geojson. This file contains the shapes of all countries of the world as ...",
+      "metadata": {
+        "url": "https://github.com/Stefie/geojson-world"
+      }
+    },
+    {
+      "category": "gpkg file",
+      "value": "tiles2columns.html",
+      "snippet": "streets.gpkg 6.2M .. buildings.gpkg 1.4M .. pois.gpkg 1.4M .. street_labels ... Parquet files will generate faster than GeoPackage files but GeoPackage ...",
+      "metadata": {
+        "url": "https://github.com/marklit/tiles2columns"
+      }
+    },
+    {
+      "category": "gpkg file",
+      "value": "foot.html",
+      "snippet": "A sample dataset of building footprints is provided: # load the sample data(\"kampala\", package=\"foot\") # 2D vector building polygons kampala$buildings ...",
+      "metadata": {
+        "url": "https://github.com/wpgp/foot"
+      }
+    },
+    {
+      "category": "gpkg file",
+      "value": "globalmlbuildingfootprints.html",
+      "snippet": "Bing Maps is releasing open building footprints around the world. We have detected 1.4B buildings from Bing Maps imagery between 2014 and 2024 including ...",
+      "metadata": {
+        "url": "https://github.com/microsoft/globalmlbuildingfootprints"
+      }
+    },
+    {
+      "category": "gpkg file",
+      "value": "covid_worksite_exposure.html",
+      "snippet": "Polygons, such as our building footprints, are represented as a list of points corresponding to building corners. The campus buildings data already exists in ...",
+      "metadata": {
+        "url": "https://github.com/datalab-dev/covid_worksite_exposure"
+      }
+    },
+    {
+      "category": "shp file",
+      "value": "d8cc25a7-df8c-45f4-9304-70c1a7e1ace9.html",
+      "snippet": "GeoJSON. URL: https://public-chesva.opendata.arcgis.com/api/download/v1/items/a09b19515cdd4ce4b07e0bc3406ff0b9/geojson?layers=15 ... Shapefile; GeoJSON; KML ...",
+      "metadata": {
+        "url": "https://catalog.data.gov/dataset/parcels-627cf/resource/d8cc25a7-df8c-45f4-9304-70c1a7e1ace9"
+      }
+    },
+    {
+      "category": "shp file",
+      "value": "0edc7a66-5642-4b1f-a1fc-d4cb131c23bb.html",
+      "snippet": "Resources · ArcGIS Hub Dataset · ArcGIS GeoService · CSV · Shapefile · GeoJSON · KML · File Geodatabase ...",
+      "metadata": {
+        "url": "https://catalog.data.gov/dataset/zip-codes-9b9fd/resource/0edc7a66-5642-4b1f-a1fc-d4cb131c23bb"
+      }
+    },
+    {
+      "category": "shp file",
+      "value": "tiger-geopackage-file.html",
+      "snippet": "This GeoPackage contains 2020 and current block information as well as suffixes indicating blocks that have been split since 2020. Download.",
+      "metadata": {
+        "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geopackage-file.html"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "geojson.html",
+      "snippet": "As parical example, take all NJ Transit stations locations as input and output area within X km of these stations. Syntax: ./geojson area input.csv 12 50.",
+      "metadata": {
+        "url": "https://github.com/intheswim/geojson"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "sm-data-desk.html",
+      "snippet": "Simple POI Project. /src/projects/ └── tourist_spots/ ├── meta.json ├── banner.png ├── desc.html # Automatically detected └── layers/ └── locations.geojson.",
+      "metadata": {
+        "url": "https://github.com/TUMFTM/sm-data-desk"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "offline_geocoder.html",
+      "snippet": "An agnostic package to reverse geocode locations from a presupplied geojson file. No internet connection or external services required as your geocoder is ...",
+      "metadata": {
+        "url": "https://github.com/OPENER-next/offline_geocoder"
+      }
+    },
+    {
+      "category": "shp file",
+      "value": "vector-river-map.html",
+      "snippet": "This project contains everything you need from start to finish to make a vector based web map of American rivers in the contiguous 48 states. This demonstration ...",
+      "metadata": {
+        "url": "https://github.com/NelsonMinar/vector-river-map"
+      }
+    },
+    {
+      "category": "shp file",
+      "value": "waterviz.html",
+      "snippet": "This project contains everything you need from start to finish to make a vector based web map of American rivers in the contiguous 48 states. There are three ...",
+      "metadata": {
+        "url": "https://github.com/r-barnes/waterviz"
+      }
+    },
+    {
+      "category": "shp file",
+      "value": "ne_10m_rivers_lake_centerlines.README.html",
+      "snippet": "... data replaced the Natural Earth data.</p>. <p>The remaining CCM data were fitted Natural Earth rivers, lakes, coastlines, glaciers, political boundaries, and ...",
+      "metadata": {
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/master/10m_physical/ne_10m_rivers_lake_centerlines.README.html"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "ecoregions.html",
+      "snippet": "ecoregions. Spatial boundaries datasets of ecoregions. Installation. You can install the released version of ecoregions from github with: devtools ...",
+      "metadata": {
+        "url": "https://github.com/tomroh/ecoregions"
+      }
+    },
+    {
+      "category": "geojson file",
+      "value": "geodat.html",
+      "snippet": "Biomes data(biomes) # Terrestrial ecoregions of the world data(teow) # Zoogeographic realms of the world data(zoorealms) data(zooregions). Map of zoogeographic ...",
+      "metadata": {
+        "url": "https://github.com/RS-eco/geodat"
+      }
+    }
+  ]
+}

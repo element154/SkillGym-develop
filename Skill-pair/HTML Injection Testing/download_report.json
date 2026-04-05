@@ -1,0 +1,21 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\HTML Injection Testing\\HTML Injection Testing\\SKILL.md",
+  "records": [
+    {
+      "category": "code_repo file",
+      "value": "Html-Injection-Payloads.txt",
+      "snippet": "... to identify and exploit vulnerabilities in target web applications. - Offensive-Payloads/Html-Injection-Payloads.txt at main · InfoSecWarrior/Offensive-",
+      "metadata": {
+        "url": "https://github.com/InfoSecWarrior/Offensive-Payloads/blob/main/Html-Injection-Payloads.txt"
+      }
+    },
+    {
+      "category": "py file",
+      "value": "WebFuzzer.py",
+      "snippet": "`SQLInjectionFuzzer` is a proof-of-concept on how to build a malicious fuzzer ... HTML Injection Attacks if __name__ == '__main__': print('\\n### HTML ...",
+      "metadata": {
+        "url": "https://www.fuzzingbook.org/code/WebFuzzer.py"
+      }
+    }
+  ]
+}

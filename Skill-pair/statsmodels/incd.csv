@@ -1,0 +1,73 @@
+Incidence Rate Report for Alaska by Borough or Census Area
+
+"Pancreas (Late Stage^), 2018-2022"
+
+"All Races (includes Hispanic), Female, All Ages"
+
+Sorted by Count
+
+Area,FIPS,2023 Rural-Urban Continuum Codes([rural urban note]),"Age-Adjusted Incidence Rate([rate note]) - cases per 100,000","Lower 95% Confidence Interval","Upper 95% Confidence Interval","CI*Rank([rank note])","Lower CI (CI*Rank)","Upper CI (CI*Rank)",Average Annual Count,Percent of Cases with Late Stage
+"Alaska(2)",02900,N/A,7.9 ,6.6, 9.3,39 , 4 , 51,30,66.4
+"US (SEER+NPCR)(1)",00000,N/A,8.7 ,8.6, 8.7,N/A , N/A , N/A,19583,71.7
+"Anchorage Municipality(2)",02020,Urban,9.3 ,7.1, 11.8,2 , 1 , 3,14,69.0
+"Matanuska-Susitna Borough(2)",02170,Urban,9.5 ,6, 14.3,1 , 1 , 3,5,57.8
+"Kenai Peninsula Borough(2)",02122,Rural,7.8 ,4.3, 13.3,3 , 1 , 3,3,72.7
+"Aleutians East Borough(2)",02013,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Aleutians West Census Area(2)",02016,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Bethel Census Area(2)",02050,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Bristol Bay Borough(2)",02060,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Denali Borough(2)",02068,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Dillingham Census Area(2)",02070,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Fairbanks North Borough(2)",02090,Urban,* ,*, *,* , * , *,3 or fewer,*
+"Haines Borough(2)",02100,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Hoonah-Angoon Census Area(2)",02105,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Juneau City and Borough(2)",02110,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Ketchikan Gateway Borough(2)",02130,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Kodiak Island Borough(2)",02150,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Kusilvak Census Area(2)",02158,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Lake and Peninsula Borough(2)",02164,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Nome Census Area(2)",02180,Rural,* ,*, *,* , * , *,3 or fewer,*
+"North Slope Borough(2)",02185,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Northwest Arctic Borough(2)",02188,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Petersburg Census Area(2)",02195,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Prince of Wales-Hyder Census Area(2)",02198,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Sitka City and Borough(2)",02220,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Skagway Municipality(2)",02230,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Southeast Fairbanks Census Area(2)",02240,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Valdez-Cordova Census Area(2)",02261,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Wrangell Borough(2)",02275,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Yakutat City and Borough(2)",02282,Rural,* ,*, *,* , * , *,3 or fewer,*
+"Yukon-Koyukuk Census Area(2)",02290,Rural,* ,*, *,* , * , *,3 or fewer,*
+
+
+Notes:
+
+Created by statecancerprofiles.cancer.gov on 04/04/2026 5:14 am.
+
+"State Cancer Registries [ https://www.cdc.gov/national-program-cancer-registries/contact/index.html ] may provide more current or more local data."
+
+"
+
+Trend
+   Rising when 95% confidence interval of average annual percent change is above 0.
+   Stable when 95% confidence interval of average annual percent change includes 0.
+   Falling when 95% confidence interval of average annual percent change is below 0.
+"
+
+"[rate note] Incidence rates (cases per 100,000 population per year) are age-adjusted to the 2000 US standard population [ http://www.seer.cancer.gov/stdpopulations/ ] (SEER areas use 20 age groups and NPCR areas use 19 age groups). Rates are for invasive cancer only (except for bladder cancer which is invasive and in situ) or unless otherwise specified. Rates calculated using SEER*Stat [ https://seer.cancer.gov/seerstat/ ]. Population counts for denominators are based on Census populations as modified [https://seer.cancer.gov/popdata/] by NCI. The US Population Data File [https://seer.cancer.gov/popdata/] is used for SEER and NPCR incidence rates."
+
+"Rates are computed using cancers classified as malignant based on ICD-O-3. For more information see malignant.html."
+
+"[stage note] Late Stage is defined as cases determined to be regional or distant. Due to changes in stage coding, Combined Summary Stage with Expanded Regional Codes (2004+) is used for data from Surveillance, Epidemiology, and End Results (SEER) databases and Merged Summary Stage is used for data from National Program of Cancer Registries [ https://www.cdc.gov/cancer/npcr/index.htm ] databases. Due to the increased complexity with staging, other staging variables maybe used if necessary."
+
+"[rank note] Results presented with the CI*Rank statistics help show the usefulness of ranks. For example, ranks for relatively rare diseases or less populated areas may be essentially meaningless because of their large variability, but ranks for more common diseases in densely populated regions can be very useful. The rates used in CI*Rank are all age-adjusted to the 2000 US standard population using 19 age groups for SEER and NPCR areas. More information about methodology can be found on the CI*Rank website [ https://surveillance.cancer.gov/cirank/ ]."
+
+"[rural urban note] Rural–urban county classifications are based on the 2023 USDA Rural–Urban Continuum Codes [ https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/ ] (except for Connecticut Counties which use 2013 codes). State-level cancer rates for rural areas are calculated using cancer cases registered exclusively in rural counties, while state-level cancer rates for urban areas are calculated using cases registered exclusively in urban counties."
+
+"(1) Source: National Program of Cancer Registries [ https://www.cdc.gov/cancer/npcr/index.htm ] and Surveillance, Epidemiology, and End Results [ http://seer.cancer.gov ] SEER*Stat Database - United States Department of Health and Human Services, Centers for Disease Control and Prevention and National Cancer Institute. Based on the 2024 submission."
+
+"(2) Source: National Program of Cancer Registries SEER*Stat Database - United States Department of Health and Human Services, Centers for Disease Control and Prevention (based on the 2024 submission).  [ https://www.cdc.gov/cancer/npcr/index.htm ]"
+
+"* Data has been suppressed to ensure confidentiality and stability of rate estimates.  Counts are suppressed if fewer than 16 records were reported in a specific area-sex-race category."
+
+"Data for United States does not include Puerto Rico."

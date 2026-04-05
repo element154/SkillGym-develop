@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="The dataset consists of data for the IEEE 118-bus system, IEEE 300-bus system, and a modified 3266-bus system based on the practical provincial grid of China for unit commitment. The dataset includes one year of load information, renewable energy generation data, and the necessary parameters for solving the unit commitment problem, such as units, lines, and buses." />
+<link rel="canonical" href="https://ieee-dataport.org/documents/118-bus-300-bus-and-3266-bus-system-data" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Dataset",
+            "creator": {
+                "@type": "Person",
+                "name": "Zhibo Xu"
+            },
+            "keywords": "Power and Energy",
+            "citation": "https://dx.doi.org/",
+            "name": [
+                "118-bus",
+                "300-bus and 3266-bus system data"
+            ],
+            "description": [
+                "The dataset consists of data for the IEEE 118-bus system",
+                "IEEE 300-bus system",
+                "and a modified 3266-bus system based on the practical provincial grid of China for unit commitment. The dataset includes one year of load information",
+                "renewable energy generation data",
+                "and the necessary parameters for solving the unit commitment problem",
+                "such as units",
+                "lines",
+                "and buses."
+            ],
+            "url": "https://ieee-dataport.org/documents/118-bus-300-bus-and-3266-bus-system-data",
+            "license": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ]
+}</script>
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" href="/themes/custom/dataport_bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>118-bus, 300-bus and 3266-bus system data | IEEE DataPort</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_T2XI90ysUA6lpAe6J9qmxcMKDEHlgbTTp0Nwc_OdZ_c.css?delta=0&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNj9EOwjAIRX-oWz-poS3OJqU0QF329-rMNJk--ELgngu5RGZTE-ghgkhhn5gIm6mLZ3LhZrCiMuEvKPStLpUj1Eltq6Ut35xQFRbUsF6L_bjaOKNLLPiM1bk9g81n1zQ9Ao8_bSFxHdT0Zc8yOtQ5F6i8uAwGncXCe_X8wNuRhhqTv0LLFUMugslYtmCC6C7lhmogPoKW9BmPZn7o6LoUpSPBPjjd1JD8jm8FV_V7nYnzqHgHk7ipcw" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_4NiDWvBKXdy6dbCGZt6Y5Uq_Nrjji5r-j8vvC3-LIq4.css?delta=1&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNj9EOwjAIRX-oWz-poS3OJqU0QF329-rMNJk--ELgngu5RGZTE-ghgkhhn5gIm6mLZ3LhZrCiMuEvKPStLpUj1Eltq6Ut35xQFRbUsF6L_bjaOKNLLPiM1bk9g81n1zQ9Ao8_bSFxHdT0Zc8yOtQ5F6i8uAwGncXCe_X8wNuRhhqTv0LLFUMugslYtmCC6C7lhmogPoKW9BmPZn7o6LoUpSPBPjjd1JD8jm8FV_V7nYnzqHgHk7ipcw" />
+<link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.13.0/css/all.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_lgWTgZEFc_2PCJ5dvP_Gz8xk58GfQhfM9O1Q9TxsZpU.css?delta=3&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNj9EOwjAIRX-oWz-poS3OJqU0QF329-rMNJk--ELgngu5RGZTE-ghgkhhn5gIm6mLZ3LhZrCiMuEvKPStLpUj1Eltq6Ut35xQFRbUsF6L_bjaOKNLLPiM1bk9g81n1zQ9Ao8_bSFxHdT0Zc8yOtQ5F6i8uAwGncXCe_X8wNuRhhqTv0LLFUMugslYtmCC6C7lhmogPoKW9BmPZn7o6LoUpSPBPjjd1JD8jm8FV_V7nYnzqHgHk7ipcw" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_GA7qXI7EYb-TnvhDGUl96bXbeUB_08UoTpeyVZUppzo.css?delta=4&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJyNj9EOwjAIRX-oWz-poS3OJqU0QF329-rMNJk--ELgngu5RGZTE-ghgkhhn5gIm6mLZ3LhZrCiMuEvKPStLpUj1Eltq6Ut35xQFRbUsF6L_bjaOKNLLPiM1bk9g81n1zQ9Ao8_bSFxHdT0Zc8yOtQ5F6i8uAwGncXCe_X8wNuRhhqTv0LLFUMugslYtmCC6C7lhmogPoKW9BmPZn7o6LoUpSPBPjjd1JD8jm8FV_V7nYnzqHgHk7ipcw" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/14450","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyNUVuShCAMvBDKkawIGYZZIG4SxvX2i86rVv3Yn1S6Ow_SjEQqyjANIzBHso5yxqJixr1yoaIwo1DGM5HzkQ2JRkid6JJiCUe9sV8nmzKKQEAZ5mvUk2WFPJrnQ63nOkHqn7Abl-4ecUZuBYzrOROV9aB-P6brWkP9Z9ngKNVc5FH-3OkjJAo93ODnwceiyKUpt--KvPSbKx4UJmId3pMteDmj39mZuPPyXeGqKGXrUpxGAvYHxdNcEoFvJ9SiB_kKxSccfGR0SrwMyojmEu8oCmxHkOg-8JX0jUcTiELrVQg2tLDHD2f-kNlMHCW_HNyAaQM1ikYnL_7DGFlEMdtt3_qzYrfYZ_I14S93Kha3","theme":"dataport_bootstrap","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/documents\/118-bus-300-bus-and-3266-bus-system-data?ajax_form=1":true},"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NSLFHWSR"]},"statistics":{"data":{"nid":"14450"},"url":"\/core\/modules\/statistics\/statistics.php"},"ajax":{"edit-submit":{"event":"click","callback":"::fivestarAjaxVote","method":"replaceWith","wrapper":"vote","effect":"fade","url":"\/documents\/118-bus-300-bus-and-3266-bus-system-data?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Rate"}}},"user":{"uid":0,"permissionsHash":"eb4c5bc0d54c637a7257b1655f03d45bbfb2069690c6c08a5a6cedc7f210745d"}}</script>
+<script src="/sites/default/files/js/js_JjiXiLZaSUZ3OOHy-lha4PQqd2V2v7n8FYd5eoB6u7Y.js?scope=header&amp;delta=0&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtkG2uAiEMRTfEDEsiBSrWAMXS0Te7f0RF48cf0nvODZB6Zu0q0JwHEWKbMnvIS9c9U00mcClY1UbZGuT1ERe_LxfCK8ooCE4bCTKnFU7wd-dUFaUOczpvKPt6YCkmgkJjUefn2xZi_4Wf0y_58dFnI2xdudiQqXkGiV8m8rVmhugCb1W_9BFqzOgiCQZl2Z0KojnQBbuC2DmsHjqaxJxGWSHZNI7PfF_FGyymCfUyV3YLZlyo1JVCn_xF_gEbf6UQ"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?tcrqbc"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?tcrqbc"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cmp.osano.com/AzyzptTmRlqVd2LRf/ae923df5-3102-4fd5-823d-d18db6ce5c2f/osano.js"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=67e1a10b59793500196aafc8&product=sop' async='async'></script>
+	  <link rel="stylesheet" href="https://cookie-consent.ieee.org/ieee-cookie-banner.css" type="text/css"/>
+    </head>
+  <body class="layout-no-sidebars page-node-14450 path-node node--type-document">
+    <a href="#main-content" class="visually-hidden-focusable">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLFHWSR"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+      <nav class="navbar" id="navbar-top">
+                <section class="container-fluid region region-top-header">
+    <nav role="navigation" aria-labelledby="block-dataport-bootstrap-ieeemenus-menu" id="block-dataport-bootstrap-ieeemenus" class="block block-menu navigation menu--ieee-menus">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-ieeemenus-menu">IEEE Menus</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="https://www.ieee.org/" target="_blank" class="nav-link nav-link-https--wwwieeeorg-">IEEE.org</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://ieeexplore.ieee.org/" target="_blank" class="nav-link nav-link-https--ieeexploreieeeorg-">IEEE Xplore Digital Library</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://standards.ieee.org/" target="_blank" class="nav-link nav-link-https--standardsieeeorg-">IEEE Standards</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://spectrum.ieee.org/" target="_blank" class="nav-link nav-link-https--spectrumieeeorg-">IEEE Spectrum</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.ieee.org/sitemap.html" target="_blank" class="nav-link nav-link-https--wwwieeeorg-sitemaphtml">More Sites</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-account-menu-menu" id="block-dataport-bootstrap-account-menu" class="block block-menu navigation menu--account">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-account-menu-menu">User account menu</h2>
+  
+
+        
+              <ul class="clearfix nav flex-row" data-component-id="bootstrap_barrio:menu_columns">
+                    <li class="d-none d-md-block btn btn-primary btn-sm  my-2 py-1 nav-item">
+                <a href="/subscribe" class="text-white rounded p-0 nav-link text-white rounded p-0 nav-link--subscribe" target="_blank" data-drupal-link-system-path="node/914">Subscribe</a>
+              </li>
+                <li class="d-none d-md-block cart nav-item">
+                <a href="https://www.ieee.org/cart/public/myCart/page.html?refSite=https%3A//ieee-dataport.org&amp;refSiteName=IEEE%20DataPort" target="_blank" class="nav-link nav-link-https--wwwieeeorg-cart-public-mycart-pagehtmlrefsitehttps3a--ieee-dataportorgrefsitenameieee20dataport">Cart</a>
+              </li>
+                <li class="nav-item">
+                <a href="/saml_login?idp=IEEEDataport&amp;destination=/" class="nav-link nav-link--saml-loginidpieeedataportdestination-" data-drupal-link-query="{&quot;destination&quot;:&quot;\/&quot;,&quot;idp&quot;:&quot;IEEEDataport&quot;}" data-drupal-link-system-path="saml_login">Login</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.ieee.org/profile/public/createwebaccount/showCreateAccount.html?sourceCode=dataport&amp;signinurl=https%3A//ieee-dataport.org/&amp;url=https%3A//ieee-dataport.org/" target="_blank" class="nav-link nav-link-https--wwwieeeorg-profile-public-createwebaccount-showcreateaccounthtmlsourcecodedataportsigninurlhttps3a--ieee-dataportorg-urlhttps3a--ieee-dataportorg-">Create Free Account</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+          </nav>
+    <div class="container-fluid">
+    <div class="row py-4 px-0 px-sm-3 mx-auto">
+      <nav class="navbar navbar-expand-lg" id="navbar-main">
+                          <a href="/" title="Home" rel="home" class="navbar-brand">
+              <img src="/themes/custom/dataport_bootstrap/logo.svg" alt="Home" class="img-fluid d-inline-block align-top" />
+            
+    </a>
+    <nav role="navigation" aria-labelledby="block-dataport-bootstrap-main-menu-menu" id="block-dataport-bootstrap-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-main-menu-menu">Main navigation</h2>
+  
+
+        <ul class="navbar-nav justify-content-between w-100">
+      <li class="nav-item ">
+      <a href="/datasets"  class="nav-link "  >
+        Datasets
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/submit-dataset"  class="nav-link "  >
+        Submit a Dataset
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/competitions"  class="nav-link "  >
+        Competitions
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/search"  class="nav-link "  >
+        Search
+      </a>
+    </li>
+  </ul>
+
+  </nav>
+<div id="block-dataport-bootstrap-ieeelogo" class="block-content-basic block block-block-content block-block-contentbf31f3fb-7ce3-4e1b-bf33-5b4ec9a3fff3">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><nav class="navbar"><div><a class="navbar-brand-ieee" href="https://www.ieee.org" target="_blank"><img class="partner-logo" src="https://ieee-dataport.org/themes/custom/dataport_bootstrap/images/ieee-logo.svg" alt="IEEE" width="120" height="35" loading="lazy"></a></div></nav></div>
+      
+    </div>
+  </div>
+
+
+                      <button class="navbar-toggler navbar-toggler-left" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                <nav role="navigation" aria-labelledby="block-dataport-bootstrap-mainnavigation-menu" id="block-dataport-bootstrap-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-mainnavigation-menu">Main navigation</h2>
+  
+
+        <ul class="navbar-nav justify-content-between w-100">
+      <li class="nav-item ">
+      <a href="/datasets"  class="nav-link "  >
+        Datasets
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/submit-dataset"  class="nav-link "  >
+        Submit a Dataset
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/competitions"  class="nav-link "  >
+        Competitions
+      </a>
+    </li>
+      <li class="nav-item ">
+      <a href="/search"  class="nav-link "  >
+        Search
+      </a>
+    </li>
+  </ul>
+
+  </nav>
+
+
+            </div>
+                                  </nav>
+    </div>
+  </div>
+
+          <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-dataport-bootstrap-page-title" class="block block-core block-page-title-block">
+  
+    
+      <div class="content">
+      
+			<h2 class="title">
+			Datasets
+			<h3>Standard Dataset</h3>
+		</h2>
+	
+
+    </div>
+  </div>
+
+
+  
+  
+  <div id="main" class="container-fluid mx-auto">
+    <div class="row row-offcanvas row-offcanvas-left clearfix">
+            <main class="main-content col" id="content" role="main">
+        <section class="section">
+          <a href="#main-content" id="main-content" tabindex="-1"></a>
+          
+            <div id="block-dataport-bootstrap-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      
+
+
+
+                  
+
+<article data-history-node-id="14450" class="node node--type-document node--view-mode-full clearfix">
+  <div class="node__content clearfix container-fluid">
+    <div class="container-fluid" id="infocard">
+      <header class="row pt-0 py-4 mx-auto">
+        
+        <h1 class="node__title">
+          118-bus, 300-bus and 3266-bus system data
+        </h1>
+        
+      </header>
+      <div class="row mx-auto">
+        <div class="col-lg-3 col-xl-2 pb-1 featured-image">
+                    
+                                  <img src="/sites/default/files/styles/home/public/data_picture_6.jpg.webp?itok=Njrb0kAA" alt="Dataset image">
+                    <div class="mt-3">
+            
+            <div class="field field--name-field-rating field--type-fivestar field--label-hidden field__item">
+<form class="fivestar-form-1" id="vote" data-drupal-selector="fivestar-form-1" action="/documents/118-bus-300-bus-and-3266-bus-system-data" method="post" accept-charset="UTF-8">
+  <div class="clearfix fivestar-average-text fivestar-average-stars fivestar-form-item fivestar-basic">
+
+
+
+
+
+  <div class="js-form-item js-form-type-fivestar form-type-fivestar js-form-item-vote form-item-vote form-no-label mb-3">
+                    
+
+
+
+
+
+  <div class="js-form-item js-form-type-select form-type-select js-form-item-vote form-item-vote form-no-label mb-3">
+                    
+<select class="vote form-select" data-drupal-selector="edit-vote" aria-describedby="edit-vote--2--description" id="edit-vote--2" name="vote"><option value="-">Select rating</option><option value="20">Give it 1/5</option><option value="40">Give it 2/5</option><option value="60">Give it 3/5</option><option value="80">Give it 4/5</option><option value="100" selected="selected">Give it 5/5</option></select>
+                          <small id="edit-vote--2--description" class="description text-muted">
+        <div class="fivestar-summary fivestar-summary-average-count">
+  
+      <span class="average-rating">
+      Average: <span>5</span>
+    </span>
+  
+            <span class="total-votes">
+                          (<span>233</span> votes)
+              </span>
+      </div>
+
+      </small>
+      </div>
+
+                      </div>
+</div><button class="js-hide button js-form-submit form-submit btn btn-primary" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Rate">Rate</button>
+<input autocomplete="off" data-drupal-selector="form-panja8ct3-cptcgspo7cgq4elhiltpvk8z59fn-shek" type="hidden" name="form_build_id" value="form-PAnja8cT3-cpTCgsPO7CGQ4elHILTpvK8z59Fn_Shek" class="form-control" />
+<input data-drupal-selector="edit-fivestar-form-1" type="hidden" name="form_id" value="fivestar_form_1" class="form-control" />
+
+</form>
+</div>
+      
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-9 col-xl-6 col-lg-5">
+          <dl class="topinfo">
+            <dt>Citation Author(s):</dt>
+            <dd>
+                                                                <div>
+  Zhibo Xu
+    </div>                                          </dd>
+                                      <dt>Submitted by:</dt>
+              <dd>
+                <a href="/authors/zhibo-xu">
+                  Zhibo
+                  Xu
+                </a>
+              </dd>
+                        <dt>Last updated:</dt>
+            <dd>
+              <time datetime="2026-01-07T01:47:14+00:00">
+                Wed, 01/07/2026 - 01:47
+              </time>
+            </dd>
+            <dt>DOI:</dt>
+            <dd>
+              <a href="https://dx.doi.org/10.21227/vma9-wk20" target="_blank">10.21227/vma9-wk20</a>
+            </dd>
+                                                          </dl>
+        </div>
+        <div class="col-xs-12 offset-xs-0 col-lg-4 col-md-9">
+          <div class="mb-3">
+            <img src="/themes/custom/dataport_bootstrap/images/view.svg" style="height: 1.5em;">
+            2920 views
+            <span class="file-download-count ps-3" data-content-id="14450"></span>
+                      </div>
+
+          <dl class="topinfo d-flex flex-wrap mt-3">
+                          <dt class="float-none w-25">Categories:</dt>
+              <dd class="float-none w-75"><div class="field field--name-field-tags field--type-entity-reference field--label-hidden clearfix">
+    <ul class='links field__items'>
+          <li><a href="/topic-tags/power-and-energy" hreflang="en">Power and Energy</a></li>
+      </ul>
+</div>
+</dd>
+                                      <dt class="float-none w-25">Keywords:</dt>
+              <dd class="float-none w-75">
+      <div class="field field--name-field-keywords field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item"><a href="/keywords/power-system" hreflang="en">Power System</a></div>
+              <div class="field__item"><a href="/keywords/unit-commitment" hreflang="en">unit commitment</a></div>
+          </div>
+  </dd>
+                                  </dl>
+          <a class="btn btn-primary mt-3 me-3" href="#" id="cite" data-bs-toggle="modal" data-bs-target="#citeModal">
+            <i class="icon quote"></i>CITE
+          </a>
+          <a class="btn btn-primary mt-3 me-3" href="#" id="share" data-bs-toggle="modal" data-bs-target="#shareModal">
+            <i class="icon share"></i>SHARE/EMBED
+          </a>
+                  </div>
+      </div>
+    </div>
+ 
+    <div class="container-fluid">
+      <div class="row py-4 mx-auto mainContentClass">
+        <div class="col-lg-8 col-md-12">
+          <div id="mainContentId">
+                                                                      <div class="ai-analysis-section">
+                  <div class="alert alert-info d-flex justify-content-between align-items-center"><div><em><i class="fas fa-info-circle me-2">​</i></em>AI-Powered Dataset Intelligence is available for this dataset exclusively to <a class="fw-bold" href="https://ieee-dataport.org/institutional-subscriptions" target="_blank">institutional subscribers</a>.</div><div><a class="btn btn-primary btn-sm" href="https://ieee-dataport.org/institutional-subscriptions">Learn More</a></div></div>
+                </div>
+                          
+                                    
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link active" id="abstract-tab" data-bs-toggle="tab" data-bs-target="#abstract-tab-pane" type="button" role="tab" aria-controls="abstract-tab-pane" aria-selected="true"><i class="fas fa-paragraph"></i> Abstract & Instructions</button>
+              </li>
+              <li class="nav-item fw-bold" role="presentation">
+                <button class="nav-link" id="comments-tab" data-bs-toggle="tab" data-bs-target="#comments-tab-pane" type="button" role="tab" aria-controls="comments-tab-pane" aria-selected="false"><i class="fas fa-comments"></i> Comments </button>
+              </li>
+                          </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane p-4 fade show active" id="abstract-tab-pane" role="tabpanel" aria-labelledby="abstract-tab" tabindex="0">
+                <h4>Abstract</h4>
+                
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>The dataset consists of data for the IEEE 118-bus system, IEEE 300-bus system, and a modified 3266-bus system based on the practical provincial grid of China for unit commitment. The dataset includes one year of load information, renewable energy generation data, and the necessary parameters for solving the unit commitment problem, such as units, lines, and buses.</p></div>
+      
+                                  <h4>Instructions:</h4>
+                  
+            <div class="clearfix text-formatted field field--name-field-instructions field--type-text-long field--label-hidden field__item"><p>The dataset is for the paper<strong> </strong>"A Multi-timescale Learn-to-Optimize Method for Unit Commitment with Renewable Power." The data is stored in three folders: **118-bus**, **300-bus**, and **3266-bus**. In the **118-bus** and **300-bus** folders, `renew_power_data.csv` represents the predicted renewable power generation for one year, and `renew_gen_para` includes the location and installed capacity of renewable power generation units. For additional parameters of the IEEE 118-bus and IEEE 300-bus systems, please refer to Alinson S. Xavier, Aleksandr M. Kazachkov, Ogün Yurdakul, Jun He, Feng Qiu. "UnitCommitment.jl: A Julia/JuMP Optimization Package for Security-Constrained Unit Commitment (Version 0.4)". Zenodo (2024). DOI: 10.5281/zenodo.4269874.&nbsp;&nbsp;</p><p>&nbsp;</p><p>In the **3266-bus** folder, `system_para.mat` contains information about the units, buses, and lines in the system, while `load_renew_data.csv` represents the predicted load demand and renewable power generation for one year.</p></div>
+      
+                                                              </div>
+              <div class="tab-pane fade p-4" id="comments-tab-pane" role="tabpanel" aria-labelledby="comments-tab" tabindex="0">
+                <div>
+                  <section class="field field--name-comment field--type-comment field--label-hidden comment-wrapper">
+  
+  
+<article role="article" data-comment-user-id="1357206" id="comment-7686" class="comment js-comment clearfix">
+  <i class="fas fa-quote-left text-primary lead"></i>
+  <div class="comment__meta col-sm-3">
+        <span class="hidden text-danger" data-comment-timestamp="1745406453"></span>
+
+          </div>
+
+  <div class="comment__content card border-0">
+    <div class="card-body">
+      
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Good</p></div>
+      
+    </div>
+    <div class="card-body pt-0">
+      <small class="comment__author"><a title="View user profile." href="/authors/kevin-kim" class="username">kevin kim</a></small>
+      <span class="comment__time">Sun, 03/16/2025 - 18:49</span>
+      <span class="comment__permalink"><a href="/comment/7686#comment-7686" hreflang="en">Permalink</a></span>
+
+              <nav class="mt-3">
+
+  <div class="inline__links"><nav class="links inline nav links-inline"><span class="comment-forbidden nav-link"><a href="/user/login?destination=/documents/118-bus-300-bus-and-3266-bus-system-data%23comment-form">Log in</a> to post comments</span></nav>
+  </div>
+</nav>
+      
+    </div>
+  </div>
+</article>
+
+<div class="indented">
+<article role="article" data-comment-user-id="1300927" id="comment-7778" class="comment js-comment by-node-author clearfix">
+  <i class="fas fa-quote-left text-primary lead"></i>
+  <div class="comment__meta col-sm-3">
+        <span class="hidden text-danger" data-comment-timestamp="1745406453"></span>
+
+              <p class="visually-hidden">In reply to <a href="/comment/7686#comment-7686" class="permalink" rel="bookmark" hreflang="en">Good</a> by <a title="View user profile." href="/authors/kevin-kim" class="username">kevin kim</a></p>
+      </div>
+
+  <div class="comment__content card border-0">
+    <div class="card-body">
+      
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Thank you!</p></div>
+      
+    </div>
+    <div class="card-body pt-0">
+      <small class="comment__author"><a title="View user profile." href="/authors/zhibo-xu" class="username">Zhibo Xu</a></small>
+      <span class="comment__time">Tue, 03/25/2025 - 09:26</span>
+      <span class="comment__permalink"><a href="/comment/7778#comment-7778" hreflang="en">Permalink</a></span>
+
+              <nav class="mt-3">
+
+  <div class="inline__links"><nav class="links inline nav links-inline"><span class="comment-forbidden nav-link"><a href="/user/login?destination=/documents/118-bus-300-bus-and-3266-bus-system-data%23comment-form">Log in</a> to post comments</span></nav>
+  </div>
+</nav>
+      
+    </div>
+  </div>
+</article>
+</div>
+<article role="article" data-comment-user-id="1360776" id="comment-7760" class="comment js-comment clearfix">
+  <i class="fas fa-quote-left text-primary lead"></i>
+  <div class="comment__meta col-sm-3">
+        <span class="hidden text-danger" data-comment-timestamp="1745406453"></span>
+
+          </div>
+
+  <div class="comment__content card border-0">
+    <div class="card-body">
+      
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>good</p></div>
+      
+    </div>
+    <div class="card-body pt-0">
+      <small class="comment__author"><a title="View user profile." href="/authors/sathieshkumar-s" class="username">SATHIESHKUMAR S</a></small>
+      <span class="comment__time">Mon, 03/24/2025 - 09:06</span>
+      <span class="comment__permalink"><a href="/comment/7760#comment-7760" hreflang="en">Permalink</a></span>
+
+              <nav class="mt-3">
+
+  <div class="inline__links"><nav class="links inline nav links-inline"><span class="comment-forbidden nav-link"><a href="/user/login?destination=/documents/118-bus-300-bus-and-3266-bus-system-data%23comment-form">Log in</a> to post comments</span></nav>
+  </div>
+</nav>
+      
+    </div>
+  </div>
+</article>
+
+<div class="indented">
+<article role="article" data-comment-user-id="1300927" id="comment-7779" class="comment js-comment by-node-author clearfix">
+  <i class="fas fa-quote-left text-primary lead"></i>
+  <div class="comment__meta col-sm-3">
+        <span class="hidden text-danger" data-comment-timestamp="1745406453"></span>
+
+              <p class="visually-hidden">In reply to <a href="/comment/7760#comment-7760" class="permalink" rel="bookmark" hreflang="en">good</a> by <a title="View user profile." href="/authors/sathieshkumar-s" class="username">SATHIESHKUMAR S</a></p>
+      </div>
+
+  <div class="comment__content card border-0">
+    <div class="card-body">
+      
+            <div class="clearfix text-formatted field field--name-comment-body field--type-text-long field--label-hidden field__item"><p>Thank you!</p></div>
+      
+    </div>
+    <div class="card-body pt-0">
+      <small class="comment__author"><a title="View user profile." href="/authors/zhibo-xu" class="username">Zhibo Xu</a></small>
+      <span class="comment__time">Tue, 03/25/2025 - 09:26</span>
+      <span class="comment__permalink"><a href="/comment/7779#comment-7779" hreflang="en">Permalink</a></span>
+
+              <nav class="mt-3">
+
+  <div class="inline__links"><nav class="links inline nav links-inline"><span class="comment-forbidden nav-link"><a href="/user/login?destination=/documents/118-bus-300-bus-and-3266-bus-system-data%23comment-form">Log in</a> to post comments</span></nav>
+  </div>
+</nav>
+      
+    </div>
+  </div>
+</article>
+</div>
+
+  
+</section>
+
+                </div>
+              </div>
+                          </div>
+
+            <div class="mt-3">
+              <div class="views-element-container"><div class="view view-latest-posts view-id-latest_posts view-display-id-block_1 js-view-dom-id-440de0e8f377e8450f0784d8b47c1ae570238faeb82e6f16d864d9fe17f6d3d4">
+  
+    
+      
+  
+          </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="column-box">
+            <div class="mb-3">
+              <h4>Dataset Files</h4>
+              <a name="files"></a>
+                              
+      <div class="field field--name-field-s3-fs-multi-test field--type-file field--label-hidden field__items">
+              <div class="field__item"><div class="s3-file-lists"><div class="item-list"><ul class="list-group"><li class="rar list-group-item"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal" class="refresh-get-customer">power_system_data.rar (Size: 41.96 MB)</a></li></ul></div></div></div>
+              <div class="field__item"><div class="s3-file-lists"><ul><li class="folder"><span class="caret">power_system_data</span><ul><li class="folder"><span class="caret">dataset</span><ul><li class="folder"><span class="caret">118-bus</span><ul><li class="csv"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal">renew_gen_para.csv (81 bytes)</a></li><li class="csv"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal">renew_power_data.csv (467.78 KB)</a></li></ul></li><li class="folder"><span class="caret">300-bus</span><ul><li class="csv"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal">renew_gen_para.csv (111 bytes)</a></li><li class="csv"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal">renew_power_data.csv (651.13 KB)</a></li></ul></li><li class="folder"><span class="caret">3266-bus</span><ul><li class="csv"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal">load_renew_data.csv (74.04 MB)</a></li><li class="mat"><a href="#" data-bs-toggle="modal" data-bs-target="#accessModal">system_para.mat (156.02 MB)</a></li></ul></li></ul></li></ul></li></ul></div></div>
+              <div class="field__item">			<a href="/saml_login/?idp=IEEEDataport" id="accesss3" class="btn btn-primary my-2">
+			<i class="icon document-cloud"></i>LOGIN TO ACCESS DATASET FILES</a>
+			</div>
+              <div class="field__item"></div>
+          </div>
+  
+                          </div>
+                                    <div class="mb-3">
+              <em class="small">Advertisement</em>
+              
+              <div id="div-gpt-ad-4507714-2"></div>
+            </div>
+            <div class="pt-1 questions">
+              <h4>QUESTIONS?</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action">
+                  <img src="/themes/custom/dataport_bootstrap/images/email.svg" style="height: 12px; margin-left: -20px; vertical-align: baseline;">
+                  <a href="/private-message/create?recipient=1300927">Send Author a Private Message</a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                  <img src="/themes/custom/dataport_bootstrap/images/caution.svg" style="height: 13px; margin-left: -20px; vertical-align: baseline;">
+                  <a href="/contact">Report a problem with this Dataset</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- upload Modal -->
+<div class="modal modalDataSet fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="uploadModalLabel">Upload your Dataset</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="modal-body">
+            <h3>How to Upload Dataset Files Directly to AWS</h3>
+            <p>IEEE DataPort Subscribers may upload their dataset files directly to IEEE DataPort's AWS S3 file storage. Please read the
+              <a href="https://ieee-dataport.org/help/upload-your-files-directly-ieee-dataport-s3-bucket" target="_blank">Upload Your Files directly to the IEEE DataPort S3 Bucket</a>
+              help topic for detailed instructions.</p>
+            <p>You will need the following information to complete your upload:</p>
+            <ol>
+              <li>Your AWS Access Key and Secret key, which can be found on your
+                <a href="/user">IEEE DataPort User Profile</a>.</li>
+              <li>
+                <em>DATASET TYPE:</em>
+                data</li>
+              <li>
+                <em>USERID:</em>
+                1353045</li>
+              <li>
+                <em>DATASETID:</em>
+                14627</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- access Modal -->
+<div class="modal modalDataSet fade" id="accessModal" tabindex="-1" aria-labelledby="accessModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="accessModalLabel">Dataset Access Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                
+                              <div class="alert alert-info">
+              <h4>Subscription Required</h4>
+              <p>This dataset requires an IEEE DataPort Subscription to access.</p>
+                              <p><strong>Your Status:</strong> Not logged in.</p>
+                <p>For all IEEE DataPort Subscribers, including all IEEE Society Members, please
+                  <a href="/saml_login?idp=IEEEDataport&destination=/">login now</a>
+                  to access your IEEE DataPort Subscription.</p>
+                <a href="/subscribe" class="btn btn-primary mt-2">Subscribe Now</a>
+                          </div>
+                        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cite Modal -->
+<div class="modal modalDataSet fade" id="citeModal" tabindex="-1" aria-labelledby="citeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="citeModalLabel">Dataset Citation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                                                                                                
+          <div class="accordion" id="accordionDatasetCitation">
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  IEEE
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  Zhibo Xu, "118-bus, 300-bus and 3266-bus system data", IEEE Dataport,
+                  January 3, 2025, doi:10.21227/vma9-wk20
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  BibTeX
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  @data{vma9-wk20-25,<br/>
+                  doi =
+                  {10.21227/vma9-wk20},<br/>
+                  url =
+                  {https://dx.doi.org/10.21227/vma9-wk20},<br/>
+                  author =
+                  {Zhibo Xu},<br/>
+                  publisher = {IEEE Dataport},<br/>
+                  title =
+                  {118-bus, 300-bus and 3266-bus system data},<br/>
+                  year =
+                  {2025} }<br/>
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  RIS
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  TY  - DATA<br/>
+                  T1  -
+                  118-bus, 300-bus and 3266-bus system data<br/>
+                                      AU  -
+                    Zhibo Xu<br/>
+                                    PY  -
+                  2025<br/>
+                  PB  - IEEE Dataport<br/>
+                  UR  -
+                  10.21227/vma9-wk20<br/>
+                  ER  -<br/>
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  APA
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  Zhibo Xu
+                  (2025).
+                  118-bus, 300-bus and 3266-bus system data. IEEE Dataport.
+                  https://dx.doi.org/10.21227/vma9-wk20
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Harvard
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  Zhibo Xu
+                  2025
+                  118-bus, 300-bus and 3266-bus system data. Available at:
+                  https://dx.doi.org/10.21227/vma9-wk20
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  MLA
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  Zhibo Xu.(2025). "118-bus, 300-bus and 3266-bus system data." Web,
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Vancouver
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  1.
+                  Zhibo Xu.
+                  118-bus, 300-bus and 3266-bus system data
+                  [Internet]. IEEE Dataport;
+                  2025. Available from:
+                  https://dx.doi.org/10.21227/vma9-wk20
+                </div>
+              </div>
+            </div>
+
+                        <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Chicago
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionDatasetCitation">
+                <div class="accordion-body">
+                  Zhibo Xu, "118-bus, 300-bus and 3266-bus system data,",
+                  doi: 10.21227/vma9-wk20.
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Share Modal -->
+<div class="modal modalDataSet fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shareModalLabel">Share / Embed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title" id="embedDescription">Embed this dataset on another website</h4>
+            <p class="mb-3">Copy and paste the HTML code below to embed your dataset:</p>
+            <textarea id="embed-code" class="form-control mb-2" rows="4" spellcheck="false"><iframe width="100%" height="600" src="https://ieee-dataport.org//documents/118-bus-300-bus-and-3266-bus-system-data" title="Embedded Dataset Viewer" frameborder="0" allowfullscreen></iframe></textarea>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Share via email or social media</h4>
+            <p style="padding-bottom: 10px;">Click the buttons below:</p>
+            <!-- Share this -->
+            <div class="sharethis-inline-share-buttons"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Share a link to this dataset</h4>
+            <p>
+              <strong>Permalink:</strong>
+              https://ieee-dataport.org//documents/118-bus-300-bus-and-3266-bus-system-data
+            </p>
+            <p>
+              <strong>DOI Link:</strong>
+              https://dx.doi.org/10.21227/vma9-wk20
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Zip Content Modal -->
+<div class="modal modalDataSet fade" id="zipContentModal" tabindex="-1" aria-labelledby="zipContentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="zipContentModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body overflow-auto" style="max-height: 500px;">
+        <div id="tree-container" class="s3-file-lists">
+          Loading...
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+<div class="views-element-container block block-views block-views-blockdatasets-home-block-2" id="block-dataport-bootstrap-views-block-datasets-home-block-2">
+  
+    
+      <div class="content">
+      <div><div class="px-4 mb-4 view view-datasets-home view-id-datasets_home view-display-id-block_2 js-view-dom-id-3c66f85f569022bccac36609d0e4416857deea8ea7a4cd716f876d7be9348422">
+  
+    
+      
+  
+          </div>
+</div>
+
+    </div>
+  </div>
+<div class="views-element-container block block-views block-views-blockdatasets-home-block-3" id="block-dataport-bootstrap-views-block-datasets-home-block-3">
+  
+    
+      <div class="content">
+      <div><div class="px-4 view view-datasets-home view-id-datasets_home view-display-id-block_3 js-view-dom-id-ca1aebc6a500f943db8f267e524a554da1669419c2989eb54b2f9662512bf5cb">
+  
+    
+      <div class="view-header">
+      <h3>More like this Dataset</h3>
+    </div>
+      
+      <div class="view-content row">
+          <div class="col-md-4 col-lg-2 pb-2 views-row">
+    
+
+<article data-history-node-id="2700" class="node node--type-open-access node--view-mode-card clearfix">
+  <div>
+        
+        <img src="/sites/default/files/styles/home/public/Workbench.png.webp?itok=gGI9eNxH" alt="Dataset image">
+      </div>
+  <h6>
+	  <a class="text-break" href="/open-access/experimental-database-detecting-and-diagnosing-rotor-broken-bar-three-phase-induction">Experimental database for detecting and diagnosing rotor broken bar in a three-phase induction motor.</a>
+	</h6>
+</article>
+
+  </div>
+    <div class="col-md-4 col-lg-2 pb-2 views-row">
+    
+
+<article data-history-node-id="4303" class="node node--type-open-access node--view-mode-card clearfix">
+  <div>
+        
+        <img src="/sites/default/files/styles/home/public/Dataset_2.jpg.webp?itok=Td7jdxSN" alt="Dataset image">
+      </div>
+  <h6>
+	  <a class="text-break" href="/open-access/data-server-energy-consumption-dataset">Data Server Energy Consumption Dataset</a>
+	</h6>
+</article>
+
+  </div>
+    <div class="col-md-4 col-lg-2 pb-2 views-row">
+    
+
+<article data-history-node-id="2874" class="node node--type-open-access node--view-mode-card clearfix">
+  <div>
+        
+        <img src="/sites/default/files/styles/home/public/BMW%20i3%20_%20Measurement%20Data_v4.png.webp?itok=Zetewxg6" alt="Dataset image">
+      </div>
+  <h6>
+	  <a class="text-break" href="/open-access/battery-and-heating-data-real-driving-cycles">Battery and Heating Data in Real Driving Cycles</a>
+	</h6>
+</article>
+
+  </div>
+    <div class="col-md-4 col-lg-2 pb-2 views-row">
+    
+
+<article data-history-node-id="1109" class="node node--type-document node--view-mode-card clearfix">
+  <div>
+            
+                              <img src="/sites/default/files/styles/home/public/tags/images/artificial-intelligence-3382507_1920.jpg.webp?itok=dA-l7deV" alt="Tag image">
+        </div>
+  <h6>
+	  <a class="text-break" href="/documents/automotive-li-ion-cell-usage-data-set">Automotive Li-ion Cell Usage Data Set</a>
+	</h6>
+</article>
+
+  </div>
+    <div class="col-md-4 col-lg-2 pb-2 views-row">
+    
+
+<article data-history-node-id="1577" class="node node--type-document node--view-mode-card clearfix">
+  <div>
+            
+                      <img src="/sites/default/files/styles/home/public/current_signal.png.webp?itok=R2V8LURm" alt="Dataset image">
+        </div>
+  <h6>
+	  <a class="text-break" href="/documents/real-life-current-signal-wind-generator">Real-life current signal from a wind generator</a>
+	</h6>
+</article>
+
+  </div>
+    <div class="col-md-4 col-lg-2 pb-2 views-row">
+    
+
+<article data-history-node-id="1359" class="node node--type-document node--view-mode-card clearfix">
+  <div>
+            
+                      <img src="/sites/default/files/styles/home/public/ahus.png.webp?itok=HUj8xXT1" alt="Dataset image">
+        </div>
+  <h6>
+	  <a class="text-break" href="/documents/hvac-air-handling-units-one-year-data-medium-large-size-academic-building">HVAC Air Handling Units: One-year Data from Medium-to-Large Size Academic Building</a>
+	</h6>
+</article>
+
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+    </div>
+  </div>
+
+
+        </section>
+      </main>
+          </div>
+  </div>
+
+      <div class="container-fluid py-4 px-4 featured-bottom">
+        <section class="row region region-featured-bottom">
+    <div class="mailchimp-signup-subscribe-form-block block block-mailchimp-signup block-mailchimp-signup-subscribe-blocknewsletter-signup" data-drupal-selector="mailchimp-signup-subscribe-block-newsletter-signup-form" id="block-dataport-bootstrap-mailchimpsubscriptionformnewslettersignup-2">
+  
+    
+      <nav class="py-1 pl-0">
+      <a href="/">
+        <img class="logo" src="/themes/custom/dataport_bootstrap/images/dataport-logo-white.svg" alt="IEEE DataPort" width="300" height="53" loading="lazy">
+      </a>
+    </nav>
+    <div class="content">
+      <form action="/documents/118-bus-300-bus-and-3266-bus-system-data" method="post" id="mailchimp-signup-subscribe-block-newsletter-signup-form" accept-charset="UTF-8">
+  <div class="mailchimp-signup-subscribe-description"></div>
+  <div id="mailchimp-newsletter-3333fbe9ca-mergefields" class="mailchimp-newsletter-mergefields">
+
+
+
+
+
+  <div class="js-form-item js-form-type-email form-type-email js-form-item-mergevars-email form-item-mergevars-email mb-3">
+          <label for="edit-mergevars-email" class="js-form-required form-required">Newsletter Signup:</label>
+                    <input autocomplete="email" placeholder="Email Address *" data-drupal-selector="edit-mergevars-email" type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="254" class="form-email required form-control" required="required" aria-required="true" />
+
+                      </div>
+
+
+      
+
+
+
+  <div class="js-form-item js-form-type-checkbox checkbox form-check mb-3 js-form-item-mergevars-privacy form-item-mergevars-privacy">
+                      <input type="checkbox" data-drupal-selector="edit-mergevars-privacy" id="edit-mergevars-privacy" name="mergevars[PRIVACY]" value="1" class="form-checkbox required form-check-input" required="required" aria-required="true">
+              <label  class="form-check-label" for="edit-mergevars-privacy">
+        I have read and accept the <a class="text-white text-decoration-underline" href="https://www.ieee.org/security_privacy.html" target="_blank" rel="noopener noreferrer">IEEE Privacy Policy</a>
+      </label>
+                  </div>
+</div><input autocomplete="off" data-drupal-selector="form-xgnaz-053jr4kez-tcuscs2r98-70eftam1eeioxb-s" type="hidden" name="form_build_id" value="form-xgNAz-053Jr4KEz-tCUScS2r98_70EftAM1EEIOxB_s" class="form-control" />
+<input data-drupal-selector="edit-mailchimp-signup-subscribe-block-newsletter-signup-form" type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_newsletter_signup_form" class="form-control" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><button data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Sign Up" class="button js-form-submit form-submit btn btn-primary">Sign Up</button>
+</div>
+
+</form>
+
+    </div>
+    <div class="mb-3">
+      <a href="https://x.com/IEEEDataPort" target="_blank">
+        <img class="mr-2" src="/themes/custom/dataport_bootstrap/images/x-logo.svg" alt="X" width="21" height="21" loading="lazy">
+      </a>
+      <a href="https://www.youtube.com/@ieeedataport7743" target="_blank">
+        <img style="margin-left:6px;" src="/themes/custom/dataport_bootstrap/images/youtube.svg" alt="Youtube" width="32" height="22" loading="lazy">
+      </a>
+      <a href="https://www.linkedin.com/company/ieee-dataport" target="_blank">
+        <img style="margin-left:6px;" src="/themes/custom/dataport_bootstrap/images/InBug-White.png" alt="LinkedIn" width="24" height="22" loading="lazy">
+      </a>      
+    </div>
+  </div>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-whyieeedataport-menu" id="block-dataport-bootstrap-whyieeedataport" class="block block-menu navigation menu--why-ieee-dataport">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-whyieeedataport-menu">Why IEEE DataPort?</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="/why-ieee-dataport" class="nav-link nav-link--why-ieee-dataport" data-drupal-link-system-path="node/2567">Why IEEE DataPort?</a>
+              </li>
+                <li class="nav-item">
+                <a href="/datasets" class="nav-link nav-link--datasets" data-drupal-link-system-path="node/20">Access Datasets</a>
+              </li>
+                <li class="nav-item">
+                <a href="/submit-dataset" class="nav-link nav-link--submit-dataset" data-drupal-link-system-path="node/782">Submit a Dataset</a>
+              </li>
+                <li class="nav-item">
+                <a href="/subscribe" class="nav-link nav-link--subscribe" data-drupal-link-system-path="node/914">Subscribe</a>
+              </li>
+                <li class="nav-item">
+                <a href="/contact-us" class="nav-link nav-link--contact-us" data-drupal-link-system-path="node/93991">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-ieeedataportresources-menu" id="block-dataport-bootstrap-ieeedataportresources" class="block block-menu navigation menu--ieee-dataport-resources">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-ieeedataportresources-menu">IEEE DataPort Resources</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="/news" class="nav-link nav-link--news" data-drupal-link-system-path="node/3906">IEEE DataPort Resources</a>
+              </li>
+                <li class="nav-item">
+                <a href="/search" class="nav-link nav-link--search" data-drupal-link-system-path="search">Dataset Search</a>
+              </li>
+                <li class="nav-item">
+                <a href="/news" class="nav-link nav-link--news" data-drupal-link-system-path="node/3906">Newsletters and Insights</a>
+              </li>
+                <li class="nav-item">
+                <a href="/use-cases-and-additional-resources" class="nav-link nav-link--use-cases-and-additional-resources" data-drupal-link-system-path="node/4591">Use Cases</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://supportcenter.ieee.org/" class="nav-link nav-link-https--supportcenterieeeorg-">IEEE Support Center</a>
+              </li>
+                <li class="nav-item">
+                <a href="/help" class="nav-link nav-link--help" data-drupal-link-system-path="node/744">Help &amp; FAQs</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-dataport-bootstrap-businesssolutions-menu" id="block-dataport-bootstrap-businesssolutions" class="block block-menu navigation menu--business-solutions">
+            
+  <h2 class="visually-hidden" id="block-dataport-bootstrap-businesssolutions-menu">Business Solutions</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="/institutional-subscriptions" class="nav-link nav-link--institutional-subscriptions" data-drupal-link-system-path="node/9127">Business Solutions</a>
+              </li>
+                <li class="nav-item">
+                <a href="/institutional-subscriptions" class="nav-link nav-link--institutional-subscriptions" data-drupal-link-system-path="node/9127">Institutional Subscriptions</a>
+              </li>
+                <li class="nav-item">
+                <a href="/corporate-programs" class="nav-link nav-link--corporate-programs" data-drupal-link-system-path="node/12786">Corporate Partnerships</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://ieee-dataport.org/sites/default/files/2025-09/IEEE_DataPort_Media_Kit_2025_Rev2.pdf" class="nav-link nav-link-https--ieee-dataportorg-sites-default-files-2025-09-ieee-dataport-media-kit-2025-rev2pdf">Advertising/Media Kit</a>
+              </li>
+                <li class="nav-item">
+                <a href="/ieee-dataport-data-competition-sponsorship-opportunities" class="nav-link nav-link--ieee-dataport-data-competition-sponsorship-opportunities" data-drupal-link-system-path="node/15019">Data Competition Sponsorship</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+    </div>
+  
+      <footer class="site-footer py-3">
+        <section class="row region region-footer mx-3">
+    <div id="block-dataport-bootstrap-footerlinks" class="block-content-basic block block-block-content block-block-contentb4865bc9-dce6-425e-977d-076a76a6da91">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="row py-2 mx-auto justify-content-center"><p class="text-center"><a href="http://www.ieee.org/index.html" target="_blank">Home</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/sitemap.html" target="_blank">Sitemap/More Sites</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/about/contact_center/index.html" target="_blank">Contact</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/accessibility_statement.html" target="_blank">Accessibility</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/p9-26.html" target="_blank">Nondiscrimination Policy</a> &nbsp;|&nbsp; <a href="http://ieee-ethics-reporting.org/" target="_blank">IEEE Ethics Reporting</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/security_privacy.html" target="_blank">IEEE Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.ieee.org/about/help/site-terms-conditions.html" target="_blank">Terms &amp; Disclosures</a></p><p class="text-center">© Copyright&nbsp;<script type="text/javascript">document.write((new Date()).getFullYear());</script> IEEE - All rights reserved. A public charity, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.<br>&nbsp;</p></div></div>
+      
+    </div>
+  </div>
+
+  </section>
+
+    </footer>
+  
+  </div>
+
+    
+    <script src="/sites/default/files/js/js_N0EzF9lMZvSb1cHUG2lUIAbJA_taWd_W8cr7hcgASSY.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtkG2uAiEMRTfEDEsiBSrWAMXS0Te7f0RF48cf0nvODZB6Zu0q0JwHEWKbMnvIS9c9U00mcClY1UbZGuT1ERe_LxfCK8ooCE4bCTKnFU7wd-dUFaUOczpvKPt6YCkmgkJjUefn2xZi_4Wf0y_58dFnI2xdudiQqXkGiV8m8rVmhugCb1W_9BFqzOgiCQZl2Z0KojnQBbuC2DmsHjqaxJxGWSHZNI7PfF_FGyymCfUyV3YLZlyo1JVCn_xF_gEbf6UQ"></script>
+<script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" async crossorigin="anonymous"></script>
+<script src="/sites/default/files/js/js_UbetwCKVepUIGS0m4Z_M3p28uFNE3_ADI5tX-tOWVNQ.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtkG2uAiEMRTfEDEsiBSrWAMXS0Te7f0RF48cf0nvODZB6Zu0q0JwHEWKbMnvIS9c9U00mcClY1UbZGuT1ERe_LxfCK8ooCE4bCTKnFU7wd-dUFaUOczpvKPt6YCkmgkJjUefn2xZi_4Wf0y_58dFnI2xdudiQqXkGiV8m8rVmhugCb1W_9BFqzOgiCQZl2Z0KojnQBbuC2DmsHjqaxJxGWSHZNI7PfF_FGyymCfUyV3YLZlyo1JVCn_xF_gEbf6UQ"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js__XVd4pFHFDdGPvEQ2e0qy0VbH1LPgQAk8W34_8HiBGI.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=dataport_bootstrap&amp;include=eJxtkG2uAiEMRTfEDEsiBSrWAMXS0Te7f0RF48cf0nvODZB6Zu0q0JwHEWKbMnvIS9c9U00mcClY1UbZGuT1ERe_LxfCK8ooCE4bCTKnFU7wd-dUFaUOczpvKPt6YCkmgkJjUefn2xZi_4Wf0y_58dFnI2xdudiQqXkGiV8m8rVmhugCb1W_9BFqzOgiCQZl2Z0KojnQBbuC2DmsHjqaxJxGWSHZNI7PfF_FGyymCfUyV3YLZlyo1JVCn_xF_gEbf6UQ"></script>
+
+  </body>
+</html>

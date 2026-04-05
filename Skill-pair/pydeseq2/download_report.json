@@ -1,0 +1,21 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\pydeseq2\\pydeseq2\\SKILL.md",
+  "records": [
+    {
+      "category": "pcap file",
+      "value": "samplecaptures.html",
+      "snippet": "NMap Captures.zip (libpcap) Some captures of various NMap port scan techniques. OptoMMP.pcap A capture of some OptoMMP read/write quadlet/block request/ ...",
+      "metadata": {
+        "url": "https://wiki.wireshark.org/samplecaptures"
+      }
+    },
+    {
+      "category": "pcap file",
+      "value": "Public_PCAP_files_for_download_-_Netresec.html",
+      "snippet": "Publicly available PCAP files. This is a list of public packet capture (PCAP) repositories, which are freely available on the Internet. Network Forensics.",
+      "metadata": {
+        "url": "https://www.netresec.com/?page=PcapFiles"
+      }
+    }
+  ]
+}

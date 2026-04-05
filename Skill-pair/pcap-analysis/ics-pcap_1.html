@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>ICS-pcap | Tool Directory|Cybersecurity Tools Directory</title>
+  <meta name="title" content="ICS-pcap | Tool Directory">
+  <meta name="description" content="A service for better visibility on networking issues in Kubernetes clusters by detecting traffic denied by iptables.">
+  
+  <meta name="author" content="Cybersecurity Tools Directory">
+  <meta name="robots" content="index,follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gracker.ai/cybersecurity-tools/ics-pcap">
+  <meta property="og:title" content="Cybersecurity Tools Directory">
+  <meta property="og:description" content="Gracker Cybersecurity Tool Directory - Discover and submit cybersecurity tools">
+  
+  <meta property="og:image" content="https://gracker.ai/static/logo-black.B4kmP2m0_Z5vXqW.svg">
+  
+  
+  <meta property="og:site_name" content="Cybersecurity Tools Directory">
+  
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://gracker.ai/cybersecurity-tools/ics-pcap">
+  <meta property="twitter:title" content="ICS-pcap | Tool Directory">
+  <meta property="twitter:description" content="A service for better visibility on networking issues in Kubernetes clusters by detecting traffic denied by iptables.">
+  
+  <meta property="twitter:image" content="https://gracker.ai/static/logo-black.B4kmP2m0_Z5vXqW.svg">
+  
+  
+  <!-- Canonical URL -->
+  
+  <link rel="canonical" href="https://gracker.ai/cybersecurity-tools/ics-pcap">
+  
+  
+  <!-- Favicon -->
+  
+  <link rel="icon" type="image/png" href="https://gracker.ai/favicon.ico">
+  
+  
+  <!-- Google Fonts - Dynamic from database (Primary font only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  
+  <!-- CSS Variables and Stylesheets -->
+  
+  
+  <style>
+:root {
+  --color-bg-white: #fff;
+  --color-bg-black: #000;
+  --color-bg-default: #fff;
+  --color-bg-secondary: #f3f4f6;
+  --color-brand-primary: #1d4ed8;
+  --color-brand-primary-hover: #2563EB;
+  --color-brand-secondary: #ffffff;
+  --color-brand-secondary-hover: #ffffff;
+  --color-text-heading: #111827;
+  --color-text-body: #374151;
+  --color-text-link: #1d4ed8;
+  --color-text-navigation: #191919;
+  --color-text-navigation-hover: #3B82F6;
+  --color-text-muted: #6b7280;
+  --color-button-primary-bg: #3B82F6;
+  --color-button-primary-bg-hover: #1e40af;
+  --color-button-primary-text: #fff;
+  --color-button-primary-text-hover: #fff;
+  --color-button-secondary-bg: #ffffff;
+  --color-button-secondary-bg-hover: #3B82F6;
+  --color-button-secondary-text: #3B82F6;
+  --color-button-secondary-text-hover: #ffffff;
+  --color-bg-header: #ffffff;
+  --color-bg-footer: #ffffff;
+  --color-border: #d1d5db ;
+  --color-border-light: #d1d5db ;
+  --color-state-success: #28a745;
+  --color-state-error: #dc3545;
+  --color-state-warning: #ffc107;
+  --font-primary: Bricolage Grotesque;
+  --font-secondary: Inter;
+  --rgb-brand-primary: 29 78 216;
+  --rgb-brand-primary-hover: 37 99 235;
+  --rgb-brand-secondary: 255 255 255;
+  --rgb-brand-secondary-hover: 255 255 255;
+  --rgb-bg-white: 255 255 255;
+  --rgb-bg-black: 0 0 0;
+  --rgb-bg-default: 255 255 255;
+  --rgb-bg-secondary: 243 244 246;
+  --rgb-text-heading: 17 24 39;
+  --rgb-text-body: 55 65 81;
+  --rgb-text-link: 29 78 216;
+  --rgb-text-navigation: 25 25 25;
+  --rgb-text-navigation-hover: 59 130 246;
+  --rgb-text-muted: 107 114 128;
+  --rgb-button-primary-bg: 59 130 246;
+  --rgb-button-primary-bg-hover: 30 64 175;
+  --rgb-button-secondary-bg: 255 255 255;
+  --rgb-button-secondary-bg-hover: 59 130 246;
+  --rgb-bg-header: 255 255 255;
+  --rgb-bg-footer: 255 255 255;
+  --rgb-border: 209 213 219;
+  --rgb-border-light: 209 213 219;
+  --rgb-state-success: 40 167 69;
+  --rgb-state-error: 220 53 69;
+  --rgb-state-warning: 255 193 7;
+  --color-success-bg: rgba(40, 167, 69, 0.1);
+  --color-success-border: rgba(40, 167, 69, 0.3);
+  --color-primary-bg: rgba(29, 78, 216, 0.1);
+  --color-primary-border: rgba(29, 78, 216, 0.3);
+}
+  /* Custom utility classes for badge backgrounds and borders */
+  .bg-success-badge { background-color: var(--color-success-bg); }
+  .border-success-badge { border-color: var(--color-success-border); }
+  .bg-primary-badge { background-color: var(--color-primary-bg); }
+  .border-primary-badge { border-color: var(--color-primary-border); }
+  
+  /* Utility classes for Tailwind arbitrary values with CSS variables */
+  .bg-\[var\(--color-background\)\] { background-color: var(--color-background); }
+  .bg-\[var\(--color-background-secondary\)\] { background-color: var(--color-background-secondary); }
+  .border-\[var\(--color-border\)\] { border-color: var(--color-border); }
+  .border-\[var\(--color-border-light\)\] { border-color: var(--color-border-light); }
+  
+  /* Utility classes for Tailwind arbitrary values with CSS variables */
+  .bg-\[var\(--color-background\)\] { background-color: var(--color-background); }
+  .bg-\[var\(--color-background-secondary\)\] { background-color: var(--color-background-secondary); }
+  .border-\[var\(--color-border\)\] { border-color: var(--color-border); }
+  .border-\[var\(--color-border-light\)\] { border-color: var(--color-border-light); }
+  </style>
+  
+  <style>
+    html, body, h1, h2, h3, h4, h5, h6 {
+      font-family: Inter, system-ui, -apple-system, sans-serif !important;
+    }
+  </style>
+  
+    <!-- Using CSS files from database -->
+    
+      
+  <link rel="stylesheet" type="text/css" media="screen" href="https://local-seo-storage.gracker.ai/691d8c8bed1d638eea887664/css/output.css?v=1775006712019">
+    
+  
+  
+  <!-- Structured Data (JSON-LD) -->
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Cybersecurity Tools Directory","url":"https://gracker.ai/cybersecurity-tools","description":"Gracker Cybersecurity Tool Directory - Discover and submit cybersecurity tools","logo":"https://gracker.ai/static/logo-black.B4kmP2m0_Z5vXqW.svg"}
+  </script>
+  
+  
+  <!-- Analytics Scripts -->
+  
+    
+      
+        
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TPM6JQPC');</script>
+        
+      
+    
+  
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--color-bg-secondary)] text-[var(--color-text-body)]" style="font-family: 'Inter', sans-serif;">
+  <!-- Google Tag Manager (noscript) -->
+  
+    
+      
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPM6JQPC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      
+    
+  
+  
+
+<header class="sticky top-0 z-50 w-full border-b border-[var(--color-border)] bg-[var(--color-bg-white)]" role="banner">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 lg:min-w-[336px]">
+        <a href="/cybersecurity-tools/" class="flex items-center gap-2" aria-label="Cybersecurity Tools Directory">
+          
+          <img src="https://gracker.ai/static/logo-black.B4kmP2m0_Z5vXqW.svg" alt="Cybersecurity Tools Directory" class="h-10 w-auto" width="120" height="40">
+          
+        </a>
+      </div>
+
+      <!-- Desktop Navigation and Search -->
+      <div class="hidden md:flex items-center flex-1 justify-center gap-8 mx-6">
+        <!-- Navigation Links -->
+        <nav class="flex items-center gap-8" aria-label="Main navigation">
+          
+          
+          <a href="https://gracker.ai/why-gracker-ai-cybersecurity-marketing-platform/" class="text-sm font-medium text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors">
+            Why Gracker
+          </a>
+          
+          <a href="https://gracker.ai/pricing" class="text-sm font-medium text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors">
+            Pricing
+          </a>
+          
+          
+        </nav>
+
+
+      </div>
+
+      <!-- Premium Links (Buttons on Right Side) -->
+      <div class="hidden md:flex items-center gap-4 flex-shrink-0">
+        <!-- Search Bar (Always shown for layout4/tool-directory) -->
+        
+        <form action="/cybersecurity-tools/search" method="GET" class="flex-shrink-0">
+          <div class="relative">
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input type="text" name="q" class="pl-10 pr-4 py-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-white)] text-sm placeholder:text-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)] focus:ring-offset-2 w-48 transition-all" placeholder="Search businesses..." autocomplete="off">
+          </div>
+        </form>
+        
+        
+        <a href="https://gracker.ai/cybersecurity-tools/submit-tool" class="px-6 py-2 bg-[var(--color-brand-primary)] text-white rounded-full font-medium text-sm hover:bg-[var(--color-brand-primary-hover)] transition-colors" aria-label="Submit Your Tool">
+          Submit Your Tool
+        </a>
+        
+        
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button type="button" id="mobile-menu-button" class="p-2 text-[var(--color-text-body)] hover:bg-[var(--color-bg-default)] rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)] focus:ring-offset-2" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" onclick="toggleMobileMenu()">
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon (shown when menu is closed) -->
+          <svg id="hamburger-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <!-- Close icon (shown when menu is open) -->
+          <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="md:hidden hidden h-screen" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <div class="px-2 pt-2 pb-4 border-t border-[var(--color-border)] space-y-1 sm:px-3">
+      <!-- Mobile Search -->
+      
+      <form action="/cybersecurity-tools/search" method="GET" class="mb-3">
+        <div class="relative">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input type="text" name="q" class="w-full pl-10 pr-4 py-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-white)] text-sm placeholder:text-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)] focus:ring-offset-2" placeholder="Search businesses..." autocomplete="off">
+        </div>
+      </form>
+      
+
+      
+      
+      
+      <a href="https://gracker.ai/why-gracker-ai-cybersecurity-marketing-platform/" class="block px-4 py-2 rounded-lg text-sm font-medium text-[var(--color-text-body)] hover:bg-[var(--color-bg-default)] transition-colors">
+        Why Gracker
+      </a>
+      
+      
+      
+      <a href="https://gracker.ai/pricing" class="block px-4 py-2 rounded-lg text-sm font-medium text-[var(--color-text-body)] hover:bg-[var(--color-bg-default)] transition-colors">
+        Pricing
+      </a>
+      
+      
+      
+      <a href="https://gracker.ai/cybersecurity-tools/submit-tool" class="block w-full text-center px-4 py-2 mt-2 text-base font-medium rounded-full text-white bg-[var(--color-brand-primary)] hover:bg-[var(--color-brand-primary-hover)] transition-colors">
+        Submit Your Tool
+      </a>
+      
+      
+      
+    </div>
+  </div>
+</header>
+
+<script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const button = document.getElementById('mobile-menu-button');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const isExpanded = mobileMenu.classList.contains('hidden') ? false : true;
+
+    mobileMenu.classList.toggle('hidden');
+    button.setAttribute('aria-expanded', !isExpanded);
+    
+    // Toggle icons: show close when open, hamburger when closed
+    if (!isExpanded) {
+      // Menu is now open - show close icon, hide hamburger
+      hamburgerIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    } else {
+      // Menu is now closed - show hamburger icon, hide close
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuButton = document.getElementById('mobile-menu-button');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (mobileMenu && menuButton && !mobileMenu.classList.contains('hidden') &&
+      !menuButton.contains(event.target) &&
+      !mobileMenu.contains(event.target)) {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      // Reset icons
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+  });
+</script>
+  <main class="flex-grow" id="main-content">
+    
+
+
+  <!-- Breadcrumb -->
+  <section class="bg-[var(--color-bg-secondary)] py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-sm mb-6">
+        <a href="/cybersecurity-tools/" class="text-[var(--color-text-body-light)] hover:text-[var(--color-brand-primary)]">Home</a>
+        <span class="text-[var(--color-text-body-light)]">/</span>
+        
+          <a href="/cybersecurity-tools/category/network-cloud" class="text-[var(--color-text-body-light)] hover:text-[var(--color-brand-primary)]">
+            Network &amp; Cloud
+          </a>
+          <span class="text-[var(--color-text-body-light)]">/</span>
+          
+        
+        <span class="text-[var(--color-text-heading)] font-medium">ICS-pcap</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <!-- Left: Title, meta, actions -->
+        <div class="h-full flex flex-col">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 md:w-20 md:h-20 p-2 rounded-xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center overflow-hidden flex-shrink-0">
+              
+                <img src="https://kcjlih8bwjd7vpzd.public.blob.vercel-storage.com/github-pNnWZrsWcngjHtgmLcqC9TLc5g3tJS.webp" alt="ICS-pcap" class="w-full h-full object-contain">
+              
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h1 class="text-4xl lg:text-[48px] font-bold text-[var(--color-text-heading)]">ICS-pcap</h1>
+              </div>
+              <div class="flex items-center gap-3 mt-2 flex-wrap">
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="flex justify-start gap-3 flex-wrap mb-6 flex-col">
+            <div>
+              
+                <a href="/cybersecurity-tools/category/network-cloud" class="text-sm text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)]">
+                  <span class="font-medium">Network &amp; Cloud</span>
+                </a>
+                
+              
+            </div>
+            <div>
+              
+                <span class="text-sm text-[var(--color-text-body-secondary)] font-medium">Pricing:</span>
+                <span class="text-sm font-medium">Free</span>
+              
+            </div>
+            
+          </div>
+
+          <div class="flex items-center gap-3 mt-auto">
+            <a href="#reviews" class="w-full flex items-center justify-center gap-2 text-center px-6 py-3 border-2 border-[var(--color-brand-primary)] text-[var(--color-brand-primary)] font-medium rounded-full hover:bg-[var(--color-brand-primary)] hover:text-white transition-colors">
+              Write a Review
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              </svg>
+            </a>
+            
+              <a href="https://github.com/automayt/ICS-pcap?utm_source=cybersectools.com" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 text-center px-6 py-3 bg-[var(--color-brand-primary)] text-white border-2 border-[var(--color-brand-primary)] font-medium rounded-full hover:bg-[var(--color-brand-primary-hover)] transition-colors">
+                Visit Website
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </a>
+            
+          </div>
+        </div>
+
+        <!-- Right: Screenshot card -->
+        <div class="h-full bg-[var(--color-bg-white)] lg:min-h-[242px] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-sm text-[var(--color-text-body-light)] place-items-center grid">
+          
+            <div class="">
+              
+                <img src="https://kcjlih8bwjd7vpzd.public.blob.vercel-storage.com/github-pNnWZrsWcngjHtgmLcqC9TLc5g3tJS.webp" alt="ICS-pcap" class="w-16 h-16 object-contain grayscale opacity-30">
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tool Details -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+
+          
+
+          
+            <div class="border-b border-[var(--color-border)] mb-12">
+              <nav class="flex space-x-8 overflow-x-auto" aria-label="Tabs">
+                
+                  <a href="#what-is"
+                    onclick="event.preventDefault(); scrollToSection('#what-is'); return false;"
+                    class="tab-link border-b-2 border-[var(--color-brand-primary)] text-[var(--color-brand-primary)] py-4 px-1 text-sm font-medium whitespace-nowrap">
+                    What is ICS-pcap
+                  </a>
+                
+                  <a href="#reviews"
+                    onclick="event.preventDefault(); scrollToSection('#reviews'); return false;"
+                    class="tab-link border-b-2 border-transparent text-[var(--color-text-body-light)] hover:text-[var(--color-text-body-secondary)] hover:border-[var(--color-border)] py-4 px-1 text-sm font-medium whitespace-nowrap">
+                    Reviews
+                  </a>
+                
+              </nav>
+            </div>
+          
+
+          <!-- Overview Section -->
+          
+
+          <!-- What is [Tool Name] / Description -->
+          
+            <div class="mb-12" id="what-is">
+              <h2 class="text-2xl font-semibold mb-4 text-[var(--color-text-heading)]">What is ICS-pcap</h2>
+              <div class="prose max-w-none text-[var(--color-text-body-secondary)]">
+                <p>A service for better visibility on networking issues in Kubernetes clusters by detecting traffic denied by iptables.</p>
+              </div>
+            </div>
+          
+
+          <!-- Features -->
+          
+
+          <!-- Pricing Description -->
+          
+
+          <!-- Custom Sections -->
+          
+            
+            
+              
+              <div class="mb-12" id="this-is-a-collection-of-pcaps-for-icsscada-utilities-and-protocols">
+                <h2 class="text-2xl font-semibold mb-4 text-[var(--color-text-heading)]">This is a collection of PCAPs for ICS/SCADA Utilities and Protocols</h2>
+                <div class="prose max-w-none text-[var(--color-text-body-secondary)]">
+                  This document contains a collection of PCAPs (Packet Capture files) and additional notes where PCAPs are still needed, specifically for ICS (Industrial Control Systems) and SCADA (Supervisory Control and Data Acquisition) utilities and protocols. The credit for these PCAPs goes to contributors including digitalbond, 4sics, netresec, scadahacker, Wireshark sample captures, shodan.io, kargs.net, Oak Ridge Datasets, and many others. Users are encouraged to contribute by submitting pull requests with additional PCAP files or information, or by creating an issue for corrections or new uploads.
+                </div>
+              </div>
+            
+          
+
+          <!-- Pros and Cons -->
+          
+
+          <!-- FAQs -->
+          
+
+          <div class="my-16 h-[1px] w-full bg-[var(--color-border)]">&nbsp;</div>
+
+          <!-- Reviews Section -->
+          <div class="mb-12" id="reviews">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-semibold text-[var(--color-text-heading)]">ICS-pcap Reviews</h2>
+              <a href="#review-form" class="inline-flex items-center px-4 py-2 bg-[var(--color-brand-primary)] text-white text-sm font-medium rounded-full hover:bg-[var(--color-brand-primary-hover)] transition-colors">
+                Write a Review
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+                </svg>
+              </a>
+            </div>
+
+            
+              <div class="text-center py-12 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)]">
+                <p class="text-[var(--color-text-body-secondary)]">No reviews yet. Be the first to review this tool!</p>
+              </div>
+            
+          </div>
+
+          <!-- Review Form Section -->
+          <div id="review-form">
+            <h2 class="text-2xl font-semibold mb-2 text-[var(--color-text-heading)]">Write a Review</h2>
+            <p class="text-[var(--color-text-body-secondary)] mb-4">Share your experience with ICS-pcap tool and help others make informed decisions.</p>
+            <div class="bg-[var(--color-bg-secondary)] rounded-lg p-6 border border-[var(--color-border)]">
+              <div id="review-messages" class="hidden mb-4"></div>
+              <form id="review-form-element" class="space-y-4">
+                <div>
+                  <label class="block text-sm font-medium text-[var(--color-text-body-secondary)] mb-2">Your Rating</label>
+                  <div class="flex items-center gap-2" id="rating-selector">
+                    
+                      <button type="button" class="rating-star w-6 h-6 transition-colors text-[var(--color-border)]" data-rating="1">
+                        <svg class="w-full h-full fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      </button>
+                    
+                      <button type="button" class="rating-star w-6 h-6 transition-colors text-[var(--color-border)]" data-rating="2">
+                        <svg class="w-full h-full fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      </button>
+                    
+                      <button type="button" class="rating-star w-6 h-6 transition-colors text-[var(--color-border)]" data-rating="3">
+                        <svg class="w-full h-full fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      </button>
+                    
+                      <button type="button" class="rating-star w-6 h-6 transition-colors text-[var(--color-border)]" data-rating="4">
+                        <svg class="w-full h-full fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      </button>
+                    
+                      <button type="button" class="rating-star w-6 h-6 transition-colors text-[var(--color-border)]" data-rating="5">
+                        <svg class="w-full h-full fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      </button>
+                    
+                  </div>
+                  <input type="hidden" name="rating" id="rating-value" value="0">
+                </div>
+                <div>
+                  <label for="reviewer-name" class="block text-sm font-medium text-[var(--color-text-body-secondary)] mb-2">Your Name</label>
+                  <input type="text" id="reviewer-name" name="reviewerName"
+                    class="w-full px-4 py-2 border border-[var(--color-border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]"
+                    placeholder="Enter your name">
+                </div>
+                <div>
+                  <label for="review-comment" class="block text-sm font-medium text-[var(--color-text-body-secondary)] mb-2">Your Review</label>
+                  <textarea id="review-comment" name="comment" rows="4"
+                    class="w-full px-4 py-2 border border-[var(--color-border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]"
+                    placeholder="Share your thoughts about this tool..."></textarea>
+                </div>
+                <button type="submit" id="review-submit-btn"
+                  class="w-full px-6 py-3 bg-[var(--color-brand-primary)] text-white font-medium rounded-full hover:bg-[var(--color-brand-primary-hover)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                  <span id="review-submit-text">Submit Review</span>
+                  <span id="review-submit-loading" class="hidden">Submitting...</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          
+            <div class="mt-6 lg:mt-0 sticky top-24">
+              <h3 class="text-lg font-bold text-[var(--color-text-heading)] mb-4">Featured</h3>
+              <div class="grid grid-cols-1 gap-4">
+                
+                  
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/specops-software-5941'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://www.cybersecurityintelligence.com/files/logo/5941.jpg" alt="Specops Software" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  SS
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/identity-and-access-management-iam/password-management"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Password Management
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        Specops Software
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/specops-software-5941" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View Specops Software</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        Specops Software empowers organizations to fortify their IT security by addressing the critical vulnerability of password management and authentication. As a premier vendor, Specops Software provides advanced solutions designed to proactively block weak passwords, enforce robust authentication protocols, and ensure compliance with stringent industry standards like CJIS and HITRUST. With deep native integration into Active Directory and on-premises data storage, Specops Software offers unparalleled security and control for sensitive business data.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Active Directory password policy auditing against compliance standards
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Breached password detection for over 900 million known compromised passwords
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Zero-trust access evaluation and enhancement
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+                
+                  
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/infisical'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://bookface-images.s3.us-west-2.amazonaws.com/logos/d96946fee962ea83c1b9a7a0ce788135527a0297.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=ASIAQC4NIECACCI553BF%2F20251117%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20251117T165341Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCqxxTQY9FvLZRILO51rAUjqFGpMGhL2TbYN2CN%2FzyeygIhAOl4wITmI9Mopoxlc53h8R7LRDlrfRtXFlpZ1%2FeWl%2BSVKu4DCLH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDA2MjAxODExMDcyIgxm4oz1xwZ%2FQPI3E2QqwgMuYyj8ZFno0Pzr8dl%2BU%2BTOmIZ%2BmZRHtmVNg6ymaNFW1F5G17R36lvCsw6e35Vouy1U4VCUU%2FYtKPsOQePAoD4XPD%2F6VjOLCFWg7dYSAYbvi1mqmZevk72LdUm%2BFhU4em4o9Oenhp6z4vuHr0PF%2FvNIcG9lppR7eh0VEQxOZZ7b%2FtxU886bAjqRtfVvdWaU7J0GrX2%2FYbkhS0jOW4BrKkSbNBaZYbF8YOGVBvNnWiN1j%2F1mWyL0qG%2Fw56V4x%2BdTk4595Ogiy3yss5sxvj%2BPf3VwV7Mmo4PnaIyAch9p4ydlsGOmzXP8l42kfa0CyKATGkCe1sCFuXmiWEVzBMMIR0KT6CEFjkLZb3vLDpP05eE5zYsl87kBE4a%2FuL%2BMnz6OyXafs%2FhKejoIxYj6gY6%2BirWB8RlmAxmRHYztXDa2pnZ3z%2FIOl204mHgH34Jf131mkiUhVm2k6sFrypjDLRyUe80LxU4aKbAeCMo9tFZYEWl8uSmB%2BdQiU2R6pfRiwnEz2A8%2FtAoj%2BwJa11%2B6c1Ii%2FltFfF%2Fl6dGibZZOU9Sog1VEhwiQaED%2FNS6R8G3aiKjn%2BURiPaOJf6NKy4dOGcNlZak%2FjoUw7oPtyAY6pAG6CJXfmP17EmMmEa3YuLFtCcJe12jzzLDw%2BymXyGAKTC5jUCY0%2FPO20BPGC9IgWqZZKtAZNVl9d9F%2Bk%2Bdq0z9bPKJnGmMtDXAaPNBvCW8s5E%2FyvtTyYjIZDp71TgWLYDl9puZS4GgW4uXI7WZDj%2B5hIfz4LVi9W0dW7EomQ%2BaIClawHeYiM2y2rSNjNI6NiepDuYl0BPdLbS4fllTtM2aVe%2BaxIg%3D%3D&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f4f37ab57361c7f74e884b48b87d8637c87348947e710bf69ff0bce84684e258" alt="Infisical" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  I
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/identity-and-access-management-iam/password-management"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Password Management
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        Infisical
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/infisical" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View Infisical</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        Infisical is the premier open-source platform designed for unified management of secrets, certificates, and configurations across your entire organization. It seamlessly integrates into your development workflows, CI/CD pipelines, and cloud infrastructure, ensuring secure storage and automated injection of sensitive information. Empower your team with robust features like versioning, point-in-time recovery, comprehensive audit logging, and automated secret rotation for enhanced security and operational efficiency.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Open-source secrets management platform
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Unified management of secrets, certificates, and configs
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Seamless integration with development workflows and CI/CD
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+                
+                  
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/click-studios-11604'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://www.cybersecurityintelligence.com/files/logo/11604.jpg" alt="Click Studios" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  CS
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/identity-and-access-management-iam/password-management"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Password Management
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        Click Studios
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/click-studios-11604" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View Click Studios</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        Click Studios is an Australian-based Agile software development company dedicated to evolving Passwordstate, their robust Enterprise Password Management solution. Continuously refined through customer insights and cybersecurity advancements, Passwordstate offers advanced features for secure sensitive information management and stringent compliance. Click Studios provides scalable, secure, and user-friendly password management solutions, empowering businesses globally with affordable and reliable access control.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Secure Enterprise Password Management
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Continuous Feature Enhancement
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Customer Feedback Driven Development
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+                
+              </div>
+            </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16 bg-[var(--color-bg-secondary)]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+        <div class="">
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl font-semibold text-[var(--color-text-heading)]">Similar Tools</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+              
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/sweet-security-9929'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://www.cybersecurityintelligence.com/files/logo/9929.jpg" alt="Sweet Security" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  SS
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/network-cloud/cloud-security"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Cloud Security
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        Sweet Security
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/sweet-security-9929" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View Sweet Security</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        Sweet Security provides advanced Runtime Attack Security for cloud workloads, empowering security teams to achieve comprehensive visibility and proactively thwart attacks at every stage. Leveraging a team with deep expertise in offensive and defensive cloud security, Sweet&#39;s innovative suite offers precise, rapid threat mitigation with minimal impact on business operations. Our mission is to provide cloud security that is effective, efficient, and perfectly tuned to your environment.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Comprehensive Cloud Runtime Security Suite
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Full Environment Discovery and Visibility
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Proactive Multi-Stage Attack Mitigation
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+            
+              
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/rad-security-10737'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://www.cybersecurityintelligence.com/files/logo/10737.jpg" alt="RAD Security" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  RS
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/network-cloud/access-rights-management"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Access Rights Management
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        RAD Security
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/rad-security-10737" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View RAD Security</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        RAD Security (formerly KSOC) is a leading cloud-native security platform designed to empower engineering and security teams by automating threat detection and response. It establishes behavioral baselines across your entire cloud-native environment – including infrastructure, workloads, and identities – to proactively identify zero-day attacks and malicious drift. By focusing on identity threat detection and response (ITDR) and ensuring least privilege, RAD Security enables organizations to accelerate innovation with confidence, rather than being hindered by security complexities.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Cloud-Native Identity Threat Detection and Response (ITDR)
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Behavioral Fingerprinting for Zero-Day Attack Detection
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Least Privilege Enforcement and Identity Right-Sizing
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+            
+              
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/ksoc-labs-8598'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://www.cybersecurityintelligence.com/files/logo/8598.jpg" alt="KSOC Labs" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  KL
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/network-cloud/security-orchestration-automation-and-response-soar"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Security Orchestration, Automation, and Response (SOAR)
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        KSOC Labs
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/ksoc-labs-8598" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View KSOC Labs</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        RAD Security (formerly KSOC) is an event-driven SaaS platform that automates Kubernetes security operations and enforces least privilege across distributed infrastructures. Leveraging existing cloud and Kubernetes APIs without intrusive agents, RAD Security provides a unified control plane for real-time discovery and remediation of misconfigurations and vulnerabilities, ensuring alignment with critical security frameworks.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Automated Kubernetes Security Remediation
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Least Privilege Access Control Enforcement
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Agentless Cloud &amp; Kubernetes API Integration
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+            
+              
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/ip-address-scanner'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://kcjlih8bwjd7vpzd.public.blob.vercel-storage.com/icon-C3N70BiSYlBtat0YrXUygAEzNLFIXF.webp" alt="IP Address Scanner" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  IA
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        IP Address Scanner
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/ip-address-scanner" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View IP Address Scanner</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        A Yara scanner for IMAP feeds and saved streams, extracting attachments and scanning them with chosen Yara rule files.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+
+      </article>
+      
+            
+              
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/aircrack-ng-1'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://kcjlih8bwjd7vpzd.public.blob.vercel-storage.com/aircrack-ng-1-VpBhrMpwQu4eWrixJqediVN6nnTyiv.webp" alt="Aircrack-ng" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  A
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/network-cloud/offensive-security"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Offensive Security
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        Aircrack-ng
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/aircrack-ng-1" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View Aircrack-ng</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        A subdomain scan tool that helps you find subdomains of a given domain.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+
+      </article>
+      
+            
+              
+
+
+
+
+<article class="relative group bg-[var(--color-bg-white)] rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer " onclick="if(!event.target.closest('a')) { window.location.href='/cybersecurity-tools/wiz-7436'; }">
+
+        <!-- Top Section with Gradient Background -->
+        <div class="relative  p-6  flex flex-col justify-between">
+          <div class="flex items-start justify-between mb-8">
+            <!-- Logo / Initials avatar -->
+            <div
+              class="relative w-14 h-14 rounded-2xl bg-[var(--color-bg-white)] border border-[var(--color-border)] flex items-center justify-center transition-colors  p-2">
+              
+                <img src="https://www.cybersecurityintelligence.com/files/logo/7436.jpg" alt="Wiz" class="w-full h-full object-contain rounded"
+                  onerror="this.style.display='none'; this.parentElement.querySelector('.tool-initials-fallback').style.display='flex';" />
+                <span
+                  class="tool-initials-fallback text-xl font-semibold text-[var(--color-brand-primary)] absolute inset-0 items-center justify-center"
+                  style="display: none;">
+                  W
+                </span>
+                
+                    <!-- Verified Badge - Show for both logo and initials -->
+                    
+            </div>
+          </div>
+          <!-- Price badge (if you still want a separate visual) -->
+          
+            <div class="absolute top-6 right-6 flex gap-2">
+              
+                <span
+                  class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold text-[var(--color-state-success)] border bg-success-badge border-success-badge">
+                  Free
+                </span>
+                
+            </div>
+            
+
+              <div>
+                <!-- Category and Subcategory -->
+                
+                  <div class="mb-2 relative z-10 flex items-center gap-2 flex-wrap">
+
+                    
+
+                      
+                        <a href="/cybersecurity-tools/category/network-cloud/cloud-security"
+                          class="inline-block text-xs font-medium text-[var(--color-brand-primary)] hover:text-[var(--color-brand-primary-hover)] relative z-10"
+                          onclick="event.stopPropagation();">
+                          Cloud Security
+                        </a>
+                        
+                            
+                  </div>
+                  
+
+                    <!-- Tool Name with Website Link -->
+                    <h3
+                      class="relative text-xl font-semibold mb-2 group-hover:text-[var(--color-brand-primary-hover)] flex items-center gap-1 relative z-10 text-[var(--color-text-heading)]"
+                      onclick="event.stopPropagation();">
+                      <span class="line-clamp-1 max-w-[calc(100%-4rem)]">
+                        Wiz
+                      </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                              viewBox="0 0 14 14"
+                        class="relative opacity-0 cursor-pointer px-1 text-[var(--color-text-muted)] transition-all group-hover:text-[var(--color-brand-primary-hover)] group-hover:sm:opacity-100">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                          d="M12.25 5.25v-3.5m0 0h-3.5m3.5 0L7 7M5.833 1.75H4.55c-.98 0-1.47 0-1.844.19a1.75 1.75 0 0 0-.765.766c-.191.374-.191.864-.191 1.844v4.9c0 .98 0 1.47.19 1.845.169.329.436.597.766.764.374.191.864.191 1.844.191h4.9c.98 0 1.47 0 1.845-.19a1.75 1.75 0 0 0 .764-.766c.191-.374.191-.864.191-1.844V8.167">
+                        </path>
+                      </svg>
+                      <!-- <a href="/cybersecurity-tools/wiz-7436" class="absolute w-full h-full inset-0 z-10"
+                        onclick="event.stopPropagation();"> -->
+                        <span class="sr-only">View Wiz</span>
+                      <!-- </a> -->
+                    </h3>
+                    
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 flex-grow min-h-10">
+                        Wiz delivers comprehensive cloud security posture management and risk visibility across multi-cloud environments, containers, and workloads without requiring agents. By leveraging cloud-native APIs from AWS, Azure, and GCP, Wiz provides a unified, 360-degree view of your entire cloud infrastructure, identifying vulnerabilities, misconfigurations, network exposures, and sensitive data. Gain immediate insights and make informed decisions with an up-to-date, holistic representation of your security landscape.
+                      </p>
+                      
+              </div>
+        </div>
+
+        <!-- Tool Content - Only show if there's content -->
+        
+          <div class="pt-0 p-6 flex flex-col flex-grow">
+            <!-- Full Mode: All Information -->
+
+            <!-- Rating and Reviews - Only show if there's content (rating, features, or use cases) -->
+            
+              <div class="flex items-start gap-6  flex-col mt-auto">
+                
+                    <!-- Features (only show if available) -->
+                    
+                      <div class="space-y-4 ">
+                        
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              Agentless Cloud Native Security Platform
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              360° Risk Visibility Across Multi-Cloud
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-[var(--color-brand-primary)] flex-shrink-0" fill="currentColor"
+                              viewBox="0 0 20 20">
+                              <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-[var(--color-text-muted)] font-medium">
+                              API-Driven Security Posture Management
+                            </span>
+                          </div>
+                          
+                      </div>
+                      
+
+                        
+              </div>
+              
+          </div>
+          
+
+      </article>
+      
+            
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+
+
+<script>
+  function scrollToSection(anchor) {
+    var targetId = anchor.replace('#', '');
+    var targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      document.querySelectorAll('.tab-link').forEach(function(link) {
+        link.classList.remove('border-[var(--color-brand-primary)]', 'text-[var(--color-brand-primary)]');
+        link.classList.add('border-transparent', 'text-gray-500');
+      });
+      var clickedTab = document.querySelector('a[href="' + anchor + '"]');
+      if (clickedTab) {
+        clickedTab.classList.remove('border-transparent', 'text-gray-500');
+        clickedTab.classList.add('border-[var(--color-brand-primary)]', 'text-[var(--color-brand-primary)]');
+      }
+      var offset = 100;
+      var elementPosition = targetElement.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  }
+
+  window.addEventListener('scroll', function() {
+    var tabLinks = document.querySelectorAll('.tab-link');
+    if (tabLinks.length === 0) return;
+    var sectionSelectors = [];
+    tabLinks.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        sectionSelectors.push('[id="' + href.replace('#', '') + '"]');
+      }
+    });
+    if (sectionSelectors.length === 0) return;
+    var sections = document.querySelectorAll(sectionSelectors.join(', '));
+    var scrollPosition = window.pageYOffset + 150;
+    var activeSection = null;
+    sections.forEach(function(section) {
+      var sectionTop = section.offsetTop;
+      var sectionHeight = section.offsetHeight;
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        activeSection = section;
+      }
+    });
+    if (!activeSection && sections.length > 0) {
+      var closestSection = null;
+      var closestDistance = Infinity;
+      sections.forEach(function(section) {
+        var distance = section.offsetTop - scrollPosition;
+        if (distance <= 0 && Math.abs(distance) < closestDistance) {
+          closestDistance = Math.abs(distance);
+          closestSection = section;
+        }
+      });
+      activeSection = closestSection || sections[0];
+    }
+    if (activeSection) {
+      var sectionId = activeSection.getAttribute('id');
+      document.querySelectorAll('.tab-link').forEach(function(link) {
+        link.classList.remove('border-[var(--color-brand-primary)]', 'text-[var(--color-brand-primary)]');
+        link.classList.add('border-transparent', 'text-gray-500');
+      });
+      var activeTab = document.querySelector('a[href="#' + sectionId + '"]');
+      if (activeTab) {
+        activeTab.classList.remove('border-transparent', 'text-gray-500');
+        activeTab.classList.add('border-[var(--color-brand-primary)]', 'text-[var(--color-brand-primary)]');
+      }
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var baseUrl = '/cybersecurity-tools';
+    var toolId = '691dad3831fd8f2c3e21cb16';
+
+    // Rating Selector
+    var ratingStars = document.querySelectorAll('.rating-star');
+    var ratingInput = document.getElementById('rating-value');
+    if (ratingStars.length > 0 && ratingInput) {
+      var selectedRating = 0;
+      ratingStars.forEach(function(star, index) {
+        star.addEventListener('click', function() {
+          selectedRating = index + 1;
+          ratingInput.value = selectedRating;
+          updateStarDisplay();
+        });
+        star.addEventListener('mouseenter', function() {
+          highlightStars(index + 1);
+        });
+      });
+      var ratingContainer = document.getElementById('rating-selector');
+      if (ratingContainer) {
+        ratingContainer.addEventListener('mouseleave', function() {
+          updateStarDisplay();
+        });
+      }
+      function highlightStars(rating) {
+        ratingStars.forEach(function(star, index) {
+          star.style.color = index < rating ? 'var(--color-state-warning)' : 'var(--color-border)';
+        });
+      }
+      function updateStarDisplay() {
+        highlightStars(selectedRating);
+      }
+    }
+
+    // Review Form Submission
+    var reviewForm = document.getElementById('review-form-element');
+    var reviewSubmitBtn = document.getElementById('review-submit-btn');
+    var reviewSubmitText = document.getElementById('review-submit-text');
+    var reviewSubmitLoading = document.getElementById('review-submit-loading');
+    var reviewMessages = document.getElementById('review-messages');
+
+    if (reviewForm) {
+      reviewForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var rating = document.getElementById('rating-value').value;
+        var reviewerName = document.getElementById('reviewer-name').value.trim();
+        var comment = document.getElementById('review-comment').value.trim();
+        if (!rating || rating === '0') { showMessage('error', 'Please select a rating'); return; }
+        if (!reviewerName) { showMessage('error', 'Please enter your name'); return; }
+        if (!toolId) { showMessage('error', 'Tool ID not found'); return; }
+        reviewSubmitBtn.disabled = true;
+        reviewSubmitText.classList.add('hidden');
+        reviewSubmitLoading.classList.remove('hidden');
+        hideMessage();
+        try {
+          var apiUrl;
+          if (baseUrl && baseUrl.trim() !== '') {
+            apiUrl = baseUrl.replace(/\/$/, '') + '/api/tool-directory/submit-review';
+          } else {
+            apiUrl = '/api/tool-directory/submit-review';
+          }
+          var response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ toolId: toolId, rating: parseInt(rating), reviewerName: reviewerName, comment: comment })
+          });
+          var data = await response.json();
+          if (data.success) {
+            showMessage('success', data.message || 'Review submitted successfully!');
+            reviewForm.reset();
+            document.getElementById('rating-value').value = '0';
+            if (ratingStars) {
+              ratingStars.forEach(function(star) { star.style.color = 'var(--color-border)'; });
+            }
+            setTimeout(function() { window.location.reload(); }, 2000);
+          } else {
+            showMessage('error', data.error || 'Failed to submit review. Please try again.');
+          }
+        } catch (error) {
+          console.error('[REVIEW] Error:', error);
+          showMessage('error', 'An error occurred. Please try again.');
+        } finally {
+          reviewSubmitBtn.disabled = false;
+          reviewSubmitText.classList.remove('hidden');
+          reviewSubmitLoading.classList.add('hidden');
+        }
+      });
+    }
+
+    function showMessage(type, message) {
+      if (!reviewMessages) return;
+      reviewMessages.classList.remove('hidden');
+      reviewMessages.className = 'mb-4 px-4 py-2 rounded-lg border';
+      if (type === 'success') {
+        reviewMessages.innerHTML = '<p class="text-[var(--color-state-success)]">' + message + '</p>';
+      } else {
+        reviewMessages.innerHTML = '<p class="text-[var(--color-state-error)]">' + message + '</p>';
+      }
+      reviewMessages.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function hideMessage() {
+      if (reviewMessages) { reviewMessages.classList.add('hidden'); }
+    }
+  });
+</script>
+
+  </main>
+  
+<footer class="bg-[var(--color-bg-white)] border-t border-[var(--color-border)] mt-auto" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+      <!-- Logo -->
+      <div class="flex-shrink-0 mb-6 md:mb-0">
+        <a href="/cybersecurity-tools/" class="flex items-center" aria-label="Cybersecurity Tools Directory">
+          
+            <img src="https://gracker.ai/static/logo-black.B4kmP2m0_Z5vXqW.svg" alt="Cybersecurity Tools Directory" class="h-8 w-auto" width="100" height="32">
+          
+        </a>
+      </div>
+
+      <!-- Social Icons -->
+      
+      <div class="flex space-x-6" aria-label="Social media links">
+        
+        
+        <a href="https://x.com/grackerAI" target="_blank" rel="noopener noreferrer" class="text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors duration-200" aria-label="Twitter">
+          <span class="sr-only">Twitter</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+        </a>
+        
+        
+        
+        <a href="https://www.linkedin.com/company/gracker-ai/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors duration-200" aria-label="LinkedIn">
+          <span class="sr-only">LinkedIn</span>
+          <svg class="h-6 w-6" height="24" viewBox="0 0 32 32" width="24" aria-hidden="true"><path d="M26.627 26.113h-4.182v-6.562c0-1.562 0-3.583-2.185-3.583s-2.53 1.708-2.53 3.469v6.676h-4.182v-13.54h4.036v1.843h.063a4.415 4.415 0 0 1 1.69-1.637 4.435 4.435 0 0 1 2.293-.54c4.265 0 5.05 2.792 5.05 6.437l-.053 7.438ZM8.74 10.77a2.452 2.452 0 0 1-2.26-1.504 2.43 2.43 0 0 1 .53-2.657 2.45 2.45 0 0 1 2.666-.528 2.444 2.444 0 0 1 1.51 2.252c0 .646-.257 1.266-.716 1.723a2.451 2.451 0 0 1-1.73.714Zm2.091 15.343H6.648v-13.54h4.182v13.54ZM4.526 2c-.554 0-1.086.22-1.478.61a2.08 2.08 0 0 0-.613 1.473v24.218c0 .553.22 1.082.613 1.473.392.39.924.61 1.478.61H28.73c.554 0 1.086-.22 1.478-.61.392-.39.612-.92.612-1.473V4.041a2.08 2.08 0 0 0-.627-1.446A2.095 2.095 0 0 0 28.73 2H4.526Z" fill="currentColor"></path></svg>
+        </a>
+        
+      </div>
+      
+    </div>
+
+    <!-- Separator -->
+    <div class="border-t border-[var(--color-border-light)] my-6"></div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+      <!-- Copyright -->
+      <p class="text-sm text-[var(--color-text-muted)]">
+        &copy; 2026 Cybersecurity Tools Directory. All rights reserved.
+      </p>
+
+      <!-- Footer Links -->
+      <nav class="flex flex-wrap gap-4 md:gap-6 mt-4 md:mt-0" aria-label="Footer navigation">
+        
+          
+        <a href="https://gracker.ai/privacy-policy/" 
+           class="text-sm text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors duration-200">
+          Privacy Policy
+        </a>
+          
+        <a href="https://gracker.ai/terms-and-condition/" 
+           class="text-sm text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors duration-200">
+          Terms of Use
+        </a>
+          
+        <a href="https://agents.gracker.ai/" 
+           class="text-sm text-[var(--color-text-body)] hover:text-[var(--color-brand-primary)] transition-colors duration-200">
+          Agents
+        </a>
+          
+        
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+  
+  <!-- Scripts -->
+  
+    
+  
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Extracted scripts from page content (express-ejs-layouts) -->
+  
+</body>
+</html>
+

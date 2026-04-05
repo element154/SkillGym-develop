@@ -1,0 +1,6 @@
+aeon
+numpy
+scipy
+scikit-learn
+numba
+joblib

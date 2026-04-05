@@ -1,0 +1,77 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\lab-unit-harmonization\\lab-unit-harmonization\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "eCQI-RC-eCQM-export.csv",
+      "snippet": "... test (lab or point-of-care (POC)) for glucose with a result of >300 mg/dL, or (2) a day in which a glucose test with a result was not found and it was ...",
+      "metadata": {
+        "url": "https://ecqi.healthit.gov/measure-export.csv/191371?page&_format=csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Science_Clips.csv",
+      "snippet": "... Data from SEARCH, a longitudinal observational study of youth-onset type 1 diabetes (N=1316) and type 2 diabetes (N=143) were analyzed. Urine albumin:creatinine ...",
+      "metadata": {
+        "url": "https://data.restoredcdc.org/Science_Clips.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "harmonized-phenotypes.csv",
+      "snippet": "... Kidney function\",\"Quantitative measure of the ratio of albumin concentration to creatinine ... Serum or Plasma\",\"HDL in blood\" Lipids,\"Quantitative measure of ...",
+      "metadata": {
+        "url": "https://topmed.nhlbi.nih.gov/data-resources/harmonized-phenotypes.csv?page&_format=csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "risks.csv",
+      "snippet": "... kidney function test which may indicate that your kidneys are not working ... Creatinine,,\"Increased blood level of creatinine, a substance normally ...",
+      "metadata": {
+        "url": "https://www.dfhcc.harvard.edu/crs-resources/OHRS_Documents/05_-_Database/data/risks.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "20260404_SYNLAB_andmed.csv",
+      "snippet": "... Units Ex Units %99+ Common Tests Class Long Common Name Short Name Type Order/Obs Doc/Section Ext 1 HE 1 Hemogramm 3-osalise leukogrammiga ...",
+      "metadata": {
+        "url": "https://elhr.digilugu.ee/data/laboriuuringud/labori_uuringudToExcel.html?laboriId=2&onlyLabor=true"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "tgh-24-84-3.csv",
+      "snippet": "... mmol,67, oa,67, potassium,67, profound,67, sequential,67, signals,67, slight,67, stimuli,67, translation,67, widespread,67, 0.018,66, 0.027,66, 0.21,66 ...",
+      "metadata": {
+        "url": "https://cdn.amegroups.cn/static/public/tgh-24-84-3.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "rows.csv",
+      "snippet": "... L). ECOG Performance Status 0 - 2. At least 4 weeks since major surgery ... sodium < 130 mmol/L Baseline serum potassium < 3.5 mmol/L (potassium ...",
+      "metadata": {
+        "url": "https://www.backuptrials.com/?_export_type=csv_with_hidden_cols&keywords=&order="
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "NAC_DataDictionary_2025-07-20.csv",
+      "snippet": "... ast,laboratory_abnormalities,,yesno,\"Aspartate aminotransferase (AST) grade 3 or greater (≥3.0 x ULN) \",,,,,,,,y,RH,,,, alt,laboratory_abnormalities,,yesno ...",
+      "metadata": {
+        "url": "https://data.mendeley.com/public-files/datasets/djykh2tfpb/files/8698a698-529d-4652-b49f-144c2e021725/file_downloaded"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "N3C_CCOI_C.csv",
+      "snippet": "... Calcium [Mass/volume] in Serum or Plasma,LOINC,17861-6,Standard,3006906 N3C ... [Units/volume] in Serum or Plasma,LOINC,3016-3,Standard,3009201 N3C ...",
+      "metadata": {
+        "url": "https://lhncbc.nlm.nih.gov/CCOI/datasets/N3C/data/N3C_CCOI_C.csv"
+      }
+    }
+  ]
+}

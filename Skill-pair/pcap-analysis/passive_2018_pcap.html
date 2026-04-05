@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAIDA Resource Catalog</title>
+        <meta charset="UTF-8">
+
+        <!-- begin favicon settings -->
+        <link rel="apple-touch-icon" sizes="180x180"
+              href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+              href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+              href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest?v=69PqBbWL25">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?v=69PqBbWL25"
+              color="#3c8ab8">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="CAIDA">
+        <meta name="application-name" content="CAIDA">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- end favicon settings --> 
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap" rel="stylesheet">
+
+        <meta property="og:image" content="http://catalog.caida.org/preview_image/dataset/passive_2018_pcap">
+        <meta property="og:description" content="Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces ...">
+        <meta property="og:title" content="Anonymized Internet Traces 2018" >
+        <meta property="og:type" content="website" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/build/panda.efda1035.css">
+        <script>
+            window.DETAILS_PROPS = 200;
+            window.API_URL = "https:\/\/api.catalog.caida.org\/v1\/";
+        </script>
+        <script>
+            /*
+             * documentMode is an IE-only property
+             * https://www.w3schools.com/jsref/prop_doc_documentmode.asp
+             * Script to check if browser is Internet Explorer 8 or lower
+             */
+            let msie = document.documentMode;
+            // IF IE version is less than 9, redirect to browser not supported page
+            if (msie < 9) {
+                window.location = "%PUBLIC_URL%/browserNotSupported.html";
+            }
+        </script>        
+                    
+            <script type="application/ld+json">        
+                {
+    "@context": [
+        "https:\/\/schema.org",
+        {
+            "csvw": "https:\/\/www.w3.org\/ns\/csvw#"
+        }
+    ],
+    "@type": "Dataset",
+    "name": "Anonymized Internet Traces 2018",
+    "description": "Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2018 Dataset. Derived from 10G traces on Equinix NYC monitor. ",
+    "creator": {
+        "@type": "Organization",
+        "name": "CAIDA"
+    },
+    "keywords": [
+        "traffic",
+        "Anonymized Internet Traces",
+        "traces",
+        "passive",
+        "passive-2018",
+        "caida",
+        "used CAIDA data"
+    ],
+    "license": [
+        "https:\/\/www.caida.org\/about\/legal\/aua\/"
+    ],
+    "citation": "https:\/\/catalog.caida.org\/dataset\/passive_2018_pcap",
+    "identifier": "https:\/\/catalog.caida.org\/dataset\/passive_2018_pcap",
+    "temporalCoverage": "2018-03\/2018-12",
+    "url": "https:\/\/www.caida.org\/catalog\/datasets\/request_user_info_forms\/passive_dataset_request\/",
+    "isAccessibleForFree": "False"
+}
+            </script>
+                
+    </head>
+    <body>
+    <h1></h1>
+        <div id="root"></div>
+        <script src="/build/panda.7c62252a.js"></script>
+    </body>
+</html>

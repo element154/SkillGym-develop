@@ -1,0 +1,13 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\aeon\\aeon\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "energy_dataset.csv",
+      "snippet": "... forecast solar day ahead,forecast wind offshore eday ahead,forecast wind onshore day ahead,total load forecast,total load actual,price day ahead,price ...",
+      "metadata": {
+        "url": "https://huggingface.co/api/resolve-cache/datasets/vitaliy-sharandin/energy-consumption-hourly-spain/517da00f936213bd01cc4803ea31a4e7f94c2f7b/energy_dataset.csv?download=true&etag=%2296ab71da085557366a37df6af50816dc7b5c6b2a%22"
+      }
+    }
+  ]
+}

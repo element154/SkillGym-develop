@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\search-flights\\search-flights\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "austin_airport_departure_data_2015_july.csv",
+      "snippet": "... flights in October 2008. Tarmac times for cancelled or diverted flights ... Date (MM/DD/YYYY),Flight Number,Tail Number,Destination Airport ,Scheduled ...",
+      "metadata": {
+        "url": "https://assets.datacamp.com/production/course_1639/datasets/austin_airport_departure_data_2015_july.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "HMT_-_2011_Air_Data.csv",
+      "snippet": "... Departure Date,Origin,Destination,Destination Country,Carrier,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, ...",
+      "metadata": {
+        "url": "https://assets.publishing.service.gov.uk/media/5a7f09bd40f0b62305b84ba2/HMT_-_2011_Air_Data.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "busiest-flight-routes.csv",
+      "snippet": "origin,destination,date,flightNumber,airline,duration,departureTime,arrivalTime,description GMP,CJU,,,,,,, MEL,SYD,,,,,,, HND,CTS,,,,,,, HND,FUK,,,,,,, BOM ...",
+      "metadata": {
+        "url": "https://myflightroutes.com/blog/busiest-flight-routes/csvs/busiest-flight-routes.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "airports.csv",
+      "snippet": "\"IATA\",\"ICAO\",\"Airport name\",\"Country\",\"City\",\"Information\" \"AAA\",\"NTGA\",\"Anaa Airport\",\"French Polynesia\",\"Anaa\",\"https://www.worlddata.info/oceania/french ...",
+      "metadata": {
+        "url": "https://www.worlddata.info/downloads/airports.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "download_metadata.html",
+      "snippet": "... airport (Example: Roma for Fiumicino Airport) icao character varying(5): ICAO code iata character varying(5): IATA code apttype character varying(25): Airport ...",
+      "metadata": {
+        "url": "https://data.humdata.org/dataset/26d2ee92-d197-4e54-8de0-1764c19354ad/download_metadata?format=csv"
+      }
+    }
+  ]
+}

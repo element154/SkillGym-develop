@@ -1,0 +1,1257 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"  >
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1">
+
+    <!-- This is Squarespace. --><!-- turquoise-grapefruit-p7rl -->
+<base href="">
+<meta charset="utf-8" />
+<title>ICS PCAP Analysis Challenge &mdash; AMPYX CYBER</title>
+<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/1609301381558-U3WKCMVKOXTKCPR6Z1L8/favicon.ico"/>
+<link rel="canonical" href="https://ampyxcyber.com/ics-pcap-analysis-challenge"/>
+<meta property="og:site_name" content="AMPYX CYBER"/>
+<meta property="og:title" content="ICS PCAP Analysis Challenge &mdash; AMPYX CYBER"/>
+<meta property="og:url" content="https://ampyxcyber.com/ics-pcap-analysis-challenge"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="http://static1.squarespace.com/static/5f80bdfaeeac37068ed8c60e/t/68827fbacb751b670d155055/1753382842461/Icon+Transparent+-+Social.png?format=1500w"/>
+<meta property="og:image:width" content="200"/>
+<meta property="og:image:height" content="200"/>
+<meta itemprop="name" content="ICS PCAP Analysis Challenge — AMPYX CYBER"/>
+<meta itemprop="url" content="https://ampyxcyber.com/ics-pcap-analysis-challenge"/>
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/5f80bdfaeeac37068ed8c60e/t/68827fbacb751b670d155055/1753382842461/Icon+Transparent+-+Social.png?format=1500w"/>
+<link rel="image_src" href="http://static1.squarespace.com/static/5f80bdfaeeac37068ed8c60e/t/68827fbacb751b670d155055/1753382842461/Icon+Transparent+-+Social.png?format=1500w" />
+<meta itemprop="image" content="http://static1.squarespace.com/static/5f80bdfaeeac37068ed8c60e/t/68827fbacb751b670d155055/1753382842461/Icon+Transparent+-+Social.png?format=1500w"/>
+<meta name="twitter:title" content="ICS PCAP Analysis Challenge — AMPYX CYBER"/>
+<meta name="twitter:image" content="http://static1.squarespace.com/static/5f80bdfaeeac37068ed8c60e/t/68827fbacb751b670d155055/1753382842461/Icon+Transparent+-+Social.png?format=1500w"/>
+<meta name="twitter:url" content="https://ampyxcyber.com/ics-pcap-analysis-challenge"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="description" content="" />
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="preconnect" href="https://p.typekit.net" crossorigin>
+<script type="text/javascript" src="//use.typekit.net/ik/zwXZKVzUe4Sm4zaukvf7TwVbzdlW-F8Q61GcogKzpktfez9gfFHN4UJLFRbh52jhWDmc52gKZeZyZAmyjDwaw2jtZAbtjDj3ZsGMJ6U3ScNt-AuyOAozicIKfWFzZc8yOWgkdkG4f5J7IMMjMkMfH6qJn3IbMg6IJMJ7f6K3UMIbMg6BJMJ7fbKOMsMMeMS6MKG4f5w7IMMj2PMfH6qJCMIbMg65JMJ7fbKwMsMMegI6MKGHfF7xMsMgegw6MKGHfFrxMsMgeMw6MKGHf55xMsMgeMb6MKGHf5exMsMgeM96MKGHfF0xMsMgeMS6MKGHfFcxMsMgeMq6MKGHf5HxMsMgeMv6MKGHfFkxMsMgegI6MTMgxLK4UMj.js" async fetchpriority="high" onload="try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');"></script>
+<script>document.documentElement.classList.add('wf-loading')</script>
+<style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alice:ital,wght@0,400"><script type="text/javascript" crossorigin="anonymous" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-22d4f1bd66094b0e-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-22d4f1bd66094b0e-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22c6db795661f68d-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22c6db795661f68d-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-41f73026a0e85b2c-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-41f73026a0e85b2c-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-d562a476e0945d70-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-d562a476e0945d70-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-efb529d57db762a2-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-efb529d57db762a2-min.en-US.js" defer ></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"betaFeatureFlags":["campaigns_new_image_layout_picker","i18n_beta_website_locales","enable_form_submission_trigger","campaigns_merch_state","modernized-pdp-m2-enabled","enable_modernized_pdp_m3_layout_ux","marketing_automations","campaigns_discount_section_in_blasts","campaigns_thumbnail_layout","marketing_landing_page","contacts_and_campaigns_redesign","order_status_page_checkout_landing_enabled","form_block_first_last_name_show","enable_modernized_pdp_m3_fluid","campaigns_discount_section_in_automations","campaigns_table_v2","form_block_first_last_name_required","campaigns_import_discounts"],"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-b2ca930513e9a0e5-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-b05f5197a871c566-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-2b77a9cecc55adab-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-310a6ba79d3185af-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-c3fef2a497c8e56b-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-3aea253a6af7d1d7-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-96b256171ee039c1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-1f8439225b60a3ed-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-bfde05e7972d5f9d-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-7eaf5f5281dec7eb-min.en-US.js"},"squarespace-custom-css-popup":{"css":"//assets.squarespace.com/universal/styles-compressed/custom-css-popup-437649e2ffb2b473-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/custom-css-popup-1db0686a8b322c43-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-b685267b794639f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-e82ee23b9e212d6a-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-c3fef2a497c8e56b-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-c9060234fb80f484-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-397923d765e3e1e8-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-0afd3c6ac30bbab1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-2524add2c2f5cfa6-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-b4cfeedd57f0bc17-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-4f8fb92b11b9a839-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-22e8ec6693d24053-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-b742b752f5880972-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-cb326f15baa94ba7-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-bbeec24aec38391d-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-b2220a070598a2c2-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-060147f8403ee308-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-625afd0cfad482bd-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-90a67fc09b9b32c6-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-76b5d9198f1e6c08-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-032a7046028aa65f-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-701bf8bbc05ec6aa-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-6afe6883cdfcd85f-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-95032e5fa98e47a5-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-71c1004d047b9243-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-b4046463b72f34e2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-17dbc4671fa6ee15-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-07ea5a4e004e6710-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-f907acb951d09c5e-min.en-US.js"}},"pageType":1,"website":{"id":"5f80bdfaeeac37068ed8c60e","identifier":"turquoise-grapefruit-p7rl","websiteType":1,"contentModifiedOn":1774975542830,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-US","translationLocale":"en-US","formattingLocale":"en-US","timeZone":"America/Los_Angeles","machineTimeZoneOffset":-25200000,"timeZoneOffset":-25200000,"timeZoneAbbr":"PDT","siteTitle":"AMPYX CYBER","fullSiteTitle":"ICS PCAP Analysis Challenge \u2014 AMPYX CYBER","siteTagLine":"Resilient. Secure. Compliant. NERC CIP and ICS/OT Security. We keep you ahead of your adversaries - and your auditors.","siteDescription":"<p class=\"\" style=\"white-space:pre-wrap;\">Ampyx Cyber - Security services for the global industrial and critical infrastructure sectors. We keep you ahead of your adversaries - and your auditors.</p>","location":{"mapLat":45.5352065,"mapLng":-122.6488105,"addressTitle":"AMPYX CYBER","addressLine1":"1631 Northeast Broadway","addressLine2":"Portland, OR, 97232","addressCountry":"United States"},"logoImageId":"66b2e22edc457b15d7d989ce","socialLogoImageId":"68827fbacb751b670d155055","shareButtonOptions":{"7":true,"4":true,"1":true,"3":true,"6":true,"8":true,"2":true},"logoImageUrl":"//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png","socialLogoImageUrl":"//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/4e0dd4a2-6d0d-4113-b3ed-6035abb85371/Icon+Transparent+-+Social.png","authenticUrl":"https://ampyxcyber.com","internalUrl":"https://turquoise-grapefruit-p7rl.squarespace.com","baseUrl":"https://ampyxcyber.com","primaryDomain":"ampyxcyber.com","sslSetting":3,"isHstsEnabled":false,"socialAccounts":[{"serviceId":65,"screenname":"LinkedIn","addedOn":1744226105281,"profileUrl":"https://www.linkedin.com/company/ampyx-cyber/","iconEnabled":true,"serviceName":"linkedin-unauth"},{"serviceId":86,"screenname":"Bluesky","addedOn":1750354314903,"profileUrl":"https://bsky.app/profile/ampyxcyber.com","iconEnabled":true,"serviceName":"bluesky-unauth"},{"serviceId":69,"screenname":"YouTube","addedOn":1625677521380,"profileUrl":"https://www.youtube.com/channel/UCVgvPIhl1JRSwMmf1tIjGgA","iconEnabled":true,"serviceName":"youtube-unauth"},{"serviceId":83,"screenname":"Threads","addedOn":1744226606980,"profileUrl":"https://www.threads.net/@ampyxcyber","iconEnabled":true,"serviceName":"threads-unauth"},{"serviceId":85,"screenname":"X","addedOn":1744226365035,"profileUrl":"https://x.com/ampyxcyber","iconEnabled":true,"serviceName":"x-formerly-twitter-unauth"},{"serviceId":69,"screenname":"YouTube","addedOn":1744226557984,"profileUrl":"https://www.youtube.com/@ampyxcyber","iconEnabled":true,"serviceName":"youtube-unauth"}],"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"faea4245f6d8cf5c5fdc3614e3d53772e537b0f8ad86fb6cd60238de1e67cdda","captchaSettings":{"siteKey":"","enabledForDonations":false},"showOwnerLogin":false},"websiteSettings":{"id":"5f80bdfaeeac37068ed8c611","websiteId":"5f80bdfaeeac37068ed8c60e","type":"Business","subjects":[],"country":"US","state":"OR","simpleLikingEnabled":true,"mobileInfoBarSettings":{"style":1,"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"announcementBarSettings":{"style":1,"text":"<p class=\"\" style=\"white-space:pre-wrap;\"><strong>NEW! NERC CIP Bootcamp - Multi-Day Course to Boost Your Compliance - Click Here For More</strong></p>","clickthroughUrl":{"url":"/nerc-cip-bootcamp","newWindow":true}},"popupOverlaySettings":{"style":1,"showOnScroll":false,"scrollPercentage":25,"showOnTimer":true,"timerDelay":5000,"showUntilSignup":true,"displayFrequency":7,"enableMobile":true,"enabledPages":["5fd6b50d034a586a4f50c68b","5fd6b82e13a48350e81fc586","5ff28d2618d44937a91d7f71","5ff803a99b95a043a261cb8e","640f61b2ec002001a0222500","5ff77539cf36606caf55775d"],"showOnAllPages":false,"version":1},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"contactPhoneNumber":"+1 (503) 272-1414","businessHours":{"monday":{"text":"Open","ranges":[{"from":0,"to":1440}]},"tuesday":{"text":"Open","ranges":[{"from":0,"to":1440}]},"wednesday":{"text":"Open","ranges":[{"from":0,"to":1440}]},"thursday":{"text":"Open","ranges":[{"from":0,"to":1440}]},"friday":{"text":"Open","ranges":[{"from":0,"to":1440}]},"saturday":{"text":"Closed","ranges":[{}]},"sunday":{"text":"Closed","ranges":[{}]}},"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["USD","CAD","GBP","AUD","EUR","CHF","NOK","SEK","DKK","NZD","SGD","MXN","HKD","CZK","ILS","MYR","RUB","PHP","PLN","THB","BRL","ARS","COP","IDR","INR","JPY","ZAR"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":2,"showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsSuccessText":"","restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"minimumOrderSubtotalEnabled":false,"addToCartConfirmationType":2,"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":false,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"userAccountsSettings":{"loginAllowed":false,"signupAllowed":false}},"cookieSettings":{"isCookieBannerEnabled":true,"isRestrictiveCookiePolicyEnabled":true,"cookieBannerText":"<p>Select \u201CAccept all\u201D to agree to our use of cookies and similar technologies to enhance your browsing experience, security, analytics and customization. Select \u201DManage cookies\u201D to make more choices or opt out.</p>","cookieBannerTheme":"DARK","cookieBannerPosition":"BOTTOM","cookieBannerCtaText":"Accept all","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":"Decline all","cookieBannerHasOptOut":true,"cookieBannerHasManageCookies":true,"cookieBannerManageCookiesLabel":"Manage cookies","cookieBannerSavedPreferencesText":"Cookie Preferences","cookieBannerSavedPreferencesLayout":"SUB_FOOTER"},"websiteCloneable":false,"collection":{"title":"ICS PCAP Analysis Challenge","id":"686d483b5eb04073245b4e35","fullUrl":"/ics-pcap-analysis-challenge","type":1,"permissionType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Slideshow","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"350px","gridSpacing":"20px","tweak-blog-list-columns":"2","tweak-blog-list-item-image-aspect-ratio-grid":"4:3 Four-Three","tweak-blog-list-item-image-aspect-ratio-stacked":"3:2 Standard","tweak-blog-list-item-image-show":"true","tweak-blog-list-spacing":"53px","tweak-blog-list-style":"Grid","tweak-footer-layout":"Columns","tweak-header-bottom-overlay-on-index-gallery":"false","tweak-index-gallery-apply-bottom-spacing":"true","tweak-index-gallery-autoplay-duration":"2","tweak-index-gallery-autoplay-enable":"true","tweak-index-gallery-fixed-height":"true","tweak-index-gallery-height":"100vh","tweak-index-gallery-indicators":"Lines","tweak-index-gallery-layout":"Packed","tweak-index-gallery-transition":"Fade","tweak-index-gallery-transition-duration":"500","tweak-index-nav-position":"Right","tweak-index-page-apply-bottom-spacing":"false","tweak-index-page-fullscreen":"Pages with Backgrounds Only","tweak-index-page-min-height":"100vh","tweak-mobile-breakpoint":"640px","tweak-overlay-parallax-enabled":"true","tweak-overlay-parallax-new-math":"true","tweak-product-item-image-zoom-factor":"2","tweak-product-list-item-hover-behavior":"Fade","tweak-product-list-items-per-row":"2","tweak-related-products-items-per-row":"3","tweak-related-products-title-spacing":"50px","tweak-site-ajax-loading-enable":"true","tweak-site-border-show":"false","tweak-site-border-width":"10px"},"templateId":"55f0aac0e4b0f0a5b7e0b22e","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/358/scripts/","impersonatedSession":false,"tzData":{"zones":[[-480,"US","P%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}},"showAnnouncementBar":false,"recaptchaEnterpriseContext":{"recaptchaEnterpriseSiteKey":"6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv"},"i18nContext":{"timeZoneData":{"id":"America/Los_Angeles","name":"Pacific Time"}},"env":"PRODUCTION","visitorFormContext":{"formFieldFormats":{"countries":[{"name":"Afghanistan","code":"AF","phoneCode":"+93"},{"name":"\u00C5land Islands","code":"AX","phoneCode":"+358"},{"name":"Albania","code":"AL","phoneCode":"+355"},{"name":"Algeria","code":"DZ","phoneCode":"+213"},{"name":"American Samoa","code":"AS","phoneCode":"+1"},{"name":"Andorra","code":"AD","phoneCode":"+376"},{"name":"Angola","code":"AO","phoneCode":"+244"},{"name":"Anguilla","code":"AI","phoneCode":"+1"},{"name":"Antigua & Barbuda","code":"AG","phoneCode":"+1"},{"name":"Argentina","code":"AR","phoneCode":"+54"},{"name":"Armenia","code":"AM","phoneCode":"+374"},{"name":"Aruba","code":"AW","phoneCode":"+297"},{"name":"Ascension Island","code":"AC","phoneCode":"+247"},{"name":"Australia","code":"AU","phoneCode":"+61"},{"name":"Austria","code":"AT","phoneCode":"+43"},{"name":"Azerbaijan","code":"AZ","phoneCode":"+994"},{"name":"Bahamas","code":"BS","phoneCode":"+1"},{"name":"Bahrain","code":"BH","phoneCode":"+973"},{"name":"Bangladesh","code":"BD","phoneCode":"+880"},{"name":"Barbados","code":"BB","phoneCode":"+1"},{"name":"Belarus","code":"BY","phoneCode":"+375"},{"name":"Belgium","code":"BE","phoneCode":"+32"},{"name":"Belize","code":"BZ","phoneCode":"+501"},{"name":"Benin","code":"BJ","phoneCode":"+229"},{"name":"Bermuda","code":"BM","phoneCode":"+1"},{"name":"Bhutan","code":"BT","phoneCode":"+975"},{"name":"Bolivia","code":"BO","phoneCode":"+591"},{"name":"Bosnia & Herzegovina","code":"BA","phoneCode":"+387"},{"name":"Botswana","code":"BW","phoneCode":"+267"},{"name":"Brazil","code":"BR","phoneCode":"+55"},{"name":"British Indian Ocean Territory","code":"IO","phoneCode":"+246"},{"name":"British Virgin Islands","code":"VG","phoneCode":"+1"},{"name":"Brunei","code":"BN","phoneCode":"+673"},{"name":"Bulgaria","code":"BG","phoneCode":"+359"},{"name":"Burkina Faso","code":"BF","phoneCode":"+226"},{"name":"Burundi","code":"BI","phoneCode":"+257"},{"name":"Cambodia","code":"KH","phoneCode":"+855"},{"name":"Cameroon","code":"CM","phoneCode":"+237"},{"name":"Canada","code":"CA","phoneCode":"+1"},{"name":"Cape Verde","code":"CV","phoneCode":"+238"},{"name":"Caribbean Netherlands","code":"BQ","phoneCode":"+599"},{"name":"Cayman Islands","code":"KY","phoneCode":"+1"},{"name":"Central African Republic","code":"CF","phoneCode":"+236"},{"name":"Chad","code":"TD","phoneCode":"+235"},{"name":"Chile","code":"CL","phoneCode":"+56"},{"name":"China","code":"CN","phoneCode":"+86"},{"name":"Christmas Island","code":"CX","phoneCode":"+61"},{"name":"Cocos (Keeling) Islands","code":"CC","phoneCode":"+61"},{"name":"Colombia","code":"CO","phoneCode":"+57"},{"name":"Comoros","code":"KM","phoneCode":"+269"},{"name":"Congo - Brazzaville","code":"CG","phoneCode":"+242"},{"name":"Congo - Kinshasa","code":"CD","phoneCode":"+243"},{"name":"Cook Islands","code":"CK","phoneCode":"+682"},{"name":"Costa Rica","code":"CR","phoneCode":"+506"},{"name":"C\u00F4te d\u2019Ivoire","code":"CI","phoneCode":"+225"},{"name":"Croatia","code":"HR","phoneCode":"+385"},{"name":"Cuba","code":"CU","phoneCode":"+53"},{"name":"Cura\u00E7ao","code":"CW","phoneCode":"+599"},{"name":"Cyprus","code":"CY","phoneCode":"+357"},{"name":"Czechia","code":"CZ","phoneCode":"+420"},{"name":"Denmark","code":"DK","phoneCode":"+45"},{"name":"Djibouti","code":"DJ","phoneCode":"+253"},{"name":"Dominica","code":"DM","phoneCode":"+1"},{"name":"Dominican Republic","code":"DO","phoneCode":"+1"},{"name":"Ecuador","code":"EC","phoneCode":"+593"},{"name":"Egypt","code":"EG","phoneCode":"+20"},{"name":"El Salvador","code":"SV","phoneCode":"+503"},{"name":"Equatorial Guinea","code":"GQ","phoneCode":"+240"},{"name":"Eritrea","code":"ER","phoneCode":"+291"},{"name":"Estonia","code":"EE","phoneCode":"+372"},{"name":"Eswatini","code":"SZ","phoneCode":"+268"},{"name":"Ethiopia","code":"ET","phoneCode":"+251"},{"name":"Falkland Islands","code":"FK","phoneCode":"+500"},{"name":"Faroe Islands","code":"FO","phoneCode":"+298"},{"name":"Fiji","code":"FJ","phoneCode":"+679"},{"name":"Finland","code":"FI","phoneCode":"+358"},{"name":"France","code":"FR","phoneCode":"+33"},{"name":"French Guiana","code":"GF","phoneCode":"+594"},{"name":"French Polynesia","code":"PF","phoneCode":"+689"},{"name":"Gabon","code":"GA","phoneCode":"+241"},{"name":"Gambia","code":"GM","phoneCode":"+220"},{"name":"Georgia","code":"GE","phoneCode":"+995"},{"name":"Germany","code":"DE","phoneCode":"+49"},{"name":"Ghana","code":"GH","phoneCode":"+233"},{"name":"Gibraltar","code":"GI","phoneCode":"+350"},{"name":"Greece","code":"GR","phoneCode":"+30"},{"name":"Greenland","code":"GL","phoneCode":"+299"},{"name":"Grenada","code":"GD","phoneCode":"+1"},{"name":"Guadeloupe","code":"GP","phoneCode":"+590"},{"name":"Guam","code":"GU","phoneCode":"+1"},{"name":"Guatemala","code":"GT","phoneCode":"+502"},{"name":"Guernsey","code":"GG","phoneCode":"+44"},{"name":"Guinea","code":"GN","phoneCode":"+224"},{"name":"Guinea-Bissau","code":"GW","phoneCode":"+245"},{"name":"Guyana","code":"GY","phoneCode":"+592"},{"name":"Haiti","code":"HT","phoneCode":"+509"},{"name":"Honduras","code":"HN","phoneCode":"+504"},{"name":"Hong Kong SAR China","code":"HK","phoneCode":"+852"},{"name":"Hungary","code":"HU","phoneCode":"+36"},{"name":"Iceland","code":"IS","phoneCode":"+354"},{"name":"India","code":"IN","phoneCode":"+91"},{"name":"Indonesia","code":"ID","phoneCode":"+62"},{"name":"Iran","code":"IR","phoneCode":"+98"},{"name":"Iraq","code":"IQ","phoneCode":"+964"},{"name":"Ireland","code":"IE","phoneCode":"+353"},{"name":"Isle of Man","code":"IM","phoneCode":"+44"},{"name":"Israel","code":"IL","phoneCode":"+972"},{"name":"Italy","code":"IT","phoneCode":"+39"},{"name":"Jamaica","code":"JM","phoneCode":"+1"},{"name":"Japan","code":"JP","phoneCode":"+81"},{"name":"Jersey","code":"JE","phoneCode":"+44"},{"name":"Jordan","code":"JO","phoneCode":"+962"},{"name":"Kazakhstan","code":"KZ","phoneCode":"+7"},{"name":"Kenya","code":"KE","phoneCode":"+254"},{"name":"Kiribati","code":"KI","phoneCode":"+686"},{"name":"Kosovo","code":"XK","phoneCode":"+383"},{"name":"Kuwait","code":"KW","phoneCode":"+965"},{"name":"Kyrgyzstan","code":"KG","phoneCode":"+996"},{"name":"Laos","code":"LA","phoneCode":"+856"},{"name":"Latvia","code":"LV","phoneCode":"+371"},{"name":"Lebanon","code":"LB","phoneCode":"+961"},{"name":"Lesotho","code":"LS","phoneCode":"+266"},{"name":"Liberia","code":"LR","phoneCode":"+231"},{"name":"Libya","code":"LY","phoneCode":"+218"},{"name":"Liechtenstein","code":"LI","phoneCode":"+423"},{"name":"Lithuania","code":"LT","phoneCode":"+370"},{"name":"Luxembourg","code":"LU","phoneCode":"+352"},{"name":"Macao SAR China","code":"MO","phoneCode":"+853"},{"name":"Madagascar","code":"MG","phoneCode":"+261"},{"name":"Malawi","code":"MW","phoneCode":"+265"},{"name":"Malaysia","code":"MY","phoneCode":"+60"},{"name":"Maldives","code":"MV","phoneCode":"+960"},{"name":"Mali","code":"ML","phoneCode":"+223"},{"name":"Malta","code":"MT","phoneCode":"+356"},{"name":"Marshall Islands","code":"MH","phoneCode":"+692"},{"name":"Martinique","code":"MQ","phoneCode":"+596"},{"name":"Mauritania","code":"MR","phoneCode":"+222"},{"name":"Mauritius","code":"MU","phoneCode":"+230"},{"name":"Mayotte","code":"YT","phoneCode":"+262"},{"name":"Mexico","code":"MX","phoneCode":"+52"},{"name":"Micronesia","code":"FM","phoneCode":"+691"},{"name":"Moldova","code":"MD","phoneCode":"+373"},{"name":"Monaco","code":"MC","phoneCode":"+377"},{"name":"Mongolia","code":"MN","phoneCode":"+976"},{"name":"Montenegro","code":"ME","phoneCode":"+382"},{"name":"Montserrat","code":"MS","phoneCode":"+1"},{"name":"Morocco","code":"MA","phoneCode":"+212"},{"name":"Mozambique","code":"MZ","phoneCode":"+258"},{"name":"Myanmar (Burma)","code":"MM","phoneCode":"+95"},{"name":"Namibia","code":"NA","phoneCode":"+264"},{"name":"Nauru","code":"NR","phoneCode":"+674"},{"name":"Nepal","code":"NP","phoneCode":"+977"},{"name":"Netherlands","code":"NL","phoneCode":"+31"},{"name":"New Caledonia","code":"NC","phoneCode":"+687"},{"name":"New Zealand","code":"NZ","phoneCode":"+64"},{"name":"Nicaragua","code":"NI","phoneCode":"+505"},{"name":"Niger","code":"NE","phoneCode":"+227"},{"name":"Nigeria","code":"NG","phoneCode":"+234"},{"name":"Niue","code":"NU","phoneCode":"+683"},{"name":"Norfolk Island","code":"NF","phoneCode":"+672"},{"name":"Northern Mariana Islands","code":"MP","phoneCode":"+1"},{"name":"North Korea","code":"KP","phoneCode":"+850"},{"name":"North Macedonia","code":"MK","phoneCode":"+389"},{"name":"Norway","code":"NO","phoneCode":"+47"},{"name":"Oman","code":"OM","phoneCode":"+968"},{"name":"Pakistan","code":"PK","phoneCode":"+92"},{"name":"Palau","code":"PW","phoneCode":"+680"},{"name":"Palestinian Territories","code":"PS","phoneCode":"+970"},{"name":"Panama","code":"PA","phoneCode":"+507"},{"name":"Papua New Guinea","code":"PG","phoneCode":"+675"},{"name":"Paraguay","code":"PY","phoneCode":"+595"},{"name":"Peru","code":"PE","phoneCode":"+51"},{"name":"Philippines","code":"PH","phoneCode":"+63"},{"name":"Poland","code":"PL","phoneCode":"+48"},{"name":"Portugal","code":"PT","phoneCode":"+351"},{"name":"Puerto Rico","code":"PR","phoneCode":"+1"},{"name":"Qatar","code":"QA","phoneCode":"+974"},{"name":"R\u00E9union","code":"RE","phoneCode":"+262"},{"name":"Romania","code":"RO","phoneCode":"+40"},{"name":"Russia","code":"RU","phoneCode":"+7"},{"name":"Rwanda","code":"RW","phoneCode":"+250"},{"name":"Samoa","code":"WS","phoneCode":"+685"},{"name":"San Marino","code":"SM","phoneCode":"+378"},{"name":"S\u00E3o Tom\u00E9 & Pr\u00EDncipe","code":"ST","phoneCode":"+239"},{"name":"Saudi Arabia","code":"SA","phoneCode":"+966"},{"name":"Senegal","code":"SN","phoneCode":"+221"},{"name":"Serbia","code":"RS","phoneCode":"+381"},{"name":"Seychelles","code":"SC","phoneCode":"+248"},{"name":"Sierra Leone","code":"SL","phoneCode":"+232"},{"name":"Singapore","code":"SG","phoneCode":"+65"},{"name":"Sint Maarten","code":"SX","phoneCode":"+1"},{"name":"Slovakia","code":"SK","phoneCode":"+421"},{"name":"Slovenia","code":"SI","phoneCode":"+386"},{"name":"Solomon Islands","code":"SB","phoneCode":"+677"},{"name":"Somalia","code":"SO","phoneCode":"+252"},{"name":"South Africa","code":"ZA","phoneCode":"+27"},{"name":"South Korea","code":"KR","phoneCode":"+82"},{"name":"South Sudan","code":"SS","phoneCode":"+211"},{"name":"Spain","code":"ES","phoneCode":"+34"},{"name":"Sri Lanka","code":"LK","phoneCode":"+94"},{"name":"St. Barth\u00E9lemy","code":"BL","phoneCode":"+590"},{"name":"St. Helena","code":"SH","phoneCode":"+290"},{"name":"St. Kitts & Nevis","code":"KN","phoneCode":"+1"},{"name":"St. Lucia","code":"LC","phoneCode":"+1"},{"name":"St. Martin","code":"MF","phoneCode":"+590"},{"name":"St. Pierre & Miquelon","code":"PM","phoneCode":"+508"},{"name":"St. Vincent & Grenadines","code":"VC","phoneCode":"+1"},{"name":"Sudan","code":"SD","phoneCode":"+249"},{"name":"Suriname","code":"SR","phoneCode":"+597"},{"name":"Svalbard & Jan Mayen","code":"SJ","phoneCode":"+47"},{"name":"Sweden","code":"SE","phoneCode":"+46"},{"name":"Switzerland","code":"CH","phoneCode":"+41"},{"name":"Syria","code":"SY","phoneCode":"+963"},{"name":"Taiwan","code":"TW","phoneCode":"+886"},{"name":"Tajikistan","code":"TJ","phoneCode":"+992"},{"name":"Tanzania","code":"TZ","phoneCode":"+255"},{"name":"Thailand","code":"TH","phoneCode":"+66"},{"name":"Timor-Leste","code":"TL","phoneCode":"+670"},{"name":"Togo","code":"TG","phoneCode":"+228"},{"name":"Tokelau","code":"TK","phoneCode":"+690"},{"name":"Tonga","code":"TO","phoneCode":"+676"},{"name":"Trinidad & Tobago","code":"TT","phoneCode":"+1"},{"name":"Tristan da Cunha","code":"TA","phoneCode":"+290"},{"name":"Tunisia","code":"TN","phoneCode":"+216"},{"name":"T\u00FCrkiye","code":"TR","phoneCode":"+90"},{"name":"Turkmenistan","code":"TM","phoneCode":"+993"},{"name":"Turks & Caicos Islands","code":"TC","phoneCode":"+1"},{"name":"Tuvalu","code":"TV","phoneCode":"+688"},{"name":"U.S. Virgin Islands","code":"VI","phoneCode":"+1"},{"name":"Uganda","code":"UG","phoneCode":"+256"},{"name":"Ukraine","code":"UA","phoneCode":"+380"},{"name":"United Arab Emirates","code":"AE","phoneCode":"+971"},{"name":"United Kingdom","code":"GB","phoneCode":"+44"},{"name":"United States","code":"US","phoneCode":"+1"},{"name":"Uruguay","code":"UY","phoneCode":"+598"},{"name":"Uzbekistan","code":"UZ","phoneCode":"+998"},{"name":"Vanuatu","code":"VU","phoneCode":"+678"},{"name":"Vatican City","code":"VA","phoneCode":"+39"},{"name":"Venezuela","code":"VE","phoneCode":"+58"},{"name":"Vietnam","code":"VN","phoneCode":"+84"},{"name":"Wallis & Futuna","code":"WF","phoneCode":"+681"},{"name":"Western Sahara","code":"EH","phoneCode":"+212"},{"name":"Yemen","code":"YE","phoneCode":"+967"},{"name":"Zambia","code":"ZM","phoneCode":"+260"},{"name":"Zimbabwe","code":"ZW","phoneCode":"+263"}],"initialAddressFormat":{"id":0,"type":"ADDRESS","country":"US","labelLocale":"en","fields":[{"type":"FIELD","label":"Address Line 1","identifier":"Line1","length":0,"required":true,"metadata":{"autocomplete":"address-line1"}},{"type":"SEPARATOR","label":"\n","identifier":"Newline","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"Address Line 2","identifier":"Line2","length":0,"required":false,"metadata":{"autocomplete":"address-line2"}},{"type":"SEPARATOR","label":"\n","identifier":"Newline","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"City","identifier":"City","length":0,"required":true,"metadata":{"autocomplete":"address-level2"}},{"type":"SEPARATOR","label":",","identifier":"Comma","length":0,"required":false,"metadata":{}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"State","identifier":"State","length":0,"required":true,"metadata":{"autocomplete":"address-level1"}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"ZIP Code","identifier":"Zip","length":0,"required":true,"metadata":{"autocomplete":"postal-code"}}]},"initialNameOrder":"GIVEN_FIRST","initialPhoneFormat":{"id":0,"type":"PHONE_NUMBER","country":"US","labelLocale":"en-US","fields":[{"type":"SEPARATOR","label":"(","identifier":"LeftParen","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"1","identifier":"1","length":3,"required":false,"metadata":{}},{"type":"SEPARATOR","label":")","identifier":"RightParen","length":0,"required":false,"metadata":{}},{"type":"SEPARATOR","label":" ","identifier":"Space","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"2","identifier":"2","length":3,"required":false,"metadata":{}},{"type":"SEPARATOR","label":"-","identifier":"Dash","length":0,"required":false,"metadata":{}},{"type":"FIELD","label":"3","identifier":"3","length":14,"required":false,"metadata":{}}]}},"localizedStrings":{"validation":{"noValidSelection":"A valid selection must be made.","invalidUrl":"Must be a valid URL.","stringTooLong":"Value should have a length no longer than {0}.","containsInvalidKey":"{0} contains an invalid key.","invalidTwitterUsername":"Must be a valid Twitter username.","valueOutsideRange":"Value must be in the range {0} to {1}.","invalidPassword":"Passwords should not contain whitespace.","missingRequiredSubfields":"{0} is missing required subfields: {1}","invalidCurrency":"Currency value should be formatted like 1234 or 123.99.","invalidMapSize":"Value should contain exactly {0} elements.","subfieldsRequired":"All fields in {0} are required.","formSubmissionFailed":"Form submission failed. Review the following information: {0}.","invalidCountryCode":"Country code should have an optional plus and up to 4 digits.","invalidDate":"This is not a real date.","required":"{0} is required.","invalidStringLength":"Value should be {0} characters long.","invalidEmail":"Email addresses should follow the format user@domain.com.","invalidListLength":"Value should be {0} elements long.","allEmpty":"Please fill out at least one form field.","missingRequiredQuestion":"Missing a required question.","invalidQuestion":"Contained an invalid question.","captchaFailure":"Captcha validation failed. Please try again.","stringTooShort":"Value should have a length of at least {0}.","invalid":"{0} is not valid.","formErrors":"Form Errors","containsInvalidValue":"{0} contains an invalid value.","invalidUnsignedNumber":"Numbers must contain only digits and no other characters.","invalidName":"Valid names contain only letters, numbers, spaces, ', or - characters."},"submit":"Submit","status":{"title":"{@} Block","learnMore":"Learn more"},"name":{"firstName":"First Name","lastName":"Last Name"},"lightbox":{"openForm":"Open Form"},"likert":{"agree":"Agree","stronglyDisagree":"Strongly Disagree","disagree":"Disagree","stronglyAgree":"Strongly Agree","neutral":"Neutral"},"time":{"am":"AM","second":"Second","pm":"PM","minute":"Minute","amPm":"AM/PM","hour":"Hour"},"notFound":"Form not found.","date":{"yyyy":"YYYY","year":"Year","mm":"MM","day":"Day","month":"Month","dd":"DD"},"phone":{"country":"Country","number":"Number","prefix":"Prefix","areaCode":"Area Code","line":"Line"},"submitError":"Unable to submit form. Please try again later.","address":{"stateProvince":"State/Province","country":"Country","zipPostalCode":"Zip/Postal Code","address2":"Address 2","address1":"Address 1","city":"City"},"email":{"signUp":"Sign up for news and updates"},"cannotSubmitDemoForm":"This is a demo form and cannot be submitted.","required":"(required)","invalidData":"Invalid form data."}}};</script><link rel="stylesheet" type="text/css" href="https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css"/><link rel="stylesheet" type="text/css" href="https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css"/><script src="https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js"></script><script src="https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js"></script><script>Squarespace.load(window);</script>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://ampyxcyber.com/ics-pcap-analysis-challenge?format=rss" />
+<script type="application/ld+json">{"url":"https://ampyxcyber.com","name":"AMPYX CYBER","description":"<p class=\"\" style=\"white-space:pre-wrap;\">Ampyx Cyber - Security services for the global industrial and critical infrastructure sectors. We keep you ahead of your adversaries - and your auditors.</p>","image":"//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png","@context":"http://schema.org","@type":"WebSite"}</script><script type="application/ld+json">{"legalName":"AMPYX CYBER","address":"1631 Northeast Broadway\nPortland, OR, 97232\nUnited States","email":"contact@ampyxcyber.com","telephone":"+1 (503) 272-1414","sameAs":["https://www.linkedin.com/company/ampyx-cyber/","https://bsky.app/profile/ampyxcyber.com","https://www.youtube.com/channel/UCVgvPIhl1JRSwMmf1tIjGgA","https://www.threads.net/@ampyxcyber","https://x.com/ampyxcyber","https://www.youtube.com/@ampyxcyber"],"@context":"http://schema.org","@type":"Organization"}</script><script type="application/ld+json">{"address":"1631 Northeast Broadway\nPortland, OR, 97232\nUnited States","image":"https://static1.squarespace.com/static/5f80bdfaeeac37068ed8c60e/t/66b2e22edc457b15d7d989ce/1774975542830/","name":"AMPYX CYBER","openingHours":"Mo 00:00-00:00, Tu 00:00-00:00, We 00:00-00:00, Th 00:00-00:00, Fr 00:00-00:00, , ","@context":"http://schema.org","@type":"LocalBusiness"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/5f80bdfaeeac37068ed8c60e/141/55f0aac0e4b0f0a5b7e0b22e/5f80bdfbeeac37068ed8c62b/358/site.css?nocustom=true"/><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/custom-css/5f80bdfaeeac37068ed8c60e/5f80bdfbeeac37068ed8c62b/0/custom.css"/><script data-sqs-type="cookiepreferencesgetter">(function(){window.getSquarespaceCookies = function() {    const getCookiesAllowed = function(cookieName){ return ('; '+document.cookie).split('; ' + cookieName + '=').pop().split(';')[0] === 'true'};    return {      performance: getCookiesAllowed('ss_performanceCookiesAllowed') ? 'accepted' : 'declined',      marketing: getCookiesAllowed('ss_marketingCookiesAllowed') ? 'accepted' : 'declined'    }}})()</script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KNGY50JZPE"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZjQwMz', true);gtag('consent', 'default', { 'analytics_storage': 'denied', 'wait_for_update': 500 });window.googleAnalyticsRequiresConsentUpdates = true;(function(){let squarespaceCookies = {};if (window.getSquarespaceCookies) {  squarespaceCookies = window.getSquarespaceCookies();}const consentValue = squarespaceCookies.performance === 'accepted' ? 'granted' :  'denied';gtag('consent', 'update', { 'analytics_storage': consentValue })})();gtag('config', 'G-KNGY50JZPE');</script><!-- End of Squarespace Headers -->
+  </head>
+  <body id="collection-686d483b5eb04073245b4e35" class="tweak-site-width-option-full-background tweak-icon-weight-light  tweak-site-ajax-loading-enable tweak-site-ajax-loading-bar-show ancillary-header-top-left-layout-horizontal ancillary-header-top-center-layout-horizontal ancillary-header-top-right-layout-horizontal ancillary-header-bottom-left-layout-horizontal ancillary-header-bottom-center-layout-horizontal ancillary-header-bottom-right-layout-horizontal ancillary-header-branding-position-top-left ancillary-header-tagline-position-hide ancillary-header-primary-nav-position-top-right ancillary-header-secondary-nav-position-top-right ancillary-header-social-position-hide ancillary-header-search-position-top-right ancillary-header-cart-position-top-right ancillary-header-account-position-hide tweak-header-primary-nav-hover-style-active tweak-header-primary-nav-button-style-solid tweak-header-primary-nav-button-shape-square  tweak-header-secondary-nav-hover-style-button tweak-header-secondary-nav-button-style-outline tweak-header-secondary-nav-button-shape-pill tweak-header-search-style-icon-only tweak-header-search-placeholder-show tweak-header-cart-style-text tweak-header-account-style-text tweak-overlay-parallax-enabled tweak-overlay-parallax-new-math tweak-index-nav-style-none tweak-index-nav-position-right tweak-index-nav-text-show tweak-index-page-fullscreen-pages-with-backgrounds-only  tweak-index-page-scroll-indicator-none tweak-index-page-scroll-indicator-icon-arrow tweak-index-page-scroll-indicator-icon-weight-light  tweak-index-gallery-layout-packed   tweak-index-gallery-fixed-height tweak-index-gallery-apply-bottom-spacing tweak-index-gallery-hover-style-plain tweak-index-gallery-controls-small-arrows tweak-index-gallery-controls-icon-weight-hairline tweak-index-gallery-indicators-lines tweak-index-gallery-autoplay-enable tweak-index-gallery-transition-fade tweak-index-gallery-content-position-middle-center tweak-index-gallery-content-text-alignment-left tweak-footer-show tweak-footer-layout-columns tweak-footer-layout-columns-auto tweak-footer-stacked-alignment-center   tweak-mobile-bar-top-fixed ancillary-mobile-bar-branding-position-top-left ancillary-mobile-bar-menu-icon-position-top-right tweak-mobile-bar-menu-icon-hamburger ancillary-mobile-bar-search-icon-position-hide ancillary-mobile-bar-cart-position-hide tweak-mobile-bar-cart-style-text ancillary-mobile-bar-account-position-hide tweak-mobile-bar-account-style-text tweak-mobile-overlay-slide-origin-left tweak-mobile-overlay-close-show  tweak-mobile-overlay-menu-primary-button-style-outline tweak-mobile-overlay-menu-primary-button-shape-pill   tweak-mobile-overlay-menu-secondary-button-style-outline tweak-mobile-overlay-menu-secondary-button-shape-pill tweak-quote-block-alignment-center tweak-social-icons-style-regular tweak-social-icons-shape-square  tweak-blog-meta-primary-category tweak-blog-meta-secondary-date tweak-blog-list-style-grid  tweak-blog-list-alignment-left tweak-blog-list-item-image-show tweak-blog-list-item-image-aspect-ratio-grid-43-four-three tweak-blog-list-item-image-aspect-ratio-stacked-32-standard tweak-blog-list-item-title-show tweak-blog-list-item-excerpt-show tweak-blog-list-item-body-show tweak-blog-list-item-readmore-below-excerpt tweak-blog-list-item-meta-position-above-title tweak-blog-list-pagination-link-label-show tweak-blog-list-pagination-link-icon-show tweak-blog-list-pagination-link-icon-weight-light tweak-blog-item-alignment-center tweak-blog-item-meta-position-below-title tweak-blog-item-share-position-below-content  tweak-blog-item-pagination-link-label-show tweak-blog-item-pagination-link-title-show tweak-blog-item-pagination-link-meta-hide tweak-blog-item-pagination-link-icon-weight-light   event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address     event-excerpts  event-item-back-link    gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop   tweak-product-list-image-aspect-ratio-11-square tweak-product-list-item-hover-behavior-fade tweak-product-list-meta-position-under tweak-product-list-mobile-meta-position-under tweak-product-list-meta-alignment-under-center tweak-product-list-meta-alignment-overlay-center-center tweak-product-list-show-title tweak-product-list-show-price tweak-product-list-filter-display-top tweak-product-list-filter-alignment-center tweak-product-item-nav-show-none tweak-product-item-nav-pagination-style-previousnext tweak-product-item-nav-breadcrumb-alignment-left tweak-product-item-nav-pagination-alignment-split tweak-product-item-gallery-position-right tweak-product-item-gallery-design-stacked tweak-product-item-gallery-aspect-ratio-11-square tweak-product-item-gallery-thumbnail-alignment-left tweak-product-item-details-alignment-left tweak-product-item-details-show-title tweak-product-item-details-show-price tweak-product-item-details-show-excerpt tweak-product-item-details-excerpt-position-below-price tweak-product-item-details-show-share-buttons tweak-product-item-details-show-variants tweak-product-item-details-show-quantity tweak-product-item-details-options-style-pill tweak-product-item-details-show-add-to-cart-button tweak-product-item-details-add-to-cart-button-style-solid tweak-product-item-details-add-to-cart-button-shape-pill tweak-product-item-details-add-to-cart-button-padding-medium  tweak-product-item-image-zoom-behavior-hover  tweak-related-products-image-aspect-ratio-11-square tweak-related-products-meta-alignment-under-center tweak-product-badge-style-none tweak-product-badge-position-top-right tweak-product-badge-inset-floating newsletter-style-light hide-opentable-icons opentable-style-dark small-button-style-raised small-button-shape-pill medium-button-style-raised medium-button-shape-pill large-button-style-raised large-button-shape-pill image-block-poster-text-alignment-center  image-block-card-content-position-center image-block-card-text-alignment-left  image-block-overlap-content-position-center image-block-overlap-text-alignment-left  image-block-collage-content-position-center image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-pill tweak-product-quick-view-button-style-docked tweak-product-quick-view-button-position-center tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light tweak-share-buttons-style-icon-only tweak-share-buttons-icons-show tweak-share-buttons-labels-show tweak-share-buttons-counts-show  tweak-share-buttons-standard-background-color native-currency-code-usd collection-686d483b5eb04073245b4e35 collection-type-index collection-layout-default view-list mobile-style-available sqs-has-custom-cart has-logo-image has-tagline has-social has-parallax-images enable-load-effects has-primary-nav has-secondary-nav" data-controller="HashManager, SiteLoader, MobileClassname">
+
+    <div class="Loader"></div>
+
+    <div class="Mobile" data-nc-base="mobile-bar" data-controller="AncillaryLayout">
+  <div class="Mobile-bar Mobile-bar--top" data-nc-group="top" data-controller="MobileOffset">
+
+    <div data-nc-container="top-left">
+      <a href="/" class="Mobile-bar-branding" data-nc-element="branding" data-content-field="site-title">
+        
+          
+            
+            
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+  <img src="//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png" alt="AMPYX CYBER" sizes="240px" class="Mobile-bar-branding-logo" style="display:block" srcset="//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=100w 100w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=300w 300w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=500w 500w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=750w 750w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=1000w 1000w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=1500w 1500w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+
+          
+        
+      </a>
+    </div>
+    <div data-nc-container="top-center"></div>
+    <div data-nc-container="top-right"></div>
+  </div>
+  <div class="Mobile-bar Mobile-bar--bottom" data-nc-group="bottom" data-controller="MobileOffset">
+    <div data-nc-container="bottom-left">
+      <button
+        class="Mobile-bar-menu"
+        data-nc-element="menu-icon"
+        data-controller-overlay="menu"
+        data-controller="MobileOverlayToggle"
+        aria-label="Open navigation menu"
+      >
+        <svg class="Icon Icon--hamburger" viewBox="0 0 24 18">
+          <use xlink:href="/assets/ui-icons.svg#hamburger-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#hamburger-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--hotdog" viewBox="0 0 24 14">
+          <use xlink:href="/assets/ui-icons.svg#hotdog-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#hotdog-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--plus" viewBox="0 0 20 20">
+          <use xlink:href="/assets/ui-icons.svg#plus-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#plus-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--dots-horizontal" viewBox="0 0 25 7">
+          <use xlink:href="/assets/ui-icons.svg#dots-horizontal-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#dots-horizontal-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--dots-vertical" viewBox="0 0 7 25">
+          <use xlink:href="/assets/ui-icons.svg#dots-vertical-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#dots-vertical-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--squares-horizontal" viewBox="0 0 25 7">
+          <use xlink:href="/assets/ui-icons.svg#squares-horizontal-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#squares-horizontal-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--squares-vertical" viewBox="0 0 7 25">
+          <use xlink:href="/assets/ui-icons.svg#squares-vertical-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#squares-vertical-icon--odd" class="use--odd"></use>
+        </svg>
+      </button>
+    </div>
+    <div data-nc-container="bottom-center">
+      
+    </div>
+    <div data-nc-container="bottom-right">
+      
+      <a href="/search" class="Mobile-bar-search" data-nc-element="search-icon" aria-label="Search">
+        <svg class="Icon Icon--search" viewBox="0 0 20 20">
+          <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="Mobile-overlay">
+    <div class="Mobile-overlay-menu" data-controller="MobileOverlayFolders">
+      <div class="Mobile-overlay-menu-main">
+        <nav class="Mobile-overlay-nav Mobile-overlay-nav--primary" data-content-field="navigation">
+          
+  
+    
+      
+        
+          
+            <a href="/" class="Mobile-overlay-nav-item">
+              Home
+            </a>
+          
+        
+      
+    
+    
+  
+    
+      
+        
+          
+            <a href="/about-us" class="Mobile-overlay-nav-item">
+              About us
+            </a>
+          
+        
+      
+    
+    
+  
+    
+      
+        
+          
+            <a href="/services" class="Mobile-overlay-nav-item">
+              Services
+            </a>
+          
+        
+      
+    
+    
+  
+    
+      
+        
+          <a href="/blog" class="Mobile-overlay-nav-item">
+            Blog
+          </a>
+        
+      
+    
+    
+  
+    
+      
+        
+          <a href="/podcast" class="Mobile-overlay-nav-item">
+            Podcast
+          </a>
+        
+      
+    
+    
+  
+    
+      
+        
+          
+            <a href="/training" class="Mobile-overlay-nav-item">
+              Training
+            </a>
+          
+        
+      
+    
+    
+  
+    
+      
+        
+          
+            <a href="/activity" class="Mobile-overlay-nav-item">
+              Activity
+            </a>
+          
+        
+      
+    
+    
+  
+    
+      
+        
+          
+            <a href="/news" class="Mobile-overlay-nav-item">
+              News
+            </a>
+          
+        
+      
+    
+    
+  
+
+        </nav>
+        <nav class="Mobile-overlay-nav Mobile-overlay-nav--secondary" data-content-field="navigation">
+          
+  
+    
+      
+        
+          
+            <a href="/contact" class="Mobile-overlay-nav-item">
+              Contact
+            </a>
+          
+        
+      
+    
+    
+  
+
+        </nav>
+      </div>
+      <div class="Mobile-overlay-folders" data-content-field="navigation">
+        
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+        
+  
+
+      </div>
+    </div>
+    <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" aria-label="Close navigation menu">
+      <svg class="Icon Icon--close" viewBox="0 0 16 16">
+        <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <div class="Mobile-overlay-back" data-controller="MobileOverlayToggle"></div>
+  </div>
+</div>
+
+
+    <div class="Parallax-host-outer">
+      <div class="Parallax-host" data-parallax-host>
+        
+          
+            
+              
+              
+                
+                  <div class="Parallax-item" data-parallax-item data-parallax-id="686d484e22bf4a647fc17850"></div>
+                
+              
+            
+              
+              
+                
+              
+            
+          
+        
+      </div>
+    </div>
+
+    <div class="Site" data-nc-base="header" data-controller="AncillaryLayout">
+      <div class="sqs-announcement-bar-dropzone"></div>
+
+      <header class="Header Header--top">
+        <div class="Header-inner Header-inner--top" data-nc-group="top">
+          <div data-nc-container="top-left">
+
+            <div class="Header-search" data-nc-element="search">
+              <form class="Header-search-form" action="/search" method="get" role="search">
+                <input class="Header-search-form-input" name="q" type="text" spellcheck="false" value="" autocomplete="off" placeholder="Search" aria-label="Search"/>
+                <button class="Header-search-form-submit" type="submit" data-test="template-search" aria-label="Search">
+                  <svg class="Icon Icon--search--small" viewBox="0 0 15 15">
+                    <use xlink:href="/assets/ui-icons.svg#search-icon--small"></use>
+                  </svg>
+                  <svg class="Icon Icon--search" viewBox="0 0 20 20">
+                    <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+          </div>
+          <div data-nc-container="top-center">
+            
+            
+              <div class="Header-social" data-nc-element="social">
+                
+  <nav class="SocialLinks" data-content-field="connected-accounts">
+    <div class="SocialLinks-inner">
+    <a href="https://www.linkedin.com/company/ampyx-cyber/" target="_blank" class="SocialLinks-link linkedin-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#linkedin-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#linkedin-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://bsky.app/profile/ampyxcyber.com" target="_blank" class="SocialLinks-link bluesky-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#bluesky-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#bluesky-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://www.youtube.com/channel/UCVgvPIhl1JRSwMmf1tIjGgA" target="_blank" class="SocialLinks-link youtube-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#youtube-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#youtube-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://www.threads.net/@ampyxcyber" target="_blank" class="SocialLinks-link threads-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#threads-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#threads-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://x.com/ampyxcyber" target="_blank" class="SocialLinks-link x-formerly-twitter-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#x-formerly-twitter-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#x-formerly-twitter-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://www.youtube.com/@ampyxcyber" target="_blank" class="SocialLinks-link youtube-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#youtube-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#youtube-unauth-mask"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+              </div>
+            
+          </div>
+          <div data-nc-container="top-right">
+
+            
+
+          </div>
+        </div>
+      </header>
+
+      <div class="Site-inner Site-inner--index" data-controller="HeaderOverlay">
+
+        <header class="Header Header--bottom Header--overlay">
+          <div class="Header-inner Header-inner--bottom" data-nc-group="bottom">
+            <div data-nc-container="bottom-left">
+              <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
+                
+  <div class="Header-nav-inner">
+    <a href="/" class="Header-nav-item" data-test="template-nav">Home</a><a href="/about-us" class="Header-nav-item" data-test="template-nav">About us</a><a href="/services" class="Header-nav-item" data-test="template-nav">Services</a><a href="/blog" class="Header-nav-item" data-test="template-nav">Blog</a><a href="/podcast" class="Header-nav-item" data-test="template-nav">Podcast</a><a href="/training" class="Header-nav-item" data-test="template-nav">Training</a><a href="/activity" class="Header-nav-item" data-test="template-nav">Activity</a><a href="/news" class="Header-nav-item" data-test="template-nav">News</a>
+  </div>
+
+              </nav>
+            </div>
+            <div data-nc-container="bottom-center">
+
+              <a href="/" class="Header-branding" data-nc-element="branding" data-content-field="site-title">
+                
+                  
+                    
+                    
+                    
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+  <img src="//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png" alt="AMPYX CYBER" sizes="320px" class="Header-branding-logo" style="display:block" srcset="//images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=100w 100w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=300w 300w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=500w 500w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=750w 750w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=1000w 1000w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=1500w 1500w, //images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/e88a90a0-fe63-4b33-a968-04521c0f5a1a/Horizontal+Transparent+Black+Text+Ampyx+Cyber+cropped.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+
+                  
+                
+              </a>
+              <div class="Header-tagline" data-nc-element="tagline">Resilient. Secure. Compliant. NERC CIP and ICS/OT Security. We keep you ahead of your adversaries - and your auditors.</div>
+
+            </div>
+            <div data-nc-container="bottom-right">
+
+              <nav class="Header-nav Header-nav--secondary" data-nc-element="secondary-nav" data-content-field="navigation">
+                
+  <div class="Header-nav-inner">
+    <a href="/contact" class="Header-nav-item" data-test="template-nav">Contact</a>
+  </div>
+
+              </nav>
+
+            </div>
+          </div>
+        </header>
+
+        <div class="Content-outer">
+          
+
+          <main class="Index" data-collection-id="686d483b5eb04073245b4e35" data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation">
+            
+              <section id="ics-pcap-analysis-challenge-banner" class="Index-page Index-page--has-image"  data-parallax-original-element data-collection-id="686d484e22bf4a647fc17850" data-parallax-id="686d484e22bf4a647fc17850" data-edit-main-image="Background">
+        
+          <div class="Index-page-scroll-indicator hidden" data-controller="ScrollIndicator">
+            <div class="Index-page-scroll-indicator-text">Scroll</div>
+            <svg class="Index-page-scroll-indicator-arrow Icon Icon--caretLarge--down" viewBox="0 0 48 23">
+              <use xlink:href="/assets/ui-icons.svg#caret-down-large-icon"></use>
+            </svg>
+            <div class="Index-page-scroll-indicator-line"></div>
+          </div>
+        
+        <div class="Index-page-content  sqs-alternate-block-style-container">
+          <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1751992893595" id="page-686d484e22bf4a647fc17850"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-686d484e22bf4a647fc17851"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h1 style="white-space:pre-wrap;">&nbsp;ICS PCAP Analysis Challenge</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div></div></div>
+        </div>
+        
+          
+            <figure class="Index-page-image" data-parallax-image-wrapper>
+              
+  <img data-src="https://images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/0951a95a-20df-4a07-9115-bf8c87199213/technology-7571280_1920.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f80bdfaeeac37068ed8c60e/0951a95a-20df-4a07-9115-bf8c87199213/technology-7571280_1920.jpg" data-image-dimensions="1920x1280" data-image-focal-point="0.5,0.5" alt="technology-7571280_1920.jpg"  data-load="false" alt="" />
+
+            </figure>
+          
+        
+      </section>
+
+    
+
+  
+
+    
+
+      <section id="ics-pcap-analysis-challenge-body" class="Index-page"  data-collection-id="686d48687d6dd077ca22b310" data-parallax-id="686d48687d6dd077ca22b310" data-edit-main-image="Background">
+        
+        <div class="Index-page-content ">
+          <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1751994351280" id="page-686d48687d6dd077ca22b310"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1751993100947_1818"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h1 style="white-space:pre-wrap;">Test Your OT Network Skills</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_2344"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1751993408534_2734"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h2 style="white-space:pre-wrap;">Running ICS PCAP Analysis Challenge Dashboard</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block embed-block sqs-block-embed" data-block-json="&#123;&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;customThumbEnabled&quot;:false,&quot;html&quot;:&quot;&lt;iframe width=\&quot;600\&quot; height=\&quot;450\&quot; src=\&quot;https://lookerstudio.google.com/embed/reporting/0da268a6-fb1d-4e51-971a-75ac052b9421/page/S7EPF\&quot; frameborder=\&quot;0\&quot; style=\&quot;border:0\&quot; allowfullscreen sandbox=\&quot;allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;&quot;&#125;" data-block-type="22" data-sqsp-block="embed" id="block-yui_3_17_2_1_1751993100947_2145"><div class="sqs-block-content"><iframe allowfullscreen src="https://lookerstudio.google.com/embed/reporting/0da268a6-fb1d-4e51-971a-75ac052b9421/page/S7EPF?wmode=opaque" width="600" sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" data-embed="true" frameborder="0" style="border:0" height="450"></iframe></div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_3234"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-686d48687d6dd077ca22b311"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h2 style="white-space:pre-wrap;">Put Your Industrial Cyber Skills to the Test</h2><p class="" style="white-space:pre-wrap;">Step into the role of an ICS threat analyst with the ICS PCAP Analysis Challenge, a self-paced, online experience designed to sharpen your OT-focused packet analysis and threat hunting skills. Participants work through a curated packet capture (PCAP) file from a simulated industrial network, complete with common ICS protocols, misconfigurations, and attacker tradecraft.</p><p class="" style="white-space:pre-wrap;">This isn’t a quiz. It’s a hands-on, real-world challenge crafted by industrial cybersecurity professionals to test your ability to recognize what’s normal, detect what’s not, and think like a defender.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;">What You’ll Do</h3><ul data-rte-list="default"><li><p class="" style="white-space:pre-wrap;">Analyze raw network traffic from a simulated ICS environment</p></li><li><p class="" style="white-space:pre-wrap;">Identify anomalies, suspicious behaviors, and indicators of compromise</p></li><li><p class="" style="white-space:pre-wrap;">Recognize protocol-specific nuances across Modbus, DNP3, Ethernet/IP, and others</p></li><li><p class="" style="white-space:pre-wrap;">Document findings through a guided challenge workbook</p></li><li><p class="" style="white-space:pre-wrap;">Submit your answers to receive a completion badge and optional walkthrough debrief</p></li></ul><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;">What You’ll Get</h3><ul data-rte-list="default"><li><p class="" style="white-space:pre-wrap;"> Access to the full PCAP file and a scenario brief</p></li><li><p class="" style="white-space:pre-wrap;">Challenge workbook to guide your analysis</p></li><li><p class="" style="white-space:pre-wrap;">Optional video debrief or written walkthrough</p></li><li><p class="" style="white-space:pre-wrap;">Completion badge and digital certificate (3 hours CPE)</p></li><li><p class="" style="white-space:pre-wrap;">Inclusion on our Challenge Leaderboard (opt-in)</p></li><li><p class="" style="white-space:pre-wrap;">Bonus: Follow-on challenge scenarios (coming soon)</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p></li></ul><h3 style="white-space:pre-wrap;">Who Should Participate</h3><p class="" style="white-space:pre-wrap;">This challenge is designed for:</p><ul data-rte-list="default"><li><p class="" style="white-space:pre-wrap;">OT security analysts and blue teamers looking to strengthen protocol analysis skills</p></li><li><p class="" style="white-space:pre-wrap;">Red team members exploring how industrial environments respond to abuse or scanning</p></li><li><p class="" style="white-space:pre-wrap;">SOC analysts and incident responders working in or transitioning to critical infrastructure</p></li><li><p class="" style="white-space:pre-wrap;">Students and professionals looking to gain practical ICS cybersecurity experience</p></li></ul><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;">Requirements</h3><ul data-rte-list="default"><li><p class="" style="white-space:pre-wrap;">Entry-level familiarity with Wireshark or equivalent packet analysis tools</p></li><li><p class="" style="white-space:pre-wrap;">Interest in navigating PCAP files and interpreting protocol behavior</p></li><li><p class="" style="white-space:pre-wrap;"><a href="https://www.wireshark.org/download.html" target="_blank">Wireshark</a></p></li><li><p class="" style="white-space:pre-wrap;"><a href="https://www.netresec.com/?page=NetworkMiner" target="_blank">NetworkMiner</a></p></li></ul><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;">Access &amp; Format</h3><ul data-rte-list="default"><li><p class="" style="white-space:pre-wrap;">Delivery: 100% online, self-paced</p></li><li><p class="" style="white-space:pre-wrap;">FREE (no cost)</p></li><li><p class="" style="white-space:pre-wrap;">Time Estimate: 2–3 hours</p></li><li><p class="" style="white-space:pre-wrap;">Prerequisites: None (but some packet analysis experience is helpful)</p></li></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_85992"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1751993408534_86057"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h2 style="white-space:pre-wrap;">Challenge Courses</h2><p class="" style="white-space:pre-wrap;">Ready to Analyze? Put your skills to the test and see how well you know your ICS protocols.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;">DNP3 PCAP Analysis Challenge</h3><p class="" style="white-space:pre-wrap;">In this challenge, you’ll investigate a set of network packets using the <strong>Distributed Network Protocol (DNP3)</strong> — a protocol widely used in electric utilities and SCADA systems for communication between control centers, substations, and field devices. Your mission is to uncover insights from the traffic using Wireshark and your analytical skills — no specialized plugins or dissectors required</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" id="block-yui_3_17_2_1_1751993408534_79084"><div class="sqs-block-content">
+
+
+
+
+  <div
+    class="sqs-block-button-container  sqs-block-button-container--left "
+    data-animation-role="button"
+    data-button-size="medium"
+    data-button-type="primary"
+    
+  > 
+    <a 
+      href="https://forms.gle/fgic3RNRyBzQ66s87" 
+      class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+      data-sqsp-button
+       target="_blank"
+    >
+      Get Started
+    </a>
+    
+
+
+  </div>
+
+
+
+<style>
+  #block-yui_3_17_2_1_1751993408534_79084 {--sqs-block-content-flex: 0;
+  }
+</style>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_80769"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1751993408534_79210"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h3 style="white-space:pre-wrap;">CIP PCAP Analysis Challenge (Intermediate)</h3><p class="" style="white-space:pre-wrap;">In this challenge, you’ll explore a set of network packets related to CIP (Common Industrial Protocol), often used in industrial systems like PLCs. Your task is to find answers using Wireshark and your detective skills — no custom tools or dissectors provided.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" id="block-yui_3_17_2_1_1751993408534_81941"><div class="sqs-block-content">
+
+
+
+
+  <div
+    class="sqs-block-button-container  sqs-block-button-container--left "
+    data-animation-role="button"
+    data-button-size="medium"
+    data-button-type="primary"
+    
+  > 
+    <a 
+      href="https://forms.gle/XGZnehfACmdgShW7A" 
+      class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+      data-sqsp-button
+       target="_blank"
+    >
+      Get Started
+    </a>
+    
+
+
+  </div>
+
+
+
+<style>
+  #block-yui_3_17_2_1_1751993408534_81941 {--sqs-block-content-flex: 0;
+  }
+</style>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_81224"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1751993408534_81290"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h3 style="white-space:pre-wrap;">Modbus TCP PCAP Analysis Challenge (Intermediate)</h3><p class="" style="white-space:pre-wrap;">In this challenge, you’ll examine a real-world packet capture of Modbus TCP, a widely-used industrial protocol for communication between SCADA masters and field devices (like RTUs, PLCs, or sensors). Your goal is to detect signs of suspicious behavior, particularly evidence of Man-in-the-Middle (MitM) activity, replay attacks, and unauthorized data manipulation.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" id="block-yui_3_17_2_1_1751993408534_83281"><div class="sqs-block-content">
+
+
+
+
+  <div
+    class="sqs-block-button-container  sqs-block-button-container--left "
+    data-animation-role="button"
+    data-button-size="medium"
+    data-button-type="primary"
+    
+  > 
+    <a 
+      href="https://forms.gle/Qj5cVBgkR4ECuk967" 
+      class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+      data-sqsp-button
+       target="_blank"
+    >
+      Learn more
+    </a>
+    
+
+
+  </div>
+
+
+
+<style>
+  #block-yui_3_17_2_1_1751993408534_83281 {--sqs-block-content-flex: 0;
+  }
+</style>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_82590"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1751993408534_82656"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h3 style="white-space:pre-wrap;">Zigbee PCAP Analysis Challenge</h3><p class="" style="white-space:pre-wrap;">In this challenge, you’ll investigate a real-world packet capture from a Zigbee-based home automation system (Control4). Zigbee is a low-power wireless mesh protocol designed for IoT and automation — with a layered architecture involving Network (NWK), Application Support (APS), and Zigbee Cluster Library (ZCL) layers.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" id="block-yui_3_17_2_1_1751993408534_83653"><div class="sqs-block-content">
+
+
+
+
+  <div
+    class="sqs-block-button-container  sqs-block-button-container--left "
+    data-animation-role="button"
+    data-button-size="medium"
+    data-button-type="primary"
+    
+  > 
+    <a 
+      href="https://forms.gle/PHeaVN1T7kXRXGEaA" 
+      class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+      data-sqsp-button
+       target="_blank"
+    >
+      Learn more
+    </a>
+    
+
+
+  </div>
+
+
+
+<style>
+  #block-yui_3_17_2_1_1751993408534_83653 {--sqs-block-content-flex: 0;
+  }
+</style>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/5256ce1c-8e6c-4c2c-a403-075cf2ed3b82_708/website.components.spacer.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1751993408534_84024"><div class="sqs-block-content">&nbsp;</div></div></div></div></div>
+        </div>
+        
+          
+        
+      </section>
+
+    
+
+  
+
+  
+    <nav class="Index-nav">
+      <div class="Index-nav-inner">
+        
+          <a href="#ics-pcap-analysis-challenge-banner" class="Index-nav-item active">
+            <div class="Index-nav-indicator"></div>
+            <div class="Index-nav-text"><span>ICS PCAP Analysis Challenge Banner</span></div>
+          </a>
+        
+          <a href="#ics-pcap-analysis-challenge-body" class="Index-nav-item">
+            <div class="Index-nav-indicator"></div>
+            <div class="Index-nav-text"><span>ICS PCAP Analysis Challenge Body</span></div>
+          </a>
+        
+      </div>
+    </nav>
+            
+          </main>
+
+        </div>
+      </div>
+
+      <footer class="Footer" role="contentinfo" data-controller="FooterBreakpoints">
+
+  <div class="Footer-inner clear">
+
+    <div class="sqs-layout sqs-grid-12 columns-12 Footer-blocks Footer-blocks--top sqs-alternate-block-style-container" data-layout-label="Footer Top Blocks" data-type="block-field" data-updated-on="1773411233447" id="footerBlocksTop"><div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" data-sqsp-block="text" id="block-yui_3_17_2_1_1683561750199_180913"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h3 style="white-space:pre-wrap;">Social &amp; other feeds</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" data-sqsp-block="social-links" id="block-b204c7276303121252aa"><div class="sqs-block-content">
+
+
+
+<div class="sqs-svg-icon--outer social-icon-alignment-left social-icons-color-white social-icons-size-medium social-icons-style-regular " >
+  <style>
+    #block-b204c7276303121252aa .social-icons-style-border .sqs-svg-icon--wrapper {
+      
+        box-shadow: 0 0 0 2px inset;
+      
+      border: none; 
+    }
+  </style>
+  <nav class="sqs-svg-icon--list">
+    <a href="https://www.linkedin.com/company/ampyx-cyber/" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth" aria-label="LinkedIn">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#linkedin-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#linkedin-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://bsky.app/profile/ampyxcyber.com" target="_blank" class="sqs-svg-icon--wrapper bluesky-unauth" aria-label="Bluesky">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#bluesky-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#bluesky-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.youtube.com/channel/UCVgvPIhl1JRSwMmf1tIjGgA" target="_blank" class="sqs-svg-icon--wrapper youtube-unauth" aria-label="YouTube">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#youtube-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#youtube-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.threads.net/@ampyxcyber" target="_blank" class="sqs-svg-icon--wrapper threads-unauth" aria-label="Threads">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#threads-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#threads-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://x.com/ampyxcyber" target="_blank" class="sqs-svg-icon--wrapper x-formerly-twitter-unauth" aria-label="X">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#x-formerly-twitter-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#x-formerly-twitter-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.youtube.com/@ampyxcyber" target="_blank" class="sqs-svg-icon--wrapper youtube-unauth" aria-label="YouTube">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#youtube-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#youtube-unauth-mask"></use>
+        </svg>
+      </div>
+    </a>
+  </nav>
+</div>
+</div></div><div class="sqs-block rss-block sqs-block-rss" data-block-type="49" id="block-yui_3_17_2_1_1678749418200_11516"><div class="sqs-block-content">
+
+
+
+<a href="https://ampyxcyber.com/podcast?format=rss" title="Ampyx Cyber Podcasts RSS" class="social-rss">Ampyx Cyber Podcasts RSS</a>
+</div></div><div class="sqs-block rss-block sqs-block-rss" data-block-type="49" id="block-yui_3_17_2_1_1629038208829_4064"><div class="sqs-block-content">
+
+
+
+<a href="https://ampyxcyber.com/blog?format=rss" title="Ampyx Cyber Blog RSS" class="social-rss">Ampyx Cyber Blog RSS</a>
+</div></div><div class="sqs-block rss-block sqs-block-rss" data-block-type="49" id="block-yui_3_17_2_1_1736396229981_6446"><div class="sqs-block-content">
+
+
+
+<a href="https://ampyxcyber.com/newsarchive?format=rss" title="Ampyx News RSS" class="social-rss">Ampyx News RSS</a>
+</div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" data-sqsp-block="text" id="block-147dc96c3f0502a0c769"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h3 style="text-align:center;white-space:pre-wrap;">Contact information</h3><p style="text-align:center;white-space:pre-wrap;" class=""><a href="mailto:contact@ampyxcyber.com?" target="_blank">contact@ampyxcyber.com</a></p><p style="text-align:center;white-space:pre-wrap;" class="">North America +1 <a href="tel:5032721414" target="_blank">(503) 272-1414</a></p><p style="text-align:center;white-space:pre-wrap;" class="">Europe <a href="tel:+4904053299480" target="_blank">+49 (0)40 532 99480</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" id="block-yui_3_17_2_1_1712858565097_14711"><div class="sqs-block-content">
+
+
+
+
+  <div
+    class="sqs-block-button-container  sqs-block-button-container--center "
+    data-animation-role="button"
+    data-button-size="small"
+    data-button-type="tertiary"
+    
+  > 
+    <a 
+      href="/privacy" 
+      class="sqs-block-button-element--small sqs-button-element--tertiary sqs-block-button-element"
+      data-sqsp-button
+       target="_blank"
+    >
+      Privacy Policy
+    </a>
+    
+
+
+  </div>
+
+
+
+<style>
+  #block-yui_3_17_2_1_1712858565097_14711 {--sqs-block-content-flex: 0;
+  }
+</style>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/6ebfee59-5477-4111-a1a9-014d4f0e8698_555/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" id="block-yui_3_17_2_1_1773411182291_5361"><div class="sqs-block-content">
+
+
+
+
+  <div
+    class="sqs-block-button-container  sqs-block-button-container--center "
+    data-animation-role="button"
+    data-button-size="small"
+    data-button-type="tertiary"
+    
+  > 
+    <a 
+      href="/store" 
+      class="sqs-block-button-element--small sqs-button-element--tertiary sqs-block-button-element"
+      data-sqsp-button
+       target="_blank"
+    >
+      Ampyx Gear
+    </a>
+    
+
+
+  </div>
+
+
+
+<style>
+  #block-yui_3_17_2_1_1773411182291_5361 {--sqs-block-content-flex: 0;
+  }
+</style>
+<style class="transform-vars">
+      #block-yui_3_17_2_1_1773411182291_5361 {
+        --opacity: 100%;
+        --translate-x: 0px;
+        --translate-y: 0px;
+        --rotation: 0deg;
+        --scale-x: 100%;
+        --scale-y: 100%;
+        --skew-x: 0deg;
+        --skew-y: 0deg;
+        --origin-x: 50%;
+        --origin-y: 50%;
+
+        opacity: var(--opacity, 1);
+        transform: translateX(var(--translate-x)) translateY(var(--translate-y)) rotate(var(--rotation)) scale(var(--scale-x), var(--scale-y)) skewX(var(--skew-x)) skewY(var(--skew-y));
+        transform-origin: var(--origin-x) var(--origin-y);
+      }
+    </style>
+  </div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" data-sqsp-block="text" id="block-c66094313423acce3d12"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h3 style="text-align:right;white-space:pre-wrap;">Site Navigation</h3><p style="text-align:right;white-space:pre-wrap;" class=""><a href="/home">Home</a><br><a href="/about-us">About Us</a><br><a href="/services">Services</a><br><a href="/blog">Blog</a><br><a href="/podcast">Podcast</a><br><a href="/activity">Activity</a><br><a href="/training" target="_blank">Training</a><br><a href="/news">News</a><br><a href="/contact">Contact</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div></div></div>
+
+    <div class="Footer-middle">
+      <div class="Footer-business">
+
+        
+          <div class="Footer-business-info">
+            
+              
+                <div class="Footer-business-info-item Footer-business-info-item--name">AMPYX CYBER</div>
+                <div class="Footer-business-info-item">1631 Northeast Broadway,</div>
+                <div class="Footer-business-info-item">Portland, OR, 97232,</div>
+                <div class="Footer-business-info-item Footer-business-info-item--country">United States</div>
+              
+            
+            
+              <a href="tel:+1 (503) 272-1414" rel="tel" class="Footer-business-info-item Footer-business-info-item--phone">+1 (503) 272-1414</a>
+              <a href="mailto:contact@ampyxcyber.com" title="contact@ampyxcyber.com" target="_blank" class="Footer-business-info-item Footer-business-info-item--email">contact@ampyxcyber.com</a>
+            
+          </div>
+        
+
+        
+          
+            <div class="Footer-business-hours">
+              <div class="Footer-business-hours-heading">Hours</div>
+              <div class="Footer-business-hours-item">Mon Open</div>
+              <div class="Footer-business-hours-item">Tue Open</div>
+              <div class="Footer-business-hours-item">Wed Open</div>
+              <div class="Footer-business-hours-item">Thu Open</div>
+              <div class="Footer-business-hours-item">Fri Open</div>
+              <div class="Footer-business-hours-item">Sat Closed</div>
+              <div class="Footer-business-hours-item">Sun Closed</div>
+            </div>
+          
+        
+
+      </div>
+
+      <div class="sqs-layout sqs-grid-12 columns-12 Footer-blocks Footer-blocks--middle sqs-alternate-block-style-container empty" data-layout-label="Footer Middle Blocks" data-type="block-field" id="footerBlocksMiddle"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+
+      
+    </div>
+
+    <div class="sqs-layout sqs-grid-12 columns-12 Footer-blocks Footer-blocks--bottom sqs-alternate-block-style-container" data-layout-label="Footer Bottom Blocks" data-type="block-field" data-updated-on="1769371184698" id="footerBlocksBottom"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-3272d3fa1bef7593fdd4"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p style="text-align:center;white-space:pre-wrap;" class="">© 2021–2026 Ampyx Cyber. All rights reserved.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div></div></div>
+
+  </div>
+
+</footer>
+
+
+    </div>
+
+    <script src="https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/358/scripts/site-bundle.js" type="text/javascript"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchForm = document.querySelector('.Header-search-form');
+  if (!searchForm) return;
+
+  searchForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Stop Squarespace’s default behavior
+
+    const query = searchForm.querySelector('.Header-search-form-input').value.trim();
+    // Redirect to your custom search route, passing the query along if needed
+    window.location.href = '/customsearch';
+  });
+});
+</script><script data-sqs-type="imageloader-bootstrapper">if(window.ImageLoader) window.ImageLoader.bootstrap({}, document);</script><script>Squarespace.afterBodyLoad(Y);</script><svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg"><symbol id="linkedin-unauth-icon" viewBox="0 0 64 64"><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"/></symbol><symbol id="linkedin-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M25.8,44h-5.4V26.6h5.4V44z M23.1,24.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1 c1.7,0,3.1,1.4,3.1,3.1C26.2,22.9,24.8,24.3,23.1,24.3z M46,44h-5.4v-8.4c0-2,0-4.6-2.8-4.6c-2.8,0-3.2,2.2-3.2,4.5V44h-5.4V26.6 h5.2V29h0.1c0.7-1.4,2.5-2.8,5.1-2.8c5.5,0,6.5,3.6,6.5,8.3V44z"/></symbol><symbol id="bluesky-unauth-icon" viewBox="0 0 64 64"><g class="svg-icon"><path d="M22.9364 19.8673C26.6051 22.579 30.551 28.0775 32 31.0279C33.449 28.0775 37.3949 22.579 41.0636 19.8673C43.7108 17.9106 48 16.3966 48 21.2142C48 22.1763 47.4397 29.2966 47.1111 30.4526C45.9688 34.4714 41.8066 35.4965 38.1041 34.8761C44.5759 35.9605 46.2222 39.5526 42.6666 43.1448C35.914 49.9669 32.9612 41.4331 32.2046 39.2464C32.0659 38.8455 32.001 38.658 32 38.8175C31.999 38.658 31.9341 38.8455 31.7954 39.2464C31.0388 41.4331 28.086 49.9669 21.3333 43.1448C17.7778 39.5526 19.4241 35.9605 25.8959 34.8761C22.1934 35.4965 18.0312 34.4714 16.8889 30.4526C16.5603 29.2966 16 22.1763 16 21.2142C16 16.3966 20.2893 17.9106 22.9364 19.8673Z"/></g></symbol><symbol id="bluesky-unauth-mask" viewBox="0 0 64 64"><g class="svg-mask"><path d="M64 64H0V0H64V64ZM48 21.2139C47.9998 16.3967 43.7106 17.9106 41.0635 19.8672C37.3948 22.579 33.449 28.0779 32 31.0283C30.551 28.0779 26.6052 22.579 22.9365 19.8672C20.2895 17.9106 16.0002 16.3967 16 21.2139C16 22.1758 16.5601 29.2945 16.8887 30.4521C18.0309 34.4708 22.1931 35.4962 25.8955 34.876C19.4242 35.9605 17.7779 39.5526 21.333 43.1445C28.0857 49.9667 31.0393 41.4328 31.7959 39.2461C31.9345 38.8456 31.999 38.6581 32 38.8174C32.001 38.6581 32.0655 38.8456 32.2041 39.2461C32.9607 41.4328 35.9143 49.9667 42.667 43.1445C46.2221 39.5526 44.5758 35.9605 38.1045 34.876C41.8069 35.4962 45.9691 34.4708 47.1113 30.4521C47.44 29.2945 48 22.1758 48 21.2139Z"/></g></symbol><symbol id="youtube-unauth-icon" viewBox="0 0 64 64"><path d="M46.7,26c0,0-0.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C38.3,21.4,32,21.4,32,21.4h0 c0,0-6.3,0-10.5,0.3c-0.6,0.1-1.9,0.1-3,1.3c-0.9,0.9-1.2,3-1.2,3S17,28.4,17,30.9v2.3c0,2.4,0.3,4.9,0.3,4.9s0.3,2.1,1.2,3 c1.1,1.2,2.6,1.2,3.3,1.3c2.4,0.2,10.2,0.3,10.2,0.3s6.3,0,10.5-0.3c0.6-0.1,1.9-0.1,3-1.3c0.9-0.9,1.2-3,1.2-3s0.3-2.4,0.3-4.9 v-2.3C47,28.4,46.7,26,46.7,26z M28.9,35.9l0-8.4l8.1,4.2L28.9,35.9z"/></symbol><symbol id="youtube-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M47,33.1c0,2.4-0.3,4.9-0.3,4.9s-0.3,2.1-1.2,3c-1.1,1.2-2.4,1.2-3,1.3 C38.3,42.5,32,42.6,32,42.6s-7.8-0.1-10.2-0.3c-0.7-0.1-2.2-0.1-3.3-1.3c-0.9-0.9-1.2-3-1.2-3S17,35.6,17,33.1v-2.3 c0-2.4,0.3-4.9,0.3-4.9s0.3-2.1,1.2-3c1.1-1.2,2.4-1.2,3-1.3c4.2-0.3,10.5-0.3,10.5-0.3h0c0,0,6.3,0,10.5,0.3c0.6,0.1,1.9,0.1,3,1.3 c0.9,0.9,1.2,3,1.2,3s0.3,2.4,0.3,4.9V33.1z M28.9,35.9l8.1-4.2l-8.1-4.2L28.9,35.9z"/></symbol><symbol id="threads-unauth-icon" viewBox="0 0 64 64"><path d="M38.0759 30.5145C37.9596 30.4588 37.8415 30.4051 37.7218 30.3538C37.5134 26.5136 35.4151 24.315 31.8918 24.2925C31.8758 24.2924 31.8599 24.2924 31.844 24.2924C29.7366 24.2924 27.9839 25.192 26.9051 26.8289L28.8428 28.1582C29.6487 26.9355 30.9135 26.6748 31.8449 26.6748C31.8557 26.6748 31.8665 26.6748 31.8771 26.6749C33.0372 26.6823 33.9126 27.0196 34.4792 27.6774C34.8915 28.1563 35.1673 28.8181 35.3038 29.6532C34.2753 29.4784 33.1629 29.4247 31.9738 29.4928C28.624 29.6858 26.4704 31.6395 26.6151 34.3543C26.6885 35.7313 27.3745 36.916 28.5467 37.6899C29.5377 38.3441 30.8141 38.6641 32.1407 38.5916C33.8926 38.4956 35.267 37.8272 36.2258 36.605C36.954 35.6768 37.4145 34.474 37.6179 32.9584C38.4528 33.4623 39.0715 34.1253 39.4133 34.9224C39.9943 36.2774 40.0282 38.504 38.2115 40.3193C36.6197 41.9096 34.7063 42.5975 31.8146 42.6188C28.607 42.595 26.1811 41.5663 24.6039 39.5612C23.1269 37.6836 22.3636 34.9717 22.3352 31.5006C22.3636 28.0295 23.1269 25.3175 24.6039 23.44C26.1811 21.4349 28.607 20.4062 31.8146 20.3824C35.0455 20.4064 37.5137 21.44 39.1513 23.4548C39.9543 24.4428 40.5597 25.6853 40.9588 27.134L43.2295 26.5282C42.7457 24.745 41.9845 23.2084 40.9486 21.934C38.8492 19.351 35.7787 18.0274 31.8225 18H31.8067C27.8585 18.0273 24.8224 19.3559 22.7828 21.9488C20.9678 24.2562 20.0316 27.4667 20.0001 31.4911L20 31.5006L20.0001 31.5101C20.0316 35.5345 20.9678 38.7451 22.7828 41.0524C24.8224 43.6452 27.8585 44.9739 31.8067 45.0012H31.8225C35.3327 44.9769 37.8069 44.0578 39.8451 42.0214C42.5119 39.3571 42.4316 36.0175 41.5526 33.9674C40.9221 32.4973 39.7198 31.3032 38.0759 30.5145ZM32.0153 36.2127C30.5472 36.2954 29.0219 35.6364 28.9467 34.2249C28.891 33.1783 29.6915 32.0105 32.1054 31.8714C32.3819 31.8555 32.6531 31.8477 32.9196 31.8477C33.7964 31.8477 34.6167 31.9329 35.3625 32.0959C35.0843 35.5698 33.4528 36.1338 32.0153 36.2127Z" /></symbol><symbol id="threads-unauth-mask" viewBox="0 0 64 64"><path d="M28.7616 34.225C28.8368 35.6366 30.3621 36.2956 31.8303 36.2129C33.2677 36.134 34.8993 35.5699 35.1774 32.096C34.4317 31.933 33.6114 31.8478 32.7346 31.8478C32.4681 31.8478 32.1968 31.8556 31.9204 31.8715C29.5064 32.0107 28.7059 33.1785 28.7616 34.225Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M64 0H0V64H64V0ZM37.5367 30.3539C37.6564 30.4053 37.7745 30.4589 37.8908 30.5147C39.5348 31.3033 40.737 32.4974 41.3676 33.9675C42.2465 36.0177 42.3268 39.3572 39.6601 42.0215C37.6218 44.058 35.1476 44.977 31.6375 45.0013H31.6216C27.6735 44.9741 24.6374 43.6454 22.5977 41.0525C20.7827 38.7452 19.8465 35.5346 19.815 31.5102L19.8149 31.5007L19.815 31.4912C19.8465 27.4668 20.7827 24.2563 22.5977 21.949C24.6374 19.3561 27.6735 18.0275 31.6216 18.0001H31.6375C35.5937 18.0276 38.6642 19.3511 40.7636 21.9342C41.7995 23.2085 42.5607 24.7451 43.0444 26.5283L40.7737 27.1342C40.3746 25.6855 39.7692 24.443 38.9662 23.4549C37.3286 21.4402 34.8604 20.4065 31.6295 20.3825C28.4219 20.4063 25.9961 21.435 24.4188 23.4401C22.9419 25.3177 22.1786 28.0296 22.1501 31.5007C22.1786 34.9718 22.9419 37.6837 24.4188 39.5613C25.9961 41.5664 28.422 42.5951 31.6296 42.6189C34.5213 42.5977 36.4346 41.9097 38.0264 40.3194C39.8432 38.5042 39.8093 36.2776 39.2282 34.9226C38.8865 34.1255 38.2677 33.4624 37.4328 32.9585C37.2295 34.4741 36.7689 35.6769 36.0407 36.6051C35.0819 37.8273 33.7076 38.4957 31.9557 38.5918C30.6291 38.6642 29.3527 38.3443 28.3616 37.6901C27.1894 36.9162 26.5034 35.7315 26.43 34.3544C26.2854 31.6397 28.4389 29.6859 31.7887 29.493C32.9779 29.4248 34.0902 29.4786 35.1188 29.6534C34.9822 28.8182 34.7065 28.1564 34.2941 27.6775C33.7275 27.0197 32.8521 26.6824 31.692 26.675L31.6598 26.6749C30.7284 26.6749 29.4637 26.9356 28.6578 28.1583L26.7201 26.8291C27.7988 25.1921 29.5515 24.2926 31.6589 24.2926L31.7067 24.2927C35.23 24.3152 37.3283 26.5137 37.5367 30.3539Z" /></symbol><symbol id="x-formerly-twitter-unauth-icon" viewBox="0 0 64 64"><g class="svg-icon"><path d="M34.426 29.9327L43.9189 18.5H41.6694L33.4267 28.4268L26.8432 18.5H19.25L29.2055 33.5111L19.25 45.5H21.4997L30.2042 35.0169L37.1568 45.5H44.75L34.426 29.9327ZM22.3102 20.2546H25.7656L41.6704 43.8252H38.2151L22.3102 20.2546Z"/></g></symbol><symbol id="x-formerly-twitter-unauth-mask" viewBox="0 0 64 64"><g class="svg-mask"><path d="M38.2151 43.8252H41.6704L25.7656 20.2546H22.3102L38.2151 43.8252Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H64V64H0V0ZM43.9189 18.5L34.426 29.9327L44.75 45.5H37.1568L30.2042 35.0169L21.4997 45.5H19.25L29.2055 33.5111L19.25 18.5H26.8432L33.4267 28.4268L41.6694 18.5H43.9189Z"/></g></symbol><symbol id="youtube-unauth-icon" viewBox="0 0 64 64"><path d="M46.7,26c0,0-0.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C38.3,21.4,32,21.4,32,21.4h0 c0,0-6.3,0-10.5,0.3c-0.6,0.1-1.9,0.1-3,1.3c-0.9,0.9-1.2,3-1.2,3S17,28.4,17,30.9v2.3c0,2.4,0.3,4.9,0.3,4.9s0.3,2.1,1.2,3 c1.1,1.2,2.6,1.2,3.3,1.3c2.4,0.2,10.2,0.3,10.2,0.3s6.3,0,10.5-0.3c0.6-0.1,1.9-0.1,3-1.3c0.9-0.9,1.2-3,1.2-3s0.3-2.4,0.3-4.9 v-2.3C47,28.4,46.7,26,46.7,26z M28.9,35.9l0-8.4l8.1,4.2L28.9,35.9z"/></symbol><symbol id="youtube-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M47,33.1c0,2.4-0.3,4.9-0.3,4.9s-0.3,2.1-1.2,3c-1.1,1.2-2.4,1.2-3,1.3 C38.3,42.5,32,42.6,32,42.6s-7.8-0.1-10.2-0.3c-0.7-0.1-2.2-0.1-3.3-1.3c-0.9-0.9-1.2-3-1.2-3S17,35.6,17,33.1v-2.3 c0-2.4,0.3-4.9,0.3-4.9s0.3-2.1,1.2-3c1.1-1.2,2.4-1.2,3-1.3c4.2-0.3,10.5-0.3,10.5-0.3h0c0,0,6.3,0,10.5,0.3c0.6,0.1,1.9,0.1,3,1.3 c0.9,0.9,1.2,3,1.2,3s0.3,2.4,0.3,4.9V33.1z M28.9,35.9l8.1-4.2l-8.1-4.2L28.9,35.9z"/></symbol></svg>
+
+  </body>
+</html>

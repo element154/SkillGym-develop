@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\pymatgen\\pymatgen\\SKILL.md",
+  "records": [
+    {
+      "category": "cif file",
+      "value": "mp-124.html",
+      "snippet": "Ag is Copper structured and crystallizes in the cubic Fm̅3m space group. Ag is bonded to twelve equivalent Ag atoms to form a mixture of corner, edge, ...",
+      "metadata": {
+        "url": "https://next-gen.materialsproject.org/materials/mp-124"
+      }
+    },
+    {
+      "category": "cif file",
+      "value": "mp-23.html",
+      "snippet": "Ni is Copper structured and crystallizes in the cubic Fm̅3m space group. Ni is bonded to twelve equivalent Ni atoms to form a mixture of corner, edge, ...",
+      "metadata": {
+        "url": "https://materialsproject.org/materials/mp-23/"
+      }
+    },
+    {
+      "category": "cif file",
+      "value": "mp-1094023.html",
+      "snippet": "V₂C crystallizes in the hexagonal P6₃/mmc space group. The structure is two-dimensional and consists of two V₂C sheets oriented in the (0, 0, 1) direction.",
+      "metadata": {
+        "url": "https://next-gen.materialsproject.org/materials/mp-1094023"
+      }
+    },
+    {
+      "category": "cif file",
+      "value": "mp-1563.html",
+      "snippet": "CaSi crystallizes in the orthorhombic Cmcm space group. Ca²⁺ is bonded in a 7-coordinate geometry to seven equivalent Si²⁻ atoms.",
+      "metadata": {
+        "url": "https://next-gen.materialsproject.org/materials/mp-1563"
+      }
+    },
+    {
+      "category": "xml file",
+      "value": "vasprun.xml",
+      "snippet": "Download raw file. Open symbols panel. Edit and raw actions. <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <modeling> <generator> <i name=\"program\" type=\"string\"> ...",
+      "metadata": {
+        "url": "https://github.com/abelcarreras/vasp_parser/blob/master/vasprun.xml"
+      }
+    }
+  ]
+}

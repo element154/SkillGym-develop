@@ -1,0 +1,29 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\pca-decomposition\\pca-decomposition\\SKILL.md",
+  "records": [
+    {
+      "category": "csv_tsv file",
+      "value": "Data Sheet 1.csv",
+      "snippet": "... customer satisfaction o consumer behavioural intentions in service environments (2000) Journal of Retailing, 76 (2), pp. 193-218; Currall, S.C., Towler ...",
+      "metadata": {
+        "url": "https://www.frontiersin.org/api/v4/articles/529406/file/Data_Sheet_1.csv/529406_supplementary-materials_datasheets_1_csv/1"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "2b8937e81bdae9f4208ea9ff.csv",
+      "snippet": "... segments or communities that shape that audience, their demographic and psychographic data, while allowing segments to be connected. of audiences with other ...",
+      "metadata": {
+        "url": "https://assets-eu.researchsquare.com/files/rs-3191110/v1/2b8937e81bdae9f4208ea9ff.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "Poster-Session-B.csv",
+      "snippet": "... Data were collected through a self-administered survey consisting of 38 questions on a 5-point Likert-type scale. The survey evaluated student perceptions ...",
+      "metadata": {
+        "url": "https://www.uab.edu/shp/home/images/Research/docs/Poster-Session-B.csv"
+      }
+    }
+  ]
+}

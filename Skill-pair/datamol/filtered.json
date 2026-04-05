@@ -1,0 +1,770 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\datamol\\datamol\\SKILL.md",
+  "threshold": 0.7,
+  "filtered_results": [
+    {
+      "q": "crystal structure CIF file download example",
+      "file_type": "cif",
+      "preferred_sites": [
+        "materialsproject.org",
+        "cod.chemnetbase.com",
+        "rruff.info"
+      ],
+      "results_annotated": [
+        {
+          "title": "mp-124: Ag (Cubic, Fm-3m, 225) - Materials Project",
+          "url": "https://next-gen.materialsproject.org/materials/mp-124",
+          "snippet": "Ag is Copper structured and crystallizes in the cubic Fm̅3m space group. Ag is bonded to twelve equivalent Ag atoms to form a mixture of corner, edge, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a webpage describing a crystal structure (Materials Project). The snippet indicates it is a description page, not a direct CIF file download link. Furthermore, the `datamol` skill is designed for molecular cheminformatics (SMILES, SDF, small molecules), not periodic crystal structures (CIF files)."
+        },
+        {
+          "title": "mp-23: Ni (Cubic, Fm-3m, 225) - Materials Project",
+          "url": "https://materialsproject.org/materials/mp-23/",
+          "snippet": "Ni is Copper structured and crystallizes in the cubic Fm̅3m space group. Ni is bonded to twelve equivalent Ni atoms to form a mixture of corner, edge, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Similar to index 0, this is a description page for a material on Materials Project, not a direct CIF input file. The content type (crystal lattice) is also outside the primary scope of the `datamol` skill which focuses on discrete molecules."
+        },
+        {
+          "title": "mp-1094023: V2C (Hexagonal, P6_3/mmc, 194) - Materials Project",
+          "url": "https://next-gen.materialsproject.org/materials/mp-1094023",
+          "snippet": "V₂C crystallizes in the hexagonal P6₃/mmc space group. The structure is two-dimensional and consists of two V₂C sheets oriented in the (0, 0, 1) direction.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a description page for a 2D material. It is not a downloadable CIF file itself, and the data format (periodic structure) is not the standard input for `datamol` (which expects SMILES, SDF, or molecule objects)."
+        },
+        {
+          "title": "[PDF] Crystal Chemistry of Stanfieldite, Ca7M2Mg9(PO4)12 (M = Ca, Mg, Fe",
+          "url": "https://rruff.info/rruff_1.0/uploads/C10_464.pdf",
+          "snippet": "The details of structure refinement are given in Table 1 and in the crystallographic information file (CIF) attached to the Supplementary ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a PDF document mentioning that a CIF is available as supplementary material. The result itself is a research paper/report, not the CIF file input required by the skill."
+        },
+        {
+          "title": "[PDF] Jahn-Teller Distortion and Cation Ordering: The Crystal Structure of ...",
+          "url": "https://rruff.info/uploads/M9_370.pdf",
+          "snippet": "Supplementary crystallographic data have been deposited as the crystallographic information file (CIF) available at the journal website. 2.4 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a PDF document referencing a CIF file in supplementary data. It is a publication, not the actual data file (CIF) that a user would submit to the skill."
+        },
+        {
+          "title": "[PDF] minerals - Semantic Scholar",
+          "url": "https://rruff.info/uploads/M9_343.pdf",
+          "snippet": "Table 3. Crystal structure refinement data for hausmannite sample-a (cif is given as a supplementary material). Miscellaneous. Sample-a.",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a PDF article snippet mentioning a CIF file exists elsewhere. It is not the CIF file itself."
+        },
+        {
+          "title": "Crystallography Open Database: Search results",
+          "url": "http://qiserver.ugr.es/cod/result.php?&count=1000&page=0&order_by=file&order=desc",
+          "snippet": "Download all results as: list of COD numbers | list of CIF URLs | data in CSV format. We are unable to provide that many records as a single archive.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "This is a search results page from the Crystallography Open Database. While it lists options to download data, the page itself is a portal/interface, not a specific CIF file input. Additionally, CIF files are generally not inputs for `datamol`."
+        },
+        {
+          "title": "Materials Explorer",
+          "url": "https://next-gen.materialsproject.org/materials/mp-866869",
+          "snippet": "Crystal Structure. Lattice (Conventional). Lengths and angles defining the conventional lattice of this material. a, 10.52 Å. b, 6.61 Å. c, 17.49 Å. α, 90.00 º.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a webpage displaying crystal structure parameters (lattice lengths/angles). It is a view page, not a downloadable CIF file, and the data type is incompatible with `datamol`'s molecular focus."
+        },
+        {
+          "title": "Crystallography Open Database",
+          "url": "https://www.crystallography.net/",
+          "snippet": "",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is the homepage of the Crystallography Open Database. It is a website entry point, not a data file input."
+        },
+        {
+          "title": "Finding and downloading a cif file - Materials Project",
+          "url": "https://matsci.org/t/finding-and-downloading-a-cif-file/43402",
+          "snippet": "I used to get a cif structure file very easily. But now, when I log in and click on crystal structure, there is a lot of topics what information",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a forum discussion thread about how to download CIF files. It is instructional text, not a data file input."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "VASP POSCAR input file sample",
+      "file_type": "txt_md",
+      "preferred_sites": [
+        "materialscloud.org",
+        "github.com",
+        "vasp.at"
+      ],
+      "results_annotated": [
+        {
+          "title": "Preview - Materials Cloud Archive",
+          "url": "https://archive.materialscloud.org/records/8sbz4-6ng07/preview/README.md?include_deleted=0",
+          "snippet": "1. simulation_data/. Contains all input and output files from simulations. Subdirectories cover different levels of modeling and validation: DFT_binding_energy/.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file describing a dataset archive. It mentions that input files exist in subdirectories but does not contain the actual POSCAR content itself."
+        },
+        {
+          "title": "Preview - Materials Cloud Archive",
+          "url": "https://archive.materialscloud.org/records/je938-veg83/preview/README.md?include_deleted=0",
+          "snippet": "The spectra folders (subfolders under \"sulfur\" and \"phosphorus\") contain the VASP input files and the OSZICAR output file, the calculated spectra, and the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Similar to index 0, this is a README describing the contents of an archive. It lists VASP input files as existing within folders but does not provide the file content directly."
+        },
+        {
+          "title": "Preview - Materials Cloud Archive",
+          "url": "https://archive.materialscloud.org/records/cn86r-5q319/preview/README.md?include_deleted=0",
+          "snippet": "... input and output files of the non-collinear DFT calculation. These include the INCAR , POSCAR , KPOINTS , OUTCAR , and vasprun.xml . Spin-splitting ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file listing available files (including POSCAR) in a record. It is metadata about the files, not the actual input file content suitable for the skill."
+        },
+        {
+          "title": "vasp-poscar/doc/format.md at master - GitHub",
+          "url": "https://github.com/ExpHP/vasp-poscar/blob/master/doc/format.md",
+          "snippet": "The POSCAR format is phenomenally underspecified, and there is a lot of false information about it on the web. This section aims to clarify the crate ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is documentation explaining the POSCAR format specification. The skill requires actual molecular data inputs (SMILES, SDF, etc.), not format specifications or manuals."
+        },
+        {
+          "title": "vasp-toolkit/README.md at master - GitHub",
+          "url": "https://github.com/cameronmcelfresh/vasp-toolkit/blob/master/README.md",
+          "snippet": "This program generates a POSCAR file with calculated atomic positions when provided the crystal structure type, repeating cell size, and lattice parameter.",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a README for a tool that generates POSCAR files. It is a project description/tutorial, not an actual input file containing molecular data."
+        },
+        {
+          "title": "vaspup/README.md at master - GitHub",
+          "url": "https://github.com/utf/vaspup/blob/master/README.md",
+          "snippet": "POTCAR generation. The generate-potcar script can be used to generate a VASP POTCAR file, based on an input POSCAR. ... An example CONFIG file is provided ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a README for a utility script. It describes how to generate POTCAR from POSCAR but does not contain actual molecular structure data usable by the datamol skill."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 6
+    },
+    {
+      "q": "molecule XYZ coordinate file format example",
+      "file_type": "txt_md",
+      "preferred_sites": [
+        "pubchem.ncbi.nlm.nih.gov",
+        "rcsb.org",
+        "github.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "README.md - jensengroup/xyz2mol - GitHub",
+          "url": "https://github.com/jensengroup/xyz2mol/blob/master/README.md",
+          "snippet": "Given Cartesian coordinates in the form of a .xyz file, the code constructs a list of one or more molecular graphs. In cases where there are several ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README documentation file explaining how a tool works. It describes the XYZ format conceptually but does not contain an actual XYZ coordinate file or raw data that can be directly submitted as input to the skill."
+        },
+        {
+          "title": "moltemplate/doc/doc_dump2data.md at master - GitHub",
+          "url": "https://github.com/jewettaij/moltemplate/blob/master/doc/doc_dump2data.md",
+          "snippet": "Example creating RAW (3-column ascii text) coordinate files. If your LAMMPS dump file is named \"traj.lammpstrj\", you can extract the coordinates this way:.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a documentation page (doc_dump2data.md) providing instructions on how to create coordinate files. It is a tutorial/guide, not a raw data file containing molecule coordinates."
+        },
+        {
+          "title": "fosschemistry/xtb/README.md at master - GitHub",
+          "url": "https://github.com/susilehtola/fosschemistry/blob/master/xtb/README.md",
+          "snippet": "xtbopt.xyz contains the optimized geometry in XYZ format (can be opened for example in Jmol or Avogadro). xtbopt.log contains XYZ coordinates ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a README file for the xtb software. While it mentions specific filenames like 'xtbopt.xyz', the content of this URL is documentation text, not the actual XYZ file content itself."
+        },
+        {
+          "title": "View this page",
+          "url": "https://orca-manual.mpi-muelheim.mpg.de/_sources/contents/utilitiesvisualization/plots.md",
+          "snippet": "- After having produced the plot files start ***gOpenMol*** and choose ***File-Import-Coords*** . In the dialog choose the *XYZ* format and select the file.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a user manual page explaining how to import coordinates into gOpenMol. It is instructional text, not a data file containing XYZ coordinates."
+        },
+        {
+          "title": "Cartesian coordinate input - GitHub",
+          "url": "https://raw.githubusercontent.com/wiki/nwchemgit/nwchem/Cartesian-coordinate-input.md",
+          "snippet": "The Cartesian coordinates of the atom in the molecule are specified as real numbers supplied for the variables `x`, `y`, and `z` following the characters ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "This is a wiki page describing the syntax for Cartesian coordinate input in NWChem. It explains the format rules but does not provide a concrete example file with actual numerical data to process."
+        },
+        {
+          "title": "Chemaxon Extended SMILES and SMARTS - CXSMILES and ...",
+          "url": "https://kb.chemaxon.com/display/lts-radium/formats_chemaxon-extended-smiles-and-smarts-cxsmiles-and-cxsmarts.md",
+          "snippet": "The atomic coordinates are written between parentheses. Each atomic coordinate triplet (x, y, z) is separated by semicolon, and the x y z coordinates are ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a knowledge base article describing the CXSMILES format specification. It is a technical specification document, not a user-submittable data file."
+        },
+        {
+          "title": "Import-Export - Atomic Blender (PDB/XYZ) - 《Blender 4.1 Manual ...",
+          "url": "https://www.bookstack.cn/read/blender-4.1-en/4e32d8762d1d59e5.md",
+          "snippet": "The Atomic Blender (PDB/XYZ) add-on imports atomic structures (molecules, crystals, clusters, particles, surfaces, etc.), which are described in PDB ( .pdb ) ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a software manual page for a Blender add-on. It describes import/export capabilities but does not contain an actual XYZ or PDB file content."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 7
+    },
+    {
+      "q": "VASP vasprun.xml electronic structure output file",
+      "file_type": "xml",
+      "preferred_sites": [
+        "github.com",
+        "materialscloud.org",
+        "vasp.at"
+      ],
+      "results_annotated": [
+        {
+          "title": "MaterSim/vasprun: quick analysis of vasp calculation - GitHub",
+          "url": "https://github.com/MaterSim/vasprun",
+          "snippet": "vasprun-xml is used for quick analysis of vasp calculation solely from vasprun.xml. It has the following features: band gap calculation; dos plot (total dos ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a GitHub repository for a tool that analyzes vasprun.xml files. It is software documentation/code, not a user-submitted input file (XML) itself."
+        },
+        {
+          "title": "vasp_parser/vasprun.xml at master - GitHub",
+          "url": "https://github.com/abelcarreras/vasp_parser/blob/master/vasprun.xml",
+          "snippet": "Download raw file. Open symbols panel. Edit and raw actions. <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <modeling> <generator> <i name=\"program\" type=\"string\"> ...",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "This result points directly to a raw `vasprun.xml` file content on GitHub. The snippet shows the actual XML structure (`<?xml version...`). This is a valid example of the input file type (electronic structure output) that a user would submit to a cheminformatics/materials skill for parsing or analysis."
+        },
+        {
+          "title": "vasprun/README.md at master - GitHub",
+          "url": "https://github.com/qzhu2017/vasprun/blob/master/README.md",
+          "snippet": "vasprun-xml is used for quick analysis of vasp calculation solely from vasprun.xml. It has the following features: band gap calculation; dos plot (total dos ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file (documentation) for a software project. It explains how to use the tool, but is not an input data file."
+        },
+        {
+          "title": "Category:Output files - VASP Wiki",
+          "url": "https://vasp.at/wiki/Category:Output_files",
+          "snippet": "The main output file of VASP is the OUTCAR. The vasprun.xml contains similar information but in an xml format. The OSZICAR file contains the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a VASP Wiki category page describing output files. It is documentation/reference material, not an actual data file input."
+        },
+        {
+          "title": "Tutorials - VASP",
+          "url": "https://www.vasp.at/tutorials/latest/",
+          "snippet": "Install VASP and find the tutorial that suits you. You will need the VASP executable in your system path and a working directory in which you run the tutorials.",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a tutorial landing page. Tutorials and instructions are explicitly excluded from being considered user inputs."
+        },
+        {
+          "title": "Bethe-Salpeter-equations calculations - VASP Wiki",
+          "url": "https://www.vasp.at/wiki/Bethe-Salpeter-equations_calculations",
+          "snippet": "If the dielectric matrix contains only zeros in the vasprun.xml file, the WAVEDER file was not read or is incompatible to the WAVEDER file. This ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a wiki page explaining a specific calculation method (Bethe-Salpeter). It mentions the file format but is documentation, not a data file."
+        },
+        {
+          "title": "The standard format and parser of VASP output files",
+          "url": "https://mattermodeling.stackexchange.com/questions/8526/the-standard-format-and-parser-of-vasp-output-files",
+          "snippet": "VASP gives you the raw text output for you to deal with on your own. That being said, the vasprun.xml file produced at the end of a run contains ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a Stack Exchange discussion about file formats and parsers. It is a Q&A thread, not a structured data file input."
+        },
+        {
+          "title": "Using vasprun from the command line",
+          "url": "https://vasprun-xml.readthedocs.io/en/latest/Usage1.html",
+          "snippet": "vasprun must start with a vasprun.xml file followed by -v command. If you just load a file, it will attempt to parse the file and give you a summary ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is usage documentation for a command-line tool. It explains how to run the software, not providing the input data itself."
+        },
+        {
+          "title": "How can I extract data from the output files of VASP-6.3 (vasprun.xml)?",
+          "url": "https://www.researchgate.net/post/How_can_I_extract_data_from_the_output_files_of_VASP-63_vasprunxml",
+          "snippet": "I need to extract data from vasprun.xml file to plot DOS or Band structure. So, I need to know that without using py4vasp what are the other possible methods ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a ResearchGate question asking how to extract data. It is a forum post/discussion, not a structured electronic structure output file."
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "vasp_parser/vasprun.xml at master - GitHub",
+          "url": "https://github.com/abelcarreras/vasp_parser/blob/master/vasprun.xml",
+          "snippet": "Download raw file. Open symbols panel. Edit and raw actions. <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <modeling> <generator> <i name=\"program\" type=\"string\"> ...",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "This result points directly to a raw `vasprun.xml` file content on GitHub. The snippet shows the actual XML structure (`<?xml version...`). This is a valid example of the input file type (electronic structure output) that a user would submit to a cheminformatics/materials skill for parsing or analysis."
+        }
+      ],
+      "kept_count": 1,
+      "total_count": 9
+    },
+    {
+      "q": "Gaussian log file output example",
+      "file_type": "txt_md",
+      "preferred_sites": [
+        "gaussian.com",
+        "github.com",
+        "comp.chem.umn.edu"
+      ],
+      "results_annotated": [
+        {
+          "title": "GaussParse/README.md at main · sinagilassi/GaussParse · GitHub",
+          "url": "https://github.com/sinagilassi/GaussParse/blob/main/README.md",
+          "snippet": "GaussParse is a versatile Python package designed for parsing output files generated by Gaussian software, a widely used computational chemistry tool.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file describing a parser tool, not an actual Gaussian log file output. It is documentation, not user input data."
+        },
+        {
+          "title": "README.md - GAMES-UChile/mogptk · GitHub",
+          "url": "https://github.com/GAMES-UChile/mogptk/blob/master/README.md",
+          "snippet": "The Multi-Output Gaussian Process Toolkit is a Python toolkit for training and interpreting Gaussian process models with multiple data channels. It builds upon ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a README for a Gaussian Process Toolkit (statistics), unrelated to computational chemistry Gaussian software logs. It is documentation."
+        },
+        {
+          "title": "auto_slurm/README.md at master · CurtisColwell/auto_slurm · GitHub",
+          "url": "https://github.com/CurtisColwell/auto_slurm/blob/master/README.md",
+          "snippet": "The text normally generated in the log file for gaussian submissions instead appears at the beginning and end of the output file. Running orca. Follow the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file discussing log file behavior in a tutorial context. It is documentation, not a raw log file output."
+        },
+        {
+          "title": "docs/task_fmri/feat/feat_output.md · main",
+          "url": "https://git.fmrib.ox.ac.uk/hpn007/docs/-/blob/main/docs/task_fmri/feat/feat_output.md",
+          "snippet": "a logfile showing how well the statistics fit a Gaussian distribution, on the assumption of no activation. stats/cope1, the contrast of ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is documentation about FSL/FEAT output files mentioning Gaussian distributions in a statistical context. It is not a Gaussian chemistry log file."
+        },
+        {
+          "title": "README.md - LHCb Data Packages / MCStatTools",
+          "url": "https://gitlab.cern.ch/lhcb-datapkg/MCStatTools/-/blob/master/README.md",
+          "snippet": "The output of the script includes an extensive/trimmed log output that can be also saved into a file using the tee command and the following ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file describing script output logging. It is documentation, not a specific Gaussian log file instance."
+        },
+        {
+          "title": "README.md · v1.2.5 · PCMSC / dash_doodler · GitLab",
+          "url": "https://code.usgs.gov/pcmsc/dash_doodler/-/blob/v1.2.5/README.md",
+          "snippet": "This is python software that is designed to be used from within a conda environment. After setting up that environment, create a classes.txt file that tells the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file for unrelated Python software. It is documentation."
+        },
+        {
+          "title": "docs/tasks/setens.md · hpascual/performance",
+          "url": "https://gitlab.geo3bcn.csic.es/fall3d/cicd_heri/-/blob/hpascual/performance/docs/tasks/setens.md",
+          "snippet": "The LOG file name.SetEns.log is an ASCII file where the status of the task is reported. In addition, the random numbers used to construct the ensemble are ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is documentation describing the format of a LOG file for a different software (FALL3D). It is not a Gaussian chemistry log file."
+        },
+        {
+          "title": "README.md - Gabriel Schöpfer",
+          "url": "https://git.uibk.ac.at/c7441332/genetic-algorithms/-/blob/10b52b12dcb797309e18c13db5821385f13f52d2/README.md",
+          "snippet": "Gaussian Parameters ; optimize, bool, True if Gaussian should optimize the geometry. ; calc_frequencies, bool, True if Gaussian should calculate the frequencies.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file listing parameters for a genetic algorithm project. It is documentation, not a Gaussian log file output."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 8
+    },
+    {
+      "q": "Quantum ESPRESSO pw.scf.out output file sample",
+      "file_type": "txt_md",
+      "preferred_sites": [
+        "quantum-espresso.org",
+        "github.com",
+        "materialscloud.org"
+      ],
+      "results_annotated": [
+        {
+          "title": "Quantum Espresso Input and Output for Molecules - GitHub",
+          "url": "https://github.com/ImperialCollegeLondon/MSE404-MM/blob/master/docs/labs/lab02/readme.md",
+          "snippet": "A copy of pwscf.xml . A copy of the pseudopotential files used in the calculation. A file in which the charge density stored. Wavefunction files which are ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a documentation page (README) describing output files, not the actual output file content itself. The skill requires molecular data (SMILES, SDF), not Quantum ESPRESSO logs."
+        },
+        {
+          "title": "SciTools/QuantumESPRESSO.md at main - GitHub",
+          "url": "https://github.com/pablogila/SciTools/blob/main/QuantumESPRESSO.md",
+          "snippet": "Perform SCF calculation using pw.x; Calculate the dynamical matrix on a uniform mesh of q-points using ph.x; Perform inverse Fourier transform ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a tutorial/documentation file explaining how to use Quantum ESPRESSO tools. It does not contain user-submittable molecular data or raw output files suitable for cheminformatics analysis."
+        },
+        {
+          "title": "Tutorials/quantumEspresso_getting_started.md at main - GitHub",
+          "url": "https://github.com/materials-discovery/linux_tutorials/blob/main/quantumEspresso_getting_started.md",
+          "snippet": "pw.x < si.scf.in > si.scf.out. if you inspect the out file you can find for example the total energy of the configuration. Exercise. If you change the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a tutorial guide mentioning command usage. It describes the process but does not provide the actual 'si.scf.out' file content or molecular structures for the datamol skill to process."
+        },
+        {
+          "title": "doc_/guide.MD · 5e1be4520491e4f878d3c41f5bada85f5f5810a7 ...",
+          "url": "https://repo.sling.si/tonek/pwtk/-/blob/5e1be4520491e4f878d3c41f5bada85f5f5810a7/doc_/guide.MD",
+          "snippet": "@PWTK@ stands for PWscf ToolKit. @PWTK@ is a @Tcl@ scripting interface for @Quantum ESPRESSO@ (@QE@), aiming to provide a flexible and productive framework.",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is documentation for PWTK (a scripting interface). It is a manual/guide, not a data file containing molecular structures or properties."
+        },
+        {
+          "title": "README.md - Material for Ljubljana QE summer school",
+          "url": "https://gitlab.com/QEF/material-for-ljubljana-qe-summer-school/-/blob/master/Day-3/example7/README.md?ref_type=heads",
+          "snippet": "Run the SCF ground-state calculation. mpirun -np 8 pw.x < pw.methane.in > pw.methane.out. Run the turboDavidson calculation. mpirun -np 8 turbo_davidson.x ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README file for a summer school example. It contains instructions on how to run calculations, not the resulting output data file or molecular dataset."
+        },
+        {
+          "title": "karolina.md - it4i-modules",
+          "url": "https://code.it4i.cz/sccs/it4i-modules/-/blob/4f7b5cef267acf42dfb1ddd5c18daa4744ece525/karolina.md",
+          "snippet": "Quantum ESPRESSO is an integrated suite of computer codes for ... file output. Experimental backends include OpenGL, BeOS, OS/2, and ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a module description file for a computing cluster. It lists software capabilities and is unrelated to molecular data input."
+        },
+        {
+          "title": "learn-fireside/0_initial_tests/README.md at master",
+          "url": "https://github.com/materialscloud-org/learn-fireside/blob/master/0_initial_tests/README.md",
+          "snippet": "To get started lets test how to run a simple calculation using the PWscf pw.x code from Quantum ESPRESSO. Within the VM, all the installed code are already ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a README for initial tests. It provides instructions on running the code, not the actual output file content or molecular data required by the skill."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 7
+    },
+    {
+      "q": "crystallographic information file CIF batch download",
+      "file_type": "cif",
+      "preferred_sites": [
+        "cod.chemnetbase.com",
+        "icsd.fiz-karlsruhe.de",
+        "materialsproject.org"
+      ],
+      "results_annotated": [
+        {
+          "title": "mp-126: Pt (Cubic, Fm-3m, 225) - Materials Project",
+          "url": "https://next-gen.materialsproject.org/materials/mp-126",
+          "snippet": "The easiest way to use it is via the mp_api package, a freely-available Python library. For example, you can download information about this material using the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a webpage describing a material and mentioning an API. It is not a CIF file itself, nor does it contain raw CIF data that can be directly used as input for the datamol skill (which focuses on molecular cheminformatics, not crystallographic lattice files)."
+        },
+        {
+          "title": "mp-124: Ag (cubic, Fm-3m, 225) - Materials Project",
+          "url": "https://legacy.materialsproject.org/materials/mp-124/",
+          "snippet": "Ag is Copper structured and crystallizes in the cubic Fm-3m space group. The structure is three-dimensional. Ag is bonded to twelve equivalent Ag atoms to ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Similar to index 0, this is a descriptive webpage about a crystal structure. It is not a downloadable CIF file content or a direct data source suitable as skill input."
+        },
+        {
+          "title": "mp-66 - Materials Project",
+          "url": "https://next-gen.materialsproject.org/materials/mp-66",
+          "snippet": "A machine-generated description of this crystal structure written by your friendly Robocrystallographer!. C is diamond structured and crystallizes in the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a material description page. It does not provide the actual CIF file content required for input."
+        },
+        {
+          "title": "Download Crystallographic Information File (CIF File) for Rietveld ...",
+          "url": "https://www.youtube.com/watch?v=G13RwfO9VDA",
+          "snippet": "This video demonstrates how to download CIF File: 1. http://www.crystallography.net/cod/ 2. http://rruff.geo.arizona.edu/AMS/amcsd.php 3.",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a YouTube video tutorial explaining how to download files. It is instructional content, not a data file input."
+        },
+        {
+          "title": "What is a good&reliable site to download crystallography CIF/AM files?",
+          "url": "https://www.researchgate.net/post/What-is-a-good-reliable-site-to-download-crystallography-CIF-AM-files",
+          "snippet": "I would suggest http://www.crystallography.net/ An open-access collection of crystal structures of organic, inorganic, metal-organic compounds and minerals, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a ResearchGate discussion thread recommending websites. It is text discussion, not a CIF data file."
+        },
+        {
+          "title": "Finding and downloading a cif file - Materials Project",
+          "url": "https://matsci.org/t/finding-and-downloading-a-cif-file/43402",
+          "snippet": "I would appreciate if someone could give me directions on how to easily download a cif a file for a given structure. mkhorton July 12, 2022, 4: ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a forum post asking for directions on how to download files. It is not a data file."
+        },
+        {
+          "title": "How to download the CIF (Crystallographic Information File) file for ...",
+          "url": "https://www.youtube.com/watch?v=qbCsGIwIoh8",
+          "snippet": "How to #download #CIF (#Crystallographic #Information #File) #file for the #VESTA #software #Intense #Peak #using #Origin #Software ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is another YouTube tutorial video. Instructional media is not a valid input file for the skill."
+        },
+        {
+          "title": "Downloads ​ ​- The Cambridge Crystallographic Data ... - CCDC",
+          "url": "https://www.ccdc.cam.ac.uk/support-and-resources/downloads/",
+          "snippet": "Download an example CIF with syntax error by clicking on the download link. ... Download and save the data file to the same location as the Torsion Analyzer ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a download portal page for software resources and example files with errors. While it mentions CIFs, the page itself is a navigation/resource page, not the actual CIF data input. Additionally, datamol primarily handles molecular structures (SMILES/SDF), and CIFs (crystallographic unit cells) are often outside its standard direct input scope without conversion."
+        },
+        {
+          "title": "How to download Crystallographic Information (CIF)File ... - YouTube",
+          "url": "https://www.youtube.com/watch?v=PBNEByn3NDY",
+          "snippet": "How to download Crystallographic Information (CIF)File file and generate Crystal Structure via VESTA. 487 views · 1 year ago. #SmodinAItools ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a YouTube video title and description. It is not a data file."
+        },
+        {
+          "title": "File Download Services - RCSB PDB",
+          "url": "https://www.rcsb.org/docs/programmatic-access/file-download-services",
+          "snippet": "PDB entry files are available in several file formats (PDBx/mmCIF, XML, BinaryCIF and legacy PDB for some entries), compressed or uncompressed, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is documentation for RCSB PDB's file download services. It describes how to access files but is not a CIF file itself. Also, PDB/mmCIF files are protein structures, which are generally handled by specific bioinformatics tools rather than the small-molecule focused datamol skill."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "surface slab structure CIF file generation input",
+      "file_type": "cif",
+      "preferred_sites": [
+        "materialsproject.org",
+        "github.com",
+        "aflowlib.org"
+      ],
+      "results_annotated": [
+        {
+          "title": "mp-81: Au (cubic, Fm-3m, 225) - Materials Project",
+          "url": "https://legacy.materialsproject.org/materials/mp-81/",
+          "snippet": "Au is Copper structured and crystallizes in the cubic Fm-3m space group. The structure is three-dimensional. Au is bonded to twelve equivalent Au atoms to ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a webpage describing a material structure on the Materials Project website. While it likely contains a downloadable CIF file, the URL itself points to an HTML page, not a direct CIF file input. The skill requires the actual file content or a direct link to the file, not a database entry page."
+        },
+        {
+          "title": "mp-124: Ag (cubic, Fm-3m, 225) - Materials Project",
+          "url": "https://legacy.materialsproject.org/materials/mp-124/",
+          "snippet": "Ag is Copper structured and crystallizes in the cubic Fm-3m space group. The structure is three-dimensional. Ag is bonded to twelve equivalent Ag atoms to ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Similar to index 0, this is an HTML page describing a silver structure. It is not a direct CIF file input suitable for the skill without further extraction/download steps which are not guaranteed by the URL alone."
+        },
+        {
+          "title": "mp-13: Fe (cubic, Im-3m, 229) - Materials Project",
+          "url": "https://legacy.materialsproject.org/materials/mp-13/",
+          "snippet": "Fe is Tungsten structured and crystallizes in the cubic Im-3m space group. The structure is three-dimensional. Fe is bonded in a distorted body-centered ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is an HTML page describing an iron structure. It serves as a catalog entry, not a direct input file (CIF) for the skill."
+        },
+        {
+          "title": "K-Dense-AI/claude-scientific-skills - pymatgen - GitHub",
+          "url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/main/scientific-skills/pymatgen/SKILL.md?plain=1",
+          "snippet": "- Converting between structure file formats (CIF, POSCAR, XYZ, etc.) - Analyzing symmetry, space groups, or coordination environments. - Computing phase ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "This is a GitHub link to a SKILL.md file (documentation/code) for a different skill (pymatgen). It is explicitly excluded as 'skill's own implementation code' or documentation."
+        },
+        {
+          "title": "Shuyangzero/Ogre: Ogre: A Python Package for Molecular ... - GitHub",
+          "url": "https://github.com/Shuyangzero/Ogre",
+          "snippet": "The input of Ogre is the geometry of the bulk molecular crystal. The surface is cleaved from the bulk structure with the molecules on the surface kept intact. A ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a GitHub repository page for a software package (Ogre). It describes how the software works but does not provide a specific CIF file as input."
+        },
+        {
+          "title": "GitHub - usnistgov/intermat: Project to setup and analyze interface ...",
+          "url": "https://github.com/usnistgov/intermat",
+          "snippet": "It requies a config file for generation settings such as, film_file_path e.g., POSCAR-1 , substrate_file_path e.g., POSCAR-2 , or film_jid (e.g. ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "This is a GitHub repository for a project (intermat). It mentions config files and POSCAR examples in the snippet, but the URL leads to the repo homepage, not a specific input file ready for processing."
+        },
+        {
+          "title": "Building a Crystal Surface (Slab) - Avogadro",
+          "url": "https://avogadro.cc/docs/building-materials/building-a-crystal-slab/",
+          "snippet": "Either open a CIF file with the crystal structure needed, or import one from the built-in Avogadro crystal library. The tutorial will assume ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a tutorial/documentation page from Avogadro explaining how to build a slab. It is instructional content, not a data file input."
+        },
+        {
+          "title": "molSimplify Tutorial 2: Slab Builder | Kulik Research Group",
+          "url": "http://hjkgrp.mit.edu/tutorials/2016-12-02-molsimplify-tutorial-2-slab-builder/",
+          "snippet": "You can give these inputs separately, but molSimplify conveniently supports importing both from a .cif file. You can obtain .cif files for ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a tutorial page from the Kulik Research Group. It explains how to use molSimplify and mentions CIF files, but the page itself is text/tutorial, not a CIF file input."
+        },
+        {
+          "title": "How to Create Crystal Surface Slab Structures with ... - YouTube",
+          "url": "https://www.youtube.com/watch?v=SSuTgB-SRDo",
+          "snippet": "This tutorial illustrates how to use a python script to create crystal surface slab structures in POSCAR and CIF formats using Atomic ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a YouTube video tutorial. Video content cannot be used as a direct input file (CIF) for the cheminformatics skill."
+        },
+        {
+          "title": "Creating a surface slab model using VESTA - MateriApps",
+          "url": "https://ma.issp.u-tokyo.ac.jp/en/app-post/1788",
+          "snippet": "After the CIF is loaded, let me first visualize the (101) surface plane. Go to Edit → Lattice Planes, and click “new” in the “Add lattice planes ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a tutorial article on how to use VESTA software. It describes a process but does not provide a downloadable CIF file directly at this URL."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "elastic tensor matrix data input format",
+      "file_type": "json",
+      "preferred_sites": [
+        "materialsproject.org",
+        "github.com",
+        "aflowlib.org"
+      ],
+      "results_annotated": [],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 0
+    },
+    {
+      "q": "diffraction pattern data file for XRD analysis",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "rruff.info",
+        "github.com",
+        "materialscloud.org"
+      ],
+      "results_annotated": [
+        {
+          "title": "data in CSV format",
+          "url": "https://qiserver.ugr.es/cod/result.php?format=csv&CODSESSION=1ragdr36qi8en33gotu6sivae0",
+          "snippet": "... file asc file,a,siga,b,sigb,c,sigc,alpha,sigalpha,beta,sigbeta,gamma ... X-ray Diffraction: Experiment Calls for a New Theoretical Revision\",\"Journal ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a Crystallography Open Database (COD) export containing crystal lattice parameters (a, b, c, alpha, beta, gamma), not XRD diffraction pattern data (intensity vs. 2-theta). Furthermore, the datamol skill is designed for molecular cheminformatics (SMILES, SDF, molecular descriptors) and cannot process crystallographic unit cell data or XRD patterns."
+        },
+        {
+          "title": "university-of-bath-research-equipment-data CSV, 42.51 KB ...",
+          "url": "https://www.bath.ac.uk/publications/research-equipment-data/attachments/university-of-bath-research-equipment-data.csv",
+          "snippet": "... X-ray diffraction pattern from Powder, Thin film, membrane, ceramic, foil, phase identification, high resolution diffraction patterns, high/low temprature ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "The snippet describes 'research equipment data' listing capabilities like 'X-ray diffraction pattern from Powder...', indicating this is an inventory/catalog of laboratory instruments, not the actual scientific data files required as input for analysis."
+        },
+        {
+          "title": "https://www.lib.uidaho.edu/digital/etd/assets/data...",
+          "url": "https://www.lib.uidaho.edu/digital/etd/assets/data/metadata.csv",
+          "snippet": "... X-ray diffraction (XRD) to identify the crystal phase, X-ray photoemission spectroscopy (XPS) to find the binding energy and scanning electron microscopy ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "The URL path ('metadata.csv') and snippet indicate this file contains metadata describing a thesis or project where XRD was used, rather than the raw or processed diffraction data itself. Additionally, datamol does not support XRD data formats."
+        },
+        {
+          "title": "Download",
+          "url": "https://data.uni-hannover.de/dataset/c253f670-0e27-4f31-ac32-034ee916e1f2/resource/de851036-57c2-4387-b1f5-70bbaf02e6e3/download/data_set.csv",
+          "snippet": "... X-ray diffraction (XRD), CO chemisorption, H2 temperature-programmed reduction (H2-TPR), H2 temperature-programmed desorption (H2-TPD), and NH3 temperature ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "The snippet lists various characterization techniques (XRD, CO chemisorption, TPR, etc.) likely as columns in a dataset summarizing material properties. This is a summary table, not a diffraction pattern file (intensity profiles), and is unrelated to the molecular structure inputs datamol requires."
+        },
+        {
+          "title": "https://data.enseignementsup-recherche.gouv.fr/api...",
+          "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/open-access-monitor-france/snapshots/1604310260/",
+          "snippet": "... analysis of open comments from a cohort of endometriosis patients.;0;2468 ... X-ray diffraction during tensile testing of an individual Au nanowire;1 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "The snippet refers to 'analysis of open comments' and 'open-access monitor', suggesting this is a bibliometric or administrative dataset mentioning XRD in text, not a file containing numerical diffraction data."
+        },
+        {
+          "title": "download record errors as .csv - Organization List - Data.gov",
+          "url": "https://harvest.data.gov/harvest_job/912c1a5e-fa80-491b-92ce-28a97b88b898/errors/record",
+          "snippet": "... X-ray diffraction data for hydrothermal manganese oxide rocks from the Samoa hotspot region in the South Pacific Ocean collected during ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "The title 'download record errors' and the context of 'harvest_job' indicate this is a log file for a data harvesting process, not a scientific data file containing XRD patterns."
+        },
+        {
+          "title": "https://services.ga.gov.au/gis/geochronology-isoto...",
+          "url": "https://services.ga.gov.au/gis/geochronology-isotopes/ows?request=GetFeature&service=WFS&version=1.1.0&outputFormat=csv&typeName=isotope:interpreted_age_samples_igneous_crystallisation",
+          "snippet": "... X-Ray diffraction analysis on sample 7952915 reports 34% quartz, 26% microcline, 25% chlorite, 10% albite, 4% illite, 1% biotite and trace (<1%) haematite ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a geochronology/isotope dataset from a government GIS service. The snippet mentions XRD results as text descriptions ('reports 34% quartz...'), which is compositional analysis, not the diffraction pattern data format. Datamol also does not handle mineralogical composition tables."
+        },
+        {
+          "title": "https://www.imperial.ac.uk/opd/Imperial_Equipment_...",
+          "url": "https://www.imperial.ac.uk/opd/Imperial_Equipment_Data.csv",
+          "snippet": "... xrd Equipment XRD PANalytical MPD A wide range of X ray diffraction techniques is available within the Department of Materials for the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "Similar to result #1, the title 'Imperial_Equipment_Data.csv' and snippet confirm this is an inventory of available XRD equipment at a university, not experimental data files."
+        },
+        {
+          "title": "File (1.98 MB) - Cell Press",
+          "url": "https://www.cell.com/cms/10.1016/j.oneear.2021.01.014/attachment/1629aea1-306b-43e9-a2d5-73b68f8141f1/mmc2.csv",
+          "snippet": "... X-ray diffraction (XRD). The FTIR and DRX data of bone were analyzed in detail to determine possible alterations in bone mineral chemistry and crystallinity ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "While this is supplementary data from a research paper mentioning XRD analysis of bone, the file likely contains processed results or metadata rather than raw diffraction patterns. More importantly, datamol is strictly for molecular chemistry (SMILES/Mol objects) and cannot ingest or process XRD data."
+        },
+        {
+          "title": "CSV file - NRC Publications Archive",
+          "url": "https://nrc-publications.canada.ca/eng/view/ft/?id=6511238b-67ec-4131-9610-f7ee162ceb21&dsl=en",
+          "snippet": "... data at a similar developmental stage coinciding with the beginning of ... X ray diffraction|X ray photoelectron spectroscopy|Atomic layer deposition ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "The snippet lists technique names ('X ray diffraction|X ray photoelectron spectroscopy') likely as keywords or categories in an archive catalog, not as the actual data content. It is not a valid input file for the datamol skill."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    }
+  ]
+}

@@ -1,0 +1,1134 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\Finance Skill\\Finance Skill\\SKILL.md",
+  "threshold": 0.7,
+  "filtered_results": [
+    {
+      "q": "credit card statement PDF filetype:pdf",
+      "file_type": "pdf",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[PDF] Future-proofing retail banking: - Google",
+          "url": "https://services.google.com/fh/files/misc/future_proofing_retail_banking_with_spanner_paper.pdf",
+          "snippet": "It provides fast, scalable classification and redaction for sensitive data elements like credit card numbers, names, social security numbers. Cloud DLP ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是Google关于零售银行业务的技术白皮书，讨论Spanner数据库和DLP数据保护，属于行业分析报告，不是用户会提交的个人信用卡账单"
+        },
+        {
+          "title": "[PDF] Q3 2023 Threat Horizons Report - Google",
+          "url": "https://services.google.com/fh/files/blogs/gcat_threathorizons_full_oct2023.pdf",
+          "snippet": "However, based on the latest data captured in this and previous Threat Horizons Reports, the majority of victims in the cloud are not compromised by these.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是Google的威胁态势报告，讨论云安全威胁，属于安全研究报告，与个人财务账单完全无关"
+        },
+        {
+          "title": "[PDF] Terms and Conditions - Google",
+          "url": "https://services.google.com/fh/files/misc/uk_google_preferred_care_terms_conditions_7_10_24.pdf",
+          "snippet": "We accept MasterCard and Visa debit, credit cards, or Google PayTM. If you report a claim to us more than 90 days after discovering the loss, theft, fault or ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Google Preferred Care的服务条款文档，虽然提到信用卡支付，但属于商家服务条款，不是用户的消费账单"
+        },
+        {
+          "title": "[PDF] Our Mobile Planet: Canada - Google",
+          "url": "https://services.google.com/fh/files/misc/omp-2013-ca-en.pdf",
+          "snippet": "Please answer on a scale from 1 to 5. A \"1\" means that you completely disagree with the statement, a \"5\" means that you completely agree with the statement.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是Google关于加拿大移动设备使用情况的调研报告，属于市场研究数据，与信用卡账单无关"
+        },
+        {
+          "title": "[PDF] [00:00:07] ALAN: Hello, world. Welcome to the very first episode of ...",
+          "url": "https://services.google.com/fh/files/misc/ep_1_-_2017_10_16_-_frank_abagnale.pdf",
+          "snippet": "When you use your debit card, you can use it for the next 50 years, 20 times a day. You will not raise your credit score by that much, and of course, when you ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是播客/访谈的文字记录，讨论信用卡和借记卡的使用，属于教育性内容，不是实际的消费账单"
+        },
+        {
+          "title": "[PDF] Federal Register/Vol. 69, No. 144/Wednesday, July 28, 2004/Rules ...",
+          "url": "https://www.bing.com/cr?IG=8ECBE78C3927430F890A9B26911C10A0&CID=2883B8A7D85361C1274BB2F0D9626003&rd=1&h=DXAn5GZBciqw5Z3Yk8-RXcNr-gl0Q3wnqz7ZpDDnyjc&v=1&r=https%3A%2F%2Fwww.justice.gov%2Fsites%2Fdefault%2Ffiles%2Feoir%2Flegacy%2F2004%2F08%2F11%2Ffr28july04.pdf&p=DevEx,5208.1",
+          "snippet": "The agencies also are implementing more risk-sensitive risk-based capital standards for credit exposures arising from involvement with ABCP.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是联邦公报中的金融监管规则文件，讨论风险资本标准，属于政府法规文档，不是个人账单"
+        },
+        {
+          "title": "[PDF] New Mexico Health Care Workforce Committee",
+          "url": "https://www.bing.com/cr?IG=B682702CDEF341DFBC4A7AA86B0D6D33&CID=141E826E67756E7D2F91891966DA6F9B&rd=1&h=U8hwyHp7mMJudA3WSK6qWrPnzKKCPRa45UQNkbx2WmU&v=1&r=https%3A%2F%2Fhsc.unm.edu%2Fassets%2Fdoc%2Feconomic-development%2Fnmhcwc-report-2014.pdf&p=DevEx,5065.1",
+          "snippet": "The Rural Health Practitioners Tax Credit provides a $5,000 tax credit per year to licensed doctors, osteopathic physicians, dentists, clinical ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是新墨西哥州医疗劳动力委员会报告，讨论农村医疗从业者税收抵免，与信用卡账单完全无关"
+        },
+        {
+          "title": "[PDF] Turning Section 2 of the Voting Rights Act into Something It Is Not",
+          "url": "http://www.bing.com/cr?IG=5CD860327FD0484B91EA00B2E35869DD&CID=02300753F130656F0CC50D00F001647B&rd=1&h=ZxAA79gNFXoLQwyZ6sPXYP7YNorhB-OvXTwvbg3t_dE&v=1&r=http%3A%2F%2Fdigitalcommons.tourolaw.edu%2Fcgi%2Fviewcontent.cgi%3Farticle%3D2644%26context%3Dlawreview&p=DevEx,5324.1",
+          "snippet": "I. INTRODUCTION. The Voting Rights Act of 19651 may be the most successful piece of federal civil rights legislation in the long history of ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是关于投票权法案的法律评论文章，属于学术法律文献，与财务账单无关"
+        },
+        {
+          "title": "[PDF] by order of the - Intelligence Resource Program",
+          "url": "https://www.bing.com/cr?IG=0DAAED16AE0E43CFB16E5A92D7B988AC&CID=3ED93CBABAFC699609DA36EEBBCD681B&rd=1&h=aQA_bb_KukwSRI-c2BGGO82rKXQov9MBqJt5OqFYOwA&v=1&r=https%3A%2F%2Ffas.org%2Firp%2Fdoddir%2Fusaf%2Fafi21-204-sup1.pdf&p=DevEx,5202.1",
+          "snippet": "Conduct 30-day, 60-day, and 90-day follow-ups on all maintenance items ordered through any source (supply, government credit card, KCP).",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是美国空军关于维护物资采购的指令文件，提到政府信用卡仅作为采购工具说明，属于军事行政文档，不是个人消费账单"
+        },
+        {
+          "title": "[PDF] Sample credit card statement - files.consumerfinance.gov.",
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_building_block_activities_sample-credit-card-statement_handout.pdf",
+          "snippet": "Account Summary. Payment Information. Previous Balance. $482.42. New Balance. $1,392.71. Payment, Credits. -$350.42. Payment Due Date. 1/23/XX. Purchases.",
+          "judge_keep": true,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是消费者金融保护局(CFPB)提供的样本信用卡账单，明确标注为'Sample credit card statement'，包含账户摘要、余额、交易等真实账单结构，是用户可能提交给该skill的典型输入文件格式，可直接用于测试或作为模板参考"
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "[PDF] Sample credit card statement - files.consumerfinance.gov.",
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_building_block_activities_sample-credit-card-statement_handout.pdf",
+          "snippet": "Account Summary. Payment Information. Previous Balance. $482.42. New Balance. $1,392.71. Payment, Credits. -$350.42. Payment Due Date. 1/23/XX. Purchases.",
+          "judge_keep": true,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是消费者金融保护局(CFPB)提供的样本信用卡账单，明确标注为'Sample credit card statement'，包含账户摘要、余额、交易等真实账单结构，是用户可能提交给该skill的典型输入文件格式，可直接用于测试或作为模板参考"
+        }
+      ],
+      "kept_count": 1,
+      "total_count": 10
+    },
+    {
+      "q": "bank statement PDF monthly transactions filetype:pdf",
+      "file_type": "pdf",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[PDF] Future-proofing retail banking: - Google",
+          "url": "https://services.google.com/fh/files/misc/future_proofing_retail_banking_with_spanner_paper.pdf",
+          "snippet": "A bank's fundamental operations rely on its core banking system and its methods for processing transactions and payments. Core banking involves managing ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是Google关于零售银行业务的技术白皮书，讨论核心银行系统和交易处理方法，属于行业分析报告/技术文档，不是用户会提交的个人银行对账单"
+        },
+        {
+          "title": "[PDF] Real-Time Payments Systems & Third Party Access - Google Pay",
+          "url": "https://pay.google.com/about/business/static/data/GPay_RTP_2019.pdf",
+          "snippet": "To enhance this programmatic bank statement, data from a settlement channel should be provided. Transaction identifiers. (provided at transaction time) to.",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Google Pay关于实时支付系统的商业文档，讨论API和数据格式规范，属于产品/技术说明文档，不是用户个人财务对账单"
+        },
+        {
+          "title": "[PDF] ICT value for money indicators guidance",
+          "url": "https://groups.google.com/group/advanced-ict-management-trends-and-strategies-alumni/attach/3719881a1563ff6e/CPI_1011_information_technology.pdf?part=0.2",
+          "snippet": "Organisations should aim to achieve a period-on-period increase in the average percentage of transactions conducted via e-enabled channels. Definition. The ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是ICT价值指标指导文件，讨论电子交易渠道百分比，属于政府/组织管理指导文档，与个人银行对账单无关"
+        },
+        {
+          "title": "[PDF] CT SERS 6-30-2023 Valuation Report - 12-19-23 FINAL",
+          "url": "https://groups.google.com/group/ctnewswire/attach/5a9581d0c728/CT%20SERS%206-30-2023%20Valuation%20Report%20-%2012-19-23%20%20FINAL.pdf?part=0.2",
+          "snippet": "The valuation shows that the System has a total actuarial accrued liability of $41,981,067,373, of which $32,716,281,725 is for the benefits ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是康涅狄格州退休系统精算估值报告，属于政府养老金审计文件，不是个人银行对账单"
+        },
+        {
+          "title": "[PDF] 2021 Audit, No. 2.pdf",
+          "url": "https://groups.google.com/a/co.larimer.co.us/group/commissioner_kefalas_public/attach/273761d9628ac/PWMD2%20Final%20FS%20Report.pdf?part=0.1",
+          "snippet": "Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement, whether due to fraud or ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是拉默县水务区的审计财务报告，属于政府/公共事业审计文件，不是个人银行对账单"
+        },
+        {
+          "title": "[PDF] a business plan for a 600-acre farm & 300-head commercial cow ...",
+          "url": "https://www.bing.com/cr?IG=4FB15AF40F914F1B8E2FC98DBC4C7985&CID=30AE9A1A94706D441361904E95416C8E&rd=1&h=Lwy5itsI5ROU5F21zcGCzQr_UGoXpdtfmmMa4mVDN6k&v=1&r=https%3A%2F%2Fkrex.k-state.edu%2Fdspace%2Fbitstream%2Fhandle%2F2097%2F7033%2FJoshuaStaley2010.pdf%3Fsequence%3D1&p=DevEx,5113.1",
+          "snippet": "The animal units taken off the farm will be based on. $0.50 per head per day, 40 percent of that value will be paid to the land owner as rent on the pasture.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是堪萨斯州立大学的农场商业计划书，讨论畜牧业成本和租金，属于学术/商业计划文档，与银行对账单无关"
+        },
+        {
+          "title": "[PDF] by order of the - Intelligence Resource Program",
+          "url": "https://www.bing.com/cr?IG=0DAAED16AE0E43CFB16E5A92D7B988AC&CID=3ED93CBABAFC699609DA36EEBBCD681B&rd=1&h=aQA_bb_KukwSRI-c2BGGO82rKXQov9MBqJt5OqFYOwA&v=1&r=https%3A%2F%2Ffas.org%2Firp%2Fdoddir%2Fusaf%2Fafi21-204-sup1.pdf&p=DevEx,5202.1",
+          "snippet": "Personnel properly authorized to maintain the account are posting transactions to account records as transactions occur and that personnel are ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是美国空军情报资源管理指令，讨论账户交易记录维护的军方规程，属于军事行政文件，不是个人银行对账单"
+        },
+        {
+          "title": "[PDF] SAMPLE - Statement of Account 12345678 - Impact Bank",
+          "url": "https://www.impact-bank.com/user/file/dummy_statement.pdf",
+          "snippet": "You have successfully opened a sample statement in PDF format. Please continue with your e-Statement enrollment. Summary of Your Account. Page 1 of 2.",
+          "judge_keep": true,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是Impact Bank提供的样本对账单PDF，明确标注为'SAMPLE - Statement of Account'，包含账户摘要信息，是用户可能提交给skill进行解析测试或作为输入格式参考的样本对账单文件"
+        },
+        {
+          "title": "[PDF] Bank Statement Sample (Page. 1)",
+          "url": "https://www.niagara.edu/wp-content/uploads/2024/12/Financial-Examples-for-I20.pdf",
+          "snippet": "Bank Statement Letter Sample. Bank. Brennan Center Bank. 1856 133th Niagara Street. Purple City, PK, 77777. The Brennan Center Bank. November,1855 (First Name).",
+          "judge_keep": false,
+          "judge_confidence": 0.7,
+          "judge_reason": "这是尼亚加拉大学提供的银行证明信样本，用于I-20财务证明，属于签证申请用的资金证明模板，不是实际的交易对账单，不包含具体交易记录"
+        },
+        {
+          "title": "[PDF] Bank Statement",
+          "url": "https://www.commercebank.com/-/media/cb/pdf/personal/bank/statement_sample1.pdf?revision=54d56c85-b8e2-40a4-bd17-e09697b71bc6&modified=20211119170100",
+          "snippet": "Beginning Balance on May 3, 2003. $7,126.11. Deposits & Other Credits. +3,615.08. ATM Withdrawals & Debits.",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Commerce Bank官方提供的样本银行对账单，包含期初余额、存款、ATM取款等实际交易条目格式，是用户可能提交给skill进行解析的真实对账单样本文件"
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "[PDF] SAMPLE - Statement of Account 12345678 - Impact Bank",
+          "url": "https://www.impact-bank.com/user/file/dummy_statement.pdf",
+          "snippet": "You have successfully opened a sample statement in PDF format. Please continue with your e-Statement enrollment. Summary of Your Account. Page 1 of 2.",
+          "judge_keep": true,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是Impact Bank提供的样本对账单PDF，明确标注为'SAMPLE - Statement of Account'，包含账户摘要信息，是用户可能提交给skill进行解析测试或作为输入格式参考的样本对账单文件"
+        },
+        {
+          "title": "[PDF] Bank Statement",
+          "url": "https://www.commercebank.com/-/media/cb/pdf/personal/bank/statement_sample1.pdf?revision=54d56c85-b8e2-40a4-bd17-e09697b71bc6&modified=20211119170100",
+          "snippet": "Beginning Balance on May 3, 2003. $7,126.11. Deposits & Other Credits. +3,615.08. ATM Withdrawals & Debits.",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Commerce Bank官方提供的样本银行对账单，包含期初余额、存款、ATM取款等实际交易条目格式，是用户可能提交给skill进行解析的真实对账单样本文件"
+        }
+      ],
+      "kept_count": 2,
+      "total_count": 10
+    },
+    {
+      "q": "debit card statement PDF expenses filetype:pdf",
+      "file_type": "pdf",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[PDF] NWMA 2025 budget-Rev2 - Google Groups",
+          "url": "https://groups.google.com/group/northwest-multihull-association/attach/ecb56b3f9e43/NWMA%202025%20budget-Rev2.pdf?part=0.1&view=1",
+          "snippet": "Total Income. 3200. Total Expense. 2680. Notes. Income based on 2024 dues. Fees assume minimum bank balance is maintained. No R2AK this year, but should allow ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是组织预算文档，不是个人银行对账单。内容是协会的收入支出预算规划，不是用户会提交给个人财务管理skill的真实交易记录。"
+        },
+        {
+          "title": "[PDF] GPay perspective: Open banking system design",
+          "url": "https://pay.google.com/about/business/static/data/gpay-open-banking-whitepaper.pdf",
+          "snippet": "Open Banking holds the potential to drive innovation and spur competition across digital ecosystems, with user consent and high consumer protection.",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Google Pay开放银行白皮书，是技术架构文档。属于官方说明材料，不是用户会提交的个人财务对账单输入。"
+        },
+        {
+          "title": "[PDF] ICT value for money indicators guidance",
+          "url": "https://groups.google.com/group/advanced-ict-management-trends-and-strategies-alumni/attach/3719881a1563ff6e/CPI_1011_information_technology.pdf?part=0.2",
+          "snippet": "• Payment of fines / charges. • Facilities for online requests of demonstrations of Fire equipment and other safety procedures. Some organisations will have ...",
+          "judge_keep": false,
+          "judge_confidence": 0.8,
+          "judge_reason": "ICT管理指导文档，关于罚款支付和消防设备演示的在线请求设施。是组织管理指南，不是个人银行对账单。"
+        },
+        {
+          "title": "[PDF] Real-Time Payments Systems & Third Party Access - Google Pay",
+          "url": "https://pay.google.com/about/business/static/data/GPay_RTP_2019.pdf",
+          "snippet": "Head, Card & Payments, Axis Bank ... This allows the merchant's accounting system to account for and reconcile all money received through this bank statement.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "Google Pay实时支付系统文档，讨论商户会计系统如何对账银行对账单。是技术实现文档，不是用户输入的个人对账单。"
+        },
+        {
+          "title": "[PDF] Google Pay™ Online Payments",
+          "url": "https://developers.google.com/static/pay/api/download-assets/unitedfinancialcorporation-gpay-integration.pdf",
+          "snippet": "This part discusses procedure for Google Pay payment method integration. The rest of the protocol does not change. Google Pay payments can only be used for ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Google Pay在线支付集成指南，是开发者API文档。属于实现依赖/官方文档，不是用户会提交的个人财务对账单。"
+        },
+        {
+          "title": "[PDF] Federal Register/Vol. 69, No. 144/Wednesday, July 28, 2004/Rules ...",
+          "url": "https://www.bing.com/cr?IG=8ECBE78C3927430F890A9B26911C10A0&CID=2883B8A7D85361C1274BB2F0D9626003&rd=1&h=DXAn5GZBciqw5Z3Yk8-RXcNr-gl0Q3wnqz7ZpDDnyjc&v=1&r=https%3A%2F%2Fwww.justice.gov%2Fsites%2Fdefault%2Ffiles%2Feoir%2Flegacy%2F2004%2F08%2F11%2Ffr28july04.pdf&p=DevEx,5208.1",
+          "snippet": "The language of the regulations pertaining to payment of fees is intended to state more clearly the existing standards and procedures for.",
+          "judge_keep": false,
+          "judge_confidence": 0.75,
+          "judge_reason": "联邦公报关于费用支付法规的政府文件。是法律/政策文档，与个人财务对账单输入无关。"
+        },
+        {
+          "title": "[PDF] New Mexico Health Care Workforce Committee",
+          "url": "https://www.bing.com/cr?IG=B682702CDEF341DFBC4A7AA86B0D6D33&CID=141E826E67756E7D2F91891966DA6F9B&rd=1&h=U8hwyHp7mMJudA3WSK6qWrPnzKKCPRa45UQNkbx2WmU&v=1&r=https%3A%2F%2Fhsc.unm.edu%2Fassets%2Fdoc%2Feconomic-development%2Fnmhcwc-report-2014.pdf&p=DevEx,5065.1",
+          "snippet": "Statement on Clinical Nurse Specialist Practice and. Education. 2004. http://www.nacns.org/docs/NACNS-Statement.pdf. Accessed October 1, 2014 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.8,
+          "judge_reason": "新墨西哥州医疗劳动力委员会报告，引用临床护理专家实践声明。是政府/行业报告，不是个人银行对账单。"
+        },
+        {
+          "title": "[PDF] by order of the - Intelligence Resource Program",
+          "url": "https://www.bing.com/cr?IG=0DAAED16AE0E43CFB16E5A92D7B988AC&CID=3ED93CBABAFC699609DA36EEBBCD681B&rd=1&h=aQA_bb_KukwSRI-c2BGGO82rKXQov9MBqJt5OqFYOwA&v=1&r=https%3A%2F%2Ffas.org%2Firp%2Fdoddir%2Fusaf%2Fafi21-204-sup1.pdf&p=DevEx,5202.1",
+          "snippet": "Personnel properly authorized to maintain the account are posting transactions to account records as transactions occur and that personnel are ...",
+          "judge_keep": false,
+          "judge_confidence": 0.7,
+          "judge_reason": "空军情报资源程序指令，关于账户交易记录维护的授权人员规定。是军事/政府内部管理文档，不是个人财务输入。"
+        },
+        {
+          "title": "[PDF] Sample credit card statement - files.consumerfinance.gov.",
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_building_block_activities_sample-credit-card-statement_handout.pdf",
+          "snippet": "Account Summary. Payment Information. Previous Balance. $482.42. New Balance. $1,392.71. Payment, Credits. -$350.42. Payment Due Date. 1/23/XX. Purchases.",
+          "judge_keep": true,
+          "judge_confidence": 0.95,
+          "judge_reason": "消费者金融保护局提供的样本信用卡对账单，明确包含账户摘要、余额、付款信息、购买记录等。这是skill明确需要解析的输入格式类型，可直接作为测试/示例输入或帮助用户理解对账单结构。"
+        },
+        {
+          "title": "[PDF] SAMPLE - Statement of Account 12345678 - Impact Bank",
+          "url": "https://www.impact-bank.com/user/file/dummy_statement.pdf",
+          "snippet": "You have successfully opened a sample statement in PDF format. Please continue with your e-Statement enrollment. Summary of Your Account. Page 1 of 2.",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "Impact Bank提供的样本账户对账单PDF，明确标注为'e-Statement enrollment'的示例。包含账户摘要信息，是skill需要处理的个人银行对账单格式的真实样本，可作为输入参考或测试数据。"
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "Coinbase Card statement PDF crypto debit filetype:pdf",
+      "file_type": "pdf",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[PDF] The bulk of Nigerian fertiliser now heads overseas - BACITI",
+          "url": "https://groups.google.com/group/usaafricadialogue/attach/127171e410b8c/BUSINESS%20AM%20475TH%20EDITION%2020-10-2025.pdf?part=0.1",
+          "snippet": "crypto debit cards and make daily purchases, the lack of property transaction options indicates a market still in tran- sition. The Philippines, ranked.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a Nigerian business news PDF that happens to mention 'crypto debit cards' in passing. It is not a Coinbase Card statement, not a personal finance document, and not something a user would submit to this skill."
+        },
+        {
+          "title": "[PDF] Coinbase Global, Inc. | SEC.gov",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978825000074/coinbaseglobalinc2024-x202.pdf",
+          "snippet": "Coinbase Global, Inc. (Exact name of registrant as specified in its charter). Delaware. One Madison Avenue Suite 2400 New York, NY.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "SEC filing (10-K annual report) for Coinbase Global, Inc. This is corporate regulatory documentation, not a personal Coinbase Card statement. Users do not submit SEC filings to parse their personal transactions."
+        },
+        {
+          "title": "[PDF] Coinbase Global, Inc Q3 2024 - 10Q",
+          "url": "https://s27.q4cdn.com/397450999/files/doc_events/2024/Oct/30/Coinbase-Global-Inc-Q3-2024-10Q.pdf",
+          "snippet": "Crypto assets held for operations. The Company may receive crypto assets as a form of payment for transaction revenue, blockchain rewards ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Quarterly financial report (10-Q) for Coinbase Global, Inc. Corporate financial statement, not a personal debit card statement. Not user input."
+        },
+        {
+          "title": "[PDF] (A) (B) - Coinbase",
+          "url": "https://static-assets.coinbase.com/email/tos_nov_2020/cbsg-final.pdf",
+          "snippet": "​You will be able to see your E-Money Wallet balance and your transaction history using the Site, including (i) the amount (and currency) of each Digital ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Coinbase Terms of Service document from 2020. This is a legal agreement, not a transaction statement. While it mentions transaction history, it's describing the service, not containing actual user transaction data."
+        },
+        {
+          "title": "[PDF] Decision: In the Matter of Coinbase Canada Inc. and Coinbase, Inc.",
+          "url": "https://www.osc.ca/sites/default/files/2024-04/rad_20240403_coinbase-canada.pdf",
+          "snippet": "The Filer has policies and procedures for updating the Risk Statement and each Crypto. Asset Statement to reflect any material changes to the ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Canadian securities regulatory decision document. Official government filing about Coinbase's registration, not a personal financial statement."
+        },
+        {
+          "title": "[PDF] COINBASE USER AGREEMENT This agreement (the \"Agreement ...",
+          "url": "https://static-assets.coinbase.com/user_agreements/cb_uk_user_agreement_29_March_2019.pdf",
+          "snippet": "​ ​You will be able to see your E-Money Wallet balance and your transaction history using the Site, including (i) the amount (and currency) of each Digital.",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Coinbase UK User Agreement from 2019. Legal terms of service, not a personal transaction statement. Users don't submit TOS documents to parse their spending."
+        },
+        {
+          "title": "[PDF] Final notice 2024: CB Payments Limited - FCA",
+          "url": "http://www.fca.org.uk/publication/final-notices/cb-payments-limited-2024.pdf",
+          "snippet": "“Coinbase Card” means the debit cards provided to customers of certain Coinbase. Group entities, including CBPL, and, in the case of CBPL ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "FCA final notice/enforcement document about CB Payments Limited. Regulatory action document that defines 'Coinbase Card' but is not an actual user statement. Not personal transaction data."
+        },
+        {
+          "title": "[PDF] Coinbase Global, Inc.",
+          "url": "https://business.cch.com/srd/coinbaseglobalincs.pdf",
+          "snippet": "... Coinbase Card, a debit card funded by a customer's crypto asset balance on Coinbase. The Coinbase Card allows our retail users in the United ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Corporate business description document about Coinbase Global, Inc. Describes the Coinbase Card product offering, but is not an actual user statement with transactions."
+        },
+        {
+          "title": "[PDF] SNA/M1.25/9 - Compilation Guidance on Crypto Assets",
+          "url": "https://unstats.un.org/unsd/nationalaccount/aeg/2025/M28/M28_9_Crypto_Assets.pdf",
+          "snippet": "Financial statements of crypto exchanges such as Coinbase provide relatively detailed information on assets on platform (meaning crypto ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "UN statistical guidance document on crypto asset accounting. Technical methodology paper for national accounts, not a personal finance statement."
+        },
+        {
+          "title": "[PDF] Oregon-v.-Coinbase-Complaint.pdf",
+          "url": "https://www.doj.state.or.us/wp-content/uploads/2025/05/Oregon-v.-Coinbase-Complaint.pdf",
+          "snippet": "For each of the Crypto Securities, statements by the issuers and Coinbase have ... cashback rewards on a Voyager debit card, auto-staking of various crypto assets ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Legal complaint (Oregon v. Coinbase) from a state attorney general. Litigation document mentioning crypto securities and Voyager debit card, not a Coinbase Card statement with user transactions."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "receipt photo grocery store expenses",
+      "file_type": "image",
+      "preferred_sites": [
+        "google.com",
+        "bing.com",
+        "google.com/images"
+      ],
+      "results_annotated": [
+        {
+          "title": "Receipt Scanner: Easy Expense - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.easyexpense",
+          "snippet": "With Easy Expense you can scan or take photos of receipts to be stored in the app forever. Easy Expense has a simple and intuitive design which will allow you ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是第三方收据扫描应用（Easy Expense），是工具软件而非用户输入。用户不会把Google Play应用页面作为财务skill的输入。"
+        },
+        {
+          "title": "Grocery Tracker Pro - Scanner – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=grocery.tracker.pro&hl=en_IE",
+          "snippet": "Grocery Tracker Pro turns your paper receipts into organized grocery spending data in seconds. ... • Track expenses by store, item, or time period",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是第三方Grocery Tracker Pro应用，是工具软件而非用户输入。应用商店页面不是用户会提交的收据/对账单。"
+        },
+        {
+          "title": "ReceiptJar - Turn your receipt - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.unocart.unomoney",
+          "snippet": "ReceiptJar is a fun way to make money off receipts! HOW IT WORKS: 1) Take pictures of your receipts! 2) Uploaded them to the ReceiptJar app",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是ReceiptJar应用页面，是第三方工具而非用户输入。不是用户会提交的收据照片或银行对账单。"
+        },
+        {
+          "title": "Image Creator - Bing",
+          "url": "https://www.bing.com/images/create/grocery-store-shopper2c-an-old-woman2c-reluctantly-a/1-66e6fb7d8dc7474d8f6d45149bd2fa57?id=tU77TUsQJhTX%2FrKaPsFK4g%3D%3D&view=detailv2&idpp=genimg&thid=OIG3.BN_U2zfy7GtIjfwgM1Cb",
+          "snippet": "5,100+ Grocery Receipt Stock Photos, Pictures & Royalty-Free Images - iStock ... Shoplifter Stealing In A Grocery Store Stock Photo - Download Image Now - ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Bing Image Creator生成的AI图片，是合成图像而非真实收据。不是用户会提交的真实财务输入。"
+        },
+        {
+          "title": "Food Bank article: Recipe Library with budget friendly recipes",
+          "url": "https://www.bing.com/news/apiclick.aspx?ref=FexRss&aid&tid=640e2c42c12847f094c0ea7b210003c1&url=https://www.wral.com/food-bank-article-recipe-library-with-budget-friendly-recipes/20755403/&c=11234852953569708292&mkt=en-us",
+          "snippet": "March is National Nutrition Education Month, and the Food Bank of Central & Eastern North Carolina is sharing their recipe library!",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "食品银行的新闻文章，与财务skill的输入完全无关。不是收据、对账单或交易记录。"
+        },
+        {
+          "title": "Seasoned Specialty Foods leases shelf space, lets local makers ...",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=7AAD24D532ED49CAA6B0D7469FBB49E7&url=https://www.twincities.com/2018/11/07/seasoned-specialty-foods-leases-shelf-space-lets-local-makers-take-all-the-profits/&c=12991579139745695644&mkt=en-us",
+          "snippet": "Each photo published is $125 per day. For example: 2 photos in the paper on 2 days would be 4 photo charges at $500. Deadlines: Please ...",
+          "judge_keep": false,
+          "judge_confidence": 0.98,
+          "judge_reason": "关于食品货架租赁的新闻报道，与财务skill输入无关。不是收据或对账单。"
+        },
+        {
+          "title": "Receipt Scanner - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.swoyef.billscanner",
+          "snippet": "Designed to simplify your financial life, it helps you scan receipts, manage expenses, and record bills — all automatically. Whether you're ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是Receipt Scanner应用页面，第三方工具软件而非用户输入。不是用户会提交的收据照片。"
+        },
+        {
+          "title": "Grocery Receipt Images - Adobe Stock",
+          "url": "https://stock.adobe.com/search?k=grocery+receipt",
+          "snippet": "Supermarket paper receipt illustration template. Household expenses basic prices. Transparent PNG graphic.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "Adobe Stock上的收据插图/模板图片，是设计素材而非真实收据。虽然视觉上像收据，但这是模板插图，不是用户会提交的真实交易记录。"
+        },
+        {
+          "title": "4712 Grocery Shopping Receipt Images and Stock Photos - iStock",
+          "url": "https://www.istockphoto.com/photos/grocery-shopping-receipt",
+          "snippet": "Search from Grocery Shopping Receipt stock photos, pictures and royalty-free images from iStock. Get iStock exclusive photos, illustrations, and more.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "iStock上的收据库存照片，是专业拍摄的素材图片而非真实用户收据。不是用户会主动提交的个人财务输入。"
+        },
+        {
+          "title": "1176 Grocery Receipt Stock Photos, High-Res Pictures, and Images",
+          "url": "https://www.gettyimages.com/photos/grocery-receipt",
+          "snippet": "Browse 1,176 authentic grocery receipt stock photos, high-res images, and pictures, or explore additional checking grocery receipt or grocery receipt isolated ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "Getty Images上的收据库存照片，是商业素材图片而非真实用户收据。不是用户会提交的个人交易记录。"
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "restaurant receipt image food expense",
+      "file_type": "image",
+      "preferred_sites": [
+        "google.com",
+        "bing.com",
+        "google.com/images"
+      ],
+      "results_annotated": [
+        {
+          "title": "Receipt Scanner: Easy Expense - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.easyexpense",
+          "snippet": "Our receipt scanner automatically scans receipts, crops and extracts key information. Saving you time and organizing your business receipts and expense ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是一个收据扫描应用程序（Google Play商店页面），不是用户会提交给skill的输入文件。这是工具/软件本身，而非输入内容。"
+        },
+        {
+          "title": "Restaurant & Café Billing POS - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zobaze.restaurant.pos",
+          "snippet": "✓ With our one app you can run multiple businesses. ✓ Best POS system with free POS, Billing receipts, Inventory features. ✓ POS with Ingredient Management. ✓ ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是餐厅POS系统应用（Google Play商店页面），是商业软件工具，不是用户会提交的个人财务输入文件。"
+        },
+        {
+          "title": "Scan & Split Bill - OCR Check - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.astepanov.mobile.splitcheck",
+          "snippet": "Scan & Split Bill is a unique bill splitter app that supports optical character recognition on 76 languages and can OCR receipt offline!",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "这是账单分割应用（Google Play商店页面），是工具软件，不是用户会提交给Finance skill的输入文件。"
+        },
+        {
+          "title": "Image Creator - Bing",
+          "url": "https://www.bing.com/images/create/a-photorealistic-image-of-a-surprised-waiter-holdi/1-6611b012f27b4fc89f31b84456976740?id=0oyxvB92Sx0e4vHT5kFI4w%3D%3D&view=detailv2&idpp=genimg&thId=OIG4.01jwxU7WHLJr1WAXrFX5",
+          "snippet": "See related image detail. Restaurant bill for a large sum of money on hand Stock. Restaurant bill for a large sum of money on hand Stock Photo - Alamy.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是Bing Image Creator生成的AI图像（'惊讶的服务员'），是合成/生成的示例图片，不是真实的餐厅收据。虽然与'restaurant receipt'主题相关，但不是用户会提交的真实财务输入。"
+        },
+        {
+          "title": "Image Creator - Bing",
+          "url": "https://www.bing.com/images/create/first-person-perspective-of-a-man-sitting-at-a-boo/1-65cfc05dfdf1463f895cbab32fca43f3?id=W3%2FzacAAWlhMuTI8e6IHgg%3D%3D&view=detailv2&idpp=genimg&thId=OIG4.zVHDPd8RapNIxyU20E7i",
+          "snippet": "Create collection · T-Mobile Tuesday = Free Food, Gift Cards, & More for Customers! · hip2save.com.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是Bing Image Creator生成的AI图像（第一人称视角场景），是AI生成的合成图片，不是真实的餐厅收据或用户会提交的实际财务文档。"
+        },
+        {
+          "title": "Image Creator",
+          "url": "https://www.bing.com/images/create/first-person-perspective-of-a-man-sitting-at-a-boo/1-65d38c1b571e447b8e179d249262679b?id=wZFXXns4gzmcgQyjQFx2mQ%3D%3D&view=detailv2&idpp=genimg&thId=OIG3.7BiilfK3aFXFnDbuyIis",
+          "snippet": "11 Travis Pickle Stock Photos, High-Res Pictures, and Images - Getty Images. www.gettyimages.com. See related image detail. JoeC 360 | Facebook.",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "这是Bing Image Creator生成的AI图像，且snippet显示与'Travis Pickle'等无关内容相关，不是真实的餐厅收据，不适合作为Finance skill的输入。"
+        },
+        {
+          "title": "Restaurant Receipt Images - Adobe Stock",
+          "url": "https://stock.adobe.com/search?k=restaurant+receipt",
+          "snippet": "Search from thousands of royalty-free Restaurant Receipt stock images and video for your next project. Download royalty-free stock photos, vectors, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Adobe Stock的图库搜索页面，是商业库存图片集合页面，不是具体的可下载输入文件。用户需要的是具体的收据图片，而非图库网站的搜索页面。"
+        },
+        {
+          "title": "5451 Restaurant Receipt Images and Stock Photos - iStock",
+          "url": "https://www.istockphoto.com/photos/restaurant-receipt",
+          "snippet": "Browse 5,400+ restaurant receipt stock photos and images available, or search for restaurant receipt table or restaurant receipt vector to find more great stock ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是iStock的图库搜索页面，是商业库存图片集合页面，不是具体的收据图片文件本身。属于图库网站入口，不是可直接使用的输入。"
+        },
+        {
+          "title": "Restaurant receipt Images - Free Download on Freepik",
+          "url": "https://www.freepik.com/free-photos-vectors/restaurant-receipt/2",
+          "snippet": "Find & Download Free Graphic Resources for Restaurant receipt Vectors, Stock Photos & PSD files. ✓ Free for commercial use ✓ High Quality Images.",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Freepik的图库搜索页面，是免费矢量图/图片资源集合页面，不是具体的收据图片文件。属于资源网站入口，不是可直接作为skill输入的文件。"
+        },
+        {
+          "title": "Food Receipt royalty-free images - Shutterstock",
+          "url": "https://www.shutterstock.com/search/food-receipt",
+          "snippet": "A printed restaurant receipt placed on a wooden table, including service tax and subtotal. Ideal for use in finance, retail, payment, or expenses, spending, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "这是Shutterstock的图库搜索页面，snippet描述的是'一张打印的餐厅收据'的示例用途说明，但这是图库网站的搜索/分类页面，不是具体的可下载图片文件本身。"
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "gas station receipt fuel expense image",
+      "file_type": "image",
+      "preferred_sites": [
+        "google.com",
+        "bing.com",
+        "google.com/images"
+      ],
+      "results_annotated": [
+        {
+          "title": "Fuelmeter - AI Fuel Tracker – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.yurani.fuelmeter&hl=en_GB",
+          "snippet": "Upload a photo of your fuel or service receipt, and the data will be automatically recorded (date, cost, volume, location, and other details).",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "This is an app description page for a fuel tracking app, not an actual receipt image. It's a tool that processes receipts, not a receipt itself."
+        },
+        {
+          "title": "Cockpit Vehicle Cost Tracker - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.sinanaydogan.cockpit",
+          "snippet": "Cockpit lets you track fuel costs, maintenance expenses, insurance, and income from your vehicle — all with detailed charts, exportable reports, ...",
+          "judge_keep": false,
+          "judge_confidence": 0.15,
+          "judge_reason": "App store page for a vehicle cost tracking application. Not a receipt image or user input file."
+        },
+        {
+          "title": "Gas Mileage Calculator MPG Log - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.mileagecalulator.fuellog",
+          "snippet": "Gas Mileage Calculator MPG Log is your ultimate fuel tracker and gas mileage tracker, designed to help drivers and car owners track fuel consumption.",
+          "judge_keep": false,
+          "judge_confidence": 0.15,
+          "judge_reason": "Another fuel tracking app description. Not an actual receipt image that a user would submit."
+        },
+        {
+          "title": "Weber 36410001 Genesis E-435 Gas Grill (Liquid Propane) - Black",
+          "url": "https://www.bing.com/aclick?ld=e8pNebeTUYytaaI_3G1dTYVTVUCUyqlBYUPXbpCY_gdAtD52DbRnIr2awTxggaTq5qza1I1fymUFhawnNDZOns_3nimeg5RyOSGZFEbStUJT9w66Wq1aWsZf2WcfXlz7DfkhctuQ-KvhG91qO7SCI9oawRlW0gPj1HWC3wBV9fvygMXt0JYxuhtdpoTnp2oSNXamRidw&u=aHR0cHMlM2ElMmYlMmZkc2hvbWVhcHBsaWFuY2VzLmNvbSUyZnByb2R1Y3RzJTJmd2ViLTM2NDEwMDAxJTNmdmFyaWFudCUzZDQ0NzY0NjI3NzYzNDgxJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkQmluZyUyNTIwU2hvcHBpbmc&rlid=f75c689ed8cc173879fd00bd5a1fde1c",
+          "snippet": "Introducing the newly designed GENESIS gas grill - the biggest grilling innovation in decades, that creates a full backyard culinary experience.",
+          "judge_keep": false,
+          "judge_confidence": 0.05,
+          "judge_reason": "Product page for a gas grill (barbecue). Completely unrelated to fuel receipts or expense tracking."
+        },
+        {
+          "title": "FulleGitsin - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fullegitsin.app",
+          "snippet": "Manage your fuel expenses, track your vehicles, and analyze your spending with Fulle Gitsin. Purchase fuel at advantageous prices at Türkiye's ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "App store page for a fuel expense management app. Not an actual receipt image."
+        },
+        {
+          "title": "Fuelio: gas log & gas prices - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.kajda.fuelio",
+          "snippet": "Fuelio is application to track your mileage, gas consumption and costs. Using this app you can track car expenses, auto service, your fill-ups, fuel ...",
+          "judge_keep": false,
+          "judge_confidence": 0.2,
+          "judge_reason": "Fuel tracking app description. Not a receipt image that would be submitted as input."
+        },
+        {
+          "title": "Fuel Receipt royalty-free images - Shutterstock",
+          "url": "https://www.shutterstock.com/search/fuel-receipt",
+          "snippet": "Receipt printing from gas station payment terminal. Concept of fuel purchase and expense.",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "Stock photo site with actual fuel receipt images. These are real receipt images that represent the type of input a user would submit to parse fuel expenses. The snippet explicitly mentions 'Receipt printing from gas station payment terminal' - actual receipt content."
+        },
+        {
+          "title": "Gas Receipt Images – Browse 2663 Stock Photos, Vectors, and Video",
+          "url": "https://stock.adobe.com/search?k=gas+receipt",
+          "snippet": "Gas station fuel receipt from machine with unleaded fuel details including gallons and price per gallon.",
+          "judge_keep": true,
+          "judge_confidence": 0.8,
+          "judge_reason": "Stock photo site containing actual gas station fuel receipt images with specific details (gallons, price per gallon). These are authentic receipt images that match exactly what users would submit to the Parse Statement tool."
+        },
+        {
+          "title": "118 Gas Station Receipt Stock Photos - Dreamstime.com",
+          "url": "https://www.dreamstime.com/photos-images/gas-station-receipt.html",
+          "snippet": "Search among 118 authentic gas station receipt stock photos, high-definition images, and pictures, or look at other gas station or fuel purchase stock images to ...",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "Stock photo site with authentic gas station receipt images. These are real receipt photos that serve as examples of user input for the skill."
+        },
+        {
+          "title": "Fuel card receipt Images - Free Download on Freepik",
+          "url": "https://www.freepik.com/free-photos-vectors/fuel-card-receipt",
+          "snippet": "Find & Download Free Graphic Resources for Fuel card receipt Vectors, Stock Photos & PSD files. ✓ Free for commercial use ✓ High Quality Images.",
+          "judge_keep": true,
+          "judge_confidence": 0.7,
+          "judge_reason": "Freepik resource page with fuel card receipt images. Contains actual receipt images that represent the type of input users would submit for expense parsing."
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "Fuel Receipt royalty-free images - Shutterstock",
+          "url": "https://www.shutterstock.com/search/fuel-receipt",
+          "snippet": "Receipt printing from gas station payment terminal. Concept of fuel purchase and expense.",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "Stock photo site with actual fuel receipt images. These are real receipt images that represent the type of input a user would submit to parse fuel expenses. The snippet explicitly mentions 'Receipt printing from gas station payment terminal' - actual receipt content."
+        },
+        {
+          "title": "Gas Receipt Images – Browse 2663 Stock Photos, Vectors, and Video",
+          "url": "https://stock.adobe.com/search?k=gas+receipt",
+          "snippet": "Gas station fuel receipt from machine with unleaded fuel details including gallons and price per gallon.",
+          "judge_keep": true,
+          "judge_confidence": 0.8,
+          "judge_reason": "Stock photo site containing actual gas station fuel receipt images with specific details (gallons, price per gallon). These are authentic receipt images that match exactly what users would submit to the Parse Statement tool."
+        },
+        {
+          "title": "118 Gas Station Receipt Stock Photos - Dreamstime.com",
+          "url": "https://www.dreamstime.com/photos-images/gas-station-receipt.html",
+          "snippet": "Search among 118 authentic gas station receipt stock photos, high-definition images, and pictures, or look at other gas station or fuel purchase stock images to ...",
+          "judge_keep": true,
+          "judge_confidence": 0.75,
+          "judge_reason": "Stock photo site with authentic gas station receipt images. These are real receipt photos that serve as examples of user input for the skill."
+        },
+        {
+          "title": "Fuel card receipt Images - Free Download on Freepik",
+          "url": "https://www.freepik.com/free-photos-vectors/fuel-card-receipt",
+          "snippet": "Find & Download Free Graphic Resources for Fuel card receipt Vectors, Stock Photos & PSD files. ✓ Free for commercial use ✓ High Quality Images.",
+          "judge_keep": true,
+          "judge_confidence": 0.7,
+          "judge_reason": "Freepik resource page with fuel card receipt images. Contains actual receipt images that represent the type of input users would submit for expense parsing."
+        }
+      ],
+      "kept_count": 4,
+      "total_count": 10
+    },
+    {
+      "q": "transactions.json personal finance data export",
+      "file_type": "json",
+      "preferred_sites": [
+        "google.com",
+        "bing.com",
+        "github.com"
+      ],
+      "results_annotated": [],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 0
+    },
+    {
+      "q": "CSV bank export transactions monthly spending filetype:csv",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "CSV file - Google Research",
+          "url": "https://research.google.com/youtube8m/csv/2/vocabulary.csv",
+          "snippet": "... export of sewn objects, but hand sewing is still practised around the world ... monthly Ultimate Team gold packs, with each pack containing 12 items ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "This is a YouTube-8M video vocabulary dataset about sewn objects and gaming packs. Not a bank statement or personal finance export. Completely unrelated to user financial input."
+        },
+        {
+          "title": "https://data360files.worldbank.org/data360-data/da...",
+          "url": "https://data360files.worldbank.org/data360-data/data/IMF_WEO/IMF_WEO_GGX.csv",
+          "snippet": "... bank; Valuation of public debt: Nominal value Instruments included in gross and net debt: Currency and Deposits; Loans Primary domestic currency: Albanian ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "IMF World Economic Outlook government debt data for Albania. Macroeconomic statistical data, not a personal bank statement or transaction export that a user would submit to this skill."
+        },
+        {
+          "title": "Download - International Trade Commission",
+          "url": "https://www.usitc.gov/sites/default/files/data/publications_data.csv",
+          "snippet": "... Monthly Report on Selected Economic Indicators, Inv. 332-121\",\"January 1981 ... Export Restraint Agreement, Inv. 332-117\",\"June 1982\",\"General ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "USITC government publication data on trade investigations and economic indicators. Government report data, not personal bank transaction exports."
+        },
+        {
+          "title": "CSV - Department of State OIG",
+          "url": "https://www.stateoig.gov/recommendations/export/csv?action_office=All&status=All&financial_value=All&significant=All&issue_date_from=&issue_date_to=",
+          "snippet": "... monthly, in accordance with Department standards.\",\"DOS DOS\",\"Embassy Maputo ... transactions, in accordance with Department standards.\",\"DOS DOS ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "State Department OIG recommendations export. Government audit recommendations, not personal financial transaction data."
+        },
+        {
+          "title": "CSV - GAO",
+          "url": "https://www.gao.gov/assets/2025-05/2025%20DOF%20Downloadable%20Spreadsheet.csv",
+          "snippet": "... expenditures alongside related spending programs. However, OMB and Treasury had not reported on progress on this recommendation since the President's fiscal ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "GAO federal spending tracking spreadsheet. Government budget data about OMB/Treasury programs, not personal bank statements or user transaction exports."
+        },
+        {
+          "title": "CSV, Dataset - Data API - Department for International Trade",
+          "url": "https://data.api.trade.gov.uk/v1/datasets/market-barriers/versions/latest/tables/barriers/data?format=csv&download",
+          "snippet": "... Export Health Certificate allows exports of UK fish and fishery products to ... Bank has granted conditional approval for a UK-based payments provider ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "UK trade barriers dataset about export health certificates and market access. Trade policy data, not personal bank transaction exports."
+        },
+        {
+          "title": "Download the Matrix .csv format spreadsheet - IU Data Management",
+          "url": "https://datamanagement.iu.edu/docs/matrix.csv",
+          "snippet": "... Budget,Status,Efficiency,Billing\",,, Facilities,Project related data-Bank account #'s,Restricted,Project related billing/income,\"Project related data,Bank ...",
+          "judge_keep": false,
+          "judge_confidence": 0.8,
+          "judge_reason": "IU Data Management template spreadsheet about research project data classification. Contains 'Bank account' as a data category label in a template, but this is not actual transaction data or a statement export."
+        },
+        {
+          "title": "Combined spc pa sb (4.5MB) - International Monetary Fund",
+          "url": "https://www.imf.org/external/np/pdr/mona/HistoricalDataCsv/ArchSPCPASB.csv",
+          "snippet": "... export licences to 3-4 product groups (end-December 1993). 2. Narrow range ... Bank of Albania and the National Commercial Bank of Albania (including ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "IMF historical program data for Albania (SPC/PASB). Macroeconomic policy monitoring data, not personal bank statements or transaction exports."
+        },
+        {
+          "title": "CSV - Publish What You Fund",
+          "url": "https://www.publishwhatyoufund.org/the-index/2018/static/assets/results.csv?ver=",
+          "snippet": "... monthly,1,1,50,,,,,,0, 46002-annual-report,AfDB,46002,1.875,annual-report,Annual report,Organisational planning and commitments,4,0.01875,iati,iati ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Aid transparency index results about donor organization reporting. Development finance assessment data, not personal bank transaction exports."
+        },
+        {
+          "title": "https://assets.performance.gov/data/cx/2025/jan/se...",
+          "url": "https://assets.performance.gov/data/cx/2025/jan/services.csv",
+          "snippet": "... transactions. FHEO received over 34,000 inquiries related to housing discrimination and handled 4,000+ housing discrimination complaints in 2023.\",2096,HUD ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "Government customer experience data about HUD housing discrimination complaints. Federal service metrics, not personal bank statements or transaction exports."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "Mint export transactions CSV personal finance filetype:csv",
+      "file_type": "csv_tsv",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "CSV file - Google Research",
+          "url": "https://research.google.com/youtube8m/csv/2/vocabulary.csv",
+          "snippet": "... personal computers and video game consoles. These platforms range from large mainframe computers to small handheld computing devices. Specialized video ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Google Research YouTube-8M vocabulary CSV - machine learning dataset about video categories, not personal finance transactions. No relation to user bank statements or transaction exports."
+        },
+        {
+          "title": "csv (1.3 MB)",
+          "url": "https://www.ons.gov.uk/file?uri=/economy/nationalaccounts/balanceofpayments/datasets/pinkbook/current/previous/v5/pb.csv",
+          "snippet": "... personal imports of cars: CP NSA\",\"BoP: TiS: Imports: Travel: Personal: Other: CP NSA\",\"FDI : Inward : Total NFC & FCs : Level of Branch H/O debt due to ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "UK Office for National Statistics Pink Book - macroeconomic balance of payments data. Government statistical publication, not personal transaction data that a user would import."
+        },
+        {
+          "title": "CSV - GAO.gov",
+          "url": "https://www.gao.gov/assets/710/703927.csv",
+          "snippet": "... Mint,\"United States Mint Public Enterprise Fund\",20-4159,\"Public enterprise ... Finance Agency\",\"Federal Housing Finance Agency\",Office of Inspector ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "GAO government agency listing CSV. Contains federal agency codes and names including 'Mint' (US Mint), not Mint.com personal finance export. Government dataset, not user transaction data."
+        },
+        {
+          "title": "FFIListFull062017.csv - IRS",
+          "url": "https://www.irs.gov/pub/fatca/FFIListFull062017.csv",
+          "snippet": "... Finance B.V.,NETHERLANDS BXB01Q.99999.SL.442,BMS SICAV-SIF,LUXEMBOURG 1HDR1M ... Mint Tower Capital Management B.V.,NETHERLANDS 6ZK27Q.00000.SP.092 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "IRS FATCA FFI list - foreign financial institutions registry for tax compliance. 'Mint Tower Capital' is an investment firm, not Mint.com. Regulatory dataset, not personal transactions."
+        },
+        {
+          "title": "https://data.kcmo.org/api/v3/views/gqr2-24kw/expor...",
+          "url": "https://data.kcmo.org/api/v3/views/gqr2-24kw/export.csv?accessType=DOWNLOAD&app_token=bHWsGtRFRP9x8Hl8lYivqM1hQ",
+          "snippet": "... Personal Fitness Trainers, Financial Institutions\",\"Our project, Financial Wellness Program: The Trifecta targets individuals and families (Youth and Adults) ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "Kansas City community program data about financial wellness initiatives. Municipal open data about organizations/services, not individual transaction records or bank statement exports."
+        },
+        {
+          "title": "CSV version - USCIS",
+          "url": "https://www.uscis.gov/sites/default/files/document/data/2-L1Report_Excel.csv",
+          "snippet": "... FINANCIAL SOLUTIONS INC,\"Financial Transactions Processing, Reserve, and Clearinghouse Activities\", 11 ,INITIAL,L1B, D ,,, ,CONTINUING,L1A, D ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "USCIS L-1 visa petition data by employer/industry. Immigration statistics with company names like 'FINANCIAL SOLUTIONS INC' - government administrative data, not personal finance transactions."
+        },
+        {
+          "title": "https://data.sfgov.org/api/v3/views/m2xc-rbc2/expo...",
+          "url": "https://data.sfgov.org/api/v3/views/m2xc-rbc2/export.csv?accessType=DOWNLOAD&app_token=bHWsGtRFRP9x8Hl8lYivqM1hQ",
+          "snippet": "... finance the acquisition, rehabilitation, and permanent financing of a 100% affordable, 68-unit multifamily rental housing development for ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "San Francisco affordable housing development financing data. Municipal capital projects data, not individual bank transactions or personal finance exports."
+        },
+        {
+          "title": "https://datacatalogfiles.worldbank.org/ddh-publish...",
+          "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037962/1/DR0046059/figure-s3.1.1_companies.csv",
+          "snippet": "... Finance & Investment,Financial Services,Business to Business,Small Business ... transactions for more than 500 public agencies worldwide, enabling ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "World Bank company/financial services classification data. Macroeconomic research dataset about business sectors, not personal transaction records from Mint or banks."
+        },
+        {
+          "title": "https://open.canada.ca/data/dataset/a35cf382-690c-...",
+          "url": "https://open.canada.ca/data/dataset/a35cf382-690c-4221-a971-cf0fd189a46f/resource/25190cfc-b0d5-400a-bb37-408706149637/download/1630_spe_1718_en.csv",
+          "snippet": "... export markets. Market Development supports Canada's agriculture and agri-food industry to build and deliver on long-term international strategies, to gain ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Canadian government agriculture export market data. 'Export' refers to international trade, not data export format. Agricultural policy dataset, completely unrelated to personal finance."
+        },
+        {
+          "title": "https://assets.publishing.service.gov.uk/media/5a7...",
+          "url": "https://assets.publishing.service.gov.uk/media/5a75821b40f0b6360e474a94/UKTI__Programme__December_2015__published_.csv",
+          "snippet": "... Finance,CAPITA BUSINESS SERVICES LTD,120495,432.00 ,,DL1 9HN,VENDOR ... Personal Expense, Name Witheld\",123489,96.45 ,,,,,,Programme UK Trade and ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "UK Trade & Investment government vendor payments/expenses. Contains 'Personal Expense' as a government spending category, but this is public sector procurement data, not individual user transaction exports from Mint or banks."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "Plaid transactions export JSON API response",
+      "file_type": "json",
+      "preferred_sites": [
+        "google.com",
+        "bing.com",
+        "github.com"
+      ],
+      "results_annotated": [],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 0
+    },
+    {
+      "q": "Apple Card statement PDF monthly summary filetype:pdf",
+      "file_type": "pdf",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[PDF] Security Usability Fundamentals - Google Research",
+          "url": "https://research.google.com/pubs/archive/32872.pdf",
+          "snippet": "An important consideration when you're building an application is the usability of the security features that you'll be employing.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Google Research paper on security usability, completely unrelated to finance statements. Not a user input."
+        },
+        {
+          "title": "[PDF] History, Reputation, and the Chrome Malware Warning",
+          "url": "https://research.google.com/pubs/archive/42546.pdf",
+          "snippet": "In our analysis of 3,875,758 malware warning impressions, users were twice as likely to click through the Chrome malware warning if the blocked.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Google Research paper on Chrome malware warnings, unrelated to finance. Not a user input."
+        },
+        {
+          "title": "[PDF] ATP III Report on High Blood Cholesterol",
+          "url": "https://groups.google.com/group/thursday-pt-lab/attach/e7482ccda86229ed/ATP3Dylipidemia.pdf?part=0.1",
+          "snippet": "... statements. Each evidence statement is qualified according to category of evidence (A–D) and strength of evidence (1–3), as follows: Empirical data provide ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Medical cholesterol guidelines document, completely unrelated to finance statements. Not a user input."
+        },
+        {
+          "title": "[PDF] The Anatomy of Smartphone Unlocking: A Field Study of Android ...",
+          "url": "https://research.google.com/pubs/archive/44675.pdf",
+          "snippet": "We present a detailed analysis of the smartphone locking mechanisms currently available to billions of smartphone users worldwide. Through a month-long field ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Google Research paper on smartphone unlocking, unrelated to finance. Not a user input."
+        },
+        {
+          "title": "[PDF] Uncorrected Proof - Google Research",
+          "url": "https://research.google.com/pubs/archive/40568.pdf",
+          "snippet": "Abigail Sellen Socio-Digital Systems, Microsoft Research Cambridge,. JJ Thomson Avenue 7, Cambridge CB3 0FB, UK e-mail: asellen@microsoft.com.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Uncorrected proof of research paper, unrelated to finance statements. Not a user input."
+        },
+        {
+          "title": "[PDF] how to view apple pay transaction history",
+          "url": "https://ia600602.us.archive.org/29/items/apl-team-1/apl%20team32.pdf",
+          "snippet": "For Apple Card you. +1-(866)-(542)-(8909) can download monthly statements in PDF format through the Statements option in the three-dot menu of your Apple Card.",
+          "judge_keep": false,
+          "judge_confidence": 0.7,
+          "judge_reason": "Guide/instruction document on how to view Apple Pay transaction history. This is a tutorial/help document, not an actual statement PDF that a user would submit as input. The skill parses actual statement files, not guides about how to access statements."
+        },
+        {
+          "title": "[PDF] Apple Pay Statement | Official Transaction History Guide",
+          "url": "https://community.appinventor.mit.edu/uploads/short-url/vbaYU3uMiLlMzXWGGG6DDh1K5qi.pdf",
+          "snippet": "18 months history searchable filterable. PDF export standard feature. Phone 1-(833)(532)(8728) history access. Bank Statement Card Sync.",
+          "judge_keep": false,
+          "judge_confidence": 0.7,
+          "judge_reason": "Guide/instruction document on Apple Pay statement access. This is a tutorial/help document with support phone numbers, not an actual financial statement that a user would submit for parsing. Not a valid skill input."
+        },
+        {
+          "title": "[PDF] Product Disclosure Statement - Apple",
+          "url": "https://www.apple.com/legal/sales-support/applecare/applecareplus/2510/251015_applecareplus_au_tl_pds.pdf",
+          "snippet": "Before your Monthly Plan renewal, which includes ADH and Theft and Loss insurance coverage, is renewed, We may ask You questions that are ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "AppleCare+ Product Disclosure Statement (insurance/legal document). This is a terms of service document, not a transaction statement with purchase history. Not a valid input for transaction parsing."
+        },
+        {
+          "title": "[PDF] Product Disclosure Statement - Apple",
+          "url": "https://www.apple.com/legal/sales-support/applecare/applecareplus/2410/241028_applecareplusmac_au_pds.pdf",
+          "snippet": "As stated in Your Proof of Coverage, the Complimentary Cover will start on the date the. Covered Equipment was purchased and will terminate at ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "AppleCare+ Product Disclosure Statement (insurance/legal document). This is a terms of service document, not a transaction statement with purchase history. Not a valid input for transaction parsing."
+        },
+        {
+          "title": "[PDF] How do I see my Apple account transaction history? Apply Now",
+          "url": "https://ia902809.us.archive.org/4/items/apl-team-100/apl%20team52.pdf",
+          "snippet": "Open Wallet tap Apple. +1-(866)-(542)-(8909) Card tap the three-dot menu and select Statements to view and download monthly transaction ...",
+          "judge_keep": false,
+          "judge_confidence": 0.7,
+          "judge_reason": "Guide/instruction document on how to see Apple account transaction history. This is a tutorial with support phone numbers, not an actual statement PDF with transaction data that a user would submit for parsing."
+        }
+      ],
+      "results_kept": [],
+      "kept_count": 0,
+      "total_count": 10
+    },
+    {
+      "q": "Chase bank statement PDF checking account filetype:pdf",
+      "file_type": "pdf",
+      "preferred_sites": [
+        "google.com",
+        "bing.com"
+      ],
+      "results_annotated": [
+        {
+          "title": "[PDF] Would a privacy fundamentalist sell their DNA for $1000... if nothing ...",
+          "url": "https://research.google.com/pubs/archive/42847.pdf",
+          "snippet": "ABSTRACT. Westin's Privacy Segmentation Index has been widely used to measure privacy attitudes and categorize individuals into.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Google research paper about privacy attitudes and DNA, completely unrelated to bank statements or finance skill input"
+        },
+        {
+          "title": "[PDF] 2023 Publication 530 - CMMTax |",
+          "url": "http://feedproxy.google.com/~r/SacramentoCaRealEstatePodcastWithThomasMarch/~5/Buhp26xzjdY/p530.pdf",
+          "snippet": "Direct deposit also avoids the possibility that your check could be lost, stolen, destroyed, or returned undeliverable to the IRS. Eight in. 10 ...",
+          "judge_keep": false,
+          "judge_confidence": 0.9,
+          "judge_reason": "IRS tax publication about direct deposit, not a bank statement that a user would submit to this skill"
+        },
+        {
+          "title": "Six sigma for service processes - Emerald Publishing",
+          "url": "https://sites.google.com/site/nguyenvanhoaqtcl/Mon-He-Phuong-Phap-Cai-Tien-Qua-Trinh-6-Sigma/tailieubaidocthemmonhephuongphapcaitienquatrinhdotpha-sixsigma/005_Six%20Sigma%20for%20service%20processes.PDF",
+          "snippet": "Six sigma has enabled J P Morgan Chase to reduce flaws in its customer-facing processes such as account opening, payment handling and cheque-book ordering. This ...",
+          "judge_keep": false,
+          "judge_confidence": 0.85,
+          "judge_reason": "Academic paper about Six Sigma at JPMorgan Chase, discusses process improvement methodology, not an actual bank statement"
+        },
+        {
+          "title": "[PDF] The Reanchoring Channel of QE - GitHub Pages",
+          "url": "https://sites.google.com/site/pkaradi696/reanchoring.pdf",
+          "snippet": "This paper analyses the impact of the European Central Bank's asset purchase programme on long-term inflation expectations.",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Economic research paper about ECB quantitative easing, no relation to personal finance statements"
+        },
+        {
+          "title": "[PDF] A Survey of Impact Evaluations of Infrastructure Projects, Programs ...",
+          "url": "http://sites.google.com/site/mavalfortwebpage/home/-d-g-seminars/-d-g-seminar/Estache2012_2.pdf",
+          "snippet": "This large volume also allows researchers and field workers to benefit from surveys and meta-analysis conducted from the viewpoint of different groups of ...",
+          "judge_keep": false,
+          "judge_confidence": 0.95,
+          "judge_reason": "Infrastructure impact evaluation survey, completely unrelated to bank statements"
+        },
+        {
+          "title": "[PDF] Chase Connect® User Guide: Statements and Images",
+          "url": "https://www.chase.com/content/dam/chase-ux/documents/commercial-banking/chase-connect/cc_quickguide_statements_images.pdf",
+          "snippet": "Checks: View the front and back of a check, print it and/or save it as a PDF3. • Deposits: View your deposit slip and any corresponding checks. Print deposit ...",
+          "judge_keep": false,
+          "judge_confidence": 0.8,
+          "judge_reason": "Chase Connect user guide/instruction manual for viewing statements, not an actual statement file that a user would submit"
+        },
+        {
+          "title": "[PDF] Paperless Statement Sample",
+          "url": "https://www.chase.com/content/dam/chase-ux/documents/digital/resources/paperless_statements_chase_sample.pdf",
+          "snippet": "Account number: 0000 0000 0000 0000. $. Amount Enclosed. Make your check payable to: Chase Card Services. 00000 ...",
+          "judge_keep": true,
+          "judge_confidence": 0.85,
+          "judge_reason": "Chase paperless statement SAMPLE - this is a template/example of what an actual Chase statement looks like, could be used as reference for parsing format or as test input for the skill"
+        },
+        {
+          "title": "[PDF] Account Activity Go To Guide | Chase Bank",
+          "url": "https://www.chase.com/content/dam/chase-ux/documents/commercial-banking/chase-connect/cc_quickguide_account_activity.pdf",
+          "snippet": "Account Activity section in Connect provides a comprehensive view of all transactions associated with account. 1. Transaction Summary. •. Balance Overview: ...",
+          "judge_keep": false,
+          "judge_confidence": 0.8,
+          "judge_reason": "Chase Connect account activity guide/instruction manual, explains how to use the interface, not an actual statement file"
+        },
+        {
+          "title": "[PDF] Bank Statement Chase - CLaME",
+          "url": "https://clame.nyu.edu/Resources/E007G4/311060/Bank%20Statement%20Chase.pdf",
+          "snippet": "Download or view the statement in PDF format for your records. ... history, financial statement, bank account, statement download, Chase online, bank statement ...",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "Actual Chase bank statement PDF from NYU CLaME resources - appears to be a real statement file that demonstrates the format, suitable as example input or for testing the parsing skill"
+        },
+        {
+          "title": "[PDF] Chase Commercial Online | STATEMENTS AND IMAGES",
+          "url": "https://www.chase.com/content/dam/chaseonline/en/legacy/content/secure/sso/document/cco_statements_imagesl_quick_reference-lores.pdf",
+          "snippet": "From the My Accounts page, choose the account for which you want to view a statement and click the “Statements” link. Note: an exclamation point icon will ...",
+          "judge_keep": false,
+          "judge_confidence": 0.8,
+          "judge_reason": "Chase Commercial Online quick reference guide/instructions for accessing statements, not an actual statement file itself"
+        }
+      ],
+      "results_kept": [
+        {
+          "title": "[PDF] Paperless Statement Sample",
+          "url": "https://www.chase.com/content/dam/chase-ux/documents/digital/resources/paperless_statements_chase_sample.pdf",
+          "snippet": "Account number: 0000 0000 0000 0000. $. Amount Enclosed. Make your check payable to: Chase Card Services. 00000 ...",
+          "judge_keep": true,
+          "judge_confidence": 0.85,
+          "judge_reason": "Chase paperless statement SAMPLE - this is a template/example of what an actual Chase statement looks like, could be used as reference for parsing format or as test input for the skill"
+        },
+        {
+          "title": "[PDF] Bank Statement Chase - CLaME",
+          "url": "https://clame.nyu.edu/Resources/E007G4/311060/Bank%20Statement%20Chase.pdf",
+          "snippet": "Download or view the statement in PDF format for your records. ... history, financial statement, bank account, statement download, Chase online, bank statement ...",
+          "judge_keep": true,
+          "judge_confidence": 0.9,
+          "judge_reason": "Actual Chase bank statement PDF from NYU CLaME resources - appears to be a real statement file that demonstrates the format, suitable as example input or for testing the parsing skill"
+        }
+      ],
+      "kept_count": 2,
+      "total_count": 10
+    }
+  ]
+}

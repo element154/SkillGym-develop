@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>USG-medical-dataset-dicom-format | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons." />
+    <meta name="keywords" content="image,computer vision,healthcare,image classification,image segmentation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1775203526878;
+    window["pageRequestEndTime"] = 1775203526990;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-e1b1865463db8153.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/aixblock2023/usg-medical-dataset-dicom-format" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/aixblock2023/usg-medical-dataset-dicom-format" />
+    <meta property="og:title" content="USG-medical-dataset-dicom-format" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-52.png-26968847/dataset-card.png" />
+        <meta property="twitter:image" content="https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-52.png-26968847/dataset-card.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@AIxBlock" />
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="b3+eClOH/YwHmYaKpfRpOw==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"USG-medical-dataset-dicom-format","description":"This dataset contains hundreds of ultrasound (USG) cases collected from hundreds of unique patients, representing a wide spectrum of real-world clinical scenarios. Each case is stored in DICOM format, preserving full-resolution imaging data along with essential metadata for medical research and diagnostic model development.\n\n🏥 Data Type: Ultrasound images across various anatomical regions and clinical indications.\n\n📁 Format: Standard DICOM files with embedded metadata.\n\n👥 Patients: Diverse set of patients, covering multiple age groups and both genders.\n\n📊 Use Cases: Suitable for medical imaging research, AI diagnostic model training, anomaly detection, and clinical decision support development. \nLink to download : https://huggingface.co/datasets/AIxBlock/USG-medical-dataset-dicom-format\n\nThis dataset is intended to support the medical AI research community in advancing ultrasound-based diagnostics and building high-quality, real-world AI models.\n","url":"https://www.kaggle.com/aixblock2023/usg-medical-dataset-dicom-format","version":1,"keywords":["data type, image","technique, computer vision","subject, health and fitness, health, healthcare","task, image-classification","task, image-segmentation"],"license":{"@type":"CreativeWork","name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"identifier":["7472719"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"AIxBlock-2023","url":"https://www.kaggle.com/aixblock2023","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/26968847-kg.png?t=2025-05-20-22-08-58"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/aixblock2023/usg-medical-dataset-dicom-format/download?datasetVersionNumber=1","contentSize":"18554 bytes"}],"commentCount":0,"dateModified":"2025-05-20T22:40:21.477Z","discussionUrl":"https://www.kaggle.com/aixblock2023/usg-medical-dataset-dicom-format/discussion","alternateName":"","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-52.png-26968847/dataset-card.png","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":97},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":920},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":0}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="b3+eClOH/YwHmYaKpfRpOw==" src="/static/assets/runtime.js?v=dcdca6c03aca45e6"></script>
+  <script nonce="b3+eClOH/YwHmYaKpfRpOw==" src="/static/assets/vendor.js?v=b58ece3666e973c5"></script>
+  <script nonce="b3+eClOH/YwHmYaKpfRpOw==" src="/static/assets/app.js?v=da13138bcfa24966"></script>
+    <script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="b3&#x2B;eClOH/YwHmYaKpfRpOw==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

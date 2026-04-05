@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /goldenPath/hg38/bigZips/genes</title>
+ </head>
+ <body>
+<pre>
+Introduction
+^^^^^^^^^^^^
+
+This directory contains GTF files for the main gene transcript sets where available. They are
+sourced from the following gene model tables: ncbiRefSeq, refGene, ensGene, knownGene
+
+Not all files are available for every assembly. For more information on the source tables 
+see the respective data track description page in the assembly. For example:
+    https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg38&amp;g=refGene
+
+Information on the different gene models can also be found in our genes FAQ:
+    https://genome.ucsc.edu/FAQ/FAQgenes.html
+
+Summary:
+- The "knownGene" track is the current version of GENCODE gene transcript models. For the exact
+  version, see the GENCODE track on the hg38 genome browser
+- The "ncbiRefSeq" track shows the RefSeq transcripts as aligned by NCBI, the "official" placement.
+- The "refGene" track contains the RefSeq transcripts as aligned by UCSC. If UCSC differs from NCBI,
+  then such a case could be worth a manual investigation, often these differences indicate
+  transcripts that are not easy to align and where short read mapping may also run into problems and
+  long-reads or more cDNA could be needed.
+- The "ensGene" track contains the Ensembl annotations before the GENCODE project. This track exists
+  only for record-keeping and reproducibility. The ensGene.gtf.gz file has not been updated on hg38
+  since 2014 and has been removed from our download server.
+
+Generation
+^^^^^^^^^^
+
+The files are created using the genePredToGtf utility with the additional -utr flag. Utilities
+can be found in the following directory:
+    http://hgdownload.soe.ucsc.edu/admin/exe/
+
+An example command is as follows:
+    genePredToGtf -utr hg38 ncbiRefSeq hg38.ncbiRefSeq.gtf
+
+Additional Resources
+^^^^^^^^^^^^^^^^^^^^
+
+Information on GTF format and how it is related to GFF format:
+    https://genome.ucsc.edu/FAQ/FAQformat.html#format4
+
+Information about the different gene models available in the Genome Browser:
+    https://genome.ucsc.edu/FAQ/FAQgenes.html
+
+More information on how the files were generated:
+    https://genome.ucsc.edu/FAQ/FAQdownloads.html#download37
+</pre>
+<pre>      <a href="?C=N;O=D">Name</a>                      <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr>      <a href="/goldenPath/hg38/bigZips/">Parent Directory</a>                               -   
+      <a href="hg38.ensGene.gtf.gz">hg38.ensGene.gtf.gz</a>       2020-01-10 09:33   27M  
+      <a href="hg38.knownGene.gtf.gz">hg38.knownGene.gtf.gz</a>     2023-06-28 17:13   37M  
+      <a href="hg38.ncbiRefSeq.gtf.gz">hg38.ncbiRefSeq.gtf.gz</a>    2022-10-28 16:35   40M  
+      <a href="hg38.refGene.gtf.gz">hg38.refGene.gtf.gz</a>       2020-01-10 09:33   23M  
+      <a href="md5sum.txt">md5sum.txt</a>                2024-12-23 12:23  221   
+<hr></pre>
+</body></html>

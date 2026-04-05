@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang='en'>
+
+<head>
+<script async src='/javascript/ga4.client.code_py9700.js'></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-P87S7MWQRL', {transport_url: 'https://gtm.string-db.org',});</script><script type='text/javascript'>window.onerror = function(message, url, line, column) {if (url.includes('chrome-extension'))   { return None }if (url.includes('safari-extension'))   { return None }if (message.includes('ResizeObserver')) { return None } if (message.includes('googletag'))      { return None } if (message.includes('@context'))       { return None } var messageEncoded = encodeURIComponent(message);var jsUrlEncoded = encodeURIComponent(url);var webUrlEncoded = encodeURIComponent(window.location.href);var useragentEncoded = encodeURIComponent(navigator.userAgent);var xmlhttp = new XMLHttpRequest ();xmlhttp.open('POST', '/cgi/logjserror', true);xmlhttp.setRequestHeader ('Content-type', 'application/x-www-form-urlencoded');var params = 'logJsMessage=' + messageEncoded + '&logJsUrl=' + jsUrlEncoded + '&logJsLine=' + line + '&logJsColumn=' + column + '&logJsWebUrl=' + webUrlEncoded + '&logJsUseragent=' + useragentEncoded;xmlhttp.send(params);};</script><script>var startTime = new Date();function retryLoad(filePath, fileType, attempt) {    if (attempt > 3) { return };    var script = document.createElement('script');    var endTime = new Date();    var elapsedTime = (endTime.getTime() - startTime.getTime()) / 1000;    script.src = filePath;    document.head.appendChild(script);    script.onload = function () {        var endTime = new Date();        var elapsedTime = (endTime.getTime() - startTime.getTime()) / 1000;    };    script.onerror = function () {        retryLoad(filePath, fileType, attempt+1)    };}</script><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Dataset",
+    "name": "STRING download data",
+    "@id": "https://string-db.org/download/",
+    "http://purl.org/dc/terms/conformsTo": "https://bioschemas.org/profiles/Taxon/1.0-RELEASE",
+    "description" : "STRING download data. Includes network files, accessory files and database dumps",
+    "keywords": "download STRING, STRING proteins download, protein links, STRING clusters, STRING species tree, download orthologous group, STRING database schema",
+    "license": {
+        "@type": "CreativeWork",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "distribution": [
+[
+  {
+    "@type": "DataDownload",
+    "name": "protein.links.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz",
+    "description": "protein.links.v12.0.txt.gz protein network data (full network, scored links between proteins)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.links.detailed.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz",
+    "description": "protein.links.detailed.v12.0.txt.gz protein network data (full network, incl. subscores per channel)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.links.full.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz",
+    "description": "protein.links.full.v12.0.txt.gz protein network data (full network, incl. distinction: direct vs. interologs)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.physical.links.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz",
+    "description": "protein.physical.links.v12.0.txt.gz protein network data (physical subnetwork, scored links between proteins)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.physical.links.detailed.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz",
+    "description": "protein.physical.links.detailed.v12.0.txt.gz protein network data (physical subnetwork, incl. subscores per channel)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.physical.links.full.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz",
+    "description": "protein.physical.links.full.v12.0.txt.gz protein network data (physical subnetwork, incl. distinction: direct vs. interologs)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "COG.links.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz",
+    "description": "COG.links.v12.0.txt.gz association scores between orthologous groups",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "COG.links.detailed.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz",
+    "description": "COG.links.detailed.v12.0.txt.gz association scores (incl. subscores per channel)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.info.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.info.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.info.v12.0.txt.gz",
+    "description": "protein.info.v12.0.txt.gz list of STRING proteins incl. their display names and descriptions",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.sequences.v12.0.fa.gz",
+    "url": "https://stringdb-downloads.org/download/protein.sequences.v12.0.fa.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.sequences.v12.0.fa.gz",
+    "description": "protein.sequences.v12.0.fa.gz sequences of the proteins in STRING (can be used as a blast db)",
+    "encodingFormat": "fa.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.aliases.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.aliases.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.aliases.v12.0.txt.gz",
+    "description": "protein.aliases.v12.0.txt.gz aliases for STRING proteins: locus names, accessions, descriptions...",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.homology.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.homology.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.homology.v12.0.txt.gz",
+    "description": "protein.homology.v12.0.txt.gz SW alignment scores between proteins within each STRING species",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "protein.enrichment.terms.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/protein.enrichment.terms.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/protein.enrichment.terms.v12.0.txt.gz",
+    "description": "protein.enrichment.terms.v12.0.txt.gz list of terms associated with proteins used in the STRING enrichment",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "clusters.proteins.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/clusters.proteins.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/clusters.proteins.v12.0.txt.gz",
+    "description": "clusters.proteins.v12.0.txt.gz hierarchical STRING clusters and their proteins",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "clusters.info.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/clusters.info.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/clusters.info.v12.0.txt.gz",
+    "description": "clusters.info.v12.0.txt.gz hierarchical STRING clusters annotations",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "clusters.tree.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/clusters.tree.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/clusters.tree.v12.0.txt.gz",
+    "description": "clusters.tree.v12.0.txt.gz hierarchical STRING clusters tree (represented as child-parent relationship)",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "COG.mappings.v12.0.txt.gz",
+    "url": "https://stringdb-downloads.org/download/COG.mappings.v12.0.txt.gz",
+    "contenturl": "https://stringdb-downloads.org/download/COG.mappings.v12.0.txt.gz",
+    "description": "COG.mappings.v12.0.txt.gz orthologous groups (COGs,NOGs,KOGs,...) and their proteins",
+    "encodingFormat": "txt.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "species.v12.0.txt",
+    "url": "https://stringdb-downloads.org/download/species.v12.0.txt",
+    "contenturl": "https://stringdb-downloads.org/download/species.v12.0.txt",
+    "description": "species.v12.0.txt organisms in STRING",
+    "encodingFormat": "txt"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "species.tree.v12.0.txt",
+    "url": "https://stringdb-downloads.org/download/species.tree.v12.0.txt",
+    "contenturl": "https://stringdb-downloads.org/download/species.tree.v12.0.txt",
+    "description": "species.tree.v12.0.txt STRING tree of species",
+    "encodingFormat": "txt"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "database.schema.v12.0.pdf",
+    "url": "https://stringdb-downloads.org/download/database.schema.v12.0.pdf",
+    "contenturl": "https://stringdb-downloads.org/download/database.schema.v12.0.pdf",
+    "description": "database.schema.v12.0.pdf STRING database schema",
+    "encodingFormat": "pdf"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "items_schema.v12.0.sql.gz",
+    "url": "https://stringdb-downloads.org/download/items_schema.v12.0.sql.gz",
+    "contenturl": "https://stringdb-downloads.org/download/items_schema.v12.0.sql.gz",
+    "description": "items_schema.v12.0.sql.gz full database, part I: the players (proteins, species, COGs,...)",
+    "encodingFormat": "sql.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "network_schema.v12.0.sql.gz",
+    "url": "https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz",
+    "contenturl": "https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz",
+    "description": "network_schema.v12.0.sql.gz full database, part II: the networks (nodes, edges, scores,...)",
+    "encodingFormat": "sql.gz"
+  },
+  {
+    "@type": "DataDownload",
+    "name": "evidence_schema.v12.0.sql.gz",
+    "url": "https://stringdb-downloads.org/download/evidence_schema.v12.0.sql.gz",
+    "contenturl": "https://stringdb-downloads.org/download/evidence_schema.v12.0.sql.gz",
+    "description": "evidence_schema.v12.0.sql.gz full database, part III: interaction evidence (but: excluding license-restricted data)",
+    "encodingFormat": "sql.gz"
+  }
+]    ],
+    "creator": {
+        "@type": "Organization",
+        "name": "STRING consortium",
+        "url": "https://string-db.org",
+        "email": ["mering@imls.uzh.ch",
+                  "bork@embl.de",
+                  "lars.juhl.jensen@cpr.ku.dk"
+        ],
+        "memberOf": [
+            {
+                "@type": "Organization",
+                "name": "SIB Swiss bioinformatics institute",
+                "url": "https://www.sib.swiss/",
+                "sameAs": "https://ror.org/002n09z45"
+            },
+            {
+                "@type": "Organization",
+                "name": "European Molecular Biology Laboratory",
+                "url": "https://embl.org/",
+                "sameAs": "https://ror.org/01zjc6908"
+            },
+            {
+                "@type": "Organization",
+                "name": "University of Zurich",
+                "url": "https://www.uzh.ch/",
+                "sameAs": "https://ror.org/02crff812"
+            },
+            {
+                "@type": "Organization",
+                "name": "University of Copenhagen",
+                "url": "https://www.ku.dk/",
+                "sameAs": "https://ror.org/035b05819"
+            }
+        ]
+    },
+    "potentialAction": {
+        "target": "https://string-db.org/cgi/download?species_text={query_string}",
+        "@type": "SearchAction",
+        "query-input": "required name=query_string"
+     }
+}
+</script>
+<script>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//tr-denbi.embl.de/heimdall/";
+    _paq.push(['setTrackerUrl', u+'p.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'p.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<meta name='theme-color' content='transparent'>
+<link rel='shortcut icon' href='/images/favicon.png' />
+<title>Downloads - STRING functional protein association networks</title><link href='/css/combined_stylesheets.vpy8800.css' rel='stylesheet' type='text/css' onerror='javascript:retryLoad(/css/combined_stylesheets.vpy8800.css, CSS, 1)'/> <script>var js_comm_globals = {  root_address: 'https://string-db.org', web_cgi_dir: '/cgi',  web_images_dir: '/images', web_sse_dir: '/sse',  help_info_url: '/cgi/help?sessionId=bEp7bUwxd3Am', website_name: 'STRING',  task_id: '_notask', session_id: 'bEp7bUwxd3Am',  login_url: 'https://string-db.eu.auth0.com/authorize?client_id=V6E4n1vLLdhvu4HEvX1OBkrRDrLj5YLZ&response_type=code&redirect_uri=https%3A//string-db.org/cgi/login%3Fscript_name%3Ddownload', logout_url: 'https://string-db.eu.auth0.com/v2/logout?client_id=V6E4n1vLLdhvu4HEvX1OBkrRDrLj5YLZ&returnTo=https%3A//string-db.org/cgi/logout%3Fscript_name%3Ddownload%26show_logout_message%3D1', autocomplete_running_nr: 1,   targetmode: 'proteins', calling_script: 'download',  web_js_dir: '/javascript', js_script_version: 'py9700',  string_database_version_dotted: '12.0',  bot_query: 'False', edge_version: 'None'};
+</script>
+<script src='/javascript/combined_navigation_scripts_incl_scriptaculous_py9700.js' onerror='javascript:retryLoad("/javascript/combined_navigation_scripts_incl_scriptaculous_py9700.js", "JAVASCRIPT", 1)'></script>
+</head>
+
+<body id='stringBodyTag'><a href="https://string-db.org/cdn-cgi/content?id=nWUW2cA5jBChL7RSYJrTiqaL8gXBrF3TI36m8Ne74tc-1775283256.8563967-1.0.1.1-FECuhwdikFGwCxQmXURc2QxNdrjNgT4jUE_rufmA7.I" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a><div style='position:absolute;' class='nodeInfoDivStyle' id='fpWindowDiv' onmouseout='window.status=""; return true;'></div>
+<div style='position:absolute;' class='nodeInfoDivStyle' id='LinkWindowDiv' onmouseout='window.status=""; return true;'></div>
+<div class='top_bar'><div class='container'><div class='left'><ul class='top_bar_list'><li class='header'>Version:</li>
+<li class='last'><a style='font-size:13px;' href='/cgi/access?sessionId=bEp7bUwxd3Am&footer_active_subpage=archive'>12.0</a></ul></div><div class='right'><ul class='top_bar_list'><li><a id='login_display_tag' href='https://string-db.eu.auth0.com/authorize?client_id=V6E4n1vLLdhvu4HEvX1OBkrRDrLj5YLZ&response_type=code&redirect_uri=https%3A//string-db.org/cgi/login%3Fscript_name%3Ddownload'>Login</a></li> <li><a id='logout_display_tag' href='https://string-db.org/cgi/register?sessionId=bEp7bUwxd3Am'>Register</a></li> <li><a id='logout_display_tag' href='https://forms.gle/hJ1Guc6N6MLU8Xgk8' target='_blank'>Survey</a></li></ul></div></div></div><div class='main_header'><div class='container'><a id='string_logo_left' class='input_switch_to_home' href='/cgi/input?sessionId=bEp7bUwxd3Am&input_page_show_search=on' >STRING</a><a id='string_logo_right' href='/cgi/input?sessionId=bEp7bUwxd3Am&input_page_show_search=on' >STRING</a><div class='main_nav'><ul><li><div class='main_nav_item input_switch_to_search'><a class='main_nav_tag' href='/cgi/input?sessionId=bEp7bUwxd3Am&input_page_show_search=on'  id='search'>Search</a></div></li><li><div class='main_nav_item active'><a class='main_nav_tag' href='/cgi/download?sessionId=bEp7bUwxd3Am'>Download</a></div></li><li><div class='main_nav_item'><a class='main_nav_tag' href='/cgi/help?sessionId=bEp7bUwxd3Am'>Help</a></div></li><li><div class='main_nav_item'><a class='main_nav_tag' href='/cgi/my?sessionId=bEp7bUwxd3Am'>My&nbsp;Data</a></div></li></ul>
+</div><!-- end main_nav --></div>
+<div class='shadow'></div></div>
+<div class='cell'>
+<div class='container'>
+<div class='main_content download_page'>
+<h1>Download</h1>
+<h2>Files too large?</h2><form id='input_download_species' action='/cgi/download' method='get'><input type='hidden' name='sessionId' value='bEp7bUwxd3Am'/>
+<div style='display:table;border-collapse:separate;border-spacing:2px;' class='download_page_organism_select_table'><div style='display:table-cell;'><div>
+<div class='download_page_organism_select_table_row'>
+<div class='download_page_organism_select_table_cell' style='width:450px;'>
+<strong>Restrict data to a specific organism:</strong> <br/>You can restrict the downloaded data to contain only the information related to your organism of interest. The filtered files will be prefixed with the taxonomic identifier of the selected species. Choose an organism here: </div>
+<div class='download_page_organism_select_table_cell' style='width:300px; padding-top:25px'>
+<div style='height:3em;vertical-align:top;min-width:300px;'><div id='organism_text_input'><div class='wrap_search_item'><input class='input stringdb_organism_input' type='search' name='species_text' style='background:white;' id='species_text' value='choose an organism' autocomplete='off' data-updatenodeid='update_species_text' data-indicatornodeid='indicator1' data-selectclassname='informal' data-callbackscript='/cgi/queryspeciesnames' data-callbackscriptparams='auto_detect=0&home_species=0&home_species_type=core&show_clades=0&show_mapped=1&show_full=0' data-initialvalue='choose an organism' data-defaultvalue='reset (all organisms)' data-formid='input_download_species'/>
+<div class='organism_choice_box_dropdown_container'  data-popupid='speciesFloatingDiv' data-listid='speciesList'><span class='organism_drop'></span><img class='organism_drop_spinner' style='display:none;' src='/images/ajax-loader.gif' alt='Working...'/></div></div>
+<div class='wrap_species_choice_box'><div class='organism_choice_box_popup_div' id='speciesFloatingDiv'><div style='text-align:center;min-width:300px;'><br/>&nbsp;<div><select class='organism_choice_box_select' id='speciesList' size='10' data-listid='speciesList' data-textid='species_text' data-popupid='speciesFloatingDiv' data-submitafterselect='True' data-kind='species'>
+</select></div><br/>&nbsp;<button class='minibutton_grey organism_choice_box_cancel_button'  data-popupid='speciesFloatingDiv' type='button'>Cancel</button>&nbsp;&nbsp;&nbsp;<button class='minibutton organism_choice_box_select_button' type='button' data-listid='speciesList' data-textid='species_text' data-popupid='speciesFloatingDiv' data-submitafterselect='True'>Select</button><br/>&nbsp;</div></div></div>
+<span id='indicator1' style='display:none'><img src='/images/ajax-loader.gif' width='24' height='24' alt='Working...'/></span><span style='visibility:hidden'><img src='/images/ajax-loader.gif' width='24' height='24' alt='Working...'/></span><div id='update_species_text' class='autocomplete' style='box-sizing:border-box;display:none;border:1px solid rgb(228,228,228);background-color:white;'></div></div></div>
+</div>
+</div>
+<a class='as_label_left download_page_organism_select_table_row' onclick='toggle_download_advanced_settings_wrapper(); return false;'><span class='advanced_plus_sign'>&#43;&nbsp;</span>Need more options? Click here.</a><input type='hidden' name='settings_expanded' id='settings_expanded_select' value='0'/>
+<div id='download_advanced_settings_wrapper' style='display:none;'><div class='download_page_organism_select_table_row'>
+<div class='download_page_organism_select_table_cell'>
+<strong>Filter interactions based on the combined confidence score:</strong><br/>While all links in STRING are meaningful, some analyses might require only higher-confidence interactions, excluding the more exploratory part of the interaction spectrum. This can reduce file sizes by up to 90%. <i>Note:</i> Confidence scores in the files below are multiplied by 1000.</div>
+<div class='download_page_organism_select_table_cell' style='vertical-align:top; padding-top:24px'>
+<div class='data_settings_select_wrap' style='padding-right:0'>
+<select name='min_download_score' id='min_download_score_select' class='download_data_settings_select' value='None' style='padding-bottom:11px'><option  value='0'>All interactions (0.150)</option><option  value='400'>Medium confidence (0.400)</option><option  value='700'>High confidence (0.700)</option><option  value='900'>Highest confidence (0.900)</option></select></div></div>
+</div>
+<div class='download_page_organism_select_table_row'>
+<div class='download_page_organism_select_table_cell'>
+<strong>Remove redundant interaction pairs (AB-BA):</strong><br/>By default, the <i>links files</i> encode interactions in both directions (AB and BA). However, since functional and physical interactions are symmetric, recording them once (AB) is sufficient without losing information. This reduces <i>links file</i> sizes by 50%.</div>
+<div class='download_page_organism_select_table_cell' style='vertical-align:top; padding-top:24px'>
+<div class='data_settings_select_wrap' style='padding-right:0'><select name='filter_redundant_pairs' id='filter_redundant_pairs_select' class='download_data_settings_select' value='0''><option  value='0'>Includes AB and BA pairs</option><option  value='1'>Includes AB pairs only</option></select></div></div>
+</div>
+<div class='download_page_organism_select_table_row'>
+<div class='download_page_organism_select_table_cell'>
+<strong>Choose column delimiter:</strong> <br/>Different analysis tools may require specific delimiters (column separators). Select your preferred delimiter type for the <i>links files</i> to ensure compatibility with your analysis tools.&nbsp;&nbsp; <i>Note:</i> This choice does not impact the content or file size. </div>
+<div class='download_page_organism_select_table_cell' style='vertical-align:top; padding-top:24px'>
+<div class='data_settings_select_wrap' style='padding-right:0'><select name='delimiter_type' id='delimiter_type_select' class='download_data_settings_select''><option selected='selected' value='txt'>TXT (space separated)</option><option  value='tsv'>TSV (tab separated)</option><option  value='csv'>CSV (comma separated)</option></select></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class='data_settings_separator_vertical' style='border-left: 1px solid #d6d6d6; display:none;' id='download_page_settings_separator'></div><div style='display:table-cell; vertical-align:top; padding-top: 24px; width:155px;'><div class='download_page_organism_select_table_cell' style='line-height: 48px'><a class='button full_width' href='javascript:organism_choice_update_button()' style='height: 44px; line-height: 45px;'>Update</a></div>
+</div>
+</div>
+</form>
+<div class='download_table'>
+<div class='download_table_headline'><div><h2>Interaction Data</h2></div></div>
+<div class='download_table_header_row'><div>File</div><div>Description</div><div>Access</div></div>
+<div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz' class='download_file'>protein.links.v12.0.txt.gz</a>&nbsp;(128.7&nbsp;GB)</div><div>protein network data (full network, scored links between proteins)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz' class='download_file'>protein.links.detailed.v12.0.txt.gz</a>&nbsp;(189.6&nbsp;GB)</div><div>protein network data (full network, incl. subscores per channel)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz' class='download_file'>protein.links.full.v12.0.txt.gz</a>&nbsp;(199.6&nbsp;GB)</div><div>protein network data (full network, incl. distinction: direct vs. interologs)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz' class='download_file'>protein.physical.links.v12.0.txt.gz</a>&nbsp;(11.1&nbsp;GB)</div><div>protein network data (physical subnetwork, scored links between proteins)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz' class='download_file'>protein.physical.links.detailed.v12.0.txt.gz</a>&nbsp;(13.8&nbsp;GB)</div><div>protein network data (physical subnetwork, incl. subscores per channel)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz' class='download_file'>protein.physical.links.full.v12.0.txt.gz</a>&nbsp;(14.5&nbsp;GB)</div><div>protein network data (physical subnetwork, incl. distinction: direct vs. interologs)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz' class='download_file'>COG.links.v12.0.txt.gz</a>&nbsp;(176.8&nbsp;MB)</div><div>association scores between orthologous groups</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz' class='download_file'>COG.links.detailed.v12.0.txt.gz</a>&nbsp;(238.7&nbsp;MB)</div><div>association scores (incl. subscores per channel)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_headline'><div><h2>Accessory Data</h2></div></div>
+<div class='download_table_header_row'><div>File</div><div>Description</div><div>Access</div></div>
+<div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.info.v12.0.txt.gz' class='download_file'>protein.info.v12.0.txt.gz</a>&nbsp;(1.2&nbsp;GB)</div><div>list of STRING proteins incl. their display names and descriptions</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.sequences.v12.0.fa.gz' class='download_file'>protein.sequences.v12.0.fa.gz</a>&nbsp;(12.1&nbsp;GB)</div><div>sequences of the proteins in STRING (can be used as a blast db)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.aliases.v12.0.txt.gz' class='download_file'>protein.aliases.v12.0.txt.gz</a>&nbsp;(3.2&nbsp;GB)</div><div>aliases for STRING proteins: locus names, accessions, descriptions...</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.homology.v12.0.txt.gz' class='download_file'>protein.homology.v12.0.txt.gz</a>&nbsp;(17.4&nbsp;GB)</div><div>SW alignment scores between proteins within each STRING species</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.enrichment.terms.v12.0.txt.gz' class='download_file'>protein.enrichment.terms.v12.0.txt.gz</a>&nbsp;(22.0&nbsp;GB)</div><div>list of terms associated with proteins used in the STRING enrichment</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/clusters.proteins.v12.0.txt.gz' class='download_file'>clusters.proteins.v12.0.txt.gz</a>&nbsp;(13.1&nbsp;GB)</div><div>hierarchical STRING clusters and their proteins</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/clusters.info.v12.0.txt.gz' class='download_file'>clusters.info.v12.0.txt.gz</a>&nbsp;(207.8&nbsp;MB)</div><div>hierarchical STRING clusters annotations</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/clusters.tree.v12.0.txt.gz' class='download_file'>clusters.tree.v12.0.txt.gz</a>&nbsp;(55.3&nbsp;MB)</div><div>hierarchical STRING clusters tree (represented as child-parent relationship)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.network.embeddings.v12.0.h5' class='download_file'>protein.network.embeddings.v12.0.h5</a><span class='autocolor_new_span' style='color:red;'>New</span>&nbsp;(17.9&nbsp;GB)</div><div>cross-species (aligned) eukaryotic protein network embeddings <a href='https://github.com/deweihu96/SPACE'>(see documentation)</a></div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.sequence.embeddings.v12.0.h5' class='download_file'>protein.sequence.embeddings.v12.0.h5</a><span class='autocolor_new_span' style='color:red;'>New</span>&nbsp;(38.3&nbsp;GB)</div><div>ProtT5 eukaryotic protein sequence embeddings <a href='https://github.com/deweihu96/SPACE'>(see documentaion)</a></div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/protein.orthology.v12.0.txt.gz' class='download_file'>protein.orthology.v12.0.txt.gz</a>&nbsp;(2.0&nbsp;GB)</div><div>hierarchical eggNOG orthologous groups and their proteins</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/COG.mappings.v12.0.txt.gz' class='download_file'>COG.mappings.v12.0.txt.gz</a>&nbsp;(720.3&nbsp;MB)</div><div>LCA orthologous groups (COGs,NOGs,KOGs,...) and their proteins</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/species.v12.0.txt' class='download_file'>species.v12.0.txt</a>&nbsp;(999.2&nbsp;KB)</div><div>organisms in STRING</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/species.tree.v12.0.txt' class='download_file'>species.tree.v12.0.txt</a>&nbsp;(92.8&nbsp;MB)</div><div>STRING tree of species</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_headline'><div><h2>Full Database Dumps</h2></div></div>
+<div class='download_table_header_row'><div>File</div><div>Description</div><div>Access</div></div>
+<div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/database.schema.v12.0.pdf' class='download_file'>database.schema.v12.0.pdf</a>&nbsp;(51.8&nbsp;KB)</div><div>STRING database schema</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/items_schema.v12.0.sql.gz' class='download_file'>items_schema.v12.0.sql.gz</a>&nbsp;(42.4&nbsp;GB)</div><div>full database, part I: the players (proteins, species, COGs,...)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz' class='download_file'>network_schema.v12.0.sql.gz</a>&nbsp;(262.2&nbsp;GB)</div><div>full database, part II: the networks (nodes, edges, scores,...)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div><div class='download_table_data_row'><div><a href='https://stringdb-downloads.org/download/evidence_schema.v12.0.sql.gz' class='download_file'>evidence_schema.v12.0.sql.gz</a>&nbsp;(55.4&nbsp;GB)</div><div>full database, part III: interaction evidence (but: excluding license-restricted data)</div><div><a class="download_file" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc_by_40_small.png"/></a></div></div></div>
+</div>
+</div>
+</div>
+<div class='main_footer' style='display:block;'><div class='shadow'></div><div id='main_nav_footer_container' class='container'><div class='column first'>
+<h2>&copy; STRING Consortium 2025</h2>
+<ul>
+<li id='SIB_logo'><a href='https://www.isb-sib.ch/'><span></span>SIB - Swiss Institute of Bioinformatics</a></li>
+<li id='CPR_logo'><a href='https://www.cpr.ku.dk/'><span></span>CPR - Novo Nordisk Foundation Center Protein Research</a></li>
+<li id='EMBL_logo'><a href='https://www.embl.de/'><span></span>EMBL - European Molecular Biology Laboratory</a></li>
+</ul>
+</div>
+<div class='column last'>
+<h2><a href='/cgi/credits'>Credits</a></h2>
+<ul>
+<li><a href='/cgi/credits?footer_active_subpage=funding'>Funding</a></li>
+<li><a href='/cgi/credits?footer_active_subpage=datasources'>Datasources</a></li>
+<li><a href='/cgi/credits?footer_active_subpage=partners'>Partners</a></li>
+<li><a href='/cgi/credits?footer_active_subpage=libraries'>Software</a></li>
+</ul>
+</div>
+<div class='column'>
+<h2><a href='/cgi/access'>Access</a></h2>
+<ul>
+<li><a href='/cgi/access?footer_active_subpage=archive'>Versions</a></li>
+<li><a href='/cgi/access?footer_active_subpage=apis'>APIs</a></li>
+<li><a href='/cgi/access?footer_active_subpage=licensing'>Licensing</a></li>
+<li><a href='/cgi/access?footer_active_subpage=usage'>Usage</a></li>
+</ul>
+</div>
+<div class='column'>
+<h2><a href='/cgi/info'>Info</a></h2>
+<ul>
+<li><a href='/cgi/info?footer_active_subpage=scores'>Scores</a></li>
+<li><a href='/cgi/info?footer_active_subpage=scenarios'>Use scenarios</a></li>
+<li><a href='/cgi/info?footer_active_subpage=faqs'>FAQs</a></li>
+<li><a href='/cgi/info?footer_active_subpage=cookies'>Cookies/Privacy</a></li>
+</ul>
+</div>
+<div class='column'>
+<h2><a href='/cgi/about'>About</a></h2>
+<ul>
+<li><a href='/cgi/about?footer_active_subpage=content'>Content</a></li>
+<li><a href='/cgi/about?footer_active_subpage=references'>References</a></li>
+<li><a href='/cgi/about?footer_active_subpage=contributors'>People</a></li>
+<li><a href='/cgi/about?footer_active_subpage=statistics'>Statistics</a></li>
+</ul>
+</div>
+</div>
+<div class='elixir_container'><div class='elixir_cdr_message'>STRING is a Core Data Resource as designated by <a href='https://globalbiodata.org/scientific-activities/global-core-biodata-resources/'>Global Biodata Coalition</a> and <a href='https://www.elixir-europe.org/platforms/data/core-data-resources'>ELIXIR</a>.</div></div>
+</div></body></html>

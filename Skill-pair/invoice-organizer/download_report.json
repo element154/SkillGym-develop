@@ -1,0 +1,69 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\invoice-organizer\\invoice-organizer\\SKILL.md",
+  "records": [
+    {
+      "category": "pdf file",
+      "value": "Updated_Commercial_Invoice_6_11_19_1271336359.pdf",
+      "snippet": "This invoice must be completed in English. Signature / Title / Date: Date: Total. Pkgs. Total Net. Weight. Declaration Statement(s):. I declare that all the ...",
+      "metadata": {
+        "url": "https://www.fedex.com/content/dam/fedex/us-united-states/International/images/2020/Q1/Updated_Commercial_Invoice_6_11_19_1271336359.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "dummy_statement.pdf",
+      "snippet": "You have successfully opened a sample statement in PDF format. Please continue with your e-Statement enrollment. Summary of Your Account. Page 1 of 2.",
+      "metadata": {
+        "url": "https://www.impact-bank.com/user/file/dummy_statement.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Bank Statement Example Final.pdf",
+      "snippet": "Bank Statement Example. 3 February. Cash Withdrawal - YourBank, Anytown. High Street, timed 17:30 31 Jan. YourJob BiWeekly Payment. 4 February. Cash Withdrawal ...",
+      "metadata": {
+        "url": "https://the-bac.edu/Documents/Departments/Admissions%20Financial%20Aid/Admitted%20Students/International/Bank%20Statement%20Example%20Final.pdf"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "UKAD Spending Report Feb 25.csv",
+      "snippet": "\"Spend over £25,000 - Publication template\",,,,,,, ,,,,,,, Department family,Entity,Date,Expense type,Expense area,Supplier,Transaction number,Amount ...",
+      "metadata": {
+        "url": "https://www.ukad.org.uk/sites/default/files/2025-03/UKAD%20Spending%20Report%20Feb%2025.csv"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "FR_-_Over__25K_Report_-_Aug_2024.csv",
+      "snippet": "\"Spend over £25,000 - Publication template\",,,,,,,,,,,,, ,,,,,,,,,,,,, Department family,Entity,Date,Expense type,Expense area,Supplier,Transaction number ...",
+      "metadata": {
+        "url": "https://assets.publishing.service.gov.uk/media/66f684cc30536cb92748288b/FR_-_Over__25K_Report_-_Aug_2024.csv"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "consultant-invoice.xlsx",
+      "snippet": "Total Due = Subtotal + Tax Amount. 28, COMPATIBILITY. 29, Works in Microsoft Excel, Google Sheets, and LibreOffice Calc. 30, No macros or VBA ...",
+      "metadata": {
+        "url": "https://www.financialaha.com/downloads/free-spreadsheet-templates/consultant-invoice.xlsx?srsltid=AfmBOopqA_ODvN-xptQ9aqjrckkhmdbgD4NTAuq9dpOLugnJV_7jTFBR"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "bap-22-125rb-exh-1-addendum-7-gl-account-codes-fiscal.xlsx",
+      "snippet": "Invoice Number, Invoice Date, Supplier ID, Origin, Accounting Date, Invoice Receipt Date, Gross Invoice Amount, Tax Exempt Flag, Sales Tax Amount, Freight ...",
+      "metadata": {
+        "url": "https://courts.ca.gov/system/files?file=solicitation-request-document/bap-22-125rb-exh-1-addendum-7-gl-account-codes-fiscal.xlsx"
+      }
+    },
+    {
+      "category": "xlsx file",
+      "value": "CPRM_Invoice_Upload_Package_Excel_Template_2023_0.xlsx",
+      "snippet": "This spreadsheet will help you upload your invoice data into CPRM for GSA programs. Email oasisCPRM@gsa.gov with questions. 3, Zero invoices cannot be reported ...",
+      "metadata": {
+        "url": "https://www.gsa.gov/system/files/CPRM_Invoice_Upload_Package_Excel_Template_2023_0.xlsx"
+      }
+    }
+  ]
+}

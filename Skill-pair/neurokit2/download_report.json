@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\neurokit2\\neurokit2\\SKILL.md",
+  "records": [
+    {
+      "category": "edf file",
+      "value": "ds002336.html",
+      "snippet": "Simultaneous MRI-EEG during a motor imagery neurofeedback task: an open access brain imaging dataset for multi-modal data integration.",
+      "metadata": {
+        "url": "https://openneuro.org/datasets/ds002336"
+      }
+    },
+    {
+      "category": "edf file",
+      "value": "ds002338.html",
+      "snippet": "A multi-modal human neuroimaging dataset for data integration: simultaneous EEG and fMRI acquisition during a motor imagery neurofeedback task: ...",
+      "metadata": {
+        "url": "https://openneuro.org/datasets/ds002338"
+      }
+    },
+    {
+      "category": "csv_tsv file",
+      "value": "media-9.csv",
+      "snippet": "... signal, PNAS, 111, 33, pp. 12157-12162, (2014); Serban K.A., Pratte ... PPG: detailed respiratory variations enable classification of ...",
+      "metadata": {
+        "url": "https://www.medrxiv.org/content/medrxiv/early/2025/03/20/2025.03.18.25324219/DC9/embed/media-9.csv?download=true"
+      }
+    },
+    {
+      "category": "txt_md file",
+      "value": "3_Example.md",
+      "snippet": "Markers: Allow the addition of contextual information that associates a timestamp with a specific event. Write a text in the input field to specify a message ...",
+      "metadata": {
+        "url": "https://github.com/luisqtr/exciteometer/blob/main/docs/3_Example.md"
+      }
+    },
+    {
+      "category": "edf file",
+      "value": "17386294.html",
+      "snippet": "The goal is to identify neural patterns and cognitive load variations associated with decision-making and code comprehension processes during ...",
+      "metadata": {
+        "url": "https://zenodo.org/records/17386294"
+      }
+    }
+  ]
+}

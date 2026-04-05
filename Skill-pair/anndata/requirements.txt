@@ -1,0 +1,7 @@
+anndata
+numpy
+pandas
+scipy
+h5py
+zarr
+natsort

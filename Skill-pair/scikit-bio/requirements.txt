@@ -1,0 +1,7 @@
+scikit-bio
+numpy
+scipy
+pandas
+matplotlib
+biom-format
+h5py

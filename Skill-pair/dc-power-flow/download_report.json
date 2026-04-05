@@ -1,0 +1,93 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\dc-power-flow\\dc-power-flow\\SKILL.md",
+  "records": [
+    {
+      "category": "mat file",
+      "value": "ieee-14-bus.raw",
+      "snippet": "Cyber-Physical System Models of the Grid. Contribute to ITI/models development by creating an account on GitHub.",
+      "metadata": {
+        "url": "https://github.com/ITI/models/blob/master/electric-grid/physical/reference/ieee-14bus/models/ieee-14-bus.raw"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "case14.m",
+      "snippet": "Power flow data for IEEE 14 bus test case. Please see CASEFORMAT for details on the case file format. This data was converted from IEEE Common Data Format.",
+      "metadata": {
+        "url": "https://github.com/MATPOWER/matpower/blob/master/data/case14.m"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "ieee14.html",
+      "snippet": "Power flow data for IEEE 14 bus test case. This data was converted from IEEE Common Data Format (ieee14cdf.txt) on 15-Oct-2014 by cdf2matp, rev. 2393.",
+      "metadata": {
+        "url": "https://github.com/caseformat/ieee14"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "ieee-30-bus.m",
+      "snippet": "The IEEE 30-bus case represents a simple approximation of the American Power System as it was in December 1961. The equivalent system has 15 buses, 2 ...",
+      "metadata": {
+        "url": "https://github.com/ITI/models/blob/master/electric-grid/physical/reference/ieee-30bus/models/ieee-30-bus.m"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "ieee30.html",
+      "snippet": "Power flow data for IEEE 30 bus test case. This data was converted from IEEE Common Data Format (ieee30cdf.txt) on 15-Oct-2014 by cdf2matp, rev. 2393.",
+      "metadata": {
+        "url": "https://github.com/caseformat/ieee30"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "IEEE118-Bus-PowerGridData.html",
+      "snippet": "This repository contains data related to the IEEE 118-bus Cyber-Physical Power System (CPPS) for evaluating diagnostic methodologies in smart grid research.",
+      "metadata": {
+        "url": "https://github.com/HosseinH24/IEEE118-Bus-PowerGridData"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "ieee-118-bus.raw",
+      "snippet": "Cyber-Physical System Models of the Grid. Contribute to ITI/models development by creating an account on GitHub.",
+      "metadata": {
+        "url": "https://github.com/ITI/models/blob/master/electric-grid/physical/reference/ieee-118bus/models/ieee-118-bus.raw"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "modified-ieee-118-bus-system-data.html",
+      "snippet": "Modified IEEE-118 bus system data with wind scenario production uncertainty. License. MIT license · 3 stars 1 fork Branches Tags Activity.",
+      "metadata": {
+        "url": "https://github.com/datejada/modified-ieee-118-bus-system-data"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "118-bus-300-bus-and-3266-bus-system-data.html",
+      "snippet": "The dataset consists of data for the IEEE 118-bus system, IEEE 300-bus system, and a modified 3266-bus system based on the practical provincial grid of China ...",
+      "metadata": {
+        "url": "https://ieee-dataport.org/documents/118-bus-300-bus-and-3266-bus-system-data"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "case24_ieee_rts.m",
+      "snippet": "%CASE24_IEEE_RTS Power flow data for the IEEE RELIABILITY TEST SYSTEM. % Please see CASEFORMAT for details on the case file format. %.",
+      "metadata": {
+        "url": "https://github.com/MATPOWER/matpower/blob/master/data/case24_ieee_rts.m"
+      }
+    },
+    {
+      "category": "mat file",
+      "value": "19130453.html",
+      "snippet": "The parameters of cases in IEEE 30-bus and Polish 2383-bus systems.",
+      "metadata": {
+        "url": "https://figshare.com/articles/dataset/The_parameters_of_the_IEEE-30_and_Polish2383_bus_system/19130453"
+      }
+    }
+  ]
+}
