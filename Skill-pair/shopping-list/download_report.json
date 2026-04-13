@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\shopping-list\\shopping-list\\SKILL.md",
+  "records": [
+    {
+      "category": "cooklang recipe file",
+      "value": "10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook",
+      "snippet": "Cooklang recipe with quantified ingredients, cookware, and servings metadata; suitable as a single-recipe input for shopping list generation.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook",
+      "snippet": "Cooklang recipe with multiple measured ingredients and clear frontmatter, appropriate for testing shopping list extraction and aggregation.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook",
+      "snippet": "Cooklang soup recipe with ingredient quantities and pantry staples, useful for consolidated shopping list generation.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook",
+      "snippet": "Cooklang recipe with diverse ingredients and standard syntax, suitable for combining with other recipes in one shopping list.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook",
+      "snippet": "Cooklang recipe with produce, dairy, and pantry items, good for verifying grouped and scaled shopping list output.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook"
+      }
+    }
+  ]
+}

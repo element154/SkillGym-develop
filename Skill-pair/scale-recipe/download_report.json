@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\scale-recipe\\scale-recipe\\SKILL.md",
+  "records": [
+    {
+      "category": "cooklang recipe file",
+      "value": "10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook",
+      "snippet": "Cooklang recipe with servings metadata, multiple quantified ingredients, cookware, and timers; suitable for doubling or halving ingredient quantities.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook",
+      "snippet": "Cooklang recipe with structured frontmatter and many measured ingredients, making it a good input for testing scaled servings output.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook",
+      "snippet": "Cooklang soup recipe with servings, ingredient quantities, and multi-step preparation; useful for scaling a larger batch or smaller serving count.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook",
+      "snippet": "Cooklang recipe with quantified ingredients and clear servings-based structure, appropriate for validating ingredient scaling behavior.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook",
+      "snippet": "Cooklang recipe containing servings metadata, measured ingredients, and seasoning instructions, suitable for testing recipe scaling and comparison of original versus scaled quantities.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook"
+      }
+    }
+  ]
+}

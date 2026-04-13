@@ -1,0 +1,45 @@
+{
+    "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\plotly\\plotly\\SKILL.md",
+    "records": [
+        {
+            "category": "cooklang recipe file",
+            "value": "10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook",
+            "snippet": "Cooklang recipe with rich YAML frontmatter and structured steps for a steak dinner: 10-oz Ribeye and Mustard Peppercorn Sauce with Chive Mashed Potatoes and Roasted Broccoli.",
+            "metadata": {
+                "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook"
+            }
+        },
+        {
+            "category": "cooklang recipe file",
+            "value": "2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook",
+            "snippet": "Cooklang recipe for Tropical Pineapple Chicken with metadata, ingredients, cookware, timers, and multi-step instructions; good for Markdown, JSON, YAML, and LaTeX export testing.",
+            "metadata": {
+                "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook"
+            }
+        },
+        {
+            "category": "cooklang recipe file",
+            "value": "2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook",
+            "snippet": "Cooklang recipe for Vegetable Minestrone Soup with Parmesan Garlic Bread; includes frontmatter, notes, timers, ingredient quantities, and cookware references.",
+            "metadata": {
+                "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook"
+            }
+        },
+        {
+            "category": "cooklang recipe file",
+            "value": "2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook",
+            "snippet": "Cooklang recipe for Southwestern Stuffed Sweet Potatoes with Pork and Poblano Peppers; useful as a realistic single-file export input with comments and seasoning steps.",
+            "metadata": {
+                "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook"
+            }
+        },
+        {
+            "category": "cooklang recipe file",
+            "value": "2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook",
+            "snippet": "Cooklang recipe for Sweet Potato Fajitas with Pepper Jack Cheese, Pickled Jalapeño, and Lime Crema; suitable for testing export of notes, metadata, and nested ingredient instructions.",
+            "metadata": {
+                "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook"
+            }
+        }
+    ]
+}

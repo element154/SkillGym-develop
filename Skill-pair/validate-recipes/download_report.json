@@ -1,0 +1,29 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\validate-recipes\\validate-recipes\\SKILL.md",
+  "records": [
+    {
+      "category": "cooklang recipe file",
+      "value": "10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook",
+      "snippet": "Valid Cooklang recipe with YAML frontmatter, quantified ingredients, cookware, and timers; suitable as a clean validation baseline.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook",
+      "snippet": "Valid Cooklang soup recipe with frontmatter, notes, timers, ingredient quantities, and cookware references; good for full-file validation.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook",
+      "snippet": "Valid Cooklang recipe containing metadata, measured ingredients, and seasoning instructions, useful for strict-mode recipe validation.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook"
+      }
+    }
+  ]
+}

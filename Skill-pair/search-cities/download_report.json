@@ -1,0 +1,29 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\search-cities\\search-cities\\SKILL.md",
+  "records": [
+    {
+      "category": "city-state csv file",
+      "value": "us_cities_states_counties.csv",
+      "snippet": "Full list of US cities, states, and counties with columns for city, state short name, state full name, county, and city alias; ideal for mapping a state input to its cities.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/grammakov/USA-cities-and-states/refs/heads/master/us_cities_states_counties.csv"
+      }
+    },
+    {
+      "category": "city-state-zip csv file",
+      "value": "us_cities_states_counties_zips.csv",
+      "snippet": "Extended US cities dataset including ZIP codes in addition to city, state, and county fields; suitable for richer state-to-city lookup tasks and validation.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/grammakov/USA-cities-and-states/refs/heads/master/us_cities_states_counties_zips.csv"
+      }
+    },
+    {
+      "category": "city-state csv file",
+      "value": "us-cities-top-1k.csv",
+      "snippet": "Top 1,000 US cities with state, population, latitude, and longitude; a smaller, cleaner input option for testing state-to-city lookup on common destinations.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\search-recipes\\search-recipes\\SKILL.md",
+  "records": [
+    {
+      "category": "cooklang recipe file",
+      "value": "10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook",
+      "snippet": "Steak dinner recipe with ingredients like ribeye, potatoes, broccoli, mustard, and peppercorn sauce; useful for searching by ingredient, title text, and metadata.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/10-oz-ribeye-and-mustard-peppercorn-sauce-5c3f7ebfc445fa7bcf486d22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook",
+      "snippet": "Chicken recipe with pineapple and rice-style components; a good search input for terms like chicken, pineapple, tropical, dinner, and quick meal metadata.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r14-tropical-pineapple-chicken-5bcf592e30006c0ea324cd14.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook",
+      "snippet": "Vegetarian soup recipe featuring vegetable minestrone and parmesan garlic bread; suitable for tag, ingredient, and free-text recipe search.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w52r8c-vegetable-minestrone-soup-5be4485a30006c41a77c2a22.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook",
+      "snippet": "Southwestern stuffed sweet potatoes recipe with pork and poblano peppers; helpful for searching by cuisine keywords, ingredients, and title matches.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r15c-southwestern-stuffed-sweet-potatoes-5bcf5986ae08b52c2c1af982.cook"
+      }
+    },
+    {
+      "category": "cooklang recipe file",
+      "value": "2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook",
+      "snippet": "Fajita recipe with sweet potatoes, pepper jack cheese, jalapeño, and lime crema; useful for multi-term searches such as potatoes, cheese, mexican-style, or dinner.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/cooklang/fine_tune/main/recipes/us/2018w50-r8-sweet-potato-fajitas-5c87e384c445fa032d20dc82.cook"
+      }
+    }
+  ]
+}
