@@ -1,0 +1,42 @@
+Bioinformatics
+Data Analysis
+Excel Analysis
+Finance Skill
+ab-unit-harmonization
+aeon
+anndata
+audiobook
+biopython
+cobrapy
+code-review
+contribution-analysis
+data-transform
+datamol
+dc-power-flow
+did_causal_analysis
+dividend-tracking
+docx
+flood-detection
+geospatial-analysis
+lab-unit-harmonization
+markdown-to-html
+marker
+math
+networkx
+neurokit2
+openakitaskills@translate-pdf
+pca-decomposition
+pcap-analysis
+pdf
+polars
+pptx
+pydeseq2
+pymatgen
+pysam
+scikit-bio
+scikit-learn
+search-flights
+statistical-analysis
+statsmodels
+xlsx
+xsv
