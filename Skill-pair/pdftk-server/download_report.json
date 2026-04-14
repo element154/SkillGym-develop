@@ -1,0 +1,45 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\pdftk-server\\pdftk-server\\SKILL.md",
+  "records": [
+    {
+      "category": "pdf file",
+      "value": "dummy_statement.pdf",
+      "snippet": "Two-page sample bank statement PDF, suitable for merge, split, extract-pages, rotate, metadata dump, and repair-style pass-through tests.",
+      "metadata": {
+        "url": "https://www.impact-bank.com/user/file/dummy_statement.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "fw4.pdf",
+      "snippet": "Official multi-page IRS PDF form that works well for page extraction, rotation, encryption/decryption, and metadata inspection workflows.",
+      "metadata": {
+        "url": "https://www.irs.gov/pub/irs-pdf/fw4.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Sample-Fillable-PDF.pdf",
+      "snippet": "Public fillable PDF form with editable fields; suitable for form-field discovery and fill_form workflows when paired with external FDF/XFDF data.",
+      "metadata": {
+        "url": "https://themodernfirm.com/wp-content/uploads/2017/12/Sample-Fillable-PDF.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Invoice_Template.pdf",
+      "snippet": "Single-page invoice PDF template, suitable for overlay/stamp, background watermark, form-like document handling, and attachment-safe PDF transformations.",
+      "metadata": {
+        "url": "https://www.getharvest.com/hubfs/downloads/Invoice_Template.pdf"
+      }
+    },
+    {
+      "category": "pdf file",
+      "value": "Updated_Commercial_Invoice_6_11_19_1271336359.pdf",
+      "snippet": "Structured commercial invoice PDF with many fields and table regions, useful for page manipulation, form handling, and metadata extraction.",
+      "metadata": {
+        "url": "https://www.fedex.com/content/dam/fedex/us-united-states/International/images/2020/Q1/Updated_Commercial_Invoice_6_11_19_1271336359.pdf"
+      }
+    }
+  ]
+}

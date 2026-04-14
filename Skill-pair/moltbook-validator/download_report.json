@@ -1,0 +1,37 @@
+{
+  "skill": "D:\\engineer\\SkillGym-develop\\Skill-pair\\moltbook-validator\\moltbook-validator\\SKILL.md",
+  "records": [
+    {
+      "category": "markdown file",
+      "value": "README.md",
+      "snippet": "Official Moltbook API README with exact JSON request examples for creating posts and comments, using the required fields submolt, title, and content.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/moltbook/api/main/README.md"
+      }
+    },
+    {
+      "category": "markdown file",
+      "value": "SKILL.md",
+      "snippet": "OpenClaw Moltbook skill documentation containing canonical POST body examples for text posts, link posts, comments, and replies; useful for validating correct field names.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/openclaw/skills/main/skills/mattprd/moltbook/SKILL.md"
+      }
+    },
+    {
+      "category": "markdown file",
+      "value": "INVITE_CANONICAL.md",
+      "snippet": "Reference file containing real Moltbook JSON body examples for both post creation and comment submission, including long-form content and proof-comment payloads.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/MiukiAI/mizuki-uwu/main/skills/public/moltbook-uwu/references/INVITE_CANONICAL.md"
+      }
+    },
+    {
+      "category": "markdown file",
+      "value": "SKILL.md",
+      "snippet": "Clawdwork skill file with a compact example of a valid Moltbook share_suggestion payload using submolt, title, and content fields.",
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/openclaw/skills/main/skills/felo-sparticle/clawdwork/SKILL.md"
+      }
+    }
+  ]
+}
