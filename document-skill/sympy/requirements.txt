@@ -1,0 +1,2 @@
+# No Python dependency inferred from source URLs.
+# Add packages manually if this skill requires runtime libraries.
